@@ -1,76 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore breathtaking destinations, travel tips, and unforgettable stories from around the world with WanderWithMughees." />
-  <meta name="keywords" content="travel blog, wanderlust, destinations, backpacking, travel tips" />
-  <meta name="author" content="Abdul Mughees" />
-  <title>Wander With Mughees | Travel Blog</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Fox Dynamics LLC</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Setting the default font to Inter and a smooth scroll effect */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #121212; /* Dark background for the entire page */
+        }
+
+        /* Custom style for the background image on the main content area */
+        .main-background {
+            background-image: url('Website_background.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Makes the background image fixed while scrolling */
+        }
+    </style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Wander With Mughees</h1>
-      <p>Stories & Tips From a Lifetime of Travel</p>
-    </div>
-  </header>
+<body class="min-h-screen flex flex-col">
 
-  <!-- Top Ad Banner (728x90 or responsive) -->
-  <div class="ad-slot top-banner">
-    <!-- Google AdSense code goes here after approval -->
-    <p>[Ad Slot – Top Banner]</p>
-  </div>
+    <!-- Header section with the SFD Website Header.png image -->
+    <header class="w-full">
+        <!-- The image src directly references the filename in the repository -->
+        <img 
+            src="SFD Website Header.png" 
+            alt="Silver Fox Dynamics Website Header" 
+            class="w-full h-auto object-cover rounded-b-lg shadow-xl"
+        >
+    </header>
 
-  <nav class="main-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#latest">Latest Posts</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="privacy-policy.html">Privacy Policy</a></li>
-    </ul>
-  </nav>
+    <!-- Main content area -->
+    <main class="flex-grow container mx-auto px-4 py-8 md:px-8 lg:px-16 main-background">
+        <!-- A semi-transparent overlay to ensure text readability -->
+        <div class="bg-gray-900 bg-opacity-75 p-8 md:p-12 lg:p-16 rounded-lg shadow-xl min-h-[60vh] flex items-center justify-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white text-center">
+                Your content goes here!
+            </h1>
+        </div>
+    </main>
 
-  <main class="container">
-    <section class="hero">
-      <img src="hero-image.jpg" alt="Travel the World" />
-      <div class="hero-text">
-        <h2>Adventure is out there</h2>
-        <p>Come along with me as I explore the world, one country at a time.</p>
-      </div>
-    </section>
+    <!-- Footer section with the Website_background.png image -->
+    <footer class="w-full mt-auto">
+        <!-- The image src directly references the filename in the repository -->
+        <img 
+            src="Website_background.png" 
+            alt="Silver Fox Dynamics Footer Image" 
+            class="w-full h-auto object-cover rounded-t-lg shadow-xl"
+        >
+    </footer>
 
-    <section id="latest" class="blog-preview">
-      <h2>Latest Adventures</h2>
-      <div class="posts">
-        <article class="post-card">
-          <img src="images/bali.jpg" alt="Bali Beach" />
-          <h3><a href="bali-trip.html">7 Days in Bali: A Dreamy Island Getaway</a></h3>
-          <p>From sunsets to surf – discover the magic of Bali on a shoestring budget.</p>
-        </article>
-        <article class="post-card">
-          <img src="images/istanbul.jpg" alt="Istanbul Market" />
-          <h3><a href="istanbul-guide.html">Exploring Istanbul: A City of Wonders</a></h3>
-          <p>History, culture, and food collide in one unforgettable journey.</p>
-        </article>
-        <!-- Add more post-cards here -->
-      </div>
-    </section>
-
-    <!-- Inline Ad Slot -->
-    <div class="ad-slot inline">
-      <p>[Ad Slot – Inline Content]</p>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Wander With Mughees. All rights reserved.</p>
-      <p><a href="privacy-policy.html">Privacy Policy</a></p>
-    </div>
-  </footer>
 </body>
 </html>
