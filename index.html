@@ -6,19 +6,36 @@
     <title>My Website</title>
     <style>
         body {
-      font-family: 'Raleway', sans-serif;
-      background: url('https://github.com/abdulmughees00090/SFD/blob/main/Website_background.png?raw=true');
-      background-repeat: repeat;
-      background-size: contain;
-      color: #2e2e2e;
-    }
+            /* Set the font family for the page */
+            font-family: 'Raleway', sans-serif;
+
+            /* Use the shorthand 'background' property for a cleaner look */
+            /* The image URL should be a direct link, which your raw GitHub link is */
+            /* 'no-repeat' ensures the image is shown only once */
+            /* 'center center fixed' centers the image and keeps it in place on scroll */
+            background: url('https://github.com/abdulmughees00090/SFD/blob/main/Website_background.png?raw=true') no-repeat center center fixed;
+
+            /* 'background-size: cover' stretches the image to cover the entire viewport */
+            background-size: cover;
+            
+            /* Set the text color for any potential text on the page */
+            color: #2e2e2e;
+            
+            /* Ensure the body takes up the full height of the viewport */
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
 
         .header-image {
             /* Style for the header image */
-            max-width: 100%; /* Ensure it's responsive on all screen sizes */
+            max-width: 100%;
             height: auto;
-            display: block; /* Removes any extra space below the image */
-            margin-top: 2rem; /* Add some space at the top */
+            display: block;
+            margin-top: 2rem;
         }
     </style>
 </head>
@@ -27,8 +44,3 @@
     <img src="sfd_website_header.png" alt="SFD Website Header" class="header-image">
 </body>
 </html>
-
-
-
-
-
