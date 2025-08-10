@@ -6,44 +6,30 @@
     <title>My Website</title>
     <style>
         body {
-            /* Set the background image and make sure it covers the whole screen */
+            /* Set the background image and make it cover the whole page */
             background-image: url('website_background.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
-            color: #fff; /* White text for contrast */
-            height: 100vh; /* Make sure the body takes up the full viewport height */
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .container {
-            /* Add a container to hold the header image and give it some style */
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-            padding: 2rem;
-            border-radius: 15px; /* Rounded corners */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            justify-content: center; /* Center the header image horizontally */
+            align-items: flex-start; /* Place the header image at the top */
+            height: 100vh;
         }
 
         .header-image {
             /* Style for the header image */
-            max-width: 100%; /* Ensure it's responsive */
+            max-width: 100%; /* Ensure it's responsive on all screen sizes */
             height: auto;
-            border-radius: 10px;
+            display: block; /* Removes any extra space below the image */
+            margin-top: 2rem; /* Add some space at the top */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- The image source path is set to the correct filename: sfd_website_header.png -->
-        <img src="sfd_website_header.png" alt="SFD Website Header" class="header-image">
-        <h1>Welcome to my site!</h1>
-        <p>Your website is now live on GitHub Pages.</p>
-    </div>
+    <!-- Display the header image at the top of the page -->
+    <img src="sfd_website_header.png" alt="SFD Website Header" class="header-image">
 </body>
 </html>
