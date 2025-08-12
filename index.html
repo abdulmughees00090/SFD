@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Website</title>
+<title>SFD Home</title>
 <style>
     body {
         font-family: 'Raleway', sans-serif;
@@ -12,7 +12,29 @@
         background-color: #000;
     }
 
-    .header-image,
+    .header-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .header-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .header-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: clamp(16px, 4vw, 36px); /* responsive font size */
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* make text readable over image */
+        text-align: center;
+    }
+
     .background-image {
         width: 100%;
         height: auto;
@@ -21,17 +43,19 @@
 </style>
 </head>
 <body>
-    <!-- Header image -->
-    <img src="https://silverfoxdynamics.com/images/sfd_website_header.png" 
-         alt="SFD Website Header" 
-         class="header-image" 
-         loading="lazy">
+    <!-- Header with overlay text -->
+    <div class="header-container">
+        <img src="https://silverfoxdynamics.com/images/sfd_website_header.png" 
+             alt="SFD Website Header" 
+             class="header-image" 
+             loading="lazy">
+        <div class="header-text">Website is Under Development</div>
+    </div>
 
     <!-- Background image placed below header -->
-    <img src="https://silverfoxdynamics.com/images/website_background.png" 
+    <img src="https://silverfoxdynamics.com/images/Wwbsite_background.png" 
          alt="Background" 
          class="background-image" 
          loading="lazy">
 </body>
 </html>
-
