@@ -12,29 +12,46 @@
         background-color: #000;
     }
 
+    /* Header container with background color */
     .header-container {
-        position: relative;
-        width: 100%;
+        background-color: #020609;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        flex-wrap: wrap; /* allow stacking on mobile */
     }
 
-    .header-image {
-        width: 100%;
+    /* Logo styling */
+    .logo {
+        max-height: 80px;
         height: auto;
-        display: block;
+        width: auto;
     }
 
+    /* Header text */
     .header-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: clamp(16px, 4vw, 36px); /* responsive font size */
-        font-weight: bold;
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* make text readable over image */
+        flex: 1 1 100%;
         text-align: center;
+        color: white;
+        font-size: clamp(16px, 4vw, 36px);
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        margin-top: 0.5rem;
     }
 
+    /* On large screens, logo left, text center */
+    @media (min-width: 768px) {
+        .header-container {
+            flex-wrap: nowrap;
+        }
+        .header-text {
+            flex: 1;
+            margin: 0;
+        }
+    }
+
+    /* Background image styling */
     .background-image {
         width: 100%;
         height: auto;
@@ -43,11 +60,12 @@
 </style>
 </head>
 <body>
-    <!-- Header with overlay text -->
+
+    <!-- Header with logo & text -->
     <div class="header-container">
-        <img src="https://silverfoxdynamics.com/images/sfd_website_header_dark.png" 
-             alt="SFD Website Header" 
-             class="header-image" 
+        <img src="https://silverfoxdynamics.com/images/sfd_website_header_dark1.png" 
+             alt="SFD Logo" 
+             class="logo" 
              loading="lazy">
         <div class="header-text">Website is Under Development</div>
     </div>
@@ -57,7 +75,6 @@
          alt="Background" 
          class="background-image" 
          loading="lazy">
+
 </body>
 </html>
-
-
