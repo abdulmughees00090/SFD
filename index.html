@@ -25,6 +25,7 @@
       justify-content: space-between;
       position: relative;
       box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+      flex-wrap: wrap;
     }
 
     header img {
@@ -59,13 +60,14 @@
       display: none;
       flex-direction: column;
       cursor: pointer;
+      margin-top: 10px;
     }
 
     .menu-toggle span {
       background: #f1f1f1;
       height: 3px;
       width: 25px;
-      margin: 4px 0;
+      margin: 4px auto;
       border-radius: 2px;
       transition: 0.3s;
     }
@@ -138,16 +140,32 @@
 
     /* Responsive */
     @media (max-width: 900px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      header img {
+        height: 40px;
+        margin-bottom: 10px;
+      }
+      .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       nav ul {
         flex-direction: column;
         background: #111;
         position: absolute;
-        top: 70px;
-        right: 20px;
+        top: 100px;
+        right: 50%;
+        transform: translateX(50%);
         width: 200px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(255,255,255,0.1);
         display: none;
+        z-index: 1000;
       }
       nav ul.show {
         display: flex;
@@ -155,12 +173,6 @@
       nav ul li {
         margin: 15px 0;
         text-align: center;
-      }
-      .menu-toggle {
-        display: flex;
-      }
-      header img {
-        height: 40px;
       }
       .section {
         flex-direction: column;
@@ -203,7 +215,7 @@
         We aim to empower businesses and individuals through cutting-edge technology.
       </p>
     </div>
-    <img src="images/logo.png" alt="Company Secondary Logo">
+    <img src="images/logo2.png" alt="Company Secondary Logo">
   </section>
 
   <!-- CEO Message Section -->
