@@ -100,6 +100,10 @@ body {
       margin-bottom: 15px;
       color: #ff9800;
     }
+    .section-text h4 {
+      margin-bottom: 12px;
+      color: #ff9800;
+    }
 
     /* Quick Links */
     .quick-links {
@@ -182,3 +186,4 @@ body {
         max-width: 200px;
       }
     }
+
