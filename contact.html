@@ -1,32 +1,47 @@
-<!-- Contact Us Section -->
-<section class="section contact-section">
-  <!-- Google Map -->
-  <div class="map-container">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.9477!2d73.0551!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df959e6d!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v000000000"
-      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </div>
+<section class="content">
+  <h1>Contact Us</h1>
+  <form id="contactForm" method="POST" action="send_mail.php">
+    
+    <label for="firstName">First Name:</label><br />
+    <input type="text" id="firstName" name="firstName" required><br /><br />
 
-  <!-- Contact Form -->
-  <div class="section-text form-container">
-    <h2>Contact Us</h2>
-    <form id="contactForm" method="POST" onsubmit="return sendEmail(event)">
-      <label for="name">First & Last Name</label>
-      <input type="text" id="name" name="name" required minlength="5">
+    <label for="lastName">Last Name:</label><br />
+    <input type="text" id="lastName" name="lastName" required><br /><br />
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
+    <label for="email">Your Email:</label><br />
+    <input type="email" id="email" name="email" required><br /><br />
 
-      <label for="message">Your Query</label>
-      <textarea id="message" name="message" rows="6" required minlength="5" maxlength="500"></textarea>
+    <label for="message">Your Query (5–500 words):</label><br />
+    <textarea id="message" name="message" rows="6" minlength="5" maxlength="500" required></textarea><br /><br />
 
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+    <button type="submit">Send Message</button>
+    <input type="hidden" name="source" value="Contact Us Page - Silver Fox Dynamics">
+  </form>
 </section>
 
-<!-- Popup Notification -->
-<div id="popup" class="popup">
-  <p>Your Message has been sent successfully ❤️</p>
-</div>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Validate word count
+    const message = document.getElementById("message").value.trim();
+    const wordCount = message.split(/\s+/).length;
+
+    if (wordCount < 5) {
+      alert("Please write at least 5 words in your message.");
+      return;
+    }
+    if (wordCount > 500) {
+      alert("Your message exceeds the 500 word limit.");
+      return;
+    }
+
+    // Submit the form
+    this.submit();
+
+    // Show success popup
+    setTimeout(() => {
+      alert("Your Message has been sent successfully ❤️");
+    }, 200);
+  });
+</script>
