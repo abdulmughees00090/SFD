@@ -321,7 +321,18 @@ nav ul li a:hover {
   .map-container iframe {
     height: 250px;
   }
+  .contact-card iframe {
+  border: none;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;       /* centers the map */
+  max-width: 95%;       /* prevents sticking to edges */
 }
 
 }
+
+}
+
 
