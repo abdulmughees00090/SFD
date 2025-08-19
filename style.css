@@ -294,4 +294,34 @@ nav ul li a:hover {
   #contact form {
     max-width: 100%;
   }
+  /* Map Styling */
+.map-container {
+  max-width: 380px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  display: block;
+}
+
+/* Mobile: put map above form */
+@media (max-width: 900px) {
+  .map-container {
+    order: -1;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+}
+
+}
+
