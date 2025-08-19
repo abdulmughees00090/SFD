@@ -185,5 +185,61 @@ body {
         margin-top: 20px;
         max-width: 200px;
       }
+        .contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.map-container {
+  flex: 1;
+  min-height: 400px;
+}
+
+.form-container {
+  flex: 1;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-container button {
+  padding: 12px;
+  background-color: #020609;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #333;
+}
+
+/* Popup Styling */
+.popup {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #020609;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+
     }
+
 
