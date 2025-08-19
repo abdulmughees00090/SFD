@@ -332,7 +332,27 @@ nav ul li a:hover {
 }
 
 }
+  .nav-menu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background: #020609;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+}
+
 
 }
+
 
 
