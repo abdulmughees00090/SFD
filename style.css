@@ -14,7 +14,9 @@ body {
   color: #f1f1f1;
 }
 
-/* Header */
+/* ========================
+   Header
+======================== */
 header {
   background: linear-gradient(90deg, #111, #1c1c1c);
   padding: 10px 20px;
@@ -70,7 +72,9 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 
-/* Sections */
+/* ========================
+   General Sections
+======================== */
 .section {
   padding: 60px 10%;
   display: flex;
@@ -105,7 +109,9 @@ nav ul li a:hover {
   color: #ff9800;
 }
 
-/* Quick Links */
+/* ========================
+   Quick Links
+======================== */
 .quick-links {
   text-align: center;
   padding: 40px 10%;
@@ -146,19 +152,13 @@ nav ul li a:hover {
 ================================= */
 #contact {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
   gap: 40px;
   margin: 60px auto;
   max-width: 1200px;
   padding: 20px;
-}
-
-#contact img {
-  max-width: 380px;
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  flex-wrap: wrap;
 }
 
 /* Form Box */
@@ -172,6 +172,7 @@ nav ul li a:hover {
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
+  flex: 1;
 }
 
 /* Labels */
@@ -180,6 +181,7 @@ nav ul li a:hover {
   color: #fff;
   font-size: 14px;
   margin-bottom: 5px;
+  text-align: left;
 }
 
 /* Inputs & Textarea */
@@ -220,7 +222,26 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* Popup Notification */
+/* Map Styling */
+.map-container {
+  flex: 1;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: 0;
+  display: block;
+}
+
+/* ================================
+   Popup Notification
+================================= */
 #popup {
   background: #0d1417;
   border: 2px solid #ff4d4d;
@@ -237,7 +258,9 @@ nav ul li a:hover {
   100% { opacity: 0; transform: translate(-50%, -60%); }
 }
 
-/* Responsive Design */
+/* ================================
+   Responsive Design
+================================= */
 @media (max-width: 900px) {
   header {
     flex-direction: column;
@@ -248,11 +271,14 @@ nav ul li a:hover {
     height: 40px;
     margin-bottom: 10px;
   }
+
+  /* Hamburger visible */
   .menu-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   nav ul {
     flex-direction: column;
     background: #111;
@@ -266,13 +292,16 @@ nav ul li a:hover {
     display: none;
     z-index: 1000;
   }
+
   nav ul.show {
     display: flex;
   }
+
   nav ul li {
     margin: 15px 0;
     text-align: center;
   }
+
   .section {
     flex-direction: column;
     text-align: center;
@@ -287,31 +316,11 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  #contact img {
-    order: -1; /* put image above the form on mobile */
-  }
-
   #contact form {
     max-width: 100%;
   }
-  /* Map Styling */
-.map-container {
-  max-width: 380px;
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
 
-.map-container iframe {
-  width: 100%;
-  height: 300px;
-  border: 0;
-  display: block;
-}
-
-/* Mobile: put map above form */
-@media (max-width: 900px) {
+  /* Map full width on mobile */
   .map-container {
     order: -1;
     max-width: 100%;
@@ -321,38 +330,4 @@ nav ul li a:hover {
   .map-container iframe {
     height: 250px;
   }
-  .contact-card iframe {
-  border: none;
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;       /* centers the map */
-  max-width: 95%;       /* prevents sticking to edges */
 }
-
-}
-  .nav-menu {
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  background: #020609;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.nav-menu.active {
-  display: flex;
-}
-
-.menu-toggle {
-  cursor: pointer;
-  font-size: 28px;
-  color: white;
-}
-
-
-}
-
-
-
