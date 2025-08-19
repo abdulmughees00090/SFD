@@ -24,7 +24,7 @@
       <li><a href="about.html">About Us</a></li>
       <li><a href="privacy.html">Privacy Policy</a></li>
       <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
     </ul>
   </nav>
 </header>
@@ -45,6 +45,10 @@
       <!-- Email -->
       <label for="email">Email Address:</label>
       <input type="email" id="email" name="_replyto" placeholder="Enter your email address" required>
+
+      <!-- Mobile Number -->
+      <label for="phone">Mobile Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" pattern="[0-9+ ]{7,15}" required>
       
       <!-- Message -->
       <label for="message">Your Query:</label>
@@ -132,10 +136,4 @@
     }
   });
 </script>
-
-
-
-
-
-
-
+</html>
