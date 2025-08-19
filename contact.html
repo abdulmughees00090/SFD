@@ -86,6 +86,19 @@
   </section>
 
   <script src="script.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    if(menuToggle && navMenu){
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    }
+  });
+</script>
+
 </body>
 <!-- Success Notification Popup -->
 <div id="popup" style="
@@ -132,6 +145,7 @@
     }
   });
 </script>
+
 
 
 
