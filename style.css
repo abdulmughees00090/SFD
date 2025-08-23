@@ -73,40 +73,105 @@ nav ul li a:hover {
 }
 
 /* ========================
-   General Sections
+   Contact Us Section
 ======================== */
-.section {
-  padding: 60px 10%;
+.contact-section {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(145deg, #141414, #1f1f1f);
-  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.05);
-  margin-bottom: 30px;
-  border-radius: 12px;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
   flex-wrap: wrap;
-}
-
-.section img {
-  max-width: 250px;
-  width: 100%;
-  border-radius: 12px;
-}
-
-.section-text {
-  flex: 1;
+  max-width: 1200px;
+  margin: 60px auto;
   padding: 20px;
-  min-width: 250px;
 }
 
-.section-text h2 {
+.card {
+  background: #0d1417;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  flex: 1 1 500px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card h2 {
   margin-bottom: 15px;
   color: #ff9800;
 }
 
-.section-text h4 {
-  margin-bottom: 12px;
-  color: #ff9800;
+.card p {
+  margin-bottom: 20px;
+}
+
+/* Form inside Card */
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex: 1;
+}
+
+.card label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.card input,
+.card textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #1a1f23;
+  color: #fff;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+.card input:focus,
+.card textarea:focus {
+  border: 1px solid #ff4d4d;
+  outline: none;
+  background: #22292d;
+}
+
+.card button {
+  background: #ff4d4d;
+  color: #fff;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover {
+  background: #e63939;
+  transform: scale(1.05);
+}
+
+/* Map Styling */
+.map-container {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: 0;
+  display: block;
 }
 
 /* ========================
@@ -147,137 +212,44 @@ nav ul li a:hover {
   color: #ff9800;
 }
 
-/* ================================
-   Contact Us Section Styling
-================================= */
-#contact {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 40px;
-  margin: 60px auto;
-  max-width: 1200px;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-/* Form Box */
-#contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  max-width: 500px;
-  background: #0d1417;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-  margin-top: 20px;
-  flex: 1;
-}
-
-/* Labels */
-#contact label {
-  font-weight: bold;
-  color: #fff;
-  font-size: 14px;
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-/* Inputs & Textarea */
-#contact input,
-#contact textarea {
-  width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #444;
-  border-radius: 8px;
-  font-size: 15px;
-  background: #1a1f23;
-  color: #fff;
-  transition: border 0.3s ease, background 0.3s ease;
-}
-
-#contact input:focus,
-#contact textarea:focus {
-  border: 1px solid #ff4d4d;
-  outline: none;
-  background: #22292d;
-}
-
-/* Button */
-#contact button {
-  background: #ff4d4d;
-  color: #fff;
-  padding: 12px 18px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-#contact button:hover {
-  background: #e63939;
-  transform: scale(1.05);
-}
-
-/* Map Styling */
-.map-container {
-  flex: 1;
-  max-width: 600px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  margin-left: -20px; /* pushes map slightly left */
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 350px;
-  border: 0;
-  display: block;
-}
-
-/* ================================
+/* ========================
    Popup Notification
-================================= */
+======================== */
 #popup {
-  background: #0d1417;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #020609;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1000;
   border: 2px solid #ff4d4d;
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
-  animation: fadeInOut 3s ease forwards;
 }
 
-@keyframes fadeInOut {
-  0% { opacity: 0; transform: translate(-50%, -60%); }
-  20% { opacity: 1; transform: translate(-50%, -50%); }
-  80% { opacity: 1; }
-  100% { opacity: 0; transform: translate(-50%, -60%); }
-}
-
-/* ================================
-   Responsive Design
-================================= */
+/* ========================
+   Responsive
+======================== */
 @media (max-width: 900px) {
   header {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   header img {
     height: 40px;
     margin-bottom: 10px;
   }
 
-  /* Hamburger visible */
   .menu-toggle {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   nav ul {
@@ -303,40 +275,7 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  .section {
+  .contact-section {
     flex-direction: column;
-    text-align: center;
   }
-  .section img {
-    margin-top: 20px;
-    max-width: 200px;
-  }
-
-  #contact {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #contact form {
-    max-width: 100%;
-  }
-
-  /* Map full width on mobile */
-  .map-container {
-  flex: 1;
-  max-width: 600px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
-
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 350px;
-  border: 0;
-  display: block;
-}
-
-}
-
