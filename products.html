@@ -4,42 +4,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products & Services | Silver Fox Dynamics LLC</title>
+  <meta name="description" content="Silver Fox Dynamics LLC provides mobile app development, ERP solutions, websites, e-commerce stores, and IT consultation tailored to empower your business.">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="fav.png">
 </head>
 <body>
 
   <!-- Header -->
   <header>
-  <a href="index.html">
-    <img src="images/logo1.png" alt="Company Logo">
-  </a>
-  <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+    <a href="index.html">
+      <img src="images/logo1.png" alt="Company Logo">
+    </a>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul id="menu">
+        <li><a href="products.html" class="active">Products & Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Our Products & Services</h1>
+      <p>Transforming ideas into digital success with cutting-edge solutions for businesses of all sizes.</p>
     </div>
-    <ul id="menu">
-      <li><a href="products.html">Products & Services</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
+  </section>
 
-
-  <!-- Content -->
+  <!-- Mobile Apps -->
   <section class="section">
     <div class="section-text">
-      <h2>Products & Services</h2>
-      <p>We offer a wide range of IT solutions including:</p>
+      <h2>Mobile Application Development</h2>
+      <p>We build custom <strong>Android & iOS mobile applications</strong> tailored to your unique business needs. Whether you need a customer-facing app, enterprise mobility solution, or a utility app, we deliver robust and scalable products with intuitive UI/UX design.</p>
       <ul>
-        <li>Custom Android & iOS Application Development</li>
-        <li>ERP Solutions tailored for businesses</li>
-        <li>Database Design & Optimization</li>
-        <li>Web Applications & Cloud Solutions</li>
+        <li>Cross-platform development (Flutter, React Native)</li>
+        <li>Native Android (Kotlin/Java) & iOS (Swift)</li>
+        <li>Secure payment integrations</li>
+        <li>Push notifications & analytics</li>
+        <li>App maintenance & upgrades</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- ERP Solutions -->
+  <section class="section alt-bg">
+    <div class="section-text">
+      <h2>ERP Solutions (Custom & Standard)</h2>
+      <p>Our <strong>Enterprise Resource Planning (ERP)</strong> services empower organizations to streamline workflows, enhance productivity, and make data-driven decisions. We specialize in both <em>custom ERP solutions</em> built from scratch as well as integration and support for <em>standard ERP systems</em>.</p>
+      <ul>
+        <li>Human Resource Management (HRM) & Payroll</li>
+        <li>Inventory & Supply Chain Management</li>
+        <li>Finance & Accounting Modules</li>
+        <li>Point of Sale (POS) Systems</li>
+        <li>Custom modules designed to fit your operations</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Websites & E-Commerce -->
+  <section class="section">
+    <div class="section-text">
+      <h2>Websites & E-Commerce Stores</h2>
+      <p>We design and develop <strong>modern, responsive websites</strong> and <strong>scalable e-commerce platforms</strong> that drive growth and improve your online presence. From business websites to advanced e-commerce solutions, we ensure speed, security, and SEO optimization.</p>
+      <ul>
+        <li>Corporate & portfolio websites</li>
+        <li>Online stores with secure payment gateways</li>
+        <li>Content Management Systems (CMS)</li>
+        <li>SEO-friendly & mobile-optimized design</li>
+        <li>Custom UI/UX for enhanced user experience</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- IT Consultation -->
+  <section class="section alt-bg">
+    <div class="section-text">
+      <h2>IT Consultation & Business Solutions</h2>
+      <p>We provide expert <strong>IT consultation services</strong> to help businesses adopt the right technologies, optimize their workflows, and stay ahead of competition. Our team ensures cost-effective and future-ready solutions that align with your long-term goals.</p>
+      <ul>
+        <li>Digital transformation strategies</li>
+        <li>Cloud migration & infrastructure setup</li>
+        <li>Database design, optimization & support</li>
+        <li>Custom software development</li>
+        <li>Technology stack selection & training</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="cta-text">
+      <h2>Let’s Build Something Amazing Together</h2>
+      <p>Looking for a reliable partner to accelerate your business with technology? <br> Get in touch today and let’s discuss your project!</p>
+      <a href="contact.html" class="btn">Contact Us</a>
     </div>
   </section>
 
@@ -58,4 +122,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
