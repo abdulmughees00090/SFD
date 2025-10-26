@@ -1,12 +1,11 @@
 // Wait until DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu');
 
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active'); // optional: animate hamburger
+    if (menuToggle && menu) {
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
         });
     }
 });
