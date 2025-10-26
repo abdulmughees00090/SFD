@@ -4,12 +4,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const menu = document.getElementById('menu');
 
     if (menuToggle && menu) {
-        menuToggle.addEventListener('click', () => {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
             menu.classList.toggle('show');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+                menu.classList.remove('show');
+            }
+        });
+
+        // Close menu when clicking on menu items
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('show');
+            });
         });
     }
 });
-
 // Add this script to create shooting stars
 function createShootingStar() {
     const star = document.createElement('div');
@@ -44,3 +58,4 @@ setInterval(createShootingStar, 2000);
 for (let i = 0; i < 3; i++) {
     setTimeout(createShootingStar, i * 500);
 }
+
