@@ -523,6 +523,8 @@ nav ul li a:hover {
         margin: 10px 15px 15px 15px;
         max-width: calc(100% - 30px);
         border-radius: 20px;
+        position: relative;
+        z-index: 1000; /* Added to ensure header stays on top */
     }
 
     header img {
@@ -539,19 +541,20 @@ nav ul li a:hover {
 
     nav ul {
         flex-direction: column;
-        background: rgba(25, 25, 35, 0.95);
-        backdrop-filter: blur(20px);
+        background: rgba(25, 25, 35, 0.98); /* Increased opacity */
+        backdrop-filter: blur(25px);
         position: absolute;
-        top: 100px;
+        top: 80px; /* Adjusted to appear right below header */
         right: 50%;
         transform: translateX(50%);
-        width: 200px;
+        width: 220px; /* Slightly wider */
         border-radius: 20px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
         display: none;
-        z-index: 1000;
+        z-index: 1100; /* Increased z-index to appear above everything */
         border: 1px solid;
         border-image: linear-gradient(135deg, #a0a0a0, #c0c0c0, #e0e0e0) 1;
+        padding: 10px 0;
     }
 
     nav ul.show {
@@ -559,8 +562,21 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        margin: 12px 0;
+        margin: 10px 0;
         text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px 20px;
+        margin: 0 15px;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background: rgba(192, 192, 192, 0.15);
+        transform: translateY(-2px);
     }
 
     .section {
@@ -570,6 +586,8 @@ nav ul li a:hover {
         margin: 15px 15px 25px 15px;
         max-width: calc(100% - 30px);
         border-radius: 20px;
+        position: relative;
+        z-index: 1; /* Ensure sections stay below menu */
     }
 
     .section img {
@@ -584,6 +602,8 @@ nav ul li a:hover {
         max-width: calc(100% - 30px);
         padding: 25px 5%;
         border-radius: 20px;
+        position: relative;
+        z-index: 1; /* Ensure quick links stay below menu */
     }
 
     .quick-links ul {
@@ -614,14 +634,17 @@ nav ul li a:hover {
     .contact-card {
         width: 100%;
         border-radius: 20px;
+        position: relative;
+        z-index: 1;
     }
 
     .map-container {
         height: 300px;
         border-radius: 20px;
+        position: relative;
+        z-index: 1;
     }
 }
-
 @media (max-width: 480px) {
     .section {
         padding: 25px 4%;
@@ -653,3 +676,4 @@ nav ul li a:hover {
         padding: 12px 18px;
     }
 }
+
