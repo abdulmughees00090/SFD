@@ -231,7 +231,6 @@ nav ul li a:hover {
     left: 100%;
 }
 
-/* Regular team member images (square) */
 .section img {
     max-width: 200px;
     width: 100%;
@@ -242,30 +241,6 @@ nav ul li a:hover {
 
 .section img:hover {
     transform: scale(1.05);
-}
-
-/* ======================== DG Section Specific Styles ======================== */
-.dg-banner-container {
-    width: 100%;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.dg-banner {
-    width: 100%;
-    max-width: 900px; /* Updated to match max width requirement */
-    height: auto; /* Changed from fixed height to auto for proper aspect ratio */
-    max-height: 320px; /* Added max-height constraint */
-    object-fit: contain; /* Changed from cover to contain to show full image */
-    object-position: center; /* Ensure image is centered */
-    border-radius: 20px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.dg-banner:hover {
-    transform: scale(1.02);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
 .section-text {
@@ -621,25 +596,6 @@ nav ul li a:hover {
         border-radius: 15px;
     }
 
-/* Mobile responsive adjustments for DG banner */
-@media (max-width: 900px) {
-    .dg-banner-container {
-        margin-bottom: 20px;
-    }
-    
-    .dg-banner {
-        max-height: 280px; /* Slightly reduced for tablets */
-        border-radius: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .dg-banner {
-        max-height: 200px; /* Further reduced for mobile */
-        border-radius: 12px;
-    }
-}
-
     /* Quick Links Mobile - Better spacing */
     .quick-links {
         margin: 15px;
@@ -689,7 +645,6 @@ nav ul li a:hover {
         z-index: 1;
     }
 }
-
 @media (max-width: 480px) {
     .section {
         padding: 25px 4%;
@@ -720,13 +675,5 @@ nav ul li a:hover {
         min-width: 180px;
         padding: 12px 18px;
     }
-
-    /* DG Banner Mobile Small Screens */
-    .dg-banner {
-        height: 150px;
-        border-radius: 12px;
-    }
 }
-
-
 
