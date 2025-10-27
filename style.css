@@ -253,7 +253,7 @@ nav ul li a:hover {
 
 .dg-banner {
     width: 100%;
-    max-width: 800px;
+    max-width: 8000px;
     height: 300px;
     object-fit: cover;
     border-radius: 20px;
@@ -717,3 +717,4 @@ nav ul li a:hover {
         border-radius: 12px;
     }
 }
+
