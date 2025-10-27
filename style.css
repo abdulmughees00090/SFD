@@ -246,15 +246,15 @@ nav ul li a:hover {
 
 /* DG Banner Image Styles */
 .dg-banner-container {
-    width: 100%;
+    width: 630px;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .dg-banner {
     width: 100%;
-    max-width: 8000px;
-    height: 300px;
+    max-width: 800px;
+    height: 307px;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
@@ -717,4 +717,5 @@ nav ul li a:hover {
         border-radius: 12px;
     }
 }
+
 
