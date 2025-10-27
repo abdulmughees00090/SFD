@@ -58,4 +58,16 @@ setInterval(createShootingStar, 2000);
 for (let i = 0; i < 3; i++) {
     setTimeout(createShootingStar, i * 500);
 }
+// Register service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js')
+      .then(function(registration) {
+        console.log('ServiceWorker registration successful');
+      })
+      .catch(function(error) {
+        console.log('ServiceWorker registration failed: ', error);
+      });
+  });
+}
 
