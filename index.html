@@ -1,150 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Silver Fox Dynamics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="fav.png">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Silver Fox Dynamics | Leading Software Solutions & Digital Transformation</title>
-    <meta name="description" content="Silver Fox Dynamics provides cutting-edge software development, mobile applications, ERP systems, e-commerce platforms, and IT consultation. Transform your business with future-ready digital solutions.">
-    <meta name="keywords" content="Software Development, Mobile App Development, ERP Systems, E-commerce Solutions, Web Applications, IT Consultation, Digital Transformation, Business Software, Silver Fox Dynamics">
-    <meta name="author" content="Silver Fox Dynamics Team">
-
-    <meta property="og:title" content="Silver Fox Dynamics | Leading Software Solutions & Digital Transformation">
-    <meta property="og:description" content="Transform your business with future-ready software solutions, including custom ERP, mobile apps, and e-commerce platforms.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="[YOUR_WEBSITE_URL]/index.html">
-    <meta property="og:image" content="images/og_image.png"> 
-
-    <link rel="icon" type="image/png" href="fav.png">
+    
+    <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#303030"/> 
-
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#000000"/>
+    
+    <title>Silver Fox Dynamics - Your Ultimate Software Solution</title>
 </head>
 <body>
-
-    <div class="space-background">
-        <div class="stars"></div>
+<!-- Add this right after the opening body tag -->
+<div class="space-background">
+    <div class="stars"></div>
+</div>
+  <!-- Header -->
+  <header>
+  <a href="index.html">
+    <img src="images/logo1.png" alt="Company Logo">
+  </a>
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
     </div>
+    <ul id="menu">
+      <li><a href="products.html">Products & Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <header>
-        <a href="index.html" class="logo-link">
-            <img src="images/logo1.png" alt="Silver Fox Dynamics Company Logo">
-        </a>
-        <nav>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span><span></span><span></span>
-            </div>
-            <ul id="menu">
-                <li><a href="products.html">Products & Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="contact.html" class="cta-button-nav">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Digital Transformation Engineered for Growth.</h1>
-            <p class="tagline">Future-ready software, seamless integration, and powerful solutions tailored for your success.</p>
-            <a href="products.html" class="cta-button-primary">Explore Our Solutions</a>
-            <a href="contact.html" class="cta-button-secondary">Get a Free Consultation</a>
-        </div>
-    </section>
+  <!-- Our Target Section -->
+  <section class="section">
+    <div class="section-text">
+      <h2>Our Mission</h2>
+<p>
+  At <strong>Silver Fox Dynamics</strong>, our mission is to transform ideas into powerful digital solutions that drive growth, efficiency, and innovation. We believe technology should be a trusted partner in solving real-world challenges, not a complexity that holds businesses back. By combining creativity, technical expertise, and a deep understanding of modern business needs, we strive to deliver solutions that are reliable, scalable, and future-ready.
+</p>
 
-    <section class="services-overview">
-        <h2>Our Core Expertise</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="images/logo-mobile.png" alt="Mobile Development Icon">
-                <h3>Mobile Applications</h3>
-                <p>Innovative iOS and Android development for seamless user experiences.</p>
-            </div>
-            <div class="service-card">
-                <img src="images/logo-erp.png" alt="ERP System Icon">
-                <h3>Enterprise ERP</h3>
-                <p>Integrated resource planning systems to maximize operational efficiency.</p>
-            </div>
-            <div class="service-card">
-                <img src="images/logo-web.png" alt="Web Application Icon">
-                <h3>Web Applications</h3>
-                <p>Scalable websites and robust custom web applications.</p>
-            </div>
-            <div class="service-card">
-                <img src="images/logo-ecommerce.png" alt="E-commerce Icon">
-                <h3>E-commerce Solutions</h3>
-                <p>Building high-performance online stores and marketplaces.</p>
-            </div>
-            <div class="service-card">
-                <img src="images/logo-consult.png" alt="IT Consultation Icon">
-                <h3>IT Consultation & Support</h3>
-                <p>Expert guidance and reliable support to optimize your IT infrastructure.</p>
-            </div>
-        </div>
-        <a href="products.html" class="view-all-button">View All Products & Services</a>
-    </section>
+<p>
+  We are committed to empowering businesses and individuals through cutting-edge software, mobile applications, ERP systems, websites, and e-commerce platforms. Every solution we design is guided by our values of innovation, transparency, and excellence, ensuring that our clients not only achieve their goals but also gain a sustainable competitive edge.
+</p>
 
-    <section class="section reverse-layout">
-        <img src="images/logo.png" alt="Company Secondary Logo">
-        <div class="section-text">
-            <h2>Our Mission: Technology as a Bridge</h2>
-            <p>
-                At <strong>Silver Fox Dynamics</strong>, our mission is to transform ideas into powerful digital solutions that drive growth, efficiency, and innovation. We believe technology should be a trusted partner in solving real-world challenges, not a complexity that holds businesses back. By combining creativity, technical expertise, and a deep understanding of modern business needs, we strive to deliver solutions that are reliable, scalable, and future-ready.
-            </p>
-            <p>
-                Our mission extends beyond technology—we aim to build long-term partnerships, foster trust, and contribute to a world where digital transformation is accessible to all.
-            </p>
-        </div>
-    </section>
+<p>
+  Our mission extends beyond technology—we aim to build long-term partnerships, foster trust, and contribute to a world where digital transformation is accessible to all. At Silver Fox Dynamics, we are driven by the vision of making the world more connected, efficient, and tech-friendly for generations to come.
+</p>
 
-    <section class="section ceo-section">
-        <img src="images/ceo.png" alt="CEO Picture Ms. Mehwish">
-        <div class="section-text">
-            <h2>Ms. Mehwish</h2>
-            <h4>CEO - Silver Fox Dynamics</h4>
-            <p><strong>Ms. Mehwish</strong> is the visionary CEO of Silver Fox Dynamics. She leads with the conviction that technology must be accessible, practical, and a powerful bridge to growth and innovation for businesses globally. Under her guidance, Silver Fox Dynamics excels at simplifying complexity, delivering powerful, affordable solutions—from mobile apps to ERP systems.</p>
+    </div>
+    <img src="images/logo.png" alt="Company Secondary Logo">
+  </section>
 
-            <p>Her leadership is defined by passion, resilience, and a commitment to empowering lives and strengthening businesses, ensuring that the company is a trusted partner in shaping a tech-friendly world.</p>
-        </div>
-    </section>
+  <!-- CEO Message Section -->
+<section class="section">
+    <img src="images/ceo.png" alt="CEO Picture">
+    <div class="section-text">
+      <h2>Ms. Mehwish</h2>
+      <h4>(CEO - Silver Fox Dynamics)</h4>
+      <p><strong>Ms. Mehwish</strong> is the visionary CEO of Silver Fox Dynamics. She leads with the conviction that technology must be accessible, practical, and a powerful bridge to growth and innovation for businesses globally. Under her guidance, Silver Fox Dynamics excels at simplifying complexity, delivering powerful, affordable solutions—from mobile apps to ERP systems.</p>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="images/logo1.png" alt="Silver Fox Dynamics Footer Logo">
-                <p>Engineering your digital future.</p>
-            </div>
-            <div class="quick-links footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="products.html">Products & Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                </ul>
-            </div>
-            <div class="legal-links footer-links">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms of Service</a></li>
-                    <li><a href="sitemap.xml">Sitemap</a></li>
-                </ul>
-            </div>
-            <div class="contact-info">
-                <h4>Connect With Us</h4>
-                <p>Email: <a href="mailto:info@silverfoxdynamics.com">info@silverfoxdynamics.com</a></p>
-                <p>Phone: [Your Phone Number]</p>
-                <a href="contact.html" class="footer-cta">Start Your Project</a>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2025 Silver Fox Dynamics. All Rights Reserved.
-        </div>
-    </footer>
+<p>Her leadership is defined by passion, resilience, and a commitment to empowering lives and strengthening businesses, ensuring that the company is a trusted partner in shaping a tech-friendly world.</p>
 
-    <script src="script.js"></script>
+    </div>
+</section>
+
+  <!-- Quick Links -->
+  <section class="quick-links">
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="products.html">Products & Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
