@@ -1,132 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Silver Fox Dynamics</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="fav.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Silver Fox Dynamics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="fav.png">
 </head>
 <body>
-<!-- Add this right after the opening body tag -->
-<div class="space-background">
-    <div class="stars"></div>
-</div>
-   <!-- Header -->
-  <header>
-  <a href="index.html">
-    <img src="images/logo1.png" alt="Company Logo">
-  </a>
-  <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-    <ul id="menu">
-      <li><a href="products.html">Products & Services</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html" class="active">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="images/logo1.png" alt="Silver Fox Dynamics Logo">
+        </a>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="products.html">Products & Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  
-  <!-- Contact Us Section -->
-<section id="contact">
-  <div class="contact-wrapper">
-    
-    <!-- Form Card -->
-    <div class="contact-card">
-      <h2>Contact Us</h2>
-      <p>We’d love to hear from you! Please fill out the form below and our team will get back to you soon.</p>
-      
-      <form id="contactForm" action="https://formspree.io/f/xdkdrann" method="POST">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your first and last name" required minlength="5">
+    <!-- Hero -->
+    <section class="about-hero">
+        <div class="about-content">
+            <h1 style="font-size: 3rem; margin-bottom: 24px; background: linear-gradient(135deg, #FF00AA 0%, #9900FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Get in Touch</h1>
+            <p style="font-size: 1.25rem; color: var(--gray-text); max-width: 800px; line-height: 1.8;">
+                Ready to transform your business with custom digital solutions? We'd love to hear from you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="netguru-section">
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 style="margin-bottom: 10px; color: var(--light-text);">Send Us a Message</h2>
+                <p style="color: var(--gray-text); margin-bottom: 30px;">Fill out the form below and our team will get back to you within 24 hours.</p>
+                
+                <form id="contactForm" action="https://formspree.io/f/xdkdrann" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="_subject" value="New Contact Form Submission">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 16px; padding: 16px;">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map -->
+            <div class="contact-map">
+                <h2 style="padding: 30px 30px 20px; margin: 0; color: var(--light-text);">Our Location</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13280.611174066797!2d73.02959237589608!3d33.67930427323468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd6e2c8b3b5%3A0x3a3a3a3a3a3a3a3a!2sDHA%20Phase%202%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1692287300000!5m2!1sen!2s"
+                    allowfullscreen 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div style="padding: 20px 30px; background: rgba(0,0,0,0.2);">
+                    <p style="color: var(--gray-text); margin: 0;"><strong>Address:</strong> Office # 1 - 5th floor - Giga Commercial Hub - DHA Phase II - Islamabad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="netguru-section" style="text-align: center; background: var(--dark-card);">
+        <div class="cards-grid">
+            <div class="service-card">
+                <div class="icon">📧</div>
+                <h3>Email Us</h3>
+                <p>info@silverfoxdynamics.com</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">📞</div>
+                <h3>Call Us</h3>
+                <p>+92 300 1234567</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">🕒</div>
+                <h3>Business Hours</h3>
+                <p>Monday - Friday<br>9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Silver Fox Dynamics</h4>
+                <p style="color: var(--gray-text); margin-top: 20px;">Your digital transformation partner</p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Office # 1, 5th Floor</li>
+                    <li>Giga Commercial Hub</li>
+                    <li>DHA Phase II, Islamabad</li>
+                    <li><a href="mailto:info@silverfoxdynamics.com">info@silverfoxdynamics.com</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="products.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#start-project">Start a Project</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
         
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="_replyto" placeholder="Enter your email address" required>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Silver Fox Dynamics. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <label for="phone">Mobile Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" pattern="[0-9+ ]{7,15}" required>
-        
-        <label for="message">Your Query:</label>
-        <textarea id="message" name="message" rows="6" placeholder="Type your query here..." required minlength="5" maxlength="500"></textarea>
-        
-        <input type="hidden" name="_subject" value="New Query from Silver Fox Dynamics Website">
-        <input type="hidden" name="_from" value="info@silverfoxdynamics.com">
-        
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
-    <!-- Map Card -->
-    <div class="contact-card">
-      <h2>Our Location</h2>
-      <div class="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13280.611174066797!2d73.02959237589608!3d33.67930427323468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd6e2c8b3b5%3A0x3a3a3a3a3a3a3a3a!2sDHA%20Phase%202%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1692287300000!5m2!1sen!2s"
-         
-          allowfullscreen 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
- <!--<<<<<Location for Blue Area Islamabad>>>>src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.954260143849!2d73.05746617589224!3d33.72923437323115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd5c1b45c1f%3A0x9e4d6d6a7b1b5e5d!2sBlue%20Area%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1692287300000!5m2!1sen!2s"-->
-  </div>
-</section>
-
-    <!-- Quick Links -->
-  <section class="quick-links">
-    <h3>Quick Links</h3>
-    <ul>
-      <li><a href="products.html">Products & Services</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </section>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
-<!-- Success Notification Popup -->
-<div id="popup">
-  <p>Your Message has been sent successfully ❤️</p>
-</div>
-
-<script>
-  const form = document.getElementById('contactForm');
-  const popup = document.getElementById('popup');
-
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const formData = new FormData(form);
-
-    try {
-      let response = await fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        form.reset();
-        popup.style.display = "block";
-        setTimeout(() => { popup.style.display = "none"; }, 3000);
-      } else {
-        alert("Oops! Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      alert("Error submitting form. Please check your connection.");
-    }
-  });
-</script>
 </html>
-
-
-
