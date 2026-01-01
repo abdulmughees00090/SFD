@@ -1317,3 +1317,109 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+/* ======================== TEAM PAGE SPECIFIC STYLES ======================== */
+
+/* Team image container for better control */
+.team-image-container {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    background: var(--darker-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s ease;
+}
+
+.team-member:hover .team-image-container img {
+    transform: scale(1.05);
+}
+
+/* Team grid adjustments */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Team member card enhancements */
+.team-member {
+    background: var(--dark-card);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border-silver);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-brand);
+    z-index: 1;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+    border-color: var(--blue-accent);
+}
+
+.team-info {
+    padding: 30px;
+}
+
+.team-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.team-info h4 {
+    font-size: 1rem;
+    color: var(--blue-accent);
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.team-info p {
+    color: var(--gray-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for team page */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-image-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-image-container {
+        height: 220px;
+    }
+    
+    .team-info {
+        padding: 20px;
+    }
+}
