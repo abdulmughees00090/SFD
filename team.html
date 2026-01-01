@@ -4,106 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team | Silver Fox Dynamics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="fav.png">
 </head>
 <body>
-<div class="space-background">
-    <div class="stars"></div>
-</div>
+    <!-- Header -->
     <header>
-    <a href="index.html">
-        <img src="images/logo1.png" alt="Company Logo">
-    </a>
-    <nav>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
+        <a href="index.html">
+            <img src="images/logo1.png" alt="Silver Fox Dynamics Logo">
+        </a>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="products.html">Products & Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="team.html" class="active">Our Team</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="about-hero">
+        <div class="about-content">
+            <h1 style="font-size: 3rem; margin-bottom: 24px; background: linear-gradient(135deg, #FF00AA 0%, #9900FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Meet Our Team</h1>
+            <p style="font-size: 1.25rem; color: var(--gray-text); max-width: 800px; line-height: 1.8;">
+                Great software comes from passionate people working together. Meet the amazing crew behind the magic at Silver Fox Dynamics.
+            </p>
         </div>
-        <ul id="menu">
-            <li><a href="products.html">Products & Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+    </section>
 
-<section class="section">
-    <div class="section-text">
-        <h2>Meet Our Team</h2>
-        <p>At <B>Silver Fox Dynamics</B>, we believe that great software comes from passionate people working together. Our team is dedicated to building solutions that empower businesses worldwide. Here’s the amazing crew behind the magic:</p>
-    </div>
-</section>
+    <!-- Team Grid -->
+    <section class="netguru-section">
+        <div class="team-grid">
+            <!-- CEO -->
+            <div class="team-member">
+                <img src="images/ceo.png" alt="Ms. Mehwish - CEO">
+                <div class="team-info">
+                    <h3>Ms. Mehwish</h3>
+                    <h4>CEO - Silver Fox Dynamics</h4>
+                    <p>A visionary leader who believes technology must be accessible and practical. Under her guidance, Silver Fox Dynamics excels at simplifying complexity and delivering powerful, affordable solutions.</p>
+                </div>
+            </div>
 
-<section class="section">
-    <img src="images/dg.png" alt="Abdul Mughees Picture">
-    <div class="section-text">
-        <h2>Abdul Mughees</h2> <h4> (Director General)</h4>
-        <p>Meet our <B>Director General</B>, Mr. Abdul Mughees. A well-qualified, fun-loving leader with a natural ability to connect with people. With years of hands-on experience, he has mastered combining professionalism with a warm, approachable personality. Mr. Mughees believes leadership is about inspiring, guiding, and supporting his team to bring out their best. Under his direction, Silver Fox Dynamics has grown into a dynamic software company delivering global solutions. His management style is built on <B>trust and communication</B>, fostering a culture where creativity thrives.</p>
-    </div>
-</section>
+            <!-- Director General -->
+            <div class="team-member">
+                <img src="images/dg.png" alt="Abdul Mughees - Director General">
+                <div class="team-info">
+                    <h3>Abdul Mughees</h3>
+                    <h4>Director General</h4>
+                    <p>A well-qualified leader with natural ability to connect with people. His management style is built on trust and communication, fostering a culture where creativity thrives.</p>
+                </div>
+            </div>
 
-<section class="section">
-    <img src="images/app-dev.png" alt="Fakhir Ali Picture">
-    <div class="section-text">
-        <h2>Fakhir Ali</h2> <h4> (Manager – Mobile Apps Development)</h4>
-        <p>Say hello to Mr. Fakhir Ali, our energetic and talented <B>Manager of Mobile Apps Development</B>. With years of experience in designing and delivering mobile applications, he excels at turning concepts into user-friendly, reliable, and engaging mobile solutions for both Android and iOS. Fakhir is passionate about building apps that solve real problems and ensure exceptional user experiences. As a manager, he empowers his team to experiment and grow, guaranteeing that our mobile gateway is <B>robust, smooth, and flawless</B>.</p>
-    </div>
-</section>
+            <!-- Mobile Apps Manager -->
+            <div class="team-member">
+                <img src="images/app-dev.png" alt="Fakhir Ali - Mobile Apps Manager">
+                <div class="team-info">
+                    <h3>Fakhir Ali</h3>
+                    <h4>Manager – Mobile Apps Development</h4>
+                    <p>Energetic and talented manager who excels at turning concepts into user-friendly, reliable, and engaging mobile solutions for Android and iOS.</p>
+                </div>
+            </div>
 
-<section class="section">
-    <img src="images/web-dev.png" alt="Abdul Haseeb Picture">
-    <div class="section-text">
-        <h2>Amber Shan</h2><h4> (Manager – Web Development)</h4>
-        <p>Meet Ms Amber Shan, our creative and skilled <B>Manager of Web Development</B>. With a strong background in both frontend and backend, she engineers websites that are not only beautiful but also powerful, secure, and responsive. Amber understands that a great website is about creating an experience. She effectively transforms a client’s vision into a fully functional digital platform. As a manager, she fosters a collaborative and innovative atmosphere, ensuring Silver Fox Dynamics delivers web solutions for a <B>strong online presence</B>.</p>
-    </div>
-</section>
+            <!-- Web Development Manager -->
+            <div class="team-member">
+                <img src="images/web-dev.png" alt="Amber Shan - Web Development Manager">
+                <div class="team-info">
+                    <h3>Amber Shan</h3>
+                    <h4>Manager – Web Development</h4>
+                    <p>Creative and skilled manager who engineers websites that are not only beautiful but also powerful, secure, and responsive.</p>
+                </div>
+            </div>
 
-<section class="section">
-    <img src="images/e-com-dev.png" alt="Saad Ali Picture">
-    <div class="section-text">
-        <h2>Saad Ali</h2><h4> (Manager – E-Commerce Store Development)</h4>
-        <p>Say hello to Mr. Saad Ali, our enthusiastic <B>Manager of E-Commerce Store Development</B>. With deep expertise in platforms like Shopify, WooCommerce, and custom solutions, Saad builds stores that are fast, secure, and user-friendly. His approach is to design a store that delivers results by focusing on the customer journey. Every detail matters, from product displays to checkout systems, ensuring <B>trust and convenience</B> in online shopping. Saad’s leadership ensures Silver Fox Dynamics is a trusted partner for businesses stepping into online commerce.</p>
-    </div>
-</section>
+            <!-- E-Commerce Manager -->
+            <div class="team-member">
+                <img src="images/e-com-dev.png" alt="Saad Ali - E-Commerce Manager">
+                <div class="team-info">
+                    <h3>Saad Ali</h3>
+                    <h4>Manager – E-Commerce Store Development</h4>
+                    <p>Enthusiastic manager with deep expertise in e-commerce platforms, building stores that are fast, secure, and user-friendly.</p>
+                </div>
+            </div>
 
-<section class="section">
-    <img src="images/erp-dev.png" alt="Muhammad Kashif Picture">
-    <div class="section-text">
-        <h2>Muhammad Kashif</h2><h4> (Manager – ERP Development)</h4>
-        <p>Meet Mr. Muhammad Kashif, our highly skilled <B>Manager of ERP Development</B>. He delivers efficiency through powerful, customized Enterprise Resource Planning (ERP) solutions, covering everything from HR and finance to supply chain. Kashif works closely with clients to design systems that solve real business challenges and <B>fit like a glove</B>. His focus is always on making operations easier, faster, and more transparent. Kashif’s leadership brings clarity, control, and confidence to businesses around the world.</p>
-    </div>
-</section>
+            <!-- ERP Development Manager -->
+            <div class="team-member">
+                <img src="images/erp-dev.png" alt="Muhammad Kashif - ERP Development Manager">
+                <div class="team-info">
+                    <h3>Muhammad Kashif</h3>
+                    <h4>Manager – ERP Development</h4>
+                    <p>Highly skilled manager who delivers efficiency through powerful, customized Enterprise Resource Planning solutions.</p>
+                </div>
+            </div>
 
-<section class="section">
-    <img src="images/hr-mgr.png" alt="Asim Butt Picture">
-    <div class="section-text">
-        <h2>Asim Butt</h2><h4> (Manager – HR & Compliance)</h4>
-        <p>Meet Mr. Asim Butt, our dedicated <B>HR and Compliance Manager</B>. Asim ensures that our team and business practices remain strong, fair, and compliant. He manages recruitment, employee engagement, and adherence to labor laws. Asim believes in creating a workplace where people feel valued, motivated, and supported, aligning organizational goals with individual growth. His balanced decision-making and expertise foster a <B>secure and positive work environment</B> while upholding the highest ethical standards.</p>
-    </div>
-</section>
+            <!-- HR Manager -->
+            <div class="team-member">
+                <img src="images/hr-mgr.png" alt="Asim Butt - HR Manager">
+                <div class="team-info">
+                    <h3>Asim Butt</h3>
+                    <h4>Manager – HR & Compliance</h4>
+                    <p>Dedicated HR and Compliance Manager who ensures our team and business practices remain strong, fair, and compliant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="section">
-    <div class="section-text">
-        <h2>Together at Silver Fox Dynamics</h2>
-        <p> Together, we are <B>Silver Fox Dynamics</B> — a team of problem solvers, innovators, and dreamers dedicated to shaping the future of digital solutions.</p>
-    </div>
-</section>
+    <!-- Team Message -->
+    <section class="netguru-section" style="text-align: center; background: var(--dark-card);">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Together at Silver Fox Dynamics</h2>
+        <p style="font-size: 1.25rem; color: var(--gray-text); max-width: 800px; margin: 0 auto;">
+            We are a team of problem solvers, innovators, and dreamers dedicated to shaping the future of digital solutions.
+        </p>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Silver Fox Dynamics</h4>
+                <p style="color: var(--gray-text); margin-top: 20px;">Innovative team, exceptional solutions</p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Our Team</h4>
+                <ul>
+                    <li>Leadership</li>
+                    <li>Development Team</li>
+                    <li>Design Team</li>
+                    <li>Support Team</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Departments</h4>
+                <ul>
+                    <li>Mobile Development</li>
+                    <li>Web Development</li>
+                    <li>E-Commerce</li>
+                    <li>ERP Systems</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Join Us</h4>
+                <ul>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#freelance">Freelance Opportunities</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Silver Fox Dynamics. All rights reserved.</p>
+        </div>
+    </footer>
 
-<section class="quick-links">
-    <h3>Quick Links</h3>
-    <ul>
-        <li><a href="products.html">Products & Services</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</section>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
