@@ -1,102 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Silver Fox Dynamics</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="fav.png">
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- PWA Manifest -->
+    <title>Silver Fox Dynamics - Digital Innovation Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="fav.png">
     <link rel="manifest" href="manifest.json">
-    
-    <!-- Theme Color for Mobile Browsers -->
-    <meta name="theme-color" content="#000000"/>
-    
-    <title>Silver Fox Dynamics - Your Ultimate Software Solution</title>
+    <meta name="theme-color" content="#0F0F1A"/>
 </head>
 <body>
-<!-- Add this right after the opening body tag -->
-<div class="space-background">
-    <div class="stars"></div>
-</div>
-  <!-- Header -->
-  <header>
-  <a href="index.html">
-    <img src="images/logo1.png" alt="Company Logo">
-  </a>
-  <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-    <ul id="menu">
-      <li><a href="products.html">Products & Services</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <img src="images/logo1.png" alt="Silver Fox Dynamics Logo">
+        </a>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="products.html">Products & Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Digital Solutions That Drive Business Growth</h1>
+            <p>We build custom software, mobile apps, and enterprise solutions that transform businesses and create lasting impact.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Our Target Section -->
-  <section class="section">
-    <div class="section-text">
-      <h2>Our Mission</h2>
-<p>
-  At <strong>Silver Fox Dynamics</strong>, our mission is to transform ideas into powerful digital solutions that drive growth, efficiency, and innovation. We believe technology should be a trusted partner in solving real-world challenges, not a complexity that holds businesses back. By combining creativity, technical expertise, and a deep understanding of modern business needs, we strive to deliver solutions that are reliable, scalable, and future-ready.
-</p>
+    <!-- Services Section -->
+    <section id="services" class="netguru-section">
+        <div class="section-header">
+            <h2>Our Expertise</h2>
+            <p>We deliver comprehensive digital solutions tailored to your business needs</p>
+        </div>
+        
+        <div class="cards-grid">
+            <div class="service-card">
+                <div class="icon">📱</div>
+                <h3>Mobile App Development</h3>
+                <p>Native iOS and Android applications built for performance and user engagement</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Responsive websites and web applications with modern technologies</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">🛒</div>
+                <h3>E-Commerce Solutions</h3>
+                <p>Scalable online stores that drive sales and enhance customer experience</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">🏢</div>
+                <h3>ERP Systems</h3>
+                <p>Enterprise resource planning solutions to streamline your business operations</p>
+            </div>
+        </div>
+    </section>
 
-<p>
-  We are committed to empowering businesses and individuals through cutting-edge software, mobile applications, ERP systems, websites, and e-commerce platforms. Every solution we design is guided by our values of innovation, transparency, and excellence, ensuring that our clients not only achieve their goals but also gain a sustainable competitive edge.
-</p>
+    <!-- About Preview -->
+    <section class="netguru-section" style="background: var(--dark-card);">
+        <div class="section-header">
+            <h2>Why Choose Silver Fox Dynamics?</h2>
+            <p>We combine technical expertise with business understanding to deliver exceptional results</p>
+        </div>
+        
+        <div class="cards-grid">
+            <div class="service-card">
+                <h3>Client-Centric Approach</h3>
+                <p>We design solutions that align with your business goals, not just technology trends</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Innovation-Driven</h3>
+                <p>We don't just build; we innovate, ensuring your business stays ahead of the competition</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Scalable Solutions</h3>
+                <p>Our solutions grow with your business, adapting to evolving needs and markets</p>
+            </div>
+        </div>
+    </section>
 
-<p>
-  Our mission extends beyond technology—we aim to build long-term partnerships, foster trust, and contribute to a world where digital transformation is accessible to all. At Silver Fox Dynamics, we are driven by the vision of making the world more connected, efficient, and tech-friendly for generations to come.
-</p>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Silver Fox Dynamics</h4>
+                <p style="color: var(--gray-text); margin-top: 20px;">Transforming businesses through innovative digital solutions since 2020.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="products.html">Products & Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="products.html">Mobile Apps</a></li>
+                    <li><a href="products.html">Web Development</a></li>
+                    <li><a href="products.html">E-Commerce</a></li>
+                    <li><a href="products.html">ERP Systems</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@silverfoxdynamics.com">info@silverfoxdynamics.com</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Silver Fox Dynamics. All rights reserved.</p>
+        </div>
+    </footer>
 
-    </div>
-    <img src="images/logo.png" alt="Company Secondary Logo">
-  </section>
-
-  <!-- CEO Message Section -->
-<section class="section">
-    <img src="images/ceo.png" alt="CEO Picture">
-    <div class="section-text">
-      <h2>Ms. Mehwish</h2>
-      <h4>(CEO - Silver Fox Dynamics)</h4>
-      <p><strong>Ms. Mehwish</strong> is the visionary CEO of Silver Fox Dynamics. She leads with the conviction that technology must be accessible, practical, and a powerful bridge to growth and innovation for businesses globally. Under her guidance, Silver Fox Dynamics excels at simplifying complexity, delivering powerful, affordable solutions—from mobile apps to ERP systems.</p>
-
-<p>Her leadership is defined by passion, resilience, and a commitment to empowering lives and strengthening businesses, ensuring that the company is a trusted partner in shaping a tech-friendly world.</p>
-
-    </div>
-</section>
-
-  <!-- Quick Links -->
-  <section class="quick-links">
-    <h3>Quick Links</h3>
-    <ul>
-      <li><a href="products.html">Products & Services</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </section>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
