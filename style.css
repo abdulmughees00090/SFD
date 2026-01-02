@@ -2419,3 +2419,307 @@ footer {
         padding: 20px;
     }
 }
+
+
+
+/* ======================== ABOUT US PAGE STYLES ======================== */
+
+/* Card header styling */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.card-icon.vision {
+    background: rgba(74, 144, 226, 0.1);
+    color: var(--blue-accent);
+}
+
+.card-icon.mission {
+    background: rgba(255, 107, 53, 0.1);
+    color: var(--orange-accent);
+}
+
+.card-icon.services {
+    background: rgba(192, 192, 192, 0.1);
+    color: var(--silver-primary);
+}
+
+.card-icon.advantage {
+    background: rgba(255, 107, 53, 0.1);
+    color: var(--orange-accent);
+}
+
+.card-icon.values {
+    background: rgba(74, 144, 226, 0.1);
+    color: var(--blue-accent);
+}
+
+.card-icon.fox {
+    background: var(--gradient-brand);
+    color: white;
+}
+
+.about-card h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: white;
+}
+
+/* Card tag */
+.card-tag {
+    margin-top: 20px;
+}
+
+.card-tag span {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(74, 144, 226, 0.1);
+    color: var(--blue-accent);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid var(--border-blue);
+}
+
+/* Feature list */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.feature-list li {
+    color: var(--lighter-gray);
+    margin-bottom: 15px;
+    padding-left: 35px;
+    position: relative;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.feature-icon {
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Advantage grid */
+.advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.advantage-item {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    border-left: 3px solid var(--orange-accent);
+}
+
+.advantage-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--silver-light);
+}
+
+.advantage-item p {
+    color: var(--gray-text);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Values grid */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.value-item {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid var(--border-silver);
+    transition: all 0.3s ease;
+}
+
+.value-item:hover {
+    border-color: var(--blue-accent);
+    transform: translateY(-3px);
+}
+
+.value-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.value-icon.integrity {
+    background: rgba(74, 144, 226, 0.1);
+    color: var(--blue-accent);
+    border: 2px solid var(--blue-accent);
+}
+
+.value-icon.excellence {
+    background: rgba(255, 107, 53, 0.1);
+    color: var(--orange-accent);
+    border: 2px solid var(--orange-accent);
+}
+
+.value-icon.collaboration {
+    background: rgba(192, 192, 192, 0.1);
+    color: var(--silver-primary);
+    border: 2px solid var(--silver-primary);
+}
+
+.value-icon.innovation {
+    background: rgba(255, 107, 53, 0.1);
+    color: var(--orange-accent);
+    border: 2px solid var(--orange-accent);
+}
+
+.value-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.value-item p {
+    color: var(--gray-text);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Highlight card */
+.highlight-card {
+    border-color: var(--orange-accent);
+    background: linear-gradient(135deg, 
+        rgba(10, 10, 15, 0.9) 0%, 
+        rgba(255, 107, 53, 0.05) 100%);
+}
+
+.advantage-highlight {
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255, 107, 53, 0.05);
+    border-radius: 10px;
+    border-left: 4px solid var(--orange-accent);
+}
+
+.advantage-highlight p {
+    color: var(--lighter-gray);
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.advantage-highlight strong {
+    color: var(--orange-accent);
+}
+
+.cta-text {
+    text-align: center;
+    font-size: 1.2rem !important;
+    color: var(--silver-primary) !important;
+    font-weight: 600;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+}
+
+.card-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.card-actions .btn {
+    min-width: 180px;
+    text-align: center;
+}
+
+/* Stats section for about page */
+.stats-section {
+    background: var(--darker-card);
+    border-top: 1px solid var(--border-silver);
+    border-bottom: 1px solid var(--border-silver);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .about-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .advantage-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-actions {
+        flex-direction: column;
+    }
+    
+    .card-actions .btn {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .feature-list li {
+        padding-left: 30px;
+    }
+    
+    .feature-icon {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    .value-item {
+        padding: 15px;
+    }
+    
+    .advantage-highlight {
+        padding: 15px;
+    }
+    
+    .cta-text {
+        font-size: 1.1rem !important;
+    }
+}
