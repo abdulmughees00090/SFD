@@ -2723,3 +2723,15 @@ footer {
         font-size: 1.1rem !important;
     }
 }
+.logo-item i {
+  font-size: 48px;
+  color: white;
+  opacity: .9;
+  transition: transform .3s, opacity .3s;
+}
+
+.logo-item i:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
