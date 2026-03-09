@@ -3,95 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silver Fox Dynamics – Creative</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Silver Fox Dynamics - Digital Innovation Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="fav.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#7C3AED"/>
 </head>
 <body class="prototype-colorful">
-    <!-- Header -->
+    <!-- Header (Preserved original structure) -->
     <header class="colorful-header">
         <div class="container">
-            <a href="#" class="logo">✨ Silver Fox</a>
+            <a href="index.html">
+                <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
+            </a>
             <nav>
-                <ul>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#" class="btn-chat">Let's talk →</a></li>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+                <ul id="menu" class="nav-menu">
+                    <li><a href="products.html">Products & Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="colorful-hero">
         <div class="container">
             <div class="hero-content">
-                <h1>We turn bold ideas into <span class="highlight">digital reality</span></h1>
-                <p>Startup-minded, enterprise-strong. We build software that stands out.</p>
+                <span class="hero-badge">✨ Innovation meets execution</span>
+                <h1>We turn bold ideas into <span class="gradient-text">digital reality</span></h1>
+                <p>Startup-minded, enterprise-strong. We build software that stands out and drives growth.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-gradient">See our work</a>
-                    <a href="#" class="btn btn-outline-dark">Join the journey</a>
+                    <a href="products.html" class="btn btn-gradient">Explore our work</a>
+                    <a href="contact.html" class="btn btn-outline-gradient">Start a project</a>
                 </div>
             </div>
-            <div class="hero-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Marquee -->
-    <div class="marquee">
-        <span>Mobile Apps • Web Platforms • ERP • AI • Cloud • Mobile Apps • Web Platforms • ERP • AI • Cloud</span>
-    </div>
-
-    <!-- Services Bubbles -->
-    <section class="colorful-services">
+    <!-- Client Logos (Preserved but restyled) -->
+    <section class="client-logos">
         <div class="container">
-            <h2>What we do best</h2>
-            <div class="bubble-grid">
-                <div class="bubble" style="background: #ff90e8;">Mobile</div>
-                <div class="bubble" style="background: #a0e7ff;">Web</div>
-                <div class="bubble" style="background: #c5a3ff;">ERP</div>
-                <div class="bubble" style="background: #ffb347;">Analytics</div>
+            <h3>Trusted by innovative companies worldwide</h3>
+            <div class="logos-grid">
+                <div class="logo-item">
+                    <svg width="140" height="40" viewBox="0 0 300 80">
+                        <rect x="5" y="20" width="50" height="40" rx="6" fill="currentColor" opacity="0.9"/>
+                        <text x="70" y="48" fill="currentColor" font-size="26" font-family="Arial, Helvetica, sans-serif">Nextron</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg width="160" height="40" viewBox="0 0 300 80">
+                        <circle cx="35" cy="40" r="22" fill="currentColor" opacity="0.9"/>
+                        <text x="70" y="48" fill="currentColor" font-size="26" font-family="Arial, Helvetica, sans-serif">Arcadia Labs</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg width="160" height="40" viewBox="0 0 300 80">
+                        <polygon points="10,60 40,10 70,60" fill="currentColor" opacity="0.9"/>
+                        <text x="90" y="48" fill="currentColor" font-size="26" font-family="Arial, Helvetica, sans-serif">Orion Tech</text>
+                    </svg>
+                </div>
+                <div class="logo-item">
+                    <svg width="160" height="40" viewBox="0 0 300 80">
+                        <rect x="10" y="20" width="60" height="40" fill="currentColor" opacity="0.9"/>
+                        <rect x="25" y="10" width="30" height="10" fill="currentColor" opacity="0.6"/>
+                        <text x="90" y="48" fill="currentColor" font-size="26" font-family="Arial, Helvetica, sans-serif">QuantumGrid</text>
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Feature Cards -->
-    <section class="colorful-features">
+    <!-- Services Showcase (Restructured for vibrancy) -->
+    <section id="services" class="services-showcase">
         <div class="container">
-            <div class="feature-cards">
-                <div class="card card-1">
-                    <h3>AnyDown App</h3>
-                    <p>50k+ downloads on Play Store.</p>
+            <div class="section-header">
+                <h2>Our digital expertise</h2>
+                <p>Comprehensive solutions tailored to your needs</p>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="service-grid-modern">
+                <!-- Mobile Apps -->
+                <div class="service-card-modern">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Applications</h3>
+                    <p>Native iOS & Android apps built for performance and engagement.</p>
+                    <ul class="service-features">
+                        <li>Cross-platform development</li>
+                        <li>UI/UX optimization</li>
+                        <li>App store publishing</li>
+                    </ul>
+                    <a href="products.html#mobile" class="card-link">Learn more →</a>
                 </div>
-                <div class="card card-2">
-                    <h3>Sieyah Wear</h3>
-                    <p>E-commerce for modern fashion.</p>
+
+                <!-- Web Development -->
+                <div class="service-card-modern">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive web applications that drive business results.</p>
+                    <ul class="service-features">
+                        <li>Custom web platforms</li>
+                        <li>E-commerce solutions</li>
+                        <li>Progressive Web Apps</li>
+                    </ul>
+                    <a href="products.html#web" class="card-link">Learn more →</a>
                 </div>
-                <div class="card card-3">
-                    <h3>Restaurant ERP</h3>
-                    <p>Real-time inventory & analytics.</p>
+
+                <!-- ERP Systems -->
+                <div class="service-card-modern">
+                    <div class="service-icon">🏭</div>
+                    <h3>Enterprise Solutions</h3>
+                    <p>Custom ERP and business management systems.</p>
+                    <ul class="service-features">
+                        <li>Inventory management</li>
+                        <li>HR & payroll systems</li>
+                        <li>Business intelligence</li>
+                    </ul>
+                    <a href="products.html#erp" class="card-link">Learn more →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="colorful-cta">
+    <!-- Featured Projects -->
+    <section class="featured-projects">
         <div class="container">
-            <h2>Start your next big thing with us</h2>
-            <a href="#" class="btn btn-gradient btn-large">hello@silverfox.com →</a>
+            <div class="section-header">
+                <h2>Featured projects</h2>
+                <p>Real solutions, real impact</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #FF90E8, #FFB347);"></div>
+                    <div class="project-content">
+                        <h3>Restaurant ERP</h3>
+                        <p>Complete management suite for restaurant chains.</p>
+                        <a href="https://oracleapex.com/ords/r/rms_base/restaurant-management-system167524/custom-login-page?session=0" target="_blank" class="project-link">View demo →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);"></div>
+                    <div class="project-content">
+                        <h3>AnyDown Video Downloader</h3>
+                        <p>50,000+ downloads on Android.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.any.down.video.downloader.videodownloader" target="_blank" class="project-link">View on Play Store →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #FFB347, #FF90E8);"></div>
+                    <div class="project-content">
+                        <h3>Sieyah Wear</h3>
+                        <p>Premium e-commerce for black fashion.</p>
+                        <a href="http://sieyahwear.com/" target="_blank" class="project-link">Visit website →</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>Projects completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Happy clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2+</h3>
+                    <p>Years experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Support available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to transform your business?</h2>
+            <p>Let's discuss how we can help you achieve your digital goals.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-gradient btn-large">Start your project</a>
+                <a href="contact.html" class="btn btn-outline-gradient btn-large">Book a consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Preserved structure) -->
     <footer class="colorful-footer">
         <div class="container">
-            <p>© 2024 Silver Fox Dynamics – digital studio</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Silver Fox Dynamics</h4>
+                    <div class="brand-tagline">
+                        <span>Silver</span> · <span>Innovation</span> · <span>Excellence</span>
+                    </div>
+                    <p>Transforming businesses through innovative digital solutions since 2024.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="products.html#mobile">Mobile Apps</a></li>
+                        <li><a href="products.html#erp">ERP Systems</a></li>
+                        <li><a href="products.html#web">Web Development</a></li>
+                        <li><a href="products.html#ecommerce">E-Commerce</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@silverfoxdynamics.com">Email Us</a></li>
+                        <li>WhatsApp +92 329 5103414</li>
+                        <li>Office #01, 5th Floor<br>GIGA Commercial Hub<br>DHA Phase II, Islamabad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Toggle menu function (preserved)
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            menu.classList.toggle('show');
+            menuToggle.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menu.classList.remove('show');
+                menuToggle.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking on links
+        document.querySelectorAll('#menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu').classList.remove('show');
+                document.querySelector('.menu-toggle').classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize header state
+        if (window.scrollY > 50) {
+            document.querySelector('header').classList.add('scrolled');
+        }
+    </script>
 </body>
 </html>
