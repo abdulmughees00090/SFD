@@ -337,7 +337,7 @@ body {
     background: radial-gradient(circle at 40% 40%, #A0E7FF, #C5A3FF, #7C3AED);
     top: 100px;
     left: auto;
-    right: 50px; /* Positioned slightly to the right */
+    right: 150px; /* Positioned slightly to the right */
     animation-delay: 2s;
     filter: drop-shadow(0 8px 15px rgba(160, 231, 255, 0.4));
     position: absolute;
@@ -3253,6 +3253,7 @@ body {
         height: 40px;
     }
 }
+
 
 
 
