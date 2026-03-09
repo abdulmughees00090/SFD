@@ -280,142 +280,160 @@ body {
     animation: float 6s ease-in-out infinite;
 }
 
-/* Enhanced Shapes - Shiny, High-Definition Objects */
-.shape-1 {
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle at 30% 30%, #FFB347, #FF6B9D, #DB2777);
-    top: 0;
-    right: 0;
-    animation-delay: 0s;
-    filter: drop-shadow(0 10px 20px rgba(255, 107, 157, 0.3));
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.9;
-}
-
-.shape-1::after {
-    content: '';
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 30%;
-    height: 30%;
-    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.shape-2 {
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle at 70% 30%, #C5A3FF, #A0E7FF, #7C3AED);
-    bottom: 20px;
-    left: 20px;
-    animation-delay: 1s;
-    filter: drop-shadow(0 10px 20px rgba(124, 58, 237, 0.3));
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.9;
-}
-
-.shape-2::after {
-    content: '';
-    position: absolute;
-    top: 15%;
-    right: 15%;
-    width: 25%;
-    height: 25%;
-    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.shape-3 {
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle at 40% 40%, #A0E7FF, #C5A3FF, #7C3AED);
-    top: 100px;
-    left: auto;
-    right: 150px; /* Positioned slightly to the right */
-    animation-delay: 2s;
-    filter: drop-shadow(0 8px 15px rgba(160, 231, 255, 0.4));
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.95;
-    z-index: 2;
-}
-
-.shape-3::after {
-    content: '';
-    position: absolute;
-    top: 12%;
-    left: 12%;
-    width: 35%;
-    height: 35%;
-    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-/* Add subtle animation enhancement */
-@keyframes float {
-    0%, 100% { 
-        transform: translateY(0px) rotate(0deg); 
-        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
-    }
-    50% { 
-        transform: translateY(-20px) rotate(5deg); 
-        filter: drop-shadow(0 20px 30px rgba(124, 58, 237, 0.4));
-    }
-}
-
-/* Ensure floating shapes container has proper positioning */
+/* ==================== 5 SHINY FLOATING SHAPES ==================== */
+/* Shape Container */
 .floating-shapes {
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 400px;
+    min-height: 500px;
 }
 
-/* Responsive adjustments for shapes */
+/* Base Shape Styles */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.85;
+    animation: float 8s ease-in-out infinite;
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Shape Gloss Effect */
+.shape::after {
+    content: '';
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 30%;
+    height: 30%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Individual Shape Styles */
+.shape-1 {
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at 30% 30%, #FFB347, #FF6B9D, #DB2777);
+    top: 0;
+    right: 0;
+    animation-delay: 0s;
+    filter: drop-shadow(0 10px 15px rgba(255, 107, 157, 0.4));
+}
+
+.shape-2 {
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle at 70% 30%, #C5A3FF, #A0E7FF, #7C3AED);
+    bottom: 0;
+    left: 0;
+    animation-delay: 1.2s;
+    filter: drop-shadow(0 10px 15px rgba(124, 58, 237, 0.4));
+}
+
+.shape-3 {
+    width: 130px;
+    height: 130px;
+    background: radial-gradient(circle at 40% 60%, #FF90E8, #FF6B9D, #DB2777);
+    top: 30%;
+    right: 15%;
+    animation-delay: 2.4s;
+    filter: drop-shadow(0 8px 12px rgba(219, 39, 119, 0.4));
+    z-index: 3;
+}
+
+.shape-4 {
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle at 60% 40%, #A0E7FF, #7C3AED, #C5A3FF);
+    bottom: 20%;
+    right: 10%;
+    animation-delay: 3.6s;
+    filter: drop-shadow(0 8px 12px rgba(124, 58, 237, 0.35));
+}
+
+.shape-5 {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at 50% 50%, #FFB347, #FF90E8, #FF6B9D);
+    top: 15%;
+    left: 10%;
+    animation-delay: 4.8s;
+    filter: drop-shadow(0 12px 18px rgba(255, 107, 157, 0.45));
+    z-index: 4;
+}
+
+/* Enhanced Float Animation */
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg) scale(1); 
+        filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.2));
+    }
+    25% { 
+        transform: translateY(-15px) rotate(3deg) scale(1.02); 
+        filter: drop-shadow(0 25px 35px rgba(124, 58, 237, 0.3));
+    }
+    50% { 
+        transform: translateY(-25px) rotate(5deg) scale(1.05); 
+        filter: drop-shadow(0 30px 40px rgba(124, 58, 237, 0.4));
+    }
+    75% { 
+        transform: translateY(-10px) rotate(2deg) scale(1.02); 
+        filter: drop-shadow(0 20px 30px rgba(124, 58, 237, 0.3));
+    }
+}
+
+/* Optional: Add a subtle second highlight for extra shine */
+.shape-1::before,
+.shape-2::before,
+.shape-3::before,
+.shape-4::before,
+.shape-5::before {
+    content: '';
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    width: 20%;
+    height: 20%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .shape-1 { width: 180px; height: 180px; }
+    .shape-2 { width: 150px; height: 150px; }
+    .shape-3 { width: 110px; height: 110px; }
+    .shape-4 { width: 130px; height: 130px; }
+    .shape-5 { width: 80px; height: 80px; }
+}
+
 @media (max-width: 768px) {
-    .shape-1 {
-        width: 150px;
-        height: 150px;
-        right: -20px;
+    .floating-shapes {
+        min-height: 400px;
     }
     
-    .shape-2 {
-        width: 100px;
-        height: 100px;
-        left: -20px;
-    }
-    
-    .shape-3 {
-        width: 70px;
-        height: 70px;
-        right: 40px;
-        top: 150px;
-    }
+    .shape-1 { width: 150px; height: 150px; right: -10px; }
+    .shape-2 { width: 120px; height: 120px; left: -10px; }
+    .shape-3 { width: 90px; height: 90px; right: 10%; }
+    .shape-4 { width: 100px; height: 100px; }
+    .shape-5 { width: 70px; height: 70px; left: 5%; }
 }
 
 @media (max-width: 480px) {
-    .shape-1 {
-        width: 120px;
-        height: 120px;
+    .floating-shapes {
+        min-height: 300px;
     }
     
-    .shape-2 {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .shape-3 {
-        width: 60px;
-        height: 60px;
-        right: 20px;
-    }
+    .shape-1 { width: 120px; height: 120px; }
+    .shape-2 { width: 100px; height: 100px; }
+    .shape-3 { width: 70px; height: 70px; }
+    .shape-4 { width: 80px; height: 80px; }
+    .shape-5 { width: 60px; height: 60px; }
 }
 
 /* ==================== CLIENT LOGOS ==================== */
@@ -3253,6 +3271,7 @@ body {
         height: 40px;
     }
 }
+
 
 
 
