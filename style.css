@@ -1,197 +1,167 @@
-/* ==================== PROTOTYPE 1: CLEAN SAAS / MODERN LIGHT ==================== */
-.prototype-saas {
-    --primary: #2563eb;
-    --primary-light: #3b82f6;
-    --gray-50: #f8fafc;
-    --gray-100: #f1f5f9;
-    --gray-800: #1e293b;
-    --gray-900: #0f172a;
-    --text: #334155;
-    --text-light: #64748b;
-    --white: #ffffff;
-    --shadow: 0 20px 40px -10px rgba(0,0,0,0.08);
-    font-family: 'Inter', sans-serif;
-    background: var(--white);
+/* ==================== PROTOTYPE 2: DARK TECH / BOLD ACCENTS ==================== */
+.prototype-dark {
+    --bg: #0b0b0e;
+    --bg-light: #14141a;
+    --orange: #ff5e1a;
+    --blue: #2a7de1;
+    --text: #eaeef2;
+    --text-dim: #9ca3af;
+    --border: #2a2a33;
+    font-family: 'Space Grotesk', sans-serif;
+    background: var(--bg);
     color: var(--text);
-    line-height: 1.5;
     margin: 0;
+    line-height: 1.6;
 }
 
-.prototype-saas .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
 /* Header */
-.saas-header {
-    background: var(--white);
-    border-bottom: 1px solid var(--gray-100);
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
+.dark-header {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border);
+    position: relative;
     z-index: 10;
 }
-.saas-header .container {
+.dark-header .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
-.logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-.logo-fox { color: var(--gray-900); }
-.logo-dyn { color: var(--primary); }
-.saas-header nav ul {
+.logo { font-weight: 700; font-size: 2rem; color: var(--orange); text-decoration: none; }
+.dark-header nav ul {
     display: flex;
     gap: 40px;
     list-style: none;
-    margin: 0;
 }
-.saas-header nav a {
-    color: var(--text);
+.dark-header nav a {
+    color: var(--text-dim);
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.2s;
 }
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-}
-.btn-primary {
-    background: var(--primary);
-    color: white;
-}
-.btn-outline {
-    border: 1px solid var(--gray-300);
-    color: var(--gray-800);
-}
-.btn-large { padding: 14px 32px; }
+.dark-header nav a:hover { color: var(--orange); }
 
 /* Hero */
-.saas-hero {
-    padding: 80px 0;
+.dark-hero {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
 }
-.saas-hero .container {
+.dark-hero .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
     align-items: center;
 }
-.hero-badge {
-    background: var(--gray-100);
-    padding: 6px 12px;
-    border-radius: 30px;
-    font-size: 0.85rem;
-    color: var(--primary);
-}
-.hero-content h1 {
-    font-size: 3rem;
+.hero-text h1 {
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 1.2;
-    color: var(--gray-900);
-    margin: 20px 0;
+    line-height: 1.1;
 }
-.gradient-text {
-    background: linear-gradient(135deg, var(--primary), #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.glitch {
+    position: relative;
+    color: var(--orange);
 }
-.hero-buttons { display: flex; gap: 16px; margin-top: 32px; }
-.hero-visual .dashboard-preview {
-    background: var(--gray-100);
-    border-radius: 24px;
-    padding: 30px;
+.glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--blue);
+    clip: rect(44px,450px,56px,0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+@keyframes glitch-anim { 0% { clip: rect(31px,9999px,94px,0); } 20% { clip: rect(57px,9999px,70px,0); } }
+.hero-grid {
+    background: repeating-linear-gradient(45deg, var(--orange) 0px, var(--orange) 2px, transparent 2px, transparent 10px);
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    border-radius: 20px;
 }
-.dashboard-bar { height: 20px; width: 60%; background: var(--primary-light); border-radius: 12px; }
-.dashboard-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 15px;
+.btn {
+    padding: 12px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
 }
-.dashboard-grid span { height: 60px; background: var(--gray-300); border-radius: 12px; }
+.btn-orange { background: var(--orange); color: var(--bg); }
+.btn-outline { border: 1px solid var(--orange); color: var(--orange); }
 
-/* Clients */
-.saas-clients {
+/* Stats */
+.dark-stats {
     padding: 60px 0;
-    background: var(--gray-50);
-    text-align: center;
+    background: var(--bg-light);
+    border-block: 1px solid var(--border);
 }
-.logo-strip {
+.dark-stats .container {
     display: flex;
-    justify-content: center;
-    gap: 48px;
-    font-weight: 600;
-    color: var(--text-light);
-    font-size: 1.2rem;
+    justify-content: space-around;
+}
+.stat-item {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--orange);
+}
+.stat-item span {
+    display: block;
+    font-size: 1rem;
+    color: var(--text-dim);
+    font-weight: 400;
 }
 
 /* Services */
-.saas-services { padding: 80px 0; }
-.section-header { text-align: center; margin-bottom: 60px; }
-.section-header h2 { font-size: 2.2rem; color: var(--gray-900); }
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 30px;
-}
-.service-card {
-    background: var(--white);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: var(--shadow);
-    border: 1px solid var(--gray-100);
-}
-.service-icon { font-size: 2.5rem; margin-bottom: 16px; }
-
-/* Feature */
-.saas-feature { padding: 80px 0; background: var(--gray-50); }
-.feature-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-.feature-list { list-style: none; padding: 0; }
-.feature-list li { margin-bottom: 12px; }
-.code-window { background: var(--gray-800); height: 240px; border-radius: 16px; }
-
-/* CTA */
-.saas-cta {
-    padding: 100px 0;
-    text-align: center;
-    background: linear-gradient(135deg, var(--primary), #8b5cf6);
-    color: white;
-}
-.saas-cta h2 { font-size: 2.5rem; margin-bottom: 16px; }
-
-/* Footer */
-.saas-footer {
-    background: var(--gray-900);
-    color: white;
-    padding: 60px 0 30px;
-}
-.footer-grid {
+.dark-services { padding: 80px 0; }
+.dark-services h2 { font-size: 2.5rem; margin-bottom: 60px; }
+.service-tiles {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 40px;
+    gap: 30px;
 }
-.footer-col a { color: var(--gray-400); text-decoration: none; }
-.footer-bottom { text-align: center; margin-top: 60px; color: var(--gray-500); }
+.tile {
+    background: var(--bg-light);
+    padding: 40px;
+    border: 1px solid var(--border);
+    transition: 0.2s;
+}
+.tile:hover { border-color: var(--orange); transform: translateY(-4px); }
+.tile-num { color: var(--orange); font-size: 1.2rem; }
+
+/* Project */
+.dark-project { padding: 80px 0; background: var(--bg-light); }
+.project-card {
+    padding: 60px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    max-width: 600px;
+}
+.project-label { color: var(--orange); font-size: 0.9rem; text-transform: uppercase; }
+.project-link { color: var(--blue); text-decoration: none; }
+
+/* CTA */
+.dark-cta {
+    padding: 120px 0;
+    text-align: center;
+}
+.outline-text {
+    -webkit-text-stroke: 1px var(--orange);
+    color: transparent;
+}
+.dark-footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-dim);
+}
 
 /* Responsive */
 @media (max-width: 768px) {
-    .saas-hero .container { grid-template-columns: 1fr; }
-    .service-grid { grid-template-columns: 1fr; }
-    .feature-block { grid-template-columns: 1fr; }
-    .footer-grid { grid-template-columns: 1fr; }
-    .saas-header nav { display: none; }
+    .dark-hero .container { grid-template-columns: 1fr; }
+    .service-tiles { grid-template-columns: 1fr; }
+    .dark-stats .container { flex-direction: column; gap: 30px; text-align: center; }
 }
