@@ -4,255 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products & Services | Silver Fox Dynamics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="fav.png">
+    <meta name="theme-color" content="#7C3AED"/>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <a href="index.html">
-            <img src="images/logo1.png" alt="Silver Fox Dynamics Logo">
-        </a>
-        <nav>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span><span></span><span></span>
-            </div>
-            <ul id="menu">
-                <li><a href="products.html" class="active">Products & Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+<body class="prototype-colorful">
+    <!-- Header (Preserved original structure) -->
+    <header class="colorful-header">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
+            </a>
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+                <ul id="menu" class="nav-menu">
+                    <li><a href="products.html" class="active">Products & Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero -->
-    <section class="about-hero">
-        <div class="about-content">
-            <h1 class="fade-in-up" style="font-size: 3rem; margin-bottom: 24px;">
-                Our <span class="gradient-text">Products & Services</span>
-            </h1>
-            <p class="fade-in-up delay-1" style="font-size: 1.25rem; color: var(--gray-text); max-width: 800px; line-height: 1.8;">
-                End-to-end IT solutions tailored for businesses of every scale. Our services empower organizations with modern technology, streamlined processes, and sustainable digital growth.
-            </p>
-        </div>
-    </section>
-
-    <!-- Products Showcase -->
-    <section class="netguru-section">
-        <!-- ERP Solutions -->
-        <div class="product-showcase fade-in-up">
-            <div class="product-visual">
-                <img src="images/erp-prod.png" alt="ERP Solutions">
+    <!-- Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">🚀 End-to-end solutions</span>
+                <h1>Our <span class="gradient-text">Products & Services</span></h1>
+                <p>End-to-end IT solutions tailored for businesses of every scale. Our services empower organizations with modern technology, streamlined processes, and sustainable digital growth.</p>
             </div>
-            <div class="product-content">
-                <h2>ERP Solutions</h2>
-                <p>Experience our powerful Restaurant Management System built on Oracle APEX — showcasing our capability to deliver enterprise-grade business management systems.</p>
-                <p class="demo-info"><strong>Demo Access:</strong></p>
-                <ul class="demo-list">
-                    <li><strong>URL:</strong> <a href="https://oracleapex.com/ords/r/rms_base/restaurant-management-system167524/custom-login-page?session=0" target="_blank" class="demo-link">Restaurant Management System Demo</a></li>
-                    <li><strong>Usernames:</strong> "orange-ceo", "green-ceo", or "golden-ceo"</li>
-                    <li><strong>Password:</strong> "admin123" (same for all)</li>
-                </ul>
-                <div class="product-buttons">
-                    <a href="https://oracleapex.com/ords/r/rms_base/restaurant-management-system167524/custom-login-page?session=0" target="_blank" class="btn btn-orange">View Live Demo</a>
-                    <a href="contact.html" class="btn btn-secondary">Request Custom ERP</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile App Development -->
-        <div class="product-showcase fade-in-up">
-            <div class="product-visual">
-                <img src="images/mob-app-prod.png" alt="Mobile App Development">
-            </div>
-            <div class="product-content">
-                <h2>Mobile Application Development</h2>
-                <p>High-performance Android and iOS applications that enhance customer engagement and improve business efficiency.</p>
-                <p class="demo-info"><strong>Featured Published App:</strong></p>
-                <div class="featured-app">
-                    <a href="https://play.google.com/store/apps/details?id=com.any.down.video.downloader.videodownloader&pcampaignid=web_share" 
-                       target="_blank" class="demo-link app-link">
-                       <span class="app-icon">📱</span> AnyDown Video Downloader on Google Play
-                    </a>
-                </div>
-                <p><strong>Exclusive Offer:</strong> Google Play Console rental service exclusively for apps developed through Silver Fox Dynamics.</p>
-                <div class="product-buttons">
-                    <a href="https://play.google.com/store/apps/details?id=com.any.down.video.downloader.videodownloader&pcampaignid=web_share" target="_blank" class="btn btn-orange">View on Play Store</a>
-                    <a href="contact.html" class="btn btn-blue">Start Your App Project</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- E-Commerce Solutions -->
-        <div class="product-showcase fade-in-up">
-            <div class="product-visual">
-                <img src="images/ecom-prod.png" alt="E-Commerce Solutions">
-            </div>
-            <div class="product-content">
-                <h2>E-Commerce Solutions</h2>
-                <p>Robust and scalable e-commerce platforms that drive sales and enhance customer experiences.</p>
-                <p class="demo-info"><strong>Featured Projects:</strong></p>
-                <ul class="project-list">
-                    <li><a href="http://noraevebridal.co.uk/" target="_blank" class="project-link">Nora Eve Bridal</a> <span class="project-category">- Premium bridal wear</span></li>
-                    <li><a href="http://sieyah.com/" target="_blank" class="project-link">Sieyah</a> <span class="project-category">- Modern fashion</span></li>
-                    <li><a href="http://sieyahwear.com/" target="_blank" class="project-link">Sieyah Wear</a> <span class="project-category">- Fashion Wear</span></li>
-                    <li><a href="http://upstreetco.com/" target="_blank" class="project-link">Upstreet Co</a> <span class="project-category">- Urban lifestyle</span></li>
-                </ul>
-                <div class="product-buttons">
-                    <a href="contact.html" class="btn btn-orange">Get E-Commerce Store</a>
-                    <a href="http://noraevebridal.co.uk/" target="_blank" class="btn btn-secondary">View Live Example</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Websites & Web Apps -->
-        <div class="product-showcase fade-in-up">
-            <div class="product-visual">
-                <img src="images/web-prod.png" alt="Web Development">
-            </div>
-            <div class="product-content">
-                <h2>Websites and Web Applications</h2>
-                <p>A strong online presence is essential for growth. We create responsive, secure, and SEO-optimized websites along with dynamic web applications tailored to specific business needs.</p>
-                <p class="demo-info"><strong>Our web services include:</strong></p>
-                <ul class="service-features-list">
-                    <li>Corporate and brand websites</li>
-                    <li>Custom web applications with secure backends</li>
-                    <li>Cloud-based platforms</li>
-                    <li>Database-driven systems</li>
-                </ul>
-                <div class="product-buttons">
-                    <a href="contact.html" class="btn btn-orange">Get Website Quote</a>
-                    <a href="contact.html" class="btn btn-blue">Request Web App Demo</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- IT Consultation -->
-        <div class="product-showcase fade-in-up">
-            <div class="product-visual">
-                <img src="images/consult-prod.png" alt="IT Consultation">
-            </div>
-            <div class="product-content">
-                <h2>IT Consultation and Support</h2>
-                <p>Making the right technology choices is critical for long-term success. Our IT consultation services help businesses define strategies, select the right technologies, and implement effective solutions.</p>
-                <p class="demo-info"><strong>Areas we cover:</strong></p>
-                <ul class="service-features-list">
-                    <li>Business process automation</li>
-                    <li>Database design and optimization</li>
-                    <li>Cloud migration and hosting</li>
-                    <li>Custom software planning</li>
-                </ul>
-                <div class="product-buttons">
-                    <a href="contact.html" class="btn btn-orange">Book Consultation</a>
-                    <a href="contact.html" class="btn btn-secondary">Get IT Support</a>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section fade-in-up">
-        <div class="cta-content">
-            <h2>Partner With Us</h2>
-            <p>Transform your ideas into scalable, innovative, and future-ready digital solutions.</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="cta-button">Start Your Project</a>
-                <a href="contact.html" class="cta-button outline">Book Free Consultation</a>
-            </div>
-        </div>
-    </section>
-
-     <!-- Footer -->
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-column">
-                <h4>Silver Fox Dynamics</h4>
-                <div class="brand-tagline">
-                    <span>Silver Fox Dynamics</span> · 
-                    <span>Innovation</span> · 
-                    <span>Excellence</span>
+    <!-- Products Grid -->
+    <section class="products-grid-section">
+        <div class="container">
+            <!-- ERP Solutions -->
+            <div class="product-showcase-modern">
+                <div class="product-visual-wrapper">
+                    <div class="product-visual">
+                        <img src="images/erp-prod.png" alt="ERP Solutions">
+                    </div>
                 </div>
-                <p style="color: var(--gray-text); margin-top: 15px; font-size: 0.95rem; line-height: 1.6;">
-                    Transforming businesses through innovative digital solutions since 2024.
-                </p>
-            </div>
-            
-            <div class="footer-column">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="products.html#mobile">Mobile Apps</a></li>
-                    <li><a href="products.html#erp">ERP Systems</a></li>
-                    <li><a href="products.html#web">Web Development</a></li>
-                    <li><a href="products.html#ecommerce">E-Commerce</a></li>
+                <div class="product-content-wrapper">
+                    <span class="product-category" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);">Enterprise</span>
+                    <h2>ERP Solutions</h2>
+                    <p class="product-description">Experience our powerful Restaurant Management System built on Oracle APEX — showcasing our capability to deliver enterprise-grade business management systems.</p>
                     
-                </ul>
+                    <div class="demo-card">
+                        <h4>🔐 Demo Access</h4>
+                        <ul class="demo-list">
+                            <li><strong>URL:</strong> <a href="https://oracleapex.com/ords/r/rms_base/restaurant-management-system167524/custom-login-page?session=0" target="_blank" class="gradient-link">Restaurant Management System Demo</a></li>
+                            <li><strong>Usernames:</strong> "orange-ceo", "green-ceo", or "golden-ceo"</li>
+                            <li><strong>Password:</strong> "admin123" (same for all)</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <a href="https://oracleapex.com/ords/r/rms_base/restaurant-management-system167524/custom-login-page?session=0" target="_blank" class="btn btn-gradient">View Live Demo</a>
+                        <a href="contact.html" class="btn btn-outline-gradient">Request Custom ERP</a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="footer-column">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+
+            <!-- Mobile App Development -->
+            <div class="product-showcase-modern reverse">
+                <div class="product-visual-wrapper">
+                    <div class="product-visual">
+                        <img src="images/mob-app-prod.png" alt="Mobile App Development">
+                    </div>
+                </div>
+                <div class="product-content-wrapper">
+                    <span class="product-category" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);">Mobile</span>
+                    <h2>Mobile Application Development</h2>
+                    <p class="product-description">High-performance Android and iOS applications that enhance customer engagement and improve business efficiency.</p>
+                    
+                    <div class="demo-card">
+                        <h4>📱 Featured Published App</h4>
+                        <a href="https://play.google.com/store/apps/details?id=com.any.down.video.downloader.videodownloader&pcampaignid=web_share" target="_blank" class="app-promo">
+                            <span class="app-icon">📱</span>
+                            <span>AnyDown Video Downloader on Google Play</span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <p class="offer-note"><strong>Exclusive Offer:</strong> Google Play Console rental service exclusively for apps developed through Silver Fox Dynamics.</p>
+                    </div>
+
+                    <div class="product-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.any.down.video.downloader.videodownloader&pcampaignid=web_share" target="_blank" class="btn btn-gradient">View on Play Store</a>
+                        <a href="contact.html" class="btn btn-outline-gradient">Start Your App Project</a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="footer-column">
-                <h4>Connect</h4>
-                <ul>
-                    <li><a href="mailto:info@silverfoxdynamics.com" style="color: var(--blue-accent);">Email Us</a></li>
-                    <li style="color: var(--silver-light);"> WhatsApp +92 329 5103414</li>
-                    <li style="color: var(--gray-text); font-size: 0.9rem;">Office #01, 5th Floor<br>GIGA Commercial Hub<br>DHA Phase II, Islamabad</li>
-                </ul>
+
+            <!-- E-Commerce Solutions -->
+            <div class="product-showcase-modern">
+                <div class="product-visual-wrapper">
+                    <div class="product-visual">
+                        <img src="images/ecom-prod.png" alt="E-Commerce Solutions">
+                    </div>
+                </div>
+                <div class="product-content-wrapper">
+                    <span class="product-category" style="background: linear-gradient(135deg, #FFB347, #FF90E8);">E-Commerce</span>
+                    <h2>E-Commerce Solutions</h2>
+                    <p class="product-description">Robust and scalable e-commerce platforms that drive sales and enhance customer experiences.</p>
+                    
+                    <div class="demo-card">
+                        <h4>🛍️ Featured Projects</h4>
+                        <ul class="project-list">
+                            <li><a href="http://noraevebridal.co.uk/" target="_blank" class="gradient-link">Nora Eve Bridal</a> <span class="project-category">- Premium bridal wear</span></li>
+                            <li><a href="http://sieyah.com/" target="_blank" class="gradient-link">Sieyah</a> <span class="project-category">- Modern fashion</span></li>
+                            <li><a href="http://sieyahwear.com/" target="_blank" class="gradient-link">Sieyah Wear</a> <span class="project-category">- Fashion Wear</span></li>
+                            <li><a href="http://upstreetco.com/" target="_blank" class="gradient-link">Upstreet Co</a> <span class="project-category">- Urban lifestyle</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <a href="contact.html" class="btn btn-gradient">Get E-Commerce Store</a>
+                        <a href="http://noraevebridal.co.uk/" target="_blank" class="btn btn-outline-gradient">View Live Example</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Websites & Web Apps -->
+            <div class="product-showcase-modern reverse">
+                <div class="product-visual-wrapper">
+                    <div class="product-visual">
+                        <img src="images/web-prod.png" alt="Web Development">
+                    </div>
+                </div>
+                <div class="product-content-wrapper">
+                    <span class="product-category" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);">Web</span>
+                    <h2>Websites and Web Applications</h2>
+                    <p class="product-description">A strong online presence is essential for growth. We create responsive, secure, and SEO-optimized websites along with dynamic web applications tailored to specific business needs.</p>
+                    
+                    <div class="demo-card">
+                        <h4>🌐 Our web services include:</h4>
+                        <ul class="service-features-list">
+                            <li>Corporate and brand websites</li>
+                            <li>Custom web applications with secure backends</li>
+                            <li>Cloud-based platforms</li>
+                            <li>Database-driven systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <a href="contact.html" class="btn btn-gradient">Get Website Quote</a>
+                        <a href="contact.html" class="btn btn-outline-gradient">Request Web App Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IT Consultation -->
+            <div class="product-showcase-modern">
+                <div class="product-visual-wrapper">
+                    <div class="product-visual">
+                        <img src="images/consult-prod.png" alt="IT Consultation">
+                    </div>
+                </div>
+                <div class="product-content-wrapper">
+                    <span class="product-category" style="background: linear-gradient(135deg, #FF6B9D, #C5A3FF);">Consulting</span>
+                    <h2>IT Consultation and Support</h2>
+                    <p class="product-description">Making the right technology choices is critical for long-term success. Our IT consultation services help businesses define strategies, select the right technologies, and implement effective solutions.</p>
+                    
+                    <div class="demo-card">
+                        <h4>💡 Areas we cover:</h4>
+                        <ul class="service-features-list">
+                            <li>Business process automation</li>
+                            <li>Database design and optimization</li>
+                            <li>Cloud migration and hosting</li>
+                            <li>Custom software planning</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-actions">
+                        <a href="contact.html" class="btn btn-gradient">Book Consultation</a>
+                        <a href="contact.html" class="btn btn-outline-gradient">Get IT Support</a>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html" style="color: var(--gray-text); text-decoration: none;">Privacy Policy</a> | <a href="terms.html" style="color: var(--gray-text); text-decoration: none;">Terms of Service</a></p>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section-modern">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Partner With Us</h2>
+                <p>Transform your ideas into scalable, innovative, and future-ready digital solutions.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-gradient btn-large">Start Your Project</a>
+                    <a href="contact.html" class="btn btn-outline-gradient btn-large">Book Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="colorful-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Silver Fox Dynamics</h4>
+                    <div class="brand-tagline">
+                        <span>Silver</span> · <span>Innovation</span> · <span>Excellence</span>
+                    </div>
+                    <p>Transforming businesses through innovative digital solutions since 2024.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="products.html#mobile">Mobile Apps</a></li>
+                        <li><a href="products.html#erp">ERP Systems</a></li>
+                        <li><a href="products.html#web">Web Development</a></li>
+                        <li><a href="products.html#ecommerce">E-Commerce</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@silverfoxdynamics.com">Email Us</a></li>
+                        <li>WhatsApp +92 329 5103414</li>
+                        <li>Office #01, 5th Floor<br>GIGA Commercial Hub<br>DHA Phase II, Islamabad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        // Initialize animations and menu
-        document.addEventListener('DOMContentLoaded', function() {
-            // Header scroll effect
-            window.addEventListener('scroll', function() {
-                const header = document.querySelector('header');
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
-            
-            // Intersection Observer for animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-            
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animated');
-                    }
-                });
-            }, observerOptions);
-            
-            // Observe elements for animation
-            document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
-            
-            // Initialize header state
-            if (window.scrollY > 50) {
-                document.querySelector('header').classList.add('scrolled');
-            }
-        });
-        
         // Toggle menu function
         function toggleMenu() {
             const menu = document.getElementById('menu');
@@ -260,8 +269,40 @@
             menu.classList.toggle('show');
             menuToggle.classList.toggle('active');
         }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menu.classList.remove('show');
+                menuToggle.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking on links
+        document.querySelectorAll('#menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('menu').classList.remove('show');
+                document.querySelector('.menu-toggle').classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize header state
+        if (window.scrollY > 50) {
+            document.querySelector('header').classList.add('scrolled');
+        }
     </script>
 </body>
 </html>
-
-
