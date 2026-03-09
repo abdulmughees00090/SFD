@@ -3,95 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silver Fox Dynamics – Dark Tech</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Silver Fox Dynamics – Modern SaaS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="prototype-dark">
+<body class="prototype-saas">
     <!-- Header -->
-    <header class="dark-header">
+    <header class="saas-header">
         <div class="container">
-            <a href="#" class="logo">SFD</a>
+            <a href="index.html" class="logo">
+                <span class="logo-fox">Silver Fox</span><span class="logo-dyn"> Dynamics</span>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Insights</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resources</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <a href="#" class="btn btn-primary">Start a Project</a>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="dark-hero">
+    <!-- Hero Section -->
+    <section class="saas-hero">
         <div class="container">
-            <div class="hero-text">
-                <h1>We engineer the <span class="glitch" data-text="future">future</span></h1>
-                <p>Deep-tech solutions for complex challenges. From AI to blockchain, we build what matters.</p>
+            <div class="hero-content">
+                <span class="hero-badge">⚡ Enterprise-grade solutions</span>
+                <h1>Build digital products that <span class="gradient-text">scale with you</span></h1>
+                <p>Silver Fox Dynamics delivers robust software, from mobile apps to ERP systems, tailored to your business needs.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-orange">Enter the lab</a>
-                    <a href="#" class="btn btn-outline">Our projects</a>
+                    <a href="#" class="btn btn-primary btn-large">Explore Services</a>
+                    <a href="#" class="btn btn-outline">Book a Demo</a>
                 </div>
             </div>
-            <div class="hero-grid"></div>
-        </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="dark-stats">
-        <div class="container">
-            <div class="stat-item">10+ <span>projects</span></div>
-            <div class="stat-item">5 <span>clients</span></div>
-            <div class="stat-item">24/7 <span>support</span></div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="dark-services">
-        <div class="container">
-            <h2>Capabilities</h2>
-            <div class="service-tiles">
-                <div class="tile">
-                    <span class="tile-num">01</span>
-                    <h3>Mobile engineering</h3>
-                </div>
-                <div class="tile">
-                    <span class="tile-num">02</span>
-                    <h3>Web & cloud</h3>
-                </div>
-                <div class="tile">
-                    <span class="tile-num">03</span>
-                    <h3>ERP evolution</h3>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-bar"></div>
+                    <div class="dashboard-grid">
+                        <span></span><span></span><span></span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Project -->
-    <section class="dark-project">
+    <!-- Client Logos -->
+    <section class="saas-clients">
         <div class="container">
-            <div class="project-card">
-                <span class="project-label">Featured →</span>
-                <h3>Restaurant ERP</h3>
-                <p>Complete management suite for modern chains.</p>
-                <a href="#" class="project-link">View case study</a>
+            <p>Trusted by forward-thinking teams</p>
+            <div class="logo-strip">
+                <span>NEXTRON</span> <span>ARCADIA</span> <span>ORION</span> <span>QUANTUM</span> <span>VERTEX</span>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="dark-cta">
+    <!-- Services Grid -->
+    <section class="saas-services">
         <div class="container">
-            <h2>Let’s build something <span class="outline-text">bold</span></h2>
-            <a href="#" class="btn btn-orange btn-large">Start now</a>
+            <div class="section-header">
+                <h2>Everything you need to excel</h2>
+                <p>Comprehensive software solutions that drive growth and efficiency.</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native & cross-platform apps with exceptional UX.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Platforms</h3>
+                    <p>Scalable, performant web applications and PWAs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏭</div>
+                    <h3>ERP Systems</h3>
+                    <p>Custom enterprise solutions for your operations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Analytics</h3>
+                    <p>Turn your data into actionable insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Showcase -->
+    <section class="saas-feature">
+        <div class="container">
+            <div class="feature-block">
+                <div class="feature-text">
+                    <h2>Seamless integration, modern stack</h2>
+                    <p>Our solutions are built to fit right into your existing workflow, with APIs and tools that developers love.</p>
+                    <ul class="feature-list">
+                        <li>⚡ Cloud-native architecture</li>
+                        <li>🔒 Enterprise-grade security</li>
+                        <li>📈 Real-time analytics</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <div class="code-window"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="saas-cta">
+        <div class="container">
+            <h2>Ready to transform your business?</h2>
+            <p>Let’s discuss your next project.</p>
+            <a href="#" class="btn btn-primary btn-large">Get in touch</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="dark-footer">
+    <footer class="saas-footer">
         <div class="container">
-            <p>© 2024 Silver Fox Dynamics — Digital architects</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Silver Fox Dynamics</h4>
+                    <p>Innovation · Excellence · Delivery</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul><li><a href="#">Mobile</a></li><li><a href="#">Web</a></li><li><a href="#">ERP</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul><li><a href="#">About</a></li><li><a href="#">Team</a></li><li><a href="#">Contact</a></li></ul>
+                </div>
+            </div>
+            <div class="footer-bottom">© 2024 Silver Fox Dynamics. All rights reserved.</div>
         </div>
     </footer>
 </body>
