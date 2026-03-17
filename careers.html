@@ -5,345 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers | Silver Fox Dynamics</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- include the comprehensive style.css (provided in the prompt) -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="fav.png">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#7C3AED"/>
+    <!-- additional micro style just for the careers page (kept minimal, relies on existing CSS) -->
     <style>
-        /* keeping minimal inline style to ensure background consistency – 
-           normally these would be in style.css, but we embed just enough 
-           to match the colourful vibe of the prototype */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background: #0B0A1F;
-            color: #ffffff;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        /* colorful header (as original) */
-        .colorful-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 20px 0;
-            background: rgba(11, 10, 31, 0.85);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            z-index: 1000;
-            transition: all 0.3s;
-        }
-        .colorful-header.scrolled {
-            padding: 12px 0;
-            background: rgba(11, 10, 31, 0.95);
-        }
-        .colorful-header .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .header-logo {
-            height: 44px;
-            width: auto;
-            display: block;
-        }
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 32px;
-        }
-        .nav-menu a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-            transition: color 0.2s;
-        }
-        .nav-menu a:hover {
-            color: #C4A0FF;
-        }
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 6px;
-            cursor: pointer;
-        }
-        .menu-toggle span {
-            width: 28px;
-            height: 2px;
-            background: white;
-            transition: 0.3s;
-        }
-        /* hero small variation for careers */
-        .careers-hero {
-            padding: 180px 0 100px;
-            background: radial-gradient(circle at 30% 40%, rgba(124, 58, 237, 0.2) 0%, transparent 50%);
-        }
-        .hero-content {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .hero-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(4px);
-            padding: 8px 20px;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-            color: #C4A0FF;
-            border: 1px solid rgba(196,160,255,0.3);
-            margin-bottom: 24px;
-        }
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #B794FF, #FF90E8, #FFB347);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        .lead {
-            font-size: 1.25rem;
-            color: rgba(255,255,255,0.7);
-            margin-bottom: 40px;
-        }
-        /* open positions */
-        .positions-section {
-            padding: 80px 0;
-            background: #0C0B22;
-        }
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        .section-header h2 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-        .section-header p {
-            color: rgba(255,255,255,0.6);
-            font-size: 1.2rem;
-        }
-        .positions-grid {
+        /* small additions to reuse existing patterns for careers page */
+        .careers-grid-modern {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
         }
-        .position-card {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: 32px;
+        /* job card inherits .about-card-modern */
+        .job-card {
+            background: var(--bg-white);
+            border-radius: 30px;
             padding: 32px;
-            backdrop-filter: blur(8px);
-            transition: transform 0.3s, border-color 0.3s;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
-        .position-card:hover {
-            border-color: #C4A0FF;
+        .job-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: left;
+        }
+        .job-card:hover {
             transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
         }
-        .position-type {
+        .job-card:hover::before {
+            transform: scaleX(1);
+        }
+        .job-type {
             display: inline-block;
-            background: #7C3AED;
+            background: rgba(124, 58, 237, 0.1);
+            color: var(--purple);
             padding: 6px 14px;
             border-radius: 40px;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 600;
-            letter-spacing: 0.5px;
-            margin-bottom: 20px;
+            letter-spacing: 0.3px;
+            margin-bottom: 16px;
         }
-        .position-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 12px;
-        }
-        .location {
+        .job-location {
             display: flex;
             align-items: center;
             gap: 8px;
-            color: rgba(255,255,255,0.5);
-            margin-bottom: 24px;
-        }
-        .description {
-            color: rgba(255,255,255,0.7);
-            margin-bottom: 28px;
-        }
-        .btn-small {
-            background: transparent;
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white;
-            padding: 12px 28px;
-            border-radius: 40px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .btn-small:hover {
-            background: #7C3AED;
-            border-color: #7C3AED;
-        }
-        /* culture */
-        .culture-section {
-            padding: 100px 0;
-            background: linear-gradient(145deg, #0F0E28, #1A1535);
-        }
-        .culture-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 40px;
-            text-align: center;
-        }
-        .culture-item .emoji {
-            font-size: 3.8rem;
-            margin-bottom: 20px;
-            display: block;
-        }
-        .culture-item h4 {
-            font-size: 1.8rem;
-            margin-bottom: 12px;
-        }
-        .culture-item p {
-            color: rgba(255,255,255,0.6);
-        }
-        /* values strip (stats like) */
-        .values-strip {
-            padding: 60px 0;
-            background: #0B0A1F;
-        }
-        .stats-grid {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-        .stat-item {
-            text-align: center;
-        }
-        .stat-item h3 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #FFB347, #FF90E8);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        .stat-item p {
-            color: rgba(255,255,255,0.6);
-            font-size: 1.1rem;
-        }
-        /* cta */
-        .cta-section {
-            padding: 100px 0;
-            background: radial-gradient(circle at 70% 30%, #7C3AED30, transparent 60%);
-        }
-        .btn-gradient {
-            background: linear-gradient(135deg, #7C3AED, #C4A0FF);
-            color: white;
-            padding: 16px 42px;
-            border-radius: 40px;
-            font-weight: 700;
-            text-decoration: none;
-            display: inline-block;
-            transition: transform 0.2s;
-            border: none;
-        }
-        .btn-outline-gradient {
-            background: transparent;
-            border: 2px solid;
-            border-image: linear-gradient(135deg, #7C3AED, #C4A0FF) 1;
-            color: white;
-            padding: 14px 40px;
-            border-radius: 40px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            margin-left: 16px;
-        }
-        .btn-outline-gradient:hover {
-            background: rgba(124,58,237,0.1);
-        }
-        .btn-large {
-            font-size: 1.1rem;
-        }
-        /* footer */
-        .colorful-footer {
-            background: #07061A;
-            padding: 70px 0 20px;
-            border-top: 1px solid rgba(255,255,255,0.05);
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-        .footer-col h4 {
-            margin-bottom: 24px;
-            font-size: 1.2rem;
-        }
-        .footer-col ul {
-            list-style: none;
-        }
-        .footer-col li {
-            margin-bottom: 16px;
-        }
-        .footer-col a {
-            color: rgba(255,255,255,0.6);
-            text-decoration: none;
-        }
-        .footer-col a:hover {
-            color: white;
-        }
-        .brand-tagline {
+            color: var(--text-medium);
             margin: 16px 0;
-            color: #C4A0FF;
+            font-size: 0.95rem;
         }
-        .footer-bottom {
+        .job-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+        .job-description {
+            color: var(--text-medium);
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .apply-link {
+            color: var(--purple);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s ease;
+            margin-top: 16px;
+        }
+        .apply-link:hover {
+            gap: 12px;
+        }
+        .culture-mini-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .value-pill {
+            background: rgba(124, 58, 237, 0.05);
+            border-radius: 60px;
+            padding: 10px 20px;
+            font-weight: 500;
+            color: var(--text-dark);
+            border: 1px solid var(--border-light);
             text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: rgba(255,255,255,0.4);
-            font-size: 0.9rem;
         }
-        @media (max-width: 900px) {
-            .footer-grid { grid-template-columns: repeat(2,1fr); }
-            .nav-menu { 
-                position: fixed; 
-                top: 80px; right: -100%; 
-                width: 260px; background: #12102F; 
-                flex-direction: column; padding: 40px; 
-                border-radius: 24px; transition: 0.4s; 
+        .value-pill:hover {
+            border-color: var(--purple);
+        }
+
+        @media (max-width: 1024px) {
+            .careers-grid-modern {
+                grid-template-columns: 1fr;
             }
-            .nav-menu.show { right: 24px; }
-            .menu-toggle { display: flex; }
-            h1 { font-size: 2.8rem; }
         }
-        @media (max-width: 600px) {
-            .positions-grid { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr; }
+        @media (max-width: 768px) {
+            .culture-mini-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body class="prototype-colorful">
-    <!-- Header (identical to original, active Careers link) -->
+    <!-- Header (same as original, with active state for Careers) -->
     <header class="colorful-header">
         <div class="container">
             <a href="index.html">
@@ -359,47 +137,51 @@
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="team.html">Our Team</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <!-- optionally careers link is not in menu, but we keep original; but we could highlight anyway -->
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Careers Hero -->
-    <section class="careers-hero">
+    <!-- Careers Hero (using about/team hero pattern) -->
+    <section class="about-hero-modern" style="padding-bottom: 40px;">
         <div class="container">
             <div class="hero-content">
-                <span class="hero-badge">🚀 Join the pack</span>
+                <span class="hero-badge">🚀 JOIN THE PACK</span>
                 <h1>Shape the future with <span class="gradient-text">Silver Fox</span></h1>
-                <p class="lead">We're builders, thinkers, and creators. If you love solving hard problems with elegant code, you'll fit right in.</p>
-                <div class="hero-buttons">
-                    <a href="#open-positions" class="btn btn-gradient btn-large">See open roles</a>
-                    <a href="#culture" class="btn btn-outline-gradient btn-large">Life at SFD</a>
+                <p>We're builders, thinkers, and creators. If you love solving hard problems with elegant code, you'll fit right in. <strong>100% remote-friendly</strong> · vibrant culture · real impact</p>
+                <div class="hero-buttons" style="margin-top: 32px;">
+                    <a href="#open-positions" class="btn btn-gradient">See open roles</a>
+                    <a href="#life" class="btn btn-outline-gradient">Life at SFD</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="floating-shapes">
                     <div class="shape shape-1"></div>
                     <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                    <div class="shape shape-5"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Values / mini stats (like original stats-section) -->
-    <section class="values-strip">
+    <!-- mini stats (values) - like stats section -->
+    <section class="stats-section" style="background: var(--gradient-primary); padding: 60px 0;">
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>remote‑friendly</p>
+                    <h3>∞</h3>
+                    <p>learning budget</p>
                 </div>
                 <div class="stat-item">
                     <h3>5+</h3>
                     <p>annual retreats</p>
                 </div>
                 <div class="stat-item">
-                    <h3>∞</h3>
-                    <p>learning budget</p>
+                    <h3>100%</h3>
+                    <p>remote‑first</p>
                 </div>
                 <div class="stat-item">
                     <h3>4.9</h3>
@@ -409,111 +191,158 @@
         </div>
     </section>
 
-    <!-- Open positions (core content) -->
-    <section id="open-positions" class="positions-section">
+    <!-- Open positions section (using grid similar to about grid) -->
+    <section id="open-positions" class="about-grid-section" style="padding-top: 100px;">
         <div class="container">
             <div class="section-header">
                 <h2>Open positions</h2>
                 <p>Join a team where your work matters</p>
             </div>
-            <div class="positions-grid">
-                <!-- position 1 -->
-                <div class="position-card">
-                    <span class="position-type">FULL‑TIME / REMOTE</span>
+            <div class="careers-grid-modern">
+                <!-- Job Card 1 -->
+                <div class="job-card">
+                    <span class="job-type">🟣 FULL-TIME / REMOTE</span>
                     <h3>Senior Frontend Engineer</h3>
-                    <div class="location">🌍 Anywhere (EMEA / APAC)</div>
-                    <p class="description">Build beautiful, reactive interfaces with React, Vue, or Svelte. You'll own features from concept to deployment.</p>
-                    <a href="#" class="btn-small">Apply →</a>
+                    <div class="job-location">🌍 Anywhere (EMEA/APAC)</div>
+                    <p class="job-description">Build beautiful, reactive interfaces with React, Vue, or Svelte. You'll own features from concept to deployment.</p>
+                    <a href="#" class="apply-link">Apply now →</a>
                 </div>
-                <!-- position 2 -->
-                <div class="position-card">
-                    <span class="position-type">FULL‑TIME / ISLAMABAD</span>
+                <!-- Job Card 2 -->
+                <div class="job-card">
+                    <span class="job-type">🟣 FULL-TIME / ISLAMABAD</span>
                     <h3>ERP Implementation Consultant</h3>
-                    <div class="location">📍 Islamabad (hybrid)</div>
-                    <p class="description">Work with clients to deploy and customise our restaurant ERP. Previous experience with Oracle APEX is a plus.</p>
-                    <a href="#" class="btn-small">Apply →</a>
+                    <div class="job-location">📍 Islamabad (hybrid)</div>
+                    <p class="job-description">Work with clients to deploy and customise our restaurant ERP. Previous experience with Oracle APEX is a plus.</p>
+                    <a href="#" class="apply-link">Apply now →</a>
                 </div>
-                <!-- position 3 -->
-                <div class="position-card">
-                    <span class="position-type">FULL‑TIME / REMOTE</span>
+                <!-- Job Card 3 -->
+                <div class="job-card">
+                    <span class="job-type">🟣 FULL-TIME / REMOTE</span>
                     <h3>Mobile Developer (Flutter)</h3>
-                    <div class="location">🌍 Global</div>
-                    <p class="description">Help us scale AnyDown and new mobile products. 3+ years of Flutter or native Android/iOS experience required.</p>
-                    <a href="#" class="btn-small">Apply →</a>
+                    <div class="job-location">🌍 Global</div>
+                    <p class="job-description">Help us scale AnyDown and new mobile products. 3+ years of Flutter or native Android/iOS experience.</p>
+                    <a href="#" class="apply-link">Apply now →</a>
                 </div>
-                <!-- position 4 -->
-                <div class="position-card">
-                    <span class="position-type">INTERNSHIP / ISLAMABAD</span>
+                <!-- Job Card 4 -->
+                <div class="job-card">
+                    <span class="job-type">🟣 INTERNSHIP / ISLAMABAD</span>
                     <h3>Junior UI/UX Designer</h3>
-                    <div class="location">📍 Islamabad (on‑site)</div>
-                    <p class="description">Passionate about clean design? You'll assist in wireframing, prototyping, and user testing for web & mobile apps.</p>
-                    <a href="#" class="btn-small">Apply →</a>
+                    <div class="job-location">📍 Islamabad (on‑site)</div>
+                    <p class="job-description">Passionate about clean design? Assist in wireframing, prototyping, and user testing for web & mobile apps.</p>
+                    <a href="#" class="apply-link">Apply now →</a>
                 </div>
-                <!-- position 5 -->
-                <div class="position-card">
-                    <span class="position-type">CONTRACT / REMOTE</span>
+                <!-- Job Card 5 -->
+                <div class="job-card">
+                    <span class="job-type">🟣 CONTRACT / REMOTE</span>
                     <h3>DevOps Engineer</h3>
-                    <div class="location">🌍 Anywhere</div>
-                    <p class="description">Optimise our CI/CD, dockerise legacy apps, and maintain cloud infrastructure (AWS).</p>
-                    <a href="#" class="btn-small">Apply →</a>
+                    <div class="job-location">🌍 Anywhere</div>
+                    <p class="job-description">Optimise CI/CD, dockerise legacy apps, and maintain cloud infrastructure (AWS).</p>
+                    <a href="#" class="apply-link">Apply now →</a>
                 </div>
-                <!-- position 6 -->
-                <div class="position-card">
-                    <span class="position-type">FULL‑TIME / REMOTE</span>
+                <!-- Job Card 6 -->
+                <div class="job-card">
+                    <span class="job-type">🟣 FULL-TIME / REMOTE</span>
                     <h3>Technical Project Manager</h3>
-                    <div class="location">🌍 EU timezone</div>
-                    <p class="description">Lead agile teams, communicate with clients, and deliver high‑quality software on schedule.</p>
-                    <a href="#" class="btn-small">Apply →</a>
+                    <div class="job-location">🌍 EU timezone</div>
+                    <p class="job-description">Lead agile teams, communicate with clients, and deliver high‑quality software on schedule.</p>
+                    <a href="#" class="apply-link">Apply now →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Culture section (like featured projects / services but with people values) -->
-    <section id="culture" class="culture-section">
+    <!-- Life & culture section (mixing about card and featured projects) -->
+    <section id="life" class="featured-projects" style="background: var(--bg-light);">
         <div class="container">
             <div class="section-header">
                 <h2>Life at <span class="gradient-text">Silver Fox</span></h2>
                 <p>More than just work — we grow together</p>
             </div>
-            <div class="culture-grid">
-                <div class="culture-item">
-                    <span class="emoji">🧠</span>
-                    <h4>Learning first</h4>
-                    <p>Yearly budget for courses, conferences, and books. We level up constantly.</p>
+            <!-- using about card style for culture -->
+            <div class="about-grid-modern" style="grid-template-columns: repeat(3, 1fr);">
+                <!-- culture card 1 -->
+                <div class="about-card-modern">
+                    <div class="card-icon-wrapper" style="background: var(--gradient-1);"><span class="card-icon">🧠</span></div>
+                    <h3>Learning first</h3>
+                    <p>Yearly budget for courses, conferences, books. We level up constantly.</p>
                 </div>
-                <div class="culture-item">
-                    <span class="emoji">🎮</span>
-                    <h4>Fun & games</h4>
-                    <p>Game nights, hackathons, and quarterly offsites. Work hard, play hard.</p>
+                <!-- culture card 2 -->
+                <div class="about-card-modern">
+                    <div class="card-icon-wrapper" style="background: var(--gradient-2);"><span class="card-icon">🎮</span></div>
+                    <h3>Fun & games</h3>
+                    <p>Game nights, hackathons, quarterly offsites. Work hard, play hard.</p>
                 </div>
-                <div class="culture-item">
-                    <span class="emoji">🌍</span>
-                    <h4>Remote & flexible</h4>
-                    <p>Work from a cabin in the mountains or a café in the city — results matter most.</p>
+                <!-- culture card 3 -->
+                <div class="about-card-modern">
+                    <div class="card-icon-wrapper" style="background: var(--gradient-3);"><span class="card-icon">🌍</span></div>
+                    <h3>Remote & flexible</h3>
+                    <p>Work from a cabin or a café — results matter most.</p>
                 </div>
-                <div class="culture-item">
-                    <span class="emoji">🤝</span>
-                    <h4>Ownership</h4>
-                    <p>Everyone has a voice. Your ideas shape our products and processes.</p>
+                <!-- culture card 4 -->
+                <div class="about-card-modern">
+                    <div class="card-icon-wrapper" style="background: var(--gradient-4);"><span class="card-icon">🤝</span></div>
+                    <h3>Ownership</h3>
+                    <p>Your ideas shape our products and processes. Everyone has a voice.</p>
+                </div>
+                <!-- culture card 5 -->
+                <div class="about-card-modern">
+                    <div class="card-icon-wrapper" style="background: linear-gradient(135deg, #FFB347, #FF6B9D);"><span class="card-icon">⏱️</span></div>
+                    <h3>Flexible hours</h3>
+                    <p>As long as we hit milestones, you decide your schedule.</p>
+                </div>
+                <!-- culture card 6 -->
+                <div class="about-card-modern">
+                    <div class="card-icon-wrapper" style="background: linear-gradient(135deg, #C5A3FF, #7C3AED);"><span class="card-icon">🏆</span></div>
+                    <h3>Growth mindset</h3>
+                    <p>Internal promotions, mentorship, and challenging projects.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section (identical style to original) -->
-    <section class="cta-section">
+    <!-- Perks / values strip (like privacy page mini grid) reused as chips -->
+    <section class="privacy-grid-section" style="padding: 40px 0 80px;">
         <div class="container">
-            <h2 style="font-size: 2.8rem; margin-bottom: 20px;">Didn't find the perfect role?</h2>
-            <p style="font-size: 1.2rem; color: rgba(255,255,255,0.7); margin-bottom: 40px;">We're always on the lookout for talented people. Send a spontaneous application.</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-gradient btn-large">Get in touch</a>
-                <a href="mailto:careers@silverfoxdynamics.com" class="btn btn-outline-gradient btn-large">Write to careers@</a>
+            <div class="info-grid-modern" style="grid-template-columns: repeat(4, 1fr);">
+                <div class="info-card-mini">
+                    <div class="mini-icon" style="background: var(--gradient-1);">💰</div>
+                    <h4>Competitive compensation</h4>
+                    <p>Salary + equity + performance bonuses.</p>
+                </div>
+                <div class="info-card-mini">
+                    <div class="mini-icon" style="background: var(--gradient-2);">🏥</div>
+                    <h4>Health & wellness</h4>
+                    <p>Full medical coverage & fitness stipend.</p>
+                </div>
+                <div class="info-card-mini">
+                    <div class="mini-icon" style="background: var(--gradient-3);">✈️</div>
+                    <h4>Unlimited PTO</h4>
+                    <p>Take time when you need it — responsibly.</p>
+                </div>
+                <div class="info-card-mini">
+                    <div class="mini-icon" style="background: var(--gradient-4);">🖥️</div>
+                    <h4>Home office setup</h4>
+                    <p>One‑time budget for your ideal workspace.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (exact copy from original, but we keep it consistent) -->
+    <!-- Testimonial / message card similar to team message card -->
+    <section class="team-message-section">
+        <div class="container">
+            <div class="message-card">
+                <h2>Didn't find the perfect role?</h2>
+                <p>We're always on the lookout for talented people. Send a spontaneous application — we'd love to hear from you.</p>
+                <div class="message-actions">
+                    <a href="contact.html" class="btn btn-gradient btn-large">Get in touch</a>
+                    <a href="mailto:careers@silverfoxdynamics.com" class="btn btn-outline-gradient btn-large">Write to careers@</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (identical to original) -->
     <footer class="colorful-footer">
         <div class="container">
             <div class="footer-grid">
@@ -559,7 +388,7 @@
 
     <script src="script.js"></script>
     <script>
-        // Toggle menu (same as original)
+        // Toggle menu function (preserved from original)
         function toggleMenu() {
             const menu = document.getElementById('menu');
             const menuToggle = document.querySelector('.menu-toggle');
@@ -571,7 +400,6 @@
         document.addEventListener('click', function(event) {
             const menu = document.getElementById('menu');
             const menuToggle = document.querySelector('.menu-toggle');
-            
             if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
                 menu.classList.remove('show');
                 menuToggle.classList.remove('active');
