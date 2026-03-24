@@ -8,159 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="fav.png">
     <meta name="theme-color" content="#7C3AED"/>
-    <style>
-        /* mini additions for reviews & case study */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-        .review-card {
-            background: var(--bg-white);
-            border-radius: 30px;
-            padding: 30px;
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--border-light);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        .review-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
-        }
-        .review-rating {
-            color: #FFB347;
-            font-size: 1.3rem;
-            letter-spacing: 2px;
-            margin-bottom: 16px;
-        }
-        .review-text {
-            color: var(--text-medium);
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-bottom: 24px;
-            font-style: italic;
-        }
-        .review-author {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .author-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #A0E7FF, #C5A3FF);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--purple);
-            font-size: 1.2rem;
-        }
-        .author-info h4 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text-dark);
-        }
-        .author-info p {
-            font-size: 0.85rem;
-            color: var(--text-light);
-        }
-
-        .case-study-modern {
-            background: var(--bg-white);
-            border-radius: 40px;
-            padding: 60px;
-            box-shadow: var(--shadow-lg);
-            border: 1px solid var(--border-light);
-            margin: 60px 0 20px;
-            position: relative;
-            overflow: hidden;
-        }
-        .case-study-modern::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient-primary);
-        }
-        .case-study-header {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-        .case-study-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 30px;
-            background: var(--gradient-2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-        }
-        .case-study-header h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
-        }
-        .case-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin: 40px 0;
-            text-align: center;
-        }
-        .case-stat-item h4 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--purple);
-        }
-        .case-stat-item p {
-            color: var(--text-medium);
-        }
-        .case-testimonial {
-            background: rgba(124, 58, 237, 0.03);
-            padding: 30px;
-            border-radius: 30px;
-            border-left: 4px solid var(--purple);
-            margin-top: 30px;
-        }
-        .case-testimonial p {
-            font-size: 1.1rem;
-            color: var(--text-dark);
-            font-style: italic;
-        }
-        .case-testimonial span {
-            display: block;
-            margin-top: 16px;
-            color: var(--purple);
-            font-weight: 600;
-        }
-
-        @media (max-width: 1024px) {
-            .reviews-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            .reviews-grid { grid-template-columns: 1fr; }
-            .case-study-modern { padding: 30px; }
-            .case-stats { grid-template-columns: 1fr; }
-        }
-    </style>
 </head>
 <body class="prototype-colorful">
-    <!-- Header -->
+    <!-- Header with Theme Toggle -->
     <header class="colorful-header">
         <div class="container">
             <a href="index.html">
                 <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
             </a>
             <nav>
+                <!-- Theme Toggle Switch - Modern Minimal UI -->
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-switch" id="themeToggleBtn" aria-label="Switch between light and dark mode">
+                        <span class="theme-icon light-icon">☀️</span>
+                        <span class="theme-icon dark-icon">🌙</span>
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
                 <div class="menu-toggle" onclick="toggleMenu()">
                     <span></span><span></span><span></span>
                 </div>
@@ -170,12 +34,13 @@
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="team.html">Our Team</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section (unchanged) -->
+    <!-- Hero Section -->
     <section class="about-hero-modern">
         <div class="container">
             <div class="hero-content">
@@ -195,7 +60,7 @@
         </div>
     </section>
 
-    <!-- About Grid (unchanged) -->
+    <!-- About Grid Section -->
     <section class="about-grid-section">
         <div class="container">
             <div class="about-grid-modern">
@@ -212,6 +77,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- Mission Card -->
                 <div class="about-card-modern mission-card">
                     <div class="card-inner">
@@ -225,6 +91,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- What We Do Card (Spans 2 columns) -->
                 <div class="about-card-modern wide-card services-card">
                     <div class="card-inner">
@@ -267,6 +134,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- Why Choose Us Card -->
                 <div class="about-card-modern advantage-card">
                     <div class="card-inner">
@@ -294,6 +162,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- Our Values Card -->
                 <div class="about-card-modern values-card">
                     <div class="card-inner">
@@ -325,6 +194,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- The Silver Fox Advantage Card (Featured) -->
                 <div class="about-card-modern featured-card">
                     <div class="card-inner">
@@ -361,7 +231,7 @@
         </div>
     </section>
 
-    <!-- ========= NEW: DUMMY REVIEWS SECTION ========= -->
+    <!-- Client Reviews Section -->
     <section class="featured-projects" style="padding: 80px 0; background: var(--bg-light);">
         <div class="container">
             <div class="section-header">
@@ -369,7 +239,7 @@
                 <p>Don't just take our word for it — hear from some of the people we've worked with</p>
             </div>
             <div class="reviews-grid">
-                <!-- review 1 -->
+                <!-- Review 1 -->
                 <div class="review-card">
                     <div class="review-rating">★★★★★</div>
                     <p class="review-text">"Silver Fox Dynamics completely transformed our restaurant operations. The ERP system streamlined inventory, payroll, and ordering — we've saved countless hours and reduced waste by 20%."</p>
@@ -381,7 +251,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- review 2 -->
+                
+                <!-- Review 2 -->
                 <div class="review-card">
                     <div class="review-rating">★★★★★</div>
                     <p class="review-text">"The team built our e‑commerce platform from scratch and it's been flawless. Sales are up 150% since launch, and the support is always fast and friendly."</p>
@@ -393,7 +264,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- review 3 -->
+                
+                <!-- Review 3 -->
                 <div class="review-card">
                     <div class="review-rating">★★★★★</div>
                     <p class="review-text">"We hired them for a custom mobile app. They listened carefully, delivered ahead of schedule, and the app has 4.8 stars on the Play Store. Absolute pros."</p>
@@ -409,7 +281,7 @@
         </div>
     </section>
 
-    <!-- ========= NEW: CASE STUDY SECTION ========= -->
+    <!-- Case Study Section -->
     <section class="privacy-grid-section" style="padding: 40px 0 100px;">
         <div class="container">
             <div class="case-study-modern">
@@ -444,7 +316,7 @@
         </div>
     </section>
 
-    <!-- Stats Section (unchanged) -->
+    <!-- Stats Section -->
     <section class="stats-section-modern">
         <div class="container">
             <div class="stats-grid-modern">
@@ -468,7 +340,7 @@
         </div>
     </section>
 
-    <!-- CTA Section (unchanged) -->
+    <!-- CTA Section -->
     <section class="cta-section-modern">
         <div class="container">
             <div class="cta-content">
@@ -482,7 +354,7 @@
         </div>
     </section>
 
-    <!-- Footer (unchanged) -->
+    <!-- Footer -->
     <footer class="colorful-footer">
         <div class="container">
             <div class="footer-grid">
@@ -493,6 +365,7 @@
                     </div>
                     <p>Transforming businesses through innovative digital solutions since 2024.</p>
                 </div>
+
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
@@ -502,6 +375,7 @@
                         <li><a href="products.html#ecommerce">E-Commerce</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
@@ -509,8 +383,10 @@
                         <li><a href="team.html">Our Team</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="careers.html">Careers</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
                     <h4>Connect</h4>
                     <ul>
@@ -520,6 +396,7 @@
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
             </div>
@@ -528,6 +405,68 @@
 
     <script src="script.js"></script>
     <script>
+        // ==================== DUAL THEME SYSTEM ====================
+        // Theme management with localStorage persistence
+        (function() {
+            // Get theme toggle button
+            const themeBtn = document.getElementById('themeToggleBtn');
+            const body = document.body;
+            
+            // Check for saved theme preference
+            const savedTheme = localStorage.getItem('silverfox_theme');
+            
+            // Function to apply theme based on body class
+            function applyTheme(isDark) {
+                if (isDark) {
+                    body.classList.add('dark-theme');
+                    if (themeBtn) themeBtn.classList.add('dark-active');
+                } else {
+                    body.classList.remove('dark-theme');
+                    if (themeBtn) themeBtn.classList.remove('dark-active');
+                }
+            }
+            
+            // Determine initial theme
+            if (savedTheme === 'dark') {
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                applyTheme(false);
+            } else {
+                // Check system preference if no saved preference
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                applyTheme(prefersDark);
+                // Save system preference for consistency
+                localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
+            }
+            
+            // Toggle theme function
+            function toggleTheme() {
+                const isDark = body.classList.contains('dark-theme');
+                if (isDark) {
+                    body.classList.remove('dark-theme');
+                    localStorage.setItem('silverfox_theme', 'light');
+                    if (themeBtn) themeBtn.classList.remove('dark-active');
+                } else {
+                    body.classList.add('dark-theme');
+                    localStorage.setItem('silverfox_theme', 'dark');
+                    if (themeBtn) themeBtn.classList.add('dark-active');
+                }
+            }
+            
+            // Add click event listener to toggle button
+            if (themeBtn) {
+                themeBtn.addEventListener('click', toggleTheme);
+            }
+            
+            // Listen for system preference changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                // Only apply if user hasn't manually set a preference
+                if (!localStorage.getItem('silverfox_theme')) {
+                    applyTheme(e.matches);
+                }
+            });
+        })();
+
         // Toggle menu function
         function toggleMenu() {
             const menu = document.getElementById('menu');
@@ -536,15 +475,18 @@
             menuToggle.classList.toggle('active');
         }
 
+        // Close menu when clicking outside
         document.addEventListener('click', function(event) {
             const menu = document.getElementById('menu');
             const menuToggle = document.querySelector('.menu-toggle');
+            
             if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
                 menu.classList.remove('show');
                 menuToggle.classList.remove('active');
             }
         });
 
+        // Close menu when clicking on links
         document.querySelectorAll('#menu a').forEach(link => {
             link.addEventListener('click', () => {
                 document.getElementById('menu').classList.remove('show');
@@ -552,6 +494,7 @@
             });
         });
 
+        // Header scroll effect
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
@@ -561,6 +504,7 @@
             }
         });
 
+        // Initialize header state
         if (window.scrollY > 50) {
             document.querySelector('header').classList.add('scrolled');
         }
