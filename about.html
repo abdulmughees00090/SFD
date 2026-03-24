@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <!-- About Grid Section -->
+    <!-- About Grid -->
     <section class="about-grid-section">
         <div class="container">
             <div class="about-grid-modern">
@@ -77,7 +77,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <!-- Mission Card -->
                 <div class="about-card-modern mission-card">
                     <div class="card-inner">
@@ -91,7 +90,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <!-- What We Do Card (Spans 2 columns) -->
                 <div class="about-card-modern wide-card services-card">
                     <div class="card-inner">
@@ -134,7 +132,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <!-- Why Choose Us Card -->
                 <div class="about-card-modern advantage-card">
                     <div class="card-inner">
@@ -162,7 +159,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <!-- Our Values Card -->
                 <div class="about-card-modern values-card">
                     <div class="card-inner">
@@ -194,7 +190,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <!-- The Silver Fox Advantage Card (Featured) -->
                 <div class="about-card-modern featured-card">
                     <div class="card-inner">
@@ -231,7 +226,7 @@
         </div>
     </section>
 
-    <!-- Client Reviews Section -->
+    <!-- Reviews Section -->
     <section class="featured-projects" style="padding: 80px 0; background: var(--bg-light);">
         <div class="container">
             <div class="section-header">
@@ -239,7 +234,7 @@
                 <p>Don't just take our word for it — hear from some of the people we've worked with</p>
             </div>
             <div class="reviews-grid">
-                <!-- Review 1 -->
+                <!-- review 1 -->
                 <div class="review-card">
                     <div class="review-rating">★★★★★</div>
                     <p class="review-text">"Silver Fox Dynamics completely transformed our restaurant operations. The ERP system streamlined inventory, payroll, and ordering — we've saved countless hours and reduced waste by 20%."</p>
@@ -251,8 +246,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Review 2 -->
+                <!-- review 2 -->
                 <div class="review-card">
                     <div class="review-rating">★★★★★</div>
                     <p class="review-text">"The team built our e‑commerce platform from scratch and it's been flawless. Sales are up 150% since launch, and the support is always fast and friendly."</p>
@@ -264,8 +258,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Review 3 -->
+                <!-- review 3 -->
                 <div class="review-card">
                     <div class="review-rating">★★★★★</div>
                     <p class="review-text">"We hired them for a custom mobile app. They listened carefully, delivered ahead of schedule, and the app has 4.8 stars on the Play Store. Absolute pros."</p>
@@ -365,7 +358,6 @@
                     </div>
                     <p>Transforming businesses through innovative digital solutions since 2024.</p>
                 </div>
-
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
@@ -375,7 +367,6 @@
                         <li><a href="products.html#ecommerce">E-Commerce</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
@@ -386,7 +377,6 @@
                         <li><a href="careers.html">Careers</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h4>Connect</h4>
                     <ul>
@@ -396,7 +386,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
             </div>
@@ -408,14 +397,10 @@
         // ==================== DUAL THEME SYSTEM ====================
         // Theme management with localStorage persistence
         (function() {
-            // Get theme toggle button
             const themeBtn = document.getElementById('themeToggleBtn');
             const body = document.body;
-            
-            // Check for saved theme preference
             const savedTheme = localStorage.getItem('silverfox_theme');
             
-            // Function to apply theme based on body class
             function applyTheme(isDark) {
                 if (isDark) {
                     body.classList.add('dark-theme');
@@ -426,20 +411,16 @@
                 }
             }
             
-            // Determine initial theme
             if (savedTheme === 'dark') {
                 applyTheme(true);
             } else if (savedTheme === 'light') {
                 applyTheme(false);
             } else {
-                // Check system preference if no saved preference
                 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                 applyTheme(prefersDark);
-                // Save system preference for consistency
                 localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
             }
             
-            // Toggle theme function
             function toggleTheme() {
                 const isDark = body.classList.contains('dark-theme');
                 if (isDark) {
@@ -453,18 +434,9 @@
                 }
             }
             
-            // Add click event listener to toggle button
             if (themeBtn) {
                 themeBtn.addEventListener('click', toggleTheme);
             }
-            
-            // Listen for system preference changes
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-                // Only apply if user hasn't manually set a preference
-                if (!localStorage.getItem('silverfox_theme')) {
-                    applyTheme(e.matches);
-                }
-            });
         })();
 
         // Toggle menu function
@@ -475,18 +447,15 @@
             menuToggle.classList.toggle('active');
         }
 
-        // Close menu when clicking outside
         document.addEventListener('click', function(event) {
             const menu = document.getElementById('menu');
             const menuToggle = document.querySelector('.menu-toggle');
-            
             if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
                 menu.classList.remove('show');
                 menuToggle.classList.remove('active');
             }
         });
 
-        // Close menu when clicking on links
         document.querySelectorAll('#menu a').forEach(link => {
             link.addEventListener('click', () => {
                 document.getElementById('menu').classList.remove('show');
@@ -494,7 +463,6 @@
             });
         });
 
-        // Header scroll effect
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
@@ -504,7 +472,6 @@
             }
         });
 
-        // Initialize header state
         if (window.scrollY > 50) {
             document.querySelector('header').classList.add('scrolled');
         }
