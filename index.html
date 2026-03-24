@@ -18,6 +18,14 @@
                 <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
             </a>
             <nav>
+                <!-- Theme Toggle Switch - Modern Minimal UI -->
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-switch" id="themeToggleBtn" aria-label="Switch between light and dark mode">
+                        <span class="theme-icon light-icon">☀️</span>
+                        <span class="theme-icon dark-icon">🌙</span>
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
                 <div class="menu-toggle" onclick="toggleMenu()">
                     <span></span><span></span><span></span>
                 </div>
@@ -271,6 +279,68 @@
 
     <script src="script.js"></script>
     <script>
+        // ==================== DUAL THEME SYSTEM ====================
+        // Theme management with localStorage persistence
+        (function() {
+            // Get theme toggle button
+            const themeBtn = document.getElementById('themeToggleBtn');
+            const body = document.body;
+            
+            // Check for saved theme preference
+            const savedTheme = localStorage.getItem('silverfox_theme');
+            
+            // Function to apply theme based on body class
+            function applyTheme(isDark) {
+                if (isDark) {
+                    body.classList.add('dark-theme');
+                    if (themeBtn) themeBtn.classList.add('dark-active');
+                } else {
+                    body.classList.remove('dark-theme');
+                    if (themeBtn) themeBtn.classList.remove('dark-active');
+                }
+            }
+            
+            // Determine initial theme
+            if (savedTheme === 'dark') {
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                applyTheme(false);
+            } else {
+                // Check system preference if no saved preference
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                applyTheme(prefersDark);
+                // Save system preference for consistency
+                localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
+            }
+            
+            // Toggle theme function
+            function toggleTheme() {
+                const isDark = body.classList.contains('dark-theme');
+                if (isDark) {
+                    body.classList.remove('dark-theme');
+                    localStorage.setItem('silverfox_theme', 'light');
+                    if (themeBtn) themeBtn.classList.remove('dark-active');
+                } else {
+                    body.classList.add('dark-theme');
+                    localStorage.setItem('silverfox_theme', 'dark');
+                    if (themeBtn) themeBtn.classList.add('dark-active');
+                }
+            }
+            
+            // Add click event listener to toggle button
+            if (themeBtn) {
+                themeBtn.addEventListener('click', toggleTheme);
+            }
+            
+            // Listen for system preference changes (optional)
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                // Only apply if user hasn't manually set a preference
+                if (!localStorage.getItem('silverfox_theme')) {
+                    applyTheme(e.matches);
+                }
+            });
+        })();
+
         // Toggle menu function (preserved)
         function toggleMenu() {
             const menu = document.getElementById('menu');
@@ -315,5 +385,3 @@
     </script>
 </body>
 </html>
-
-
