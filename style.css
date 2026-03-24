@@ -1577,3 +1577,215 @@ body {
 }
 
 /* ==================== PRODUCTS PAGE FIX END ==================== */
+/* ==================== ABOUT PAGE FIX START ==================== */
+/* This section adds and restores about page specific styles that are not
+   covered by the global theme system */
+
+/* Reviews Grid */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.review-card {
+    background: var(--bg-white);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.review-rating {
+    color: #FFB347;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.review-text {
+    color: var(--text-medium);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #A0E7FF, #C5A3FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--purple);
+    font-size: 1.2rem;
+}
+
+.author-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.author-info p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* Case Study Styles */
+.case-study-modern {
+    background: var(--bg-white);
+    border-radius: 40px;
+    padding: 60px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-light);
+    margin: 60px 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-study-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.case-study-header {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.case-study-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    background: var(--gradient-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.case-study-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.case-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.case-stat-item h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.case-stat-item p {
+    color: var(--text-medium);
+}
+
+.case-testimonial {
+    background: rgba(124, 58, 237, 0.03);
+    padding: 30px;
+    border-radius: 30px;
+    border-left: 4px solid var(--purple);
+    margin-top: 30px;
+}
+
+.case-testimonial p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-style: italic;
+}
+
+.case-testimonial span {
+    display: block;
+    margin-top: 16px;
+    color: var(--purple);
+    font-weight: 600;
+}
+
+/* About Page Responsive Adjustments */
+@media (max-width: 1024px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .case-study-modern {
+        padding: 30px;
+    }
+    
+    .case-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .case-study-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .case-study-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .case-testimonial p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-card {
+        padding: 20px;
+    }
+    
+    .case-study-modern {
+        padding: 20px;
+    }
+    
+    .case-study-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .case-stat-item h4 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ==================== ABOUT PAGE FIX END ==================== */
