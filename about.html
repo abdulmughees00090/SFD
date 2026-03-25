@@ -10,13 +10,21 @@
     <meta name="theme-color" content="#7C3AED"/>
 </head>
 <body class="prototype-colorful">
-    <!-- Header -->
+    <!-- Header with Theme Toggle -->
     <header class="colorful-header">
         <div class="container">
             <a href="index.html">
                 <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
             </a>
             <nav>
+                <!-- Theme Toggle Switch - Modern Minimal UI -->
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-switch" id="themeToggleBtn" aria-label="Switch between light and dark mode">
+                        <span class="theme-icon light-icon">☀️</span>
+                        <span class="theme-icon dark-icon">🌙</span>
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
                 <div class="menu-toggle" onclick="toggleMenu()">
                     <span></span><span></span><span></span>
                 </div>
@@ -25,17 +33,9 @@
                     <li><a href="about.html" class="active">About Us</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="team.html">Our Team</a></li>
-                    <li><a href="careers.html">Careers</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
                 </ul>
-                <!-- Theme Toggle Button - Same as products.html -->
-                <div class="theme-toggle-wrapper">
-                    <button class="theme-switch" id="themeToggle" aria-label="Switch between light and dark mode">
-                        <span class="theme-icon light-icon">☀️</span>
-                        <span class="toggle-slider"></span>
-                        <span class="theme-icon dark-icon">🌙</span>
-                    </button>
-                </div>
             </nav>
         </div>
     </header>
@@ -374,6 +374,7 @@
                         <li><a href="team.html">Our Team</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="careers.html">Careers</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -393,6 +394,68 @@
 
     <script src="script.js"></script>
     <script>
+        // ==================== DUAL THEME SYSTEM ====================
+        // Theme management with localStorage persistence
+        (function() {
+            // Get theme toggle button
+            const themeBtn = document.getElementById('themeToggleBtn');
+            const body = document.body;
+            
+            // Check for saved theme preference
+            const savedTheme = localStorage.getItem('silverfox_theme');
+            
+            // Function to apply theme based on body class
+            function applyTheme(isDark) {
+                if (isDark) {
+                    body.classList.add('dark-theme');
+                    if (themeBtn) themeBtn.classList.add('dark-active');
+                } else {
+                    body.classList.remove('dark-theme');
+                    if (themeBtn) themeBtn.classList.remove('dark-active');
+                }
+            }
+            
+            // Determine initial theme
+            if (savedTheme === 'dark') {
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                applyTheme(false);
+            } else {
+                // Check system preference if no saved preference
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                applyTheme(prefersDark);
+                // Save system preference for consistency
+                localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
+            }
+            
+            // Toggle theme function
+            function toggleTheme() {
+                const isDark = body.classList.contains('dark-theme');
+                if (isDark) {
+                    body.classList.remove('dark-theme');
+                    localStorage.setItem('silverfox_theme', 'light');
+                    if (themeBtn) themeBtn.classList.remove('dark-active');
+                } else {
+                    body.classList.add('dark-theme');
+                    localStorage.setItem('silverfox_theme', 'dark');
+                    if (themeBtn) themeBtn.classList.add('dark-active');
+                }
+            }
+            
+            // Add click event listener to toggle button
+            if (themeBtn) {
+                themeBtn.addEventListener('click', toggleTheme);
+            }
+            
+            // Listen for system preference changes (optional)
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                // Only apply if user hasn't manually set a preference
+                if (!localStorage.getItem('silverfox_theme')) {
+                    applyTheme(e.matches);
+                }
+            });
+        })();
+
         // Toggle menu function
         function toggleMenu() {
             const menu = document.getElementById('menu');
@@ -434,32 +497,6 @@
         if (window.scrollY > 50) {
             document.querySelector('header').classList.add('scrolled');
         }
-
-        // Theme Toggle Logic - EXACT MATCH with products.html
-        const themeToggleBtn = document.getElementById('themeToggle');
-        
-        // Check for saved theme preference on load
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-theme');
-            themeToggleBtn.classList.add('dark-active');
-        } else if (savedTheme === 'light') {
-            document.body.classList.remove('dark-theme');
-            themeToggleBtn.classList.remove('dark-active');
-        }
-
-        // Toggle theme on button click
-        themeToggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-            themeToggleBtn.classList.toggle('dark-active');
-            
-            // Save preference
-            if (document.body.classList.contains('dark-theme')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
-        });
     </script>
 </body>
 </html>
