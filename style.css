@@ -3248,3 +3248,495 @@ body {
 .team-card-modern:nth-child(7) { animation-delay: 0.7s; }
 
 /* ==================== TEAM PAGE FIX END ==================== */
+
+/* ==================== CONTACT PAGE FIX START ==================== */
+/* This section restores the original Contact page styling from the older CSS
+   and adapts it for full compatibility with the new light/dark theme system. */
+
+/* Contact Hero */
+.contact-hero-modern {
+    padding: 160px 0 80px;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.contact-hero-modern .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.contact-hero-modern .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 24px 0;
+    color: var(--text-dark);
+}
+
+.contact-hero-modern .hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-medium);
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+/* Contact Grid Section */
+.contact-grid-section {
+    padding: 60px 0 80px;
+    background: var(--bg-light);
+}
+
+/* Contact Grid Modern */
+.contact-grid-modern {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Contact Form Modern */
+.contact-form-modern {
+    background: var(--bg-white);
+    border-radius: 40px;
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    color: var(--text-medium);
+    font-size: 1rem;
+}
+
+/* Modern Form */
+.modern-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group-modern {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.form-group-modern.full-width {
+    grid-column: span 2;
+}
+
+.form-group-modern label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.required {
+    color: var(--pink);
+    margin-left: 2px;
+}
+
+.form-group-modern input,
+.form-group-modern select,
+.form-group-modern textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(124, 58, 237, 0.02);
+    border: 2px solid var(--border-light);
+    border-radius: 16px;
+    color: var(--text-dark);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.form-group-modern input:focus,
+.form-group-modern select:focus,
+.form-group-modern textarea:focus {
+    outline: none;
+    border-color: var(--purple);
+    background: rgba(124, 58, 237, 0.05);
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+.form-group-modern select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237C3AED' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+}
+
+.form-group-modern textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Focus Border Animation */
+.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: width 0.3s ease;
+}
+
+.form-group-modern input:focus ~ .focus-border,
+.form-group-modern select:focus ~ .focus-border,
+.form-group-modern textarea:focus ~ .focus-border {
+    width: 100%;
+}
+
+/* Form Actions */
+.form-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-note {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-top: 16px;
+}
+
+/* Contact Info Modern */
+.contact-info-modern {
+    position: relative;
+}
+
+.info-card {
+    background: var(--bg-white);
+    border-radius: 40px;
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.info-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+/* Map Container Modern */
+.map-container-modern {
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    height: 200px;
+    border: 2px solid var(--border-light);
+}
+
+.map-container-modern iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Location Details */
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.detail-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.detail-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.detail-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.detail-content p {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contact-link-modern {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.contact-link-modern:hover {
+    color: var(--pink);
+    transform: translateX(5px);
+}
+
+/* Contact Methods Modern */
+.contact-methods-modern {
+    padding: 60px 0 100px;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.03), rgba(219, 39, 119, 0.03));
+}
+
+.methods-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.method-card-modern {
+    background: var(--bg-white);
+    border-radius: 30px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.method-card-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+.method-card-modern:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.method-card-modern:hover::before {
+    transform: scaleX(1);
+}
+
+.method-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.method-icon-wrapper span {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.method-card-modern h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.method-card-modern p {
+    color: var(--text-medium);
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.method-link-modern {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.method-link-modern:hover {
+    color: var(--pink);
+    transform: translateX(5px);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: inline-block;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Styles for Contact Page */
+@media (max-width: 1024px) {
+    .contact-hero-modern .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .contact-hero-modern .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-grid-modern {
+        grid-template-columns: 1fr;
+    }
+    
+    .methods-grid-modern {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero-modern {
+        padding: 140px 0 60px;
+    }
+    
+    .contact-hero-modern .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group-modern.full-width {
+        grid-column: span 1;
+    }
+    
+    .contact-form-modern,
+    .info-card {
+        padding: 30px;
+    }
+    
+    .methods-grid-modern {
+        grid-template-columns: 1fr;
+    }
+    
+    .method-card-modern {
+        padding: 30px 20px;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .location-details {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero-modern .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-form-modern,
+    .info-card {
+        padding: 24px;
+        border-radius: 30px;
+    }
+    
+    .form-header h2,
+    .info-card h2 {
+        font-size: 1.6rem;
+    }
+    
+    .method-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .method-icon-wrapper span {
+        font-size: 2rem;
+    }
+    
+    .detail-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Animation for contact cards */
+.contact-form-modern,
+.info-card,
+.method-card-modern {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.contact-form-modern { animation-delay: 0.1s; }
+.info-card { animation-delay: 0.2s; }
+.method-card-modern:nth-child(1) { animation-delay: 0.3s; }
+.method-card-modern:nth-child(2) { animation-delay: 0.4s; }
+.method-card-modern:nth-child(3) { animation-delay: 0.5s; }
+
+/* ==================== CONTACT PAGE FIX END ==================== */
