@@ -10,21 +10,13 @@
     <meta name="theme-color" content="#7C3AED"/>
 </head>
 <body class="prototype-colorful">
-    <!-- Header with Theme Toggle -->
+    <!-- Header -->
     <header class="colorful-header">
         <div class="container">
             <a href="index.html">
                 <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
             </a>
             <nav>
-                <!-- Theme Toggle Switch - Modern Minimal UI -->
-                <div class="theme-toggle-wrapper">
-                    <button class="theme-switch" id="themeToggleBtn" aria-label="Switch between light and dark mode">
-                        <span class="theme-icon light-icon">☀️</span>
-                        <span class="theme-icon dark-icon">🌙</span>
-                        <span class="toggle-slider"></span>
-                    </button>
-                </div>
                 <div class="menu-toggle" onclick="toggleMenu()">
                     <span></span><span></span><span></span>
                 </div>
@@ -33,9 +25,17 @@
                     <li><a href="about.html" class="active">About Us</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="team.html">Our Team</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
+                <!-- Theme Toggle Button -->
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-switch" id="themeToggle" aria-label="Switch between light and dark mode">
+                        <span class="theme-icon light-icon">☀️</span>
+                        <span class="toggle-slider"></span>
+                        <span class="theme-icon dark-icon">🌙</span>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <!-- About Grid -->
+    <!-- About Grid Section -->
     <section class="about-grid-section">
         <div class="container">
             <div class="about-grid-modern">
@@ -226,7 +226,7 @@
         </div>
     </section>
 
-    <!-- Reviews Section -->
+    <!-- Client Reviews Section -->
     <section class="featured-projects" style="padding: 80px 0; background: var(--bg-light);">
         <div class="container">
             <div class="section-header">
@@ -374,7 +374,6 @@
                         <li><a href="team.html">Our Team</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="careers.html">Careers</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -394,51 +393,6 @@
 
     <script src="script.js"></script>
     <script>
-        // ==================== DUAL THEME SYSTEM ====================
-        // Theme management with localStorage persistence
-        (function() {
-            const themeBtn = document.getElementById('themeToggleBtn');
-            const body = document.body;
-            const savedTheme = localStorage.getItem('silverfox_theme');
-            
-            function applyTheme(isDark) {
-                if (isDark) {
-                    body.classList.add('dark-theme');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                } else {
-                    body.classList.remove('dark-theme');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                }
-            }
-            
-            if (savedTheme === 'dark') {
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                applyTheme(false);
-            } else {
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                applyTheme(prefersDark);
-                localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
-            }
-            
-            function toggleTheme() {
-                const isDark = body.classList.contains('dark-theme');
-                if (isDark) {
-                    body.classList.remove('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'light');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                } else {
-                    body.classList.add('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'dark');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                }
-            }
-            
-            if (themeBtn) {
-                themeBtn.addEventListener('click', toggleTheme);
-            }
-        })();
-
         // Toggle menu function
         function toggleMenu() {
             const menu = document.getElementById('menu');
@@ -447,15 +401,18 @@
             menuToggle.classList.toggle('active');
         }
 
+        // Close menu when clicking outside
         document.addEventListener('click', function(event) {
             const menu = document.getElementById('menu');
             const menuToggle = document.querySelector('.menu-toggle');
+            
             if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
                 menu.classList.remove('show');
                 menuToggle.classList.remove('active');
             }
         });
 
+        // Close menu when clicking on links
         document.querySelectorAll('#menu a').forEach(link => {
             link.addEventListener('click', () => {
                 document.getElementById('menu').classList.remove('show');
@@ -463,6 +420,7 @@
             });
         });
 
+        // Header scroll effect
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
@@ -472,9 +430,32 @@
             }
         });
 
+        // Initialize header state
         if (window.scrollY > 50) {
             document.querySelector('header').classList.add('scrolled');
         }
+
+        // Theme Toggle Logic
+        const themeToggleBtn = document.getElementById('themeToggle');
+        
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggleBtn.classList.add('dark-active');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            themeToggleBtn.classList.toggle('dark-active');
+            
+            // Save preference
+            if (document.body.classList.contains('dark-theme')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
     </script>
 </body>
 </html>
