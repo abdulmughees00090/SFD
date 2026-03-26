@@ -4232,3 +4232,352 @@ body {
 .info-card-mini:nth-child(4) { animation-delay: 0.4s; }
 
 /* ==================== CAREERS PAGE FIX END ==================== */
+
+/* ==================== JOB APPLICATION PAGE STYLES ==================== */
+/* Add these styles to the end of your style.css file */
+
+/* Hero Section - Job Application Page */
+.job-application-hero {
+    padding: 160px 0 80px;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.job-application-hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.job-application-hero .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 24px 0;
+    color: var(--text-dark);
+}
+
+.job-application-hero .hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-medium);
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+/* Job Application Section */
+.job-application-section {
+    padding: 60px 0 100px;
+    background: var(--bg-light);
+}
+
+.job-application-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 40px;
+}
+
+/* Application Form Modern */
+.application-form-modern {
+    background: var(--bg-white);
+    border-radius: 40px;
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.application-form-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.application-form-modern .form-header {
+    margin-bottom: 30px;
+}
+
+.application-form-modern .form-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.application-form-modern .form-header p {
+    color: var(--text-medium);
+    font-size: 1rem;
+}
+
+/* Application Info Sidebar */
+.application-info-modern .info-card {
+    background: var(--bg-white);
+    border-radius: 40px;
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.application-info-modern .info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.application-info-modern .info-card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+/* Benefits List */
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    min-width: 48px;
+}
+
+.benefit-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.benefit-item p {
+    color: var(--text-medium);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Info Divider */
+.info-divider {
+    height: 1px;
+    background: var(--border-light);
+    margin: 32px 0;
+}
+
+/* Current Openings */
+.current-openings h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+.openings-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.openings-list li {
+    color: var(--text-medium);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.95rem;
+}
+
+.openings-list li:last-child {
+    border-bottom: none;
+}
+
+/* Application Tips */
+.application-tips h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+}
+
+.tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tips-list li {
+    color: var(--text-medium);
+    padding: 8px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Date Input Styling */
+.form-group-modern input[type="date"] {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(124, 58, 237, 0.02);
+    border: 2px solid var(--border-light);
+    border-radius: 16px;
+    color: var(--text-dark);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.form-group-modern input[type="date"]:focus {
+    outline: none;
+    border-color: var(--purple);
+    background: rgba(124, 58, 237, 0.05);
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+/* Dark mode fixes for select dropdowns in job application */
+.dark-theme .application-form-modern select,
+.dark-theme .job-application-section select {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    border-color: var(--border-light);
+}
+
+.dark-theme .application-form-modern select option,
+.dark-theme .job-application-section select option {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+}
+
+.dark-theme .application-form-modern select:focus,
+.dark-theme .job-application-section select:focus {
+    border-color: var(--purple);
+    background-color: var(--bg-white);
+}
+
+.dark-theme .form-group-modern input[type="date"] {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+}
+
+/* Responsive Styles for Job Application Page */
+@media (max-width: 1024px) {
+    .job-application-hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .job-application-hero .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .job-application-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .application-info-modern .info-card {
+        position: sticky;
+        top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .job-application-hero {
+        padding: 140px 0 60px;
+    }
+    
+    .job-application-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .application-form-modern,
+    .application-info-modern .info-card {
+        padding: 30px;
+    }
+    
+    .application-form-modern .form-header h2,
+    .application-info-modern .info-card h2 {
+        font-size: 1.6rem;
+    }
+    
+    .benefits-list {
+        gap: 20px;
+    }
+    
+    .benefit-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .benefit-icon {
+        margin-bottom: 8px;
+    }
+    
+    .current-openings h3,
+    .application-tips h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .openings-list li,
+    .tips-list li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .job-application-hero .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .application-form-modern,
+    .application-info-modern .info-card {
+        padding: 24px;
+        border-radius: 30px;
+    }
+    
+    .benefit-icon {
+        font-size: 1.8rem;
+    }
+    
+    .benefit-item h3 {
+        font-size: 1rem;
+    }
+    
+    .openings-list li,
+    .tips-list li {
+        font-size: 0.85rem;
+    }
+}
+
+/* Animation for job application cards */
+.application-form-modern,
+.application-info-modern .info-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.application-form-modern {
+    animation-delay: 0.1s;
+}
+
+.application-info-modern .info-card {
+    animation-delay: 0.2s;
+}
