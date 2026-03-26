@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for a Job | Silver Fox Dynamics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="fav.png">
+    <meta name="theme-color" content="#7C3AED"/>
+</head>
+<body class="prototype-colorful">
+    <!-- Header with Theme Toggle -->
+    <header class="colorful-header">
+        <div class="container">
+            <a href="index.html">
+                <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
+            </a>
+            <nav>
+                <!-- Theme Toggle Switch - Modern Minimal UI -->
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-switch" id="themeToggleBtn" aria-label="Switch between light and dark mode">
+                        <span class="theme-icon light-icon">☀️</span>
+                        <span class="theme-icon dark-icon">🌙</span>
+                        <span class="toggle-slider"></span>
+                    </button>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+                <ul id="menu" class="nav-menu">
+                    <li><a href="products.html">Products & Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="job-application-hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">🚀 Join Our Team</span>
+                <h1>Start Your <span class="gradient-text">Journey</span> With Us</h1>
+                <p>We're looking for passionate innovators to help shape the future of digital solutions.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                    <div class="shape shape-5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Application Form Section -->
+    <section class="job-application-section">
+        <div class="container">
+            <div class="job-application-grid">
+                <!-- Application Form -->
+                <div class="application-form-modern">
+                    <div class="form-header">
+                        <h2>Job Application</h2>
+                        <p>Tell us about yourself and why you'd be a great fit for our team.</p>
+                    </div>
+                    
+                    <form id="jobApplicationForm" action="https://formspree.io/f/xdkdrann" method="POST" class="modern-form">
+                        <!-- Personal Information -->
+                        <div class="form-row">
+                            <div class="form-group-modern">
+                                <label for="fullname">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                                <span class="focus-border"></span>
+                            </div>
+                            
+                            <div class="form-group-modern">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group-modern">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                                <span class="focus-border"></span>
+                            </div>
+                            
+                            <div class="form-group-modern">
+                                <label for="position">Job Position <span class="required">*</span></label>
+                                <input type="text" id="position" name="position" placeholder="Enter job position" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group-modern">
+                                <label for="experience">Years of Experience <span class="required">*</span></label>
+                                <select id="experience" name="experience" required>
+                                    <option value="">Select experience</option>
+                                    <option value="0-1">0-1 years</option>
+                                    <option value="1-3">1-3 years</option>
+                                    <option value="3-5">3-5 years</option>
+                                    <option value="5-8">5-8 years</option>
+                                    <option value="8+">8+ years</option>
+                                </select>
+                                <span class="focus-border"></span>
+                            </div>
+                            
+                            <div class="form-group-modern">
+                                <label for="skills">Skills / Technologies <span class="required">*</span></label>
+                                <input type="text" id="skills" name="skills" placeholder="e.g., React, Python, AWS, Flutter" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group-modern full-width">
+                            <label for="portfolio">Portfolio / GitHub / LinkedIn URL</label>
+                            <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/yourusername">
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group-modern full-width">
+                            <label for="education">Highest Education</label>
+                            <input type="text" id="education" name="education" placeholder="e.g., Bachelor's in Computer Science, Master's in Software Engineering">
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group-modern full-width">
+                            <label for="coverletter">Cover Letter / Why do you want to join us? <span class="required">*</span></label>
+                            <textarea id="coverletter" name="coverletter" rows="6" placeholder="Tell us about your experience, achievements, and why you're interested in this position..." required></textarea>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group-modern full-width">
+                            <label for="availability">Earliest Start Date <span class="required">*</span></label>
+                            <input type="date" id="availability" name="availability" required>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group-modern full-width">
+                            <label for="relocate">Willing to Relocate?</label>
+                            <select id="relocate" name="relocate">
+                                <option value="">Select an option</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="maybe">Maybe / Negotiable</option>
+                            </select>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <div class="form-group-modern full-width">
+                            <label for="source">How did you hear about us?</label>
+                            <select id="source" name="source">
+                                <option value="">Select an option</option>
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="github">GitHub</option>
+                                <option value="referral">Employee Referral</option>
+                                <option value="careers-page">Careers Page</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="focus-border"></span>
+                        </div>
+                        
+                        <input type="hidden" name="_subject" value="New Job Application - Silver Fox Dynamics">
+                        <input type="hidden" name="_replyto" id="replyto" value="">
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-gradient btn-large" id="submitBtn">
+                                <span class="submit-text">Submit Application</span>
+                                <span class="loading-spinner" style="display: none;">⏳ Sending...</span>
+                            </button>
+                            <p class="form-note"><span class="required">*</span> Required fields</p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Additional Info Sidebar -->
+                <div class="application-info-modern">
+                    <div class="info-card">
+                        <h2>Why Join Us?</h2>
+                        
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <span class="benefit-icon">💡</span>
+                                <div>
+                                    <h3>Innovative Culture</h3>
+                                    <p>Work on cutting-edge technologies and exciting projects.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <span class="benefit-icon">📈</span>
+                                <div>
+                                    <h3>Growth Opportunities</h3>
+                                    <p>Continuous learning, mentorship, and career advancement.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <span class="benefit-icon">🏠</span>
+                                <div>
+                                    <h3>Flexible Work</h3>
+                                    <p>Remote-friendly environment with flexible hours.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <span class="benefit-icon">🎯</span>
+                                <div>
+                                    <h3>Impactful Work</h3>
+                                    <p>Build solutions that transform businesses globally.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <span class="benefit-icon">🎉</span>
+                                <div>
+                                    <h3>Great Team</h3>
+                                    <p>Collaborative, supportive, and passionate colleagues.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <span class="benefit-icon">💰</span>
+                                <div>
+                                    <h3>Competitive Package</h3>
+                                    <p>Attractive salary, benefits, and performance bonuses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-divider"></div>
+                        
+                        <div class="current-openings">
+                            <h3>Current Open Positions</h3>
+                            <ul class="openings-list">
+                                <li>🚀 Frontend Developer (React/Vue)</li>
+                                <li>💻 Backend Developer (Node.js/Python)</li>
+                                <li>📱 Mobile App Developer (Flutter/React Native)</li>
+                                <li>⚙️ ERP Implementation Specialist</li>
+                                <li>🎨 UI/UX Designer</li>
+                                <li>🔧 DevOps Engineer</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-divider"></div>
+                        
+                        <div class="application-tips">
+                            <h3>Application Tips</h3>
+                            <ul class="tips-list">
+                                <li>✓ Be specific about your skills and experience</li>
+                                <li>✓ Share links to your best work or projects</li>
+                                <li>✓ Explain why you're passionate about software development</li>
+                                <li>✓ Highlight your problem-solving abilities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="colorful-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Silver Fox Dynamics</h4>
+                    <div class="brand-tagline">
+                        <span>Silver</span> · <span>Innovation</span> · <span>Excellence</span>
+                    </div>
+                    <p>Transforming businesses through innovative digital solutions since 2024.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="products.html#mobile">Mobile Apps</a></li>
+                        <li><a href="products.html#erp">ERP Systems</a></li>
+                        <li><a href="products.html#web">Web Development</a></li>
+                        <li><a href="products.html#ecommerce">E-Commerce</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:info@silverfoxdynamics.com">Email Us</a></li>
+                        <li><a href="https://wa.me/923295103414" target="_blank">WhatsApp +92 329 5103414</a></li>
+                        <li>Office #01, 5th Floor<br>GIGA Commercial Hub<br>DHA Phase II, Islamabad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ==================== DUAL THEME SYSTEM ====================
+        (function() {
+            const themeBtn = document.getElementById('themeToggleBtn');
+            const body = document.body;
+            const savedTheme = localStorage.getItem('silverfox_theme');
+            
+            function applyTheme(isDark) {
+                if (isDark) {
+                    body.classList.add('dark-theme');
+                    if (themeBtn) themeBtn.classList.add('dark-active');
+                } else {
+                    body.classList.remove('dark-theme');
+                    if (themeBtn) themeBtn.classList.remove('dark-active');
+                }
+            }
+            
+            if (savedTheme === 'dark') {
+                applyTheme(true);
+            } else if (savedTheme === 'light') {
+                applyTheme(false);
+            } else {
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                applyTheme(prefersDark);
+                localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
+            }
+            
+            function toggleTheme() {
+                const isDark = body.classList.contains('dark-theme');
+                if (isDark) {
+                    body.classList.remove('dark-theme');
+                    localStorage.setItem('silverfox_theme', 'light');
+                    if (themeBtn) themeBtn.classList.remove('dark-active');
+                } else {
+                    body.classList.add('dark-theme');
+                    localStorage.setItem('silverfox_theme', 'dark');
+                    if (themeBtn) themeBtn.classList.add('dark-active');
+                }
+            }
+            
+            if (themeBtn) {
+                themeBtn.addEventListener('click', toggleTheme);
+            }
+        })();
+
+        // URL Parameter Handling for Job Position
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const roleParam = urlParams.get('role');
+            const positionInput = document.getElementById('position');
+            
+            if (roleParam && positionInput) {
+                // Decode and set the value
+                const decodedRole = decodeURIComponent(roleParam);
+                positionInput.value = decodedRole;
+                // Add a small visual indicator
+                const label = document.querySelector('label[for="position"]');
+                if (label) {
+                    const note = document.createElement('span');
+                    note.style.cssText = 'font-size: 0.8rem; margin-left: 8px; color: var(--purple);';
+                    note.textContent = '(Auto-filled from job listing)';
+                    label.appendChild(note);
+                }
+            }
+        })();
+
+        // Toggle menu function
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            if (menu && menuToggle) {
+                menu.classList.toggle('show');
+                menuToggle.classList.toggle('active');
+            }
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('menu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menu.classList.remove('show');
+                menuToggle.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking on links
+        document.querySelectorAll('#menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('menu');
+                const menuToggle = document.querySelector('.menu-toggle');
+                if (menu && menuToggle) {
+                    menu.classList.remove('show');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        if (window.scrollY > 50) {
+            document.querySelector('header').classList.add('scrolled');
+        }
+
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const jobForm = document.getElementById('jobApplicationForm');
+            if (jobForm) {
+                // Set replyto email field
+                const emailInput = document.getElementById('email');
+                const replytoInput = document.getElementById('replyto');
+                if (emailInput && replytoInput) {
+                    emailInput.addEventListener('input', function() {
+                        replytoInput.value = emailInput.value;
+                    });
+                }
+                
+                jobForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    const submitBtn = document.getElementById('submitBtn');
+                    const submitText = submitBtn.querySelector('.submit-text');
+                    const loadingSpinner = submitBtn.querySelector('.loading-spinner');
+                    
+                    submitText.style.display = 'none';
+                    loadingSpinner.style.display = 'inline';
+                    submitBtn.disabled = true;
+                    
+                    try {
+                        const formData = new FormData(jobForm);
+                        const response = await fetch(jobForm.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: { 'Accept': 'application/json' }
+                        });
+                        
+                        if (response.ok) {
+                            showNotification('Application submitted successfully! We\'ll review your profile and get back to you soon.', 'success');
+                            jobForm.reset();
+                            
+                            submitText.textContent = 'Application Sent!';
+                            setTimeout(() => {
+                                submitText.textContent = 'Submit Application';
+                                submitText.style.display = 'inline';
+                                loadingSpinner.style.display = 'none';
+                                submitBtn.disabled = false;
+                            }, 3000);
+                        } else {
+                            throw new Error('Form submission failed');
+                        }
+                    } catch (error) {
+                        showNotification('Sorry, there was an error submitting your application. Please try again.', 'error');
+                        
+                        submitText.textContent = 'Submit Application';
+                        submitText.style.display = 'inline';
+                        loadingSpinner.style.display = 'none';
+                        submitBtn.disabled = false;
+                    }
+                });
+            }
+            
+            function showNotification(message, type) {
+                const notification = document.createElement('div');
+                notification.className = `notification ${type}`;
+                notification.textContent = message;
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    padding: 16px 24px;
+                    border-radius: 16px;
+                    color: white;
+                    font-weight: 500;
+                    z-index: 9999;
+                    animation: slideIn 0.3s ease;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                    background: ${type === 'success' ? 'linear-gradient(135deg, #A0E7FF, #C5A3FF)' : 'linear-gradient(135deg, #FF6B9D, #FFB347)'};
+                    border-left: 4px solid ${type === 'success' ? '#7C3AED' : '#DB2777'};
+                    max-width: 350px;
+                    font-size: 0.95rem;
+                `;
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.style.animation = 'slideOut 0.3s ease';
+                    setTimeout(() => notification.remove(), 300);
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
