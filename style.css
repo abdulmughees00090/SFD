@@ -733,11 +733,30 @@ body {
     box-shadow: var(--shadow-md);
     border: 1px solid var(--border-light);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+    z-index: 2;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
+}
+
+.project-card:hover::before {
+    transform: scaleX(1);
 }
 
 .project-image {
