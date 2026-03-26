@@ -3530,7 +3530,22 @@ body {
     resize: vertical;
     min-height: 120px;
 }
+/* ==================== DARK MODE SELECT DROPDOWN FIX ==================== */
+.dark-theme .form-group-modern select {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    border-color: var(--border-light);
+}
 
+.dark-theme .form-group-modern select option {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+}
+
+.dark-theme .form-group-modern select:focus {
+    border-color: var(--purple);
+    background-color: var(--bg-white);
+}
 /* Focus Border Animation */
 .focus-border {
     position: absolute;
