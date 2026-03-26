@@ -1084,7 +1084,7 @@ body {
         min-height: 400px;
     }
     
-    .shape-1 { width: 150px; height: 150px; right: -20px; }
+    .shape-1 { width: 150px; height: 150px; right: -10px; }
     .shape-2 { width: 120px; height: 120px; left: -10px; }
     .shape-3 { width: 90px; height: 90px; right: 10%; }
     .shape-4 { width: 100px; height: 100px; }
