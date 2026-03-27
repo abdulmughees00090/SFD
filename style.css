@@ -3997,7 +3997,12 @@ body {
     gap: 12px;
     color: var(--pink);
 }
-
+/*closed positions*/
+.closed-position {
+    opacity: 0.6;
+    pointer-events: none;
+    filter: grayscale(0.2);
+}
 /* Dark mode adjustments */
 .dark-theme .job-type {
     background: rgba(155, 94, 255, 0.2);
