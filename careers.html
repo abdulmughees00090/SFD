@@ -1,391 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers | Silver Fox Dynamics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="fav.png">
-    <meta name="theme-color" content="#7C3AED"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Silver Fox Dynamics</title>
+  <meta name="description" content="Join the Silver Fox Dynamics team. Explore open positions and build your career at a remote-first, values-driven technology company.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="sfd.png">
+  <meta name="theme-color" content="#7B35D4">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2830535043426573" crossorigin="anonymous"></script>
 </head>
-<body class="prototype-colorful">
-    <!-- Header with Theme Toggle -->
-    <header class="colorful-header">
-        <div class="container">
-            <a href="index.html">
-                <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
-            </a>
-            <nav>
-                <!-- Theme Toggle Switch - Modern Minimal UI -->
-                <div class="theme-toggle-wrapper">
-                    <button class="theme-switch" id="themeToggleBtn" aria-label="Switch between light and dark mode">
-                        <span class="theme-icon light-icon">☀️</span>
-                        <span class="theme-icon dark-icon">🌙</span>
-                        <span class="toggle-slider"></span>
-                    </button>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span><span></span><span></span>
-                </div>
-                <ul id="menu" class="nav-menu">
-                    <li><a href="products.html">Products & Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="careers.html" class="active">Careers</a></li>
-                </ul>
-            </nav>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html"><img src="sfd.png" alt="Silver Fox Dynamics" class="header-logo"></a>
+    <nav>
+      <div class="theme-toggle-wrapper">
+        <button class="theme-switch" id="themeToggleBtn" aria-label="Toggle light/dark mode">
+          <span class="theme-icon light-icon">☀</span>
+          <span class="theme-icon dark-icon">◑</span>
+          <span class="toggle-slider"></span>
+        </button>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+      <ul id="menu" class="nav-menu">
+        <li><a href="products.html">Products &amp; Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="active">Careers</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge">Join the Pack</span>
+      <h1>Shape the future with <span class="gradient-text">Silver Fox Dynamics</span></h1>
+      <p>We're builders, thinkers, and creators. If you love solving hard problems with elegant solutions, you'll fit right in. <strong>Remote-friendly · vibrant culture · real impact.</strong></p>
+      <div class="hero-buttons">
+        <a href="#open-positions" class="btn btn-gradient">See open roles</a>
+        <a href="#life" class="btn btn-outline-gradient">Life at SFD</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats bar -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><h3>∞</h3><p>Learning budget</p></div>
+      <div class="stat-item reveal"><h3>100%</h3><p>Remote-friendly</p></div>
+      <div class="stat-item reveal"><h3>5+</h3><p>Annual retreats</p></div>
+      <div class="stat-item reveal"><h3>100%</h3><p>Values-driven</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Open Positions -->
+<section id="open-positions" class="careers-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Open <span class="gradient-text">Positions</span></h2>
+      <p>Join a team where your work truly matters</p>
+    </div>
+    <div class="jobs-grid">
+
+      <div class="job-card reveal">
+        <div class="job-meta">
+          <span class="job-tag">Full-Time</span>
+          <span class="job-tag">Islamabad</span>
         </div>
-    </header>
+        <h3>HR Associate</h3>
+        <p class="job-location">Islamabad (Hybrid)</p>
+        <p>Support the full employee lifecycle — from recruitment and onboarding to culture initiatives and day-to-day HR operations. <strong>Requirements:</strong> Relevant HR degree + 1–3 years of experience. <strong>Posted:</strong> March 18, 2026 · <strong>Closes:</strong> April 17, 2026.</p>
+        <a href="apply.html?role=HR%20Associate" class="apply-link">Apply now →</a>
+      </div>
 
-    <!-- Careers Hero -->
-    <section class="about-hero-modern" style="padding-bottom: 40px;">
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">JOIN THE PACK</span>
-                <h1>Shape the future with <span class="gradient-text">Silver Fox Dynamics</span></h1>
-                <p>We're builders, thinkers, and creators. If you love solving hard problems with elegant code, you'll fit right in. <strong>100% remote-friendly</strong> · vibrant culture · real impact</p>
-                <div class="hero-buttons" style="margin-top: 32px;">
-                    <a href="#open-positions" class="btn btn-gradient">See open roles</a>
-                    <a href="#life" class="btn btn-outline-gradient">Life at SFD</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
-                    <div class="shape shape-4"></div>
-                    <div class="shape shape-5"></div>
-                </div>
-            </div>
+      <div class="job-card reveal">
+        <div class="job-meta">
+          <span class="job-tag">Full-Time</span>
+          <span class="job-tag">Islamabad</span>
         </div>
-    </section>
+        <h3>Junior Oracle APEX Developer</h3>
+        <p class="job-location">Islamabad (Hybrid)</p>
+        <p>Assist in building and maintaining enterprise-grade applications using Oracle APEX. <strong>Requirements:</strong> 1–2 years of experience + relevant graduation. <strong>Posted:</strong> March 19, 2026 · <strong>Closes:</strong> April 18, 2026.</p>
+        <a href="apply.html?role=Junior%20Oracle%20APEX%20Developer" class="apply-link">Apply now →</a>
+      </div>
 
-    <!-- Mini Stats Section -->
-    <section class="stats-section" style="background: var(--gradient-primary); padding: 60px 0;">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>∞</h3>
-                    <p>learning budget</p>
-                </div>
-                <div class="stat-item">
-                    <h3>5+</h3>
-                    <p>annual retreats</p>
-                </div>
-                <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>remote‑first</p>
-                </div>
-                <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>Values-driven</p>
-                </div>
-            </div>
+      <div class="job-card reveal">
+        <div class="job-meta">
+          <span class="job-tag remote">Remote</span>
+          <span class="job-tag">Project-Based</span>
         </div>
-    </section>
+        <h3>Junior Android Developer</h3>
+        <p class="job-location">Fully Remote — Flexible Hours</p>
+        <p>Develop and enhance Android applications using Kotlin, contributing to new features and performance improvements. <strong>Requirements:</strong> 1–2 years of experience + relevant graduation. <strong>Posted:</strong> March 20, 2026 · <strong>Closes:</strong> April 19, 2026.</p>
+        <a href="apply.html?role=Junior%20Android%20Developer" class="apply-link">Apply now →</a>
+      </div>
 
-    <!-- Open positions section -->
-    <section id="open-positions" class="about-grid-section" style="padding-top: 100px;">
-        <div class="container">
-            <div class="section-header">
-                <h2>Open <span class="gradient-text">Positions</span></h2>
-                <p>Join a team where your work matters</p>
-            </div>
-            <div class="careers-grid-modern">
-                <!-- Job Card 1: HR Associate -->
-                <div class="job-card">
-                    <span class="job-type">🟣 FULL-TIME / ISLAMABAD</span>
-                    <h3>HR Associate</h3>
-                    <div class="job-location">📍 Islamabad (hybrid)</div>
-                    <p class="job-description">Support the full employee lifecycle, from recruitment and onboarding to culture initiatives and HR operations. <strong>Requirements:</strong> Relevant HR degree + 1–3 years experience. <strong>Job Posted:</strong> March 18, 2026 | <strong>Closing Date:</strong> April 17, 2026.</p>
-                    <a href="apply.html?role=HR%20Associate" class="apply-link">Apply now →</a>
-                </div>
-                <!-- Job Card 2: Junior Oracle APEX Developer -->
-                <div class="job-card">
-                    <span class="job-type">🟣 FULL-TIME / ISLAMABAD</span>
-                    <h3>Junior Oracle APEX Developer</h3>
-                    <div class="job-location">📍 Islamabad (hybrid)</div>
-                    <p class="job-description">Assist in building and maintaining enterprise-grade applications using Oracle APEX. <strong>Requirements:</strong> 1–2 years of experience + Graduation in a relevant field. <strong>Job Posted:</strong> March 19, 2026 | <strong>Closing Date:</strong> April 18, 2026.</p>
-                    <a href="apply.html?role=Junior%20Oracle%20APEX%20Developer" class="apply-link">Apply now →</a>
-                </div>
-                <!-- Job Card 3: Junior Android Developer -->
-                <div class="job-card">
-                    <span class="job-type">🟣 PROJECT BASED / REMOTE</span>
-                    <h3>Junior Android Developer</h3>
-                    <div class="job-location">🌍 Fully Remote (Flexible Hours)</div>
-                    <p class="job-description">Develop and enhance Android applications using Kotlin, contributing to features and performance improvements. <strong>Requirements:</strong> 1–2 years of experience + Graduation in a relevant field. <strong>Job Posted:</strong> March 20, 2026 | <strong>Closing Date:</strong> April 19, 2026.</p>
-                    <a href="apply.html?role=Junior%20Android%20Developer" class="apply-link">Apply now →</a>
-                </div>
-                <!-- Job Card 4: Senior Sales Officer -->
-                <div class="job-card">
-                    <span class="job-type">🟣 FULL-TIME / ISLAMABAD</span>
-                    <h3>Senior Sales Officer</h3>
-                    <div class="job-location">📍 Islamabad (hybrid)</div>
-                    <p class="job-description">Drive new business, manage key accounts, and lead sales strategies for our software solutions. <strong>Requirements:</strong> 3–5+ years of experience + relevant degree. <strong>Job Posted:</strong> March 21, 2026 | <strong>Closing Date:</strong> April 20, 2026.</p>
-                    <a href="apply.html?role=Senior%20Sales%20Officer" class="apply-link">Apply now →</a>
-                </div>
-                <!-- Job Card 5: Junior Sales Officer -->
-                <div class="job-card">
-                    <span class="job-type">🟣 FULL-TIME / ISLAMABAD</span>
-                    <h3>Junior Sales Officer</h3>
-                    <div class="job-location">📍 Islamabad (hybrid)</div>
-                    <p class="job-description">Support the sales team by identifying leads, assisting with client outreach, and maintaining CRM data. <strong>Requirements:</strong> 1–2 years of experience + Graduation in a relevant field. <strong>Job Posted:</strong> March 22, 2026 | <strong>Closing Date:</strong> April 21, 2026.</p>
-                    <a href="apply.html?role=Junior%20Sales%20Officer" class="apply-link">Apply now →</a>
-                </div>
-                <!-- Job Card 6: Junior DBA -->
-                <div class="job-card">
-                    <span class="job-type">🟣 FULL-TIME / ISLAMABAD</span>
-                    <h3>Junior DBA</h3>
-                    <div class="job-location">📍 Islamabad (hybrid)</div>
-                    <p class="job-description">Assist in database administration, performance tuning, and ensuring data integrity for critical systems. <strong>Requirements:</strong> 1–2 years of experience + Graduation in a relevant field. <strong>Job Posted:</strong> March 23, 2026 | <strong>Closing Date:</strong> April 22, 2026.</p>
-                    <a href="apply.html?role=Junior%20DBA" class="apply-link">Apply now →</a>
-                </div>
-            </div>
+      <div class="job-card reveal">
+        <div class="job-meta">
+          <span class="job-tag">Full-Time</span>
+          <span class="job-tag">Islamabad</span>
         </div>
-    </section>
-    <!-- Life & culture section -->
-    <section id="life" class="featured-projects" style="background: var(--bg-light);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Life at <span class="gradient-text">Silver Fox</span></h2>
-                <p>More than just work — we grow together</p>
-            </div>
-            <div class="culture-grid-modern">
-                <!-- culture card 1 -->
-                <div class="about-card-modern">
-                    <div class="card-icon-wrapper" style="background: var(--gradient-1);"><span class="card-icon">🧠</span></div>
-                    <h3>Learning first</h3>
-                    <p>Yearly budget for courses, conferences, books. We level up constantly.</p>
-                </div>
-                <!-- culture card 2 -->
-                <div class="about-card-modern">
-                    <div class="card-icon-wrapper" style="background: var(--gradient-2);"><span class="card-icon">🎮</span></div>
-                    <h3>Fun & games</h3>
-                    <p>Game nights, hackathons, quarterly offsites. Work hard, play hard.</p>
-                </div>
-                <!-- culture card 3 -->
-                <div class="about-card-modern">
-                    <div class="card-icon-wrapper" style="background: var(--gradient-3);"><span class="card-icon">🌍</span></div>
-                    <h3>Remote & flexible</h3>
-                    <p>Work from a cabin or a café — results matter most.</p>
-                </div>
-                <!-- culture card 4 -->
-                <div class="about-card-modern">
-                    <div class="card-icon-wrapper" style="background: var(--gradient-4);"><span class="card-icon">🤝</span></div>
-                    <h3>Ownership</h3>
-                    <p>Your ideas shape our products and processes. Everyone has a voice.</p>
-                </div>
-                <!-- culture card 5 -->
-                <div class="about-card-modern">
-                    <div class="card-icon-wrapper" style="background: linear-gradient(135deg, #FFB347, #FF6B9D);"><span class="card-icon">⏱️</span></div>
-                    <h3>Flexible hours</h3>
-                    <p>As long as we hit milestones, you decide your schedule.</p>
-                </div>
-                <!-- culture card 6 -->
-                <div class="about-card-modern">
-                    <div class="card-icon-wrapper" style="background: linear-gradient(135deg, #C5A3FF, #7C3AED);"><span class="card-icon">🏆</span></div>
-                    <h3>Growth mindset</h3>
-                    <p>Internal promotions, mentorship, and challenging projects.</p>
-                </div>
-            </div>
+        <h3>Senior Sales Officer</h3>
+        <p class="job-location">Islamabad (Hybrid)</p>
+        <p>Drive new business, manage key accounts, and lead sales strategies for our software solutions portfolio. <strong>Requirements:</strong> 3–5+ years of experience + relevant degree. <strong>Posted:</strong> March 21, 2026 · <strong>Closes:</strong> April 20, 2026.</p>
+        <a href="apply.html?role=Senior%20Sales%20Officer" class="apply-link">Apply now →</a>
+      </div>
+
+      <div class="job-card reveal">
+        <div class="job-meta">
+          <span class="job-tag">Full-Time</span>
+          <span class="job-tag">Islamabad</span>
         </div>
-    </section>
+        <h3>Junior Sales Officer</h3>
+        <p class="job-location">Islamabad (Hybrid)</p>
+        <p>Support the sales team by identifying leads, assisting with client outreach, and maintaining accurate CRM data. <strong>Requirements:</strong> 1–2 years of experience + relevant graduation. <strong>Posted:</strong> March 22, 2026 · <strong>Closes:</strong> April 21, 2026.</p>
+        <a href="apply.html?role=Junior%20Sales%20Officer" class="apply-link">Apply now →</a>
+      </div>
 
-    <!-- Perks / values strip -->
-    <section class="privacy-grid-section" style="padding: 40px 0 80px;">
-        <div class="container">
-            <div class="perks-grid-modern">
-                <div class="info-card-mini">
-                    <div class="mini-icon" style="background: var(--gradient-1);">💰</div>
-                    <h4>Competitive compensation</h4>
-                    <p>Salary + equity + performance bonuses.</p>
-                </div>
-                <div class="info-card-mini">
-                    <div class="mini-icon" style="background: var(--gradient-2);">🏥</div>
-                    <h4>Health & wellness</h4>
-                    <p>Full medical coverage & fitness stipend.</p>
-                </div>
-                <div class="info-card-mini">
-                    <div class="mini-icon" style="background: var(--gradient-3);">✈️</div>
-                    <h4>Unlimited PTO</h4>
-                    <p>Take time when you need it — responsibly.</p>
-                </div>
-                <div class="info-card-mini">
-                    <div class="mini-icon" style="background: var(--gradient-4);">🖥️</div>
-                    <h4>Home office setup</h4>
-                    <p>One‑time budget for your ideal workspace.</p>
-                </div>
-            </div>
+      <div class="job-card reveal">
+        <div class="job-meta">
+          <span class="job-tag">Full-Time</span>
+          <span class="job-tag">Islamabad</span>
         </div>
-    </section>
+        <h3>Junior DBA</h3>
+        <p class="job-location">Islamabad (Hybrid)</p>
+        <p>Assist in database administration, performance tuning, and ensuring data integrity across critical business systems. <strong>Requirements:</strong> 1–2 years of experience + relevant graduation. <strong>Posted:</strong> March 23, 2026 · <strong>Closes:</strong> April 22, 2026.</p>
+        <a href="apply.html?role=Junior%20DBA" class="apply-link">Apply now →</a>
+      </div>
 
-    <!-- Testimonial / message card -->
-    <section class="team-message-section">
-        <div class="container">
-            <div class="message-card">
-                <h2>Didn't find the perfect role?</h2>
-                <p>We're always on the lookout for talented people. Send a spontaneous application — we'd love to hear from you.</p>
-                <div class="message-actions">
-                    <a href="contact.html" class="btn btn-gradient btn-large">Get in touch</a>
-                    <a href="mailto:infos@silverfoxdynamics.com" class="btn btn-outline-gradient btn-large">Write to HR@</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="colorful-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Silver Fox Dynamics</h4>
-                    <div class="brand-tagline">
-                        <span>Silver</span> · <span>Innovation</span> · <span>Excellence</span>
-                    </div>
-                    <p>Transforming businesses through innovative digital solutions since 2024.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="products.html#mobile">Mobile Apps</a></li>
-                        <li><a href="products.html#erp">ERP Systems</a></li>
-                        <li><a href="products.html#web">Web Development</a></li>
-                        <li><a href="products.html#ecommerce">E-Commerce</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="mailto:info@silverfoxdynamics.com">Email Us</a></li>
-                        <li>WhatsApp +92 329 5103414</li>
-                        <li>Office #01, 5th Floor<br>GIGA Commercial Hub<br>DHA Phase II, Islamabad</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-            </div>
-        </div>
-    </footer>
+<!-- Life at SFD -->
+<section id="life" class="culture-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Life at <span class="gradient-text">Silver Fox</span></h2>
+      <p>More than just work — we grow together</p>
+    </div>
+    <div class="culture-grid">
+      <div class="culture-card reveal">
+        <div class="culture-icon-badge" style="background:linear-gradient(135deg,#9B5DE5,#5BC0F8);">◎</div>
+        <h3>Learning First</h3>
+        <p>Annual budget for courses, conferences, and books. We level up as individuals and as a team.</p>
+      </div>
+      <div class="culture-card reveal">
+        <div class="culture-icon-badge" style="background:linear-gradient(135deg,#D43581,#F0A500);">▲</div>
+        <h3>Fun &amp; Games</h3>
+        <p>Game nights, hackathons, and quarterly offsites. Work hard, play harder.</p>
+      </div>
+      <div class="culture-card reveal">
+        <div class="culture-icon-badge" style="background:linear-gradient(135deg,#06D6A0,#9B5DE5);">◻</div>
+        <h3>Remote &amp; Flexible</h3>
+        <p>Work from a cabin or a café — results matter most. We trust our team to deliver.</p>
+      </div>
+      <div class="culture-card reveal">
+        <div class="culture-icon-badge" style="background:linear-gradient(135deg,#F0A500,#F06FA5);">◈</div>
+        <h3>Real Ownership</h3>
+        <p>Your ideas shape our products and processes. Everyone has a voice and is empowered to lead.</p>
+      </div>
+      <div class="culture-card reveal">
+        <div class="culture-icon-badge" style="background:linear-gradient(135deg,#7B35D4,#D43581);">◷</div>
+        <h3>Flexible Hours</h3>
+        <p>As long as we hit milestones together, you own your schedule and working rhythm.</p>
+      </div>
+      <div class="culture-card reveal">
+        <div class="culture-icon-badge" style="background:linear-gradient(135deg,#5BC0F8,#7B35D4);">★</div>
+        <h3>Growth Mindset</h3>
+        <p>Internal promotions, mentorship programmes, and challenging projects that push you forward.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
-    <script>
-        // ==================== DUAL THEME SYSTEM ====================
-        // Theme management with localStorage persistence
-        (function() {
-            // Get theme toggle button
-            const themeBtn = document.getElementById('themeToggleBtn');
-            const body = document.body;
-            
-            // Check for saved theme preference
-            const savedTheme = localStorage.getItem('silverfox_theme');
-            
-            // Function to apply theme based on body class
-            function applyTheme(isDark) {
-                if (isDark) {
-                    body.classList.add('dark-theme');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                } else {
-                    body.classList.remove('dark-theme');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                }
-            }
-            
-            // Determine initial theme
-            if (savedTheme === 'dark') {
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                applyTheme(false);
-            } else {
-                // Check system preference if no saved preference
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                applyTheme(prefersDark);
-                // Save system preference for consistency
-                localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
-            }
-            
-            // Toggle theme function
-            function toggleTheme() {
-                const isDark = body.classList.contains('dark-theme');
-                if (isDark) {
-                    body.classList.remove('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'light');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                } else {
-                    body.classList.add('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'dark');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                }
-            }
-            
-            // Add click event listener to toggle button
-            if (themeBtn) {
-                themeBtn.addEventListener('click', toggleTheme);
-            }
-            
-            // Listen for system preference changes (optional)
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-                // Only apply if user hasn't manually set a preference
-                if (!localStorage.getItem('silverfox_theme')) {
-                    applyTheme(e.matches);
-                }
-            });
-        })();
+<!-- Perks -->
+<section class="perks-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Benefits &amp; <span class="gradient-text">Perks</span></h2>
+    </div>
+    <div class="perks-grid">
+      <div class="perk-card reveal">
+        <div class="perk-icon" style="background:linear-gradient(135deg,#9B5DE5,#5BC0F8);">◎</div>
+        <h4>Competitive Package</h4>
+        <p>Attractive salary, equity, and performance-based bonuses.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="perk-icon" style="background:linear-gradient(135deg,#06D6A0,#9B5DE5);">+</div>
+        <h4>Health &amp; Wellness</h4>
+        <p>Full medical coverage and a monthly fitness stipend.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="perk-icon" style="background:linear-gradient(135deg,#F0A500,#F06FA5);">◻</div>
+        <h4>Unlimited PTO</h4>
+        <p>Take time when you need it — with responsibility and trust.</p>
+      </div>
+      <div class="perk-card reveal">
+        <div class="perk-icon" style="background:linear-gradient(135deg,#D43581,#7B35D4);">▣</div>
+        <h4>Home Office Setup</h4>
+        <p>One-time budget to build your ideal remote workspace.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Toggle menu function
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            const menuToggle = document.querySelector('.menu-toggle');
-            menu.classList.toggle('show');
-            menuToggle.classList.toggle('active');
-        }
+<!-- Spontaneous Application -->
+<section class="team-message-section">
+  <div class="container">
+    <div class="message-card reveal">
+      <h2>Didn't find the perfect role?</h2>
+      <p>We're always on the lookout for exceptional talent. Send a spontaneous application and tell us why you'd be a great fit.</p>
+      <div class="message-actions">
+        <a href="contact.html" class="btn btn-gradient btn-large">Get in touch</a>
+        <a href="mailto:info@silverfoxdynamics.com" class="btn btn-outline-gradient btn-large">Email HR directly</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('menu');
-            const menuToggle = document.querySelector('.menu-toggle');
-            if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
-                menu.classList.remove('show');
-                menuToggle.classList.remove('active');
-            }
-        });
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Silver Fox Dynamics</h4><p class="footer-tagline">Silver · Innovation · Excellence</p><p>Transforming businesses through innovative digital solutions since 2024.</p></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="products.html">Mobile Apps</a></li><li><a href="products.html">ERP Systems</a></li><li><a href="products.html">Web Development</a></li><li><a href="products.html">E-Commerce</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Contact</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="mailto:info@silverfoxdynamics.com">info@silverfoxdynamics.com</a></li><li><a href="https://wa.me/923295103414" target="_blank" rel="noopener">WhatsApp: +92 329 5103414</a></li><li>Office #01, 5th Floor, GIGA Commercial Hub, DHA Phase II, Islamabad</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Silver Fox Dynamics. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Service</a></p></div>
+  </div>
+</footer>
 
-        // Close menu on link click
-        document.querySelectorAll('#menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('menu').classList.remove('show');
-                document.querySelector('.menu-toggle').classList.remove('active');
-            });
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Initialize header state
-        if (window.scrollY > 50) {
-            document.querySelector('header').classList.add('scrolled');
-        }
-    </script>
+<script src="script.js"></script>
 </body>
 </html>

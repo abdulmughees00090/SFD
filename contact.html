@@ -1,484 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Silver Fox Dynamics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="fav.png">
-    <meta name="theme-color" content="#7C3AED"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Silver Fox Dynamics</title>
+  <meta name="description" content="Get in touch with Silver Fox Dynamics. We're ready to discuss your project, answer questions, or schedule a free consultation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="sfd.png">
+  <meta name="theme-color" content="#7B35D4">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2830535043426573" crossorigin="anonymous"></script>
 </head>
-<body class="prototype-colorful">
-    <!-- Header with Theme Toggle -->
-    <header class="colorful-header">
-        <div class="container">
-            <a href="index.html">
-                <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
-            </a>
-            <nav>
-                <!-- Theme Toggle Switch - Modern Minimal UI -->
-                <div class="theme-toggle-wrapper">
-                    <button class="theme-switch" id="themeToggleBtn" aria-label="Switch between light and dark mode">
-                        <span class="theme-icon light-icon">☀️</span>
-                        <span class="theme-icon dark-icon">🌙</span>
-                        <span class="toggle-slider"></span>
-                    </button>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span><span></span><span></span>
-                </div>
-                <ul id="menu" class="nav-menu">
-                    <li><a href="products.html">Products & Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="contact.html" class="active">Contact Us</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                </ul>
-            </nav>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html"><img src="sfd.png" alt="Silver Fox Dynamics" class="header-logo"></a>
+    <nav>
+      <div class="theme-toggle-wrapper">
+        <button class="theme-switch" id="themeToggleBtn" aria-label="Toggle light/dark mode">
+          <span class="theme-icon light-icon">☀</span>
+          <span class="theme-icon dark-icon">◑</span>
+          <span class="toggle-slider"></span>
+        </button>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+      <ul id="menu" class="nav-menu">
+        <li><a href="products.html">Products &amp; Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge">Let's connect</span>
+      <h1>Get <span class="gradient-text">In Touch</span></h1>
+      <p>Ready to transform your business with custom digital solutions? Tell us about your project — we respond within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Form -->
+      <div class="contact-form-card reveal">
+        <h2>Send Us a Message</h2>
+        <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+
+        <form id="contactForm" action="https://formspree.io/f/xdkdrann" method="POST" class="modern-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="_replyto" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="mobile-app">Mobile App Development</option>
+                <option value="web-development">Web Development</option>
+                <option value="e-commerce">E-Commerce Solutions</option>
+                <option value="erp">ERP Systems</option>
+                <option value="consultation">IT Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, requirements, or any questions you have..." required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New Contact Form Submission — Silver Fox Dynamics">
+          <div class="form-actions">
+            <button type="submit" class="btn btn-gradient btn-large" id="submitBtn">
+              <span class="submit-text">Send Message</span>
+              <span class="loading-spinner" style="display:none;">Sending...</span>
+            </button>
+            <p class="form-note"><span class="required">*</span> Required fields</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="contact-info-card">
+        <div class="info-block reveal">
+          <h2>Our Location</h2>
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13280.611174066797!2d73.02959237589608!3d33.67930427323468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd6e2c8b3b5%3A0x3a3a3a3a3a3a3a3a!2sDHA%20Phase%202%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1692287300000!5m2!1sen!2s" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SFD Office Location"></iframe>
+          </div>
+          <div class="detail-items">
+            <div class="detail-item">
+              <span class="detail-icon-badge" style="background:linear-gradient(135deg,#D43581,#F0A500);">◉</span>
+              <div><h4>Office Address</h4><p>Office #1, 5th Floor, Giga Commercial Hub<br>DHA Phase II, Islamabad, Pakistan</p></div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon-badge" style="background:linear-gradient(135deg,#06D6A0,#9B5DE5);">✉</span>
+              <div><h4>WhatsApp</h4><a href="https://wa.me/923295103414" target="_blank" rel="noopener">+92 329 5103414</a></div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon-badge" style="background:linear-gradient(135deg,#9B5DE5,#5BC0F8);">@</span>
+              <div><h4>Email</h4><a href="mailto:info@silverfoxdynamics.com">info@silverfoxdynamics.com</a></div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon-badge" style="background:linear-gradient(135deg,#F0A500,#F06FA5);">◷</span>
+              <div><h4>Business Hours</h4><p>Mon–Fri: 9:00 AM – 6:00 PM<br>Saturday: 10:00 AM – 4:00 PM<br>Sunday: Closed</p></div>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="contact-hero-modern">
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">📬 Let's connect</span>
-                <h1>Get <span class="gradient-text">In Touch</span></h1>
-                <p>Ready to transform your business with custom digital solutions? We'd love to hear from you.</p>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
-                    <div class="shape shape-4"></div>
-                    <div class="shape shape-5"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section class="contact-grid-section">
-        <div class="container">
-            <div class="contact-grid-modern">
-                <!-- Contact Form -->
-                <div class="contact-form-modern">
-                    <div class="form-header">
-                        <h2>Send Us a Message</h2>
-                        <p>Fill out the form below and our team will get back to you within 24 hours.</p>
-                    </div>
-                    
-                    <form id="contactForm" action="https://formspree.io/f/xdkdrann" method="POST" class="modern-form">
-                        <div class="form-row">
-                            <div class="form-group-modern">
-                                <label for="name">Full Name <span class="required">*</span></label>
-                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                                <span class="focus-border"></span>
-                            </div>
-                            
-                            <div class="form-group-modern">
-                                <label for="email">Email Address <span class="required">*</span></label>
-                                <input type="email" id="email" name="_replyto" placeholder="Enter your email address" required>
-                                <span class="focus-border"></span>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group-modern">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-                                <span class="focus-border"></span>
-                            </div>
-                            
-                            <div class="form-group-modern">
-                                <label for="service">Service Interested In</label>
-                                <select id="service" name="service">
-                                    <option value="">Select a service</option>
-                                    <option value="mobile-app">Mobile App Development</option>
-                                    <option value="web-development">Web Development</option>
-                                    <option value="e-commerce">E-Commerce Solutions</option>
-                                    <option value="erp">ERP Systems</option>
-                                    <option value="consultation">IT Consultation</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                <span class="focus-border"></span>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group-modern full-width">
-                            <label for="message">Your Message <span class="required">*</span></label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, requirements, or questions..." required></textarea>
-                            <span class="focus-border"></span>
-                        </div>
-                        
-                        <input type="hidden" name="_subject" value="New Contact Form Submission - Silver Fox Dynamics">
-                        
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-gradient btn-large" id="submitBtn">
-                                <span class="submit-text">Send Message</span>
-                                <span class="loading-spinner" style="display: none;">⏳ Sending...</span>
-                            </button>
-                            <p class="form-note"><span class="required">*</span> Required fields</p>
-                        </div>
-                    </form>
-                </div>
+<!-- Contact Methods -->
+<section class="contact-methods">
+  <div class="container">
+    <div class="methods-grid">
+      <div class="method-card reveal">
+        <div class="method-icon" style="background:linear-gradient(135deg,#D43581,#F0A500);">@</div>
+        <h3>Email Us</h3>
+        <p>For detailed project proposals and inquiries, email is best.</p>
+        <a href="mailto:info@silverfoxdynamics.com" class="method-link">info@silverfoxdynamics.com →</a>
+      </div>
+      <div class="method-card reveal">
+        <div class="method-icon" style="background:linear-gradient(135deg,#06D6A0,#9B5DE5);">✆</div>
+        <h3>WhatsApp</h3>
+        <p>For immediate assistance and quick queries, reach us on WhatsApp.</p>
+        <a href="https://wa.me/923295103414" class="method-link" target="_blank" rel="noopener">+92 329 5103414 →</a>
+      </div>
+      <div class="method-card reveal">
+        <div class="method-icon" style="background:linear-gradient(135deg,#9B5DE5,#5BC0F8);">◎</div>
+        <h3>Free Consultation</h3>
+        <p>Not sure where to start? Schedule a no-obligation discovery call.</p>
+        <a href="https://wa.me/923295103414?text=Hello%20Silver%20Fox%20Dynamics%2C%20I%20would%20like%20to%20schedule%20a%20consultation." class="method-link" target="_blank" rel="noopener">Schedule now →</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <!-- Map & Contact Info -->
-                <div class="contact-info-modern">
-                    <div class="info-card">
-                        <h2>Our Location</h2>
-                        
-                        <div class="map-container-modern">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13280.611174066797!2d73.02959237589608!3d33.67930427323468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd6e2c8b3b5%3A0x3a3a3a3a3a3a3a3a!2sDHA%20Phase%202%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1692287300000!5m2!1sen!2s"
-                                allowfullscreen 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                        
-                        <div class="location-details">
-                            <div class="detail-item">
-                                <span class="detail-icon" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);">📍</span>
-                                <div class="detail-content">
-                                    <h3>Office Address</h3>
-                                    <p>Office #1, 5th Floor<br>Giga Commercial Hub<br>DHA Phase II, Islamabad, Pakistan</p>
-                                </div>
-                            </div>
-                            
-                            <div class="detail-item">
-                                <span class="detail-icon" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);">💚</span>
-                                <div class="detail-content">
-                                    <h3>WhatsApp</h3>
-                                    <a href="https://wa.me/923295103414" target="_blank" class="contact-link-modern">+92 329 5103414</a>
-                                </div>
-                            </div>
-                            
-                            <div class="detail-item">
-                                <span class="detail-icon" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);">📧</span>
-                                <div class="detail-content">
-                                    <h3>Email</h3>
-                                    <a href="mailto:info@silverfoxdynamics.com" class="contact-link-modern">info@silverfoxdynamics.com</a>
-                                </div>
-                            </div>
-                            
-                            <div class="detail-item">
-                                <span class="detail-icon" style="background: linear-gradient(135deg, #FFB347, #FF90E8);">🕒</span>
-                                <div class="detail-content">
-                                    <h3>Business Hours</h3>
-                                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="cta-section">
+  <div class="container">
+    <h2 class="reveal">Ready to start your project?</h2>
+    <p class="reveal">Let's schedule a free consultation to discuss your requirements and design a custom solution that drives real results.</p>
+    <div class="cta-buttons reveal">
+      <a href="#contactForm" class="btn btn-gradient btn-large">Send us a message</a>
+      <a href="https://wa.me/923295103414?text=Hello%20Silver%20Fox%20Dynamics%2C%20I%20would%20like%20to%20discuss%20a%20project." class="btn btn-outline-gradient btn-large" target="_blank" rel="noopener">WhatsApp now</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Methods -->
-    <section class="contact-methods-modern">
-        <div class="container">
-            <div class="methods-grid-modern">
-                <div class="method-card-modern">
-                    <div class="method-icon-wrapper" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);">
-                        <span>📧</span>
-                    </div>
-                    <h3>Email Us</h3>
-                    <p>For detailed inquiries and project proposals</p>
-                    <a href="mailto:info@silverfoxdynamics.com" class="method-link-modern">info@silverfoxdynamics.com →</a>
-                </div>
-                
-                <div class="method-card-modern">
-                    <div class="method-icon-wrapper" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);">
-                        <span>💚</span>
-                    </div>
-                    <h3>WhatsApp</h3>
-                    <p>For immediate assistance and quick queries</p>
-                    <a href="https://wa.me/923295103414" class="method-link-modern" target="_blank">+92 329 5103414 →</a>
-                </div>
-                
-                <div class="method-card-modern">
-                    <div class="method-icon-wrapper" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);">
-                        <span>💬</span>
-                    </div>
-                    <h3>Live Support</h3>
-                    <p>Get instant answers to your questions</p>
-                    <a href="#" class="method-link-modern">Start Live Chat →</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Silver Fox Dynamics</h4><p class="footer-tagline">Silver · Innovation · Excellence</p><p>Transforming businesses through innovative digital solutions since 2024.</p></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="products.html">Mobile Apps</a></li><li><a href="products.html">ERP Systems</a></li><li><a href="products.html">Web Development</a></li><li><a href="products.html">E-Commerce</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Contact</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="mailto:info@silverfoxdynamics.com">info@silverfoxdynamics.com</a></li><li><a href="https://wa.me/923295103414" target="_blank" rel="noopener">WhatsApp: +92 329 5103414</a></li><li>Office #01, 5th Floor, GIGA Commercial Hub, DHA Phase II, Islamabad</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Silver Fox Dynamics. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Service</a></p></div>
+  </div>
+</footer>
 
-    <!-- CTA Section -->
-    <section class="cta-section-modern">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Start Your Project?</h2>
-                <p>Let's schedule a free consultation to discuss your requirements and create a custom solution.</p>
-                <div class="cta-buttons">
-                    <a href="#contactForm" class="btn btn-gradient btn-large" onclick="document.querySelector('#contactForm').scrollIntoView({behavior: 'smooth'}); return false;">Schedule Consultation</a>
-                    <a href="https://wa.me/923295103414?text=Hello%20Silver%20Fox%20Dynamics,%20I%20would%20like%20to%20discuss%20a%20project." class="btn btn-outline-gradient btn-large" target="_blank">WhatsApp Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="colorful-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Silver Fox Dynamics</h4>
-                    <div class="brand-tagline">
-                        <span>Silver</span> · <span>Innovation</span> · <span>Excellence</span>
-                    </div>
-                    <p>Transforming businesses through innovative digital solutions since 2024.</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="products.html#mobile">Mobile Apps</a></li>
-                        <li><a href="products.html#erp">ERP Systems</a></li>
-                        <li><a href="products.html#web">Web Development</a></li>
-                        <li><a href="products.html#ecommerce">E-Commerce</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="mailto:info@silverfoxdynamics.com">Email Us</a></li>
-                        <li><a href="https://wa.me/923295103414" target="_blank">WhatsApp +92 329 5103414</a></li>
-                        <li>Office #01, 5th Floor<br>GIGA Commercial Hub<br>DHA Phase II, Islamabad</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        // ==================== DUAL THEME SYSTEM ====================
-        // Theme management with localStorage persistence
-        (function() {
-            // Get theme toggle button
-            const themeBtn = document.getElementById('themeToggleBtn');
-            const body = document.body;
-            
-            // Check for saved theme preference
-            const savedTheme = localStorage.getItem('silverfox_theme');
-            
-            // Function to apply theme based on body class
-            function applyTheme(isDark) {
-                if (isDark) {
-                    body.classList.add('dark-theme');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                } else {
-                    body.classList.remove('dark-theme');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                }
-            }
-            
-            // Determine initial theme
-            if (savedTheme === 'dark') {
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                applyTheme(false);
-            } else {
-                // Check system preference if no saved preference
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                applyTheme(prefersDark);
-                // Save system preference for consistency
-                localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
-            }
-            
-            // Toggle theme function
-            function toggleTheme() {
-                const isDark = body.classList.contains('dark-theme');
-                if (isDark) {
-                    body.classList.remove('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'light');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                } else {
-                    body.classList.add('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'dark');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                }
-            }
-            
-            // Add click event listener to toggle button
-            if (themeBtn) {
-                themeBtn.addEventListener('click', toggleTheme);
-            }
-            
-            // Listen for system preference changes (optional)
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-                // Only apply if user hasn't manually set a preference
-                if (!localStorage.getItem('silverfox_theme')) {
-                    applyTheme(e.matches);
-                }
-            });
-        })();
-
-        // Toggle menu function
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            const menuToggle = document.querySelector('.menu-toggle');
-            menu.classList.toggle('show');
-            menuToggle.classList.toggle('active');
-        }
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('menu');
-            const menuToggle = document.querySelector('.menu-toggle');
-            
-            if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
-                menu.classList.remove('show');
-                menuToggle.classList.remove('active');
-            }
-        });
-
-        // Close menu when clicking on links
-        document.querySelectorAll('#menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('menu').classList.remove('show');
-                document.querySelector('.menu-toggle').classList.remove('active');
-            });
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Initialize header state
-        if (window.scrollY > 50) {
-            document.querySelector('header').classList.add('scrolled');
-        }
-
-        // Form submission handling
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', async function(e) {
-                    e.preventDefault();
-                    
-                    const submitBtn = document.getElementById('submitBtn');
-                    const submitText = submitBtn.querySelector('.submit-text');
-                    const loadingSpinner = submitBtn.querySelector('.loading-spinner');
-                    
-                    // Show loading state
-                    submitText.style.display = 'none';
-                    loadingSpinner.style.display = 'inline';
-                    submitBtn.disabled = true;
-                    
-                    try {
-                        const formData = new FormData(contactForm);
-                        const response = await fetch(contactForm.action, {
-                            method: 'POST',
-                            body: formData,
-                            headers: { 'Accept': 'application/json' }
-                        });
-                        
-                        if (response.ok) {
-                            // Success
-                            showNotification('Message sent successfully! We\'ll get back to you soon.', 'success');
-                            contactForm.reset();
-                            
-                            // Reset button
-                            submitText.textContent = 'Message Sent!';
-                            setTimeout(() => {
-                                submitText.textContent = 'Send Message';
-                                submitText.style.display = 'inline';
-                                loadingSpinner.style.display = 'none';
-                                submitBtn.disabled = false;
-                            }, 3000);
-                        } else {
-                            throw new Error('Form submission failed');
-                        }
-                    } catch (error) {
-                        // Error
-                        showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
-                        
-                        // Reset button
-                        submitText.textContent = 'Send Message';
-                        submitText.style.display = 'inline';
-                        loadingSpinner.style.display = 'none';
-                        submitBtn.disabled = false;
-                    }
-                });
-            }
-            
-            // Notification function
-            function showNotification(message, type) {
-                const notification = document.createElement('div');
-                notification.className = `notification ${type}`;
-                notification.textContent = message;
-                notification.style.cssText = `
-                    position: fixed;
-                    top: 20px;
-                    right: 20px;
-                    padding: 16px 24px;
-                    border-radius: 16px;
-                    color: white;
-                    font-weight: 500;
-                    z-index: 9999;
-                    animation: slideIn 0.3s ease;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-                    background: ${type === 'success' ? 'linear-gradient(135deg, #A0E7FF, #C5A3FF)' : 'linear-gradient(135deg, #FF6B9D, #FFB347)'};
-                    border-left: 4px solid ${type === 'success' ? '#7C3AED' : '#DB2777'};
-                `;
-                
-                document.body.appendChild(notification);
-                
-                // Remove after 5 seconds
-                setTimeout(() => {
-                    notification.style.animation = 'slideOut 0.3s ease';
-                    setTimeout(() => notification.remove(), 300);
-                }, 5000);
-            }
-        });
-
-        // Add CSS for animations
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes slideIn {
-                from { transform: translateX(100%); opacity: 0; }
-                to { transform: translateX(0); opacity: 1; }
-            }
-            
-            @keyframes slideOut {
-                from { transform: translateX(0); opacity: 1; }
-                to { transform: translateX(100%); opacity: 0; }
-            }
-        `;
-        document.head.appendChild(style);
-    </script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,381 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team | Silver Fox Dynamics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="fav.png">
-    <meta name="theme-color" content="#7C3AED"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team | Silver Fox Dynamics</title>
+  <meta name="description" content="Meet the talented team behind Silver Fox Dynamics — passionate technologists, designers, and leaders building the future of digital solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="sfd.png">
+  <meta name="theme-color" content="#7B35D4">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2830535043426573" crossorigin="anonymous"></script>
 </head>
-<body class="prototype-colorful">
-    <!-- Header with Theme Toggle -->
-    <header class="colorful-header">
-        <div class="container">
-            <a href="index.html">
-                <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
-            </a>
-            <nav>
-                <!-- Theme Toggle Switch - Modern Minimal UI -->
-                <div class="theme-toggle-wrapper">
-                    <button class="theme-switch" id="themeToggleBtn" aria-label="Switch between light and dark mode">
-                        <span class="theme-icon light-icon">☀️</span>
-                        <span class="theme-icon dark-icon">🌙</span>
-                        <span class="toggle-slider"></span>
-                    </button>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span><span></span><span></span>
-                </div>
-                <ul id="menu" class="nav-menu">
-                    <li><a href="products.html">Products & Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="team.html" class="active">Our Team</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                </ul>
-            </nav>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html"><img src="sfd.png" alt="Silver Fox Dynamics" class="header-logo"></a>
+    <nav>
+      <div class="theme-toggle-wrapper">
+        <button class="theme-switch" id="themeToggleBtn" aria-label="Toggle light/dark mode">
+          <span class="theme-icon light-icon">☀</span>
+          <span class="theme-icon dark-icon">◑</span>
+          <span class="toggle-slider"></span>
+        </button>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+      <ul id="menu" class="nav-menu">
+        <li><a href="products.html">Products &amp; Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html" class="active">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge">The minds behind the magic</span>
+      <h1>Meet <span class="gradient-text">Our Team</span></h1>
+      <p>Great software is built by passionate people. Meet the talented individuals at Silver Fox Dynamics who transform ideas into impactful digital experiences.</p>
+    </div>
+  </div>
+</section>
+
+<section class="team-section">
+  <div class="container">
+    <div class="team-grid">
+
+      <div class="team-card reveal">
+        <div class="team-img-wrap"><img src="/images/ceo.png" alt="Ms. Mehwish — CEO"></div>
+        <div class="team-body">
+          <h3>Ms. Mehwish</h3>
+          <h4>CEO — Silver Fox Dynamics</h4>
+          <p>A visionary leader who believes technology must be accessible and practical. Under her guidance, Silver Fox Dynamics excels at simplifying complexity and delivering powerful, affordable solutions for every business.</p>
         </div>
-    </header>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="team-hero-modern">
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">👥 The minds behind the magic</span>
-                <h1>Meet <span class="gradient-text">Our Team</span></h1>
-                <p>Great software comes from passionate people working together. Meet the amazing crew behind the magic at Silver Fox Dynamics.</p>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
-                    <div class="shape shape-4"></div>
-                    <div class="shape shape-5"></div>
-                </div>
-            </div>
+      <div class="team-card reveal">
+        <div class="team-img-wrap"><img src="/images/dg.png" alt="Abdul Mughees — Director General"></div>
+        <div class="team-body">
+          <h3>Abdul Mughees</h3>
+          <h4>Director General</h4>
+          <p>A well-qualified leader with a natural ability to connect with people. His management style is built on trust and open communication, fostering a culture where creativity and innovation consistently thrive.</p>
         </div>
-    </section>
+      </div>
 
-    <!-- Team Grid -->
-    <section class="team-grid-section">
-        <div class="container">
-            <div class="team-grid-modern">
-                <!-- CEO -->
-                <div class="team-card-modern">
-                    <div class="team-card-inner">
-                        <div class="team-image-wrapper">
-                            <div class="team-image-gradient"></div>
-                            <img src="images/ceo.png" alt="Ms. Mehwish - CEO" class="team-image">
-                        </div>
-                        <div class="team-content">
-                            <h3>Ms. Mehwish</h3>
-                            <h4>CEO - Silver Fox Dynamics</h4>
-                            <p>A visionary leader who believes technology must be accessible and practical. Under her guidance, Silver Fox Dynamics excels at simplifying complexity and delivering powerful, affordable solutions.</p>
-                            <div class="team-social">
-                                <span class="social-dot" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Director General -->
-                <div class="team-card-modern">
-                    <div class="team-card-inner">
-                        <div class="team-image-wrapper">
-                            <div class="team-image-gradient"></div>
-                            <img src="images/dg.png" alt="Abdul Mughees - Director General" class="team-image">
-                        </div>
-                        <div class="team-content">
-                            <h3>Abdul Mughees</h3>
-                            <h4>Director General</h4>
-                            <p>A well-qualified leader with natural ability to connect with people. His management style is built on trust and communication, fostering a culture where creativity thrives.</p>
-                            <div class="team-social">
-                                <span class="social-dot" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- HR Manager -->
-                <div class="team-card-modern">
-                    <div class="team-card-inner">
-                        <div class="team-image-wrapper">
-                            <div class="team-image-gradient"></div>
-                            <img src="images/hr-mgr.png" alt="Asim Butt - HR Manager" class="team-image">
-                        </div>
-                        <div class="team-content">
-                            <h3>Asim Butt</h3>
-                            <h4>Manager – HR & Compliance</h4>
-                            <p>Dedicated HR and Compliance Manager who ensures our team and business practices remain strong, fair, and compliant.</p>
-                            <div class="team-social">
-                                <span class="social-dot" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- E-Commerce Manager -->
-                <div class="team-card-modern">
-                    <div class="team-card-inner">
-                        <div class="team-image-wrapper">
-                            <div class="team-image-gradient"></div>
-                            <img src="images/e-com-dev.png" alt="Saad Ali - E-Commerce Manager" class="team-image">
-                        </div>
-                        <div class="team-content">
-                            <h3>Saad Ali</h3>
-                            <h4>Manager – E-Commerce Store Development</h4>
-                            <p>Enthusiastic manager with deep expertise in e-commerce platforms, building stores that are fast, secure, and user-friendly.</p>
-                            <div class="team-social">
-                                <span class="social-dot" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Web Development Manager -->
-                <div class="team-card-modern">
-                    <div class="team-card-inner">
-                        <div class="team-image-wrapper">
-                            <div class="team-image-gradient"></div>
-                            <img src="images/web-dev.png" alt="Amber Shan - Web Development Manager" class="team-image">
-                        </div>
-                        <div class="team-content">
-                            <h3>Amber Shan</h3>
-                            <h4>Manager – Web Development</h4>
-                            <p>Creative and skilled manager who engineers websites that are not only beautiful but also powerful, secure, and responsive.</p>
-                            <div class="team-social">
-                                <span class="social-dot" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ERP Development Manager -->
-                <div class="team-card-modern">
-                    <div class="team-card-inner">
-                        <div class="team-image-wrapper">
-                            <div class="team-image-gradient"></div>
-                            <img src="images/erp-dev.png" alt="Muhammad Kashif - ERP Development Manager" class="team-image">
-                        </div>
-                        <div class="team-content">
-                            <h3>Muhammad Kashif</h3>
-                            <h4>Manager – ERP Development</h4>
-                            <p>Highly skilled manager who delivers efficiency through powerful, customized Enterprise Resource Planning solutions.</p>
-                            <div class="team-social">
-                                <span class="social-dot" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mobile Apps Manager -->
-                <div class="team-card-modern">
-                    <div class="team-card-inner">
-                        <div class="team-image-wrapper">
-                            <div class="team-image-gradient"></div>
-                            <img src="images/app-dev.png" alt="Fakhir Ali - Mobile Apps Manager" class="team-image">
-                        </div>
-                        <div class="team-content">
-                            <h3>Fakhir Ali</h3>
-                            <h4>Manager – Mobile Apps Development</h4>
-                            <p>Energetic and talented manager who excels at turning concepts into user-friendly, reliable, and engaging mobile solutions for Android and iOS.</p>
-                            <div class="team-social">
-                                <span class="social-dot" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);"></span>
-                                <span class="social-dot" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="team-card reveal">
+        <div class="team-img-wrap"><img src="/images/hr-mgr.png" alt="Asim Butt — HR Manager"></div>
+        <div class="team-body">
+          <h3>Asim Butt</h3>
+          <h4>Manager — HR &amp; Compliance</h4>
+          <p>A dedicated HR and Compliance Manager who ensures our team culture and business practices remain strong, fair, and fully compliant with all relevant standards and regulations.</p>
         </div>
-    </section>
+      </div>
 
-    <!-- Team Message -->
-    <section class="team-message-section">
-        <div class="container">
-            <div class="message-card">
-                <h2>Together at Silver Fox Dynamics</h2>
-                <p>We are a team of problem solvers, innovators, and dreamers dedicated to shaping the future of digital solutions.</p>
-                <div class="message-actions">
-                    <a href="contact.html" class="btn btn-gradient">Join Our Team</a>
-                    <a href="contact.html" class="btn btn-outline-gradient">Contact Us</a>
-                </div>
-            </div>
+      <div class="team-card reveal">
+        <div class="team-img-wrap"><img src="/images/e-com-dev.png" alt="Saad Ali — E-Commerce Manager"></div>
+        <div class="team-body">
+          <h3>Saad Ali</h3>
+          <h4>Manager — E-Commerce Development</h4>
+          <p>An enthusiastic manager with deep expertise in e-commerce platforms, consistently delivering storefronts that are fast, secure, visually compelling, and engineered to convert.</p>
         </div>
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer class="colorful-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Silver Fox Dynamics</h4>
-                    <div class="brand-tagline">
-                        <span>Silver</span> · <span>Innovation</span> · <span>Excellence</span>
-                    </div>
-                    <p>Transforming businesses through innovative digital solutions since 2024.</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="products.html#mobile">Mobile Apps</a></li>
-                        <li><a href="products.html#erp">ERP Systems</a></li>
-                        <li><a href="products.html#web">Web Development</a></li>
-                        <li><a href="products.html#ecommerce">E-Commerce</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="mailto:info@silverfoxdynamics.com">Email Us</a></li>
-                        <li>WhatsApp +92 329 5103414</li>
-                        <li>Office #01, 5th Floor<br>GIGA Commercial Hub<br>DHA Phase II, Islamabad</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-            </div>
+      <div class="team-card reveal">
+        <div class="team-img-wrap"><img src="/images/web-dev.png" alt="Amber Shan — Web Development Manager"></div>
+        <div class="team-body">
+          <h3>Amber Shan</h3>
+          <h4>Manager — Web Development</h4>
+          <p>A creative and technically skilled manager who engineers websites that are not only beautiful but equally powerful, secure, responsive, and optimised for performance.</p>
         </div>
-    </footer>
+      </div>
 
-    <script src="script.js"></script>
-    <script>
-        // ==================== DUAL THEME SYSTEM ====================
-        // Theme management with localStorage persistence
-        (function() {
-            // Get theme toggle button
-            const themeBtn = document.getElementById('themeToggleBtn');
-            const body = document.body;
-            
-            // Check for saved theme preference
-            const savedTheme = localStorage.getItem('silverfox_theme');
-            
-            // Function to apply theme based on body class
-            function applyTheme(isDark) {
-                if (isDark) {
-                    body.classList.add('dark-theme');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                } else {
-                    body.classList.remove('dark-theme');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                }
-            }
-            
-            // Determine initial theme
-            if (savedTheme === 'dark') {
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                applyTheme(false);
-            } else {
-                // Check system preference if no saved preference
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                applyTheme(prefersDark);
-                // Save system preference for consistency
-                localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
-            }
-            
-            // Toggle theme function
-            function toggleTheme() {
-                const isDark = body.classList.contains('dark-theme');
-                if (isDark) {
-                    body.classList.remove('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'light');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                } else {
-                    body.classList.add('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'dark');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                }
-            }
-            
-            // Add click event listener to toggle button
-            if (themeBtn) {
-                themeBtn.addEventListener('click', toggleTheme);
-            }
-            
-            // Listen for system preference changes (optional)
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-                // Only apply if user hasn't manually set a preference
-                if (!localStorage.getItem('silverfox_theme')) {
-                    applyTheme(e.matches);
-                }
-            });
-        })();
+      <div class="team-card reveal">
+        <div class="team-img-wrap"><img src="/images/erp-dev.png" alt="Muhammad Kashif — ERP Development Manager"></div>
+        <div class="team-body">
+          <h3>Muhammad Kashif</h3>
+          <h4>Manager — ERP Development</h4>
+          <p>A highly skilled developer and manager who delivers efficiency and clarity through powerful, customised Enterprise Resource Planning solutions built for real-world complexity.</p>
+        </div>
+      </div>
 
-        // Toggle menu function
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            const menuToggle = document.querySelector('.menu-toggle');
-            menu.classList.toggle('show');
-            menuToggle.classList.toggle('active');
-        }
+      <div class="team-card reveal">
+        <div class="team-img-wrap"><img src="/images/app-dev.png" alt="Fakhir Ali — Mobile Apps Manager"></div>
+        <div class="team-body">
+          <h3>Fakhir Ali</h3>
+          <h4>Manager — Mobile Apps Development</h4>
+          <p>An energetic and talented lead who excels at turning concepts into user-friendly, reliable, and engaging mobile solutions for both Android and iOS platforms.</p>
+        </div>
+      </div>
 
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('menu');
-            const menuToggle = document.querySelector('.menu-toggle');
-            
-            if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
-                menu.classList.remove('show');
-                menuToggle.classList.remove('active');
-            }
-        });
+    </div>
+  </div>
+</section>
 
-        // Close menu when clicking on links
-        document.querySelectorAll('#menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('menu').classList.remove('show');
-                document.querySelector('.menu-toggle').classList.remove('active');
-            });
-        });
+<section class="team-message-section">
+  <div class="container">
+    <div class="message-card reveal">
+      <h2>Together at Silver Fox Dynamics</h2>
+      <p>We are a team of problem solvers, innovators, and builders dedicated to shaping the future of digital solutions — one project at a time.</p>
+      <div class="message-actions">
+        <a href="careers.html" class="btn btn-gradient btn-large">Join our team</a>
+        <a href="contact.html" class="btn btn-outline-gradient btn-large">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Silver Fox Dynamics</h4><p class="footer-tagline">Silver · Innovation · Excellence</p><p>Transforming businesses through innovative digital solutions since 2024.</p></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="products.html">Mobile Apps</a></li><li><a href="products.html">ERP Systems</a></li><li><a href="products.html">Web Development</a></li><li><a href="products.html">E-Commerce</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Contact</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="mailto:info@silverfoxdynamics.com">info@silverfoxdynamics.com</a></li><li><a href="https://wa.me/923295103414" target="_blank" rel="noopener">WhatsApp: +92 329 5103414</a></li><li>Office #01, 5th Floor, GIGA Commercial Hub, DHA Phase II, Islamabad</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Silver Fox Dynamics. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Service</a></p></div>
+  </div>
+</footer>
 
-        // Initialize header state
-        if (window.scrollY > 50) {
-            document.querySelector('header').classList.add('scrolled');
-        }
-    </script>
+<script src="script.js"></script>
 </body>
 </html>

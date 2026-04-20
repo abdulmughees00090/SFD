@@ -1,502 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Silver Fox Dynamics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="fav.png">
-    <meta name="theme-color" content="#7C3AED"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Silver Fox Dynamics</title>
+  <meta name="description" content="Learn about Silver Fox Dynamics — our vision, mission, values, and the story behind our digital innovation journey.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="sfd.png">
+  <meta name="theme-color" content="#7B35D4">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2830535043426573" crossorigin="anonymous"></script>
 </head>
-<body class="prototype-colorful">
-    <!-- Header with Theme Toggle -->
-    <header class="colorful-header">
-        <div class="container">
-            <a href="index.html">
-                <img src="images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo">
-            </a>
-            <nav>
-                <!-- Theme Toggle Switch - Modern Minimal UI -->
-                <div class="theme-toggle-wrapper">
-                    <button class="theme-switch" id="themeToggleBtn" aria-label="Switch between light and dark mode">
-                        <span class="theme-icon light-icon">☀️</span>
-                        <span class="theme-icon dark-icon">🌙</span>
-                        <span class="toggle-slider"></span>
-                    </button>
-                </div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span><span></span><span></span>
-                </div>
-                <ul id="menu" class="nav-menu">
-                    <li><a href="products.html">Products & Services</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                </ul>
-            </nav>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html"><img src="sfd.png" alt="Silver Fox Dynamics" class="header-logo"></a>
+    <nav>
+      <div class="theme-toggle-wrapper">
+        <button class="theme-switch" id="themeToggleBtn" aria-label="Toggle light/dark mode">
+          <span class="theme-icon light-icon">☀</span>
+          <span class="theme-icon dark-icon">◑</span>
+          <span class="toggle-slider"></span>
+        </button>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+      <ul id="menu" class="nav-menu">
+        <li><a href="products.html">Products &amp; Services</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge">Who we are</span>
+      <h1>About <span class="gradient-text">Silver Fox Dynamics</span></h1>
+      <p>We are a forward-thinking software house committed to helping businesses navigate the complexities of today's digital landscape — with clarity, creativity, and commitment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Cards -->
+<section class="about-cards-section">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Vision -->
+      <div class="glass-card reveal" style="padding:36px;">
+        <div class="card-icon-badge" style="background:linear-gradient(135deg,#9B5DE5,#5BC0F8);">👁</div>
+        <h3>Our Vision</h3>
+        <p>To make technology accessible, reliable, and impactful for every business. We believe innovation should not only solve today's challenges but consistently unlock tomorrow's opportunities.</p>
+      </div>
+
+      <!-- Mission -->
+      <div class="glass-card reveal" style="padding:36px;">
+        <div class="card-icon-badge" style="background:linear-gradient(135deg,#D43581,#F0A500);">◎</div>
+        <h3>Our Mission</h3>
+        <p>We strive to deliver world-class software solutions that blend creativity with functionality — empowering businesses through reliable, user-friendly, and scalable technology built to last.</p>
+      </div>
+
+      <!-- What We Do -->
+      <div class="glass-card wide reveal" style="padding:36px;">
+        <div class="card-icon-badge" style="background:linear-gradient(135deg,#F06FA5,#F0A500);">▲</div>
+        <h3>What We Do</h3>
+        <p>We specialise in building solutions that are practical, robust, and precisely tailored to your business needs.</p>
+        <div class="services-mini">
+          <div class="service-mini">
+            <span class="service-mini-icon">▣</span>
+            <div>
+              <h4>Enterprise ERP Systems</h4>
+              <p>Streamline HR, payroll, finance, inventory, and operations under one unified platform.</p>
+            </div>
+          </div>
+          <div class="service-mini">
+            <span class="service-mini-icon">◻</span>
+            <div>
+              <h4>Mobile Applications</h4>
+              <p>Feature-rich, high-performance iOS and Android apps your users will love.</p>
+            </div>
+          </div>
+          <div class="service-mini">
+            <span class="service-mini-icon">▤</span>
+            <div>
+              <h4>E-Commerce Platforms</h4>
+              <p>Secure, scalable online storefronts engineered to convert and grow.</p>
+            </div>
+          </div>
+          <div class="service-mini">
+            <span class="service-mini-icon">◈</span>
+            <div>
+              <h4>Custom Software</h4>
+              <p>Bespoke solutions designed around your unique workflows and requirements.</p>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="about-hero-modern">
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">🦊 Who we are</span>
-                <h1>About <span class="gradient-text">Silver Fox Dynamics</span></h1>
-                <p>Welcome to <strong>Silver Fox Dynamics</strong> — your trusted partner in technology, innovation, and digital transformation. We are a forward-thinking software house committed to helping businesses navigate the complexities of today's digital landscape.</p>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
-                    <div class="shape shape-4"></div>
-                    <div class="shape shape-5"></div>
-                </div>
-            </div>
+      <!-- Why Choose Us -->
+      <div class="glass-card reveal" style="padding:36px;">
+        <div class="card-icon-badge" style="background:linear-gradient(135deg,#7B35D4,#5BC0F8);">★</div>
+        <h3>Why Choose Us?</h3>
+        <div class="adv-items">
+          <div class="adv-item"><div class="adv-bullet"></div><div><h4>Client-Centric Approach</h4><p>Solutions aligned with your goals, not just technology trends.</p></div></div>
+          <div class="adv-item"><div class="adv-bullet"></div><div><h4>Experienced Team</h4><p>Years of cross-industry expertise across diverse technology stacks.</p></div></div>
+          <div class="adv-item"><div class="adv-bullet"></div><div><h4>Innovation-Driven</h4><p>We keep you ahead of the curve with cutting-edge approaches.</p></div></div>
+          <div class="adv-item"><div class="adv-bullet"></div><div><h4>Scalable Architecture</h4><p>Technology designed to grow seamlessly alongside your business.</p></div></div>
         </div>
-    </section>
+      </div>
 
-    <!-- About Grid Section -->
-    <section class="about-grid-section">
-        <div class="container">
-            <div class="about-grid-modern">
-                <!-- Vision Card -->
-                <div class="about-card-modern vision-card">
-                    <div class="card-inner">
-                        <div class="card-icon-wrapper" style="background: linear-gradient(135deg, #A0E7FF, #C5A3FF);">
-                            <span class="card-icon">👁️</span>
-                        </div>
-                        <h3>Our Vision</h3>
-                        <p>Our vision is simple yet powerful: to make technology accessible, reliable, and impactful for every business. We believe innovation should not only solve today's challenges but also unlock opportunities for tomorrow.</p>
-                        <div class="card-tag">
-                            <span>Future-Focused</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mission Card -->
-                <div class="about-card-modern mission-card">
-                    <div class="card-inner">
-                        <div class="card-icon-wrapper" style="background: linear-gradient(135deg, #FFB347, #FF90E8);">
-                            <span class="card-icon">🎯</span>
-                        </div>
-                        <h3>Our Mission</h3>
-                        <p>We strive to deliver <strong>world-class software solutions</strong> that blend creativity with functionality. Our mission is to empower businesses through reliable, user-friendly, and scalable technology.</p>
-                        <div class="card-tag">
-                            <span>Empowerment</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- What We Do Card (Spans 2 columns) -->
-                <div class="about-card-modern wide-card services-card">
-                    <div class="card-inner">
-                        <div class="card-header-row">
-                            <div class="card-icon-wrapper" style="background: linear-gradient(135deg, #FF6B9D, #FFB347);">
-                                <span class="card-icon">🚀</span>
-                            </div>
-                            <h3>What We Do</h3>
-                        </div>
-                        <p>Silver Fox Dynamics specializes in building solutions that are practical, robust, and tailored to your needs:</p>
-                        <div class="services-grid-mini">
-                            <div class="service-mini-item">
-                                <span class="service-mini-icon">💼</span>
-                                <div>
-                                    <h4>Enterprise ERP Systems</h4>
-                                    <p>Streamline HR, payroll, finance, inventory, and operations</p>
-                                </div>
-                            </div>
-                            <div class="service-mini-item">
-                                <span class="service-mini-icon">📱</span>
-                                <div>
-                                    <h4>Mobile Applications</h4>
-                                    <p>Feature-rich iOS and Android apps</p>
-                                </div>
-                            </div>
-                            <div class="service-mini-item">
-                                <span class="service-mini-icon">🛒</span>
-                                <div>
-                                    <h4>E-commerce Platforms</h4>
-                                    <p>Secure, scalable online stores</p>
-                                </div>
-                            </div>
-                            <div class="service-mini-item">
-                                <span class="service-mini-icon">🔧</span>
-                                <div>
-                                    <h4>Custom Software</h4>
-                                    <p>Tailored solutions for unique needs</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Why Choose Us Card -->
-                <div class="about-card-modern advantage-card">
-                    <div class="card-inner">
-                        <div class="card-icon-wrapper" style="background: linear-gradient(135deg, #C5A3FF, #A0E7FF);">
-                            <span class="card-icon">⭐</span>
-                        </div>
-                        <h3>Why Choose Us?</h3>
-                        <div class="advantage-items">
-                            <div class="advantage-item">
-                                <h4>Client-Centric</h4>
-                                <p>Solutions that align with your business goals, not just technology trends.</p>
-                            </div>
-                            <div class="advantage-item">
-                                <h4>Experienced Team</h4>
-                                <p>Years of expertise across diverse industries and technologies.</p>
-                            </div>
-                            <div class="advantage-item">
-                                <h4>Innovation-Driven</h4>
-                                <p>We keep you ahead of the competition with cutting-edge solutions.</p>
-                            </div>
-                            <div class="advantage-item">
-                                <h4>Scalable Solutions</h4>
-                                <p>Technology that grows seamlessly with your business.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Our Values Card -->
-                <div class="about-card-modern values-card">
-                    <div class="card-inner">
-                        <div class="card-icon-wrapper" style="background: linear-gradient(135deg, #FF90E8, #FF6B9D);">
-                            <span class="card-icon">❤️</span>
-                        </div>
-                        <h3>Our Values</h3>
-                        <div class="values-grid-modern">
-                            <div class="value-item-modern">
-                                <div class="value-icon">✓</div>
-                                <h4>Integrity</h4>
-                                <p>Transparency, honesty, and accountability in everything we do.</p>
-                            </div>
-                            <div class="value-item-modern">
-                                <div class="value-icon">★</div>
-                                <h4>Excellence</h4>
-                                <p>Superior quality delivered in every project.</p>
-                            </div>
-                            <div class="value-item-modern">
-                                <div class="value-icon">🤝</div>
-                                <h4>Collaboration</h4>
-                                <p>We view our clients as partners in success.</p>
-                            </div>
-                            <div class="value-item-modern">
-                                <div class="value-icon">💡</div>
-                                <h4>Innovation</h4>
-                                <p>Constantly embracing emerging technologies.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- The Silver Fox Advantage Card (Featured) -->
-                <div class="about-card-modern featured-card">
-                    <div class="card-inner">
-                        <div class="card-icon-wrapper featured" style="background: var(--gradient-primary);">
-                            <img src="images/logo2.png" alt="Silver Fox Dynamics Logo" class="card-icon-image">
-                        </div>
-                        <h3>The Silver Fox Advantage</h3>
-                        <p class="featured-text">Partnering with us means gaining more than just a software vendor. You gain a reliable ally who understands your vision, anticipates challenges, and delivers solutions that go beyond expectations.</p>
-                        
-                        <div class="advantage-highlight-modern">
-                            <div class="highlight-item">
-                                <span class="highlight-bullet">✦</span>
-                                <p><strong>Transformative Partnerships:</strong> We build relationships that drive long-term success.</p>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-bullet">✦</span>
-                                <p><strong>Future-Ready Solutions:</strong> Technology designed to adapt and evolve.</p>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-bullet">✦</span>
-                                <p><strong>Unmatched Support:</strong> 24/7 assistance and continuous improvement.</p>
-                            </div>
-                        </div>
-                        
-                        <p class="cta-text-modern">Let's create something extraordinary together.</p>
-                        
-                        <div class="card-actions-modern">
-                            <a href="contact.html" class="btn btn-gradient">Start Your Project</a>
-                            <a href="team.html" class="btn btn-outline-gradient">Meet Our Team</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Values -->
+      <div class="glass-card reveal" style="padding:36px;">
+        <div class="card-icon-badge" style="background:linear-gradient(135deg,#F06FA5,#D43581);">♡</div>
+        <h3>Our Values</h3>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon">✓</div>
+            <h4>Integrity</h4>
+            <p>Transparency and accountability in everything we do.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">★</div>
+            <h4>Excellence</h4>
+            <p>Superior quality delivered in every engagement.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">⟳</div>
+            <h4>Collaboration</h4>
+            <p>We view clients as long-term partners in success.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">◎</div>
+            <h4>Innovation</h4>
+            <p>Constantly embracing emerging technologies.</p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Client Reviews Section -->
-    <section class="featured-projects" style="padding: 80px 0; background: var(--bg-light);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Client <span class="gradient-text">Love</span></h2>
-                <p>Don't just take our word for it — hear from some of the people we've worked with</p>
-            </div>
-            <div class="reviews-grid">
-                <!-- review 1 -->
-                <div class="review-card">
-                    <div class="review-rating">★★★★★</div>
-                    <p class="review-text">"Silver Fox Dynamics completely transformed our restaurant operations. The ERP system streamlined inventory, payroll, and ordering — we've saved countless hours and reduced waste by 20%."</p>
-                    <div class="review-author">
-                        <div class="author-avatar">LT</div>
-                        <div class="author-info">
-                            <h4>Laura T.</h4>
-                            <p>Owner, Bistro Central</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- review 2 -->
-                <div class="review-card">
-                    <div class="review-rating">★★★★★</div>
-                    <p class="review-text">"The team built our e‑commerce platform from scratch and it's been flawless. Sales are up 150% since launch, and the support is always fast and friendly."</p>
-                    <div class="review-author">
-                        <div class="author-avatar">MK</div>
-                        <div class="author-info">
-                            <h4>Michael K.</h4>
-                            <p>Founder, Sieyah Wear</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- review 3 -->
-                <div class="review-card">
-                    <div class="review-rating">★★★★★</div>
-                    <p class="review-text">"We hired them for a custom mobile app. They listened carefully, delivered ahead of schedule, and the app has 4.8 stars on the Play Store. Absolute pros."</p>
-                    <div class="review-author">
-                        <div class="author-avatar">AR</div>
-                        <div class="author-info">
-                            <h4>Ahmed R.</h4>
-                            <p>Product Lead, AnyDown</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- The SFD Advantage -->
+      <div class="glass-card featured reveal" style="padding:44px;">
+        <h3>The Silver Fox Advantage</h3>
+        <p>Partnering with us means gaining more than a software vendor. You gain a reliable ally who understands your vision, anticipates challenges, and delivers solutions that exceed expectations.</p>
+        <div class="adv-items" style="margin-top:24px;">
+          <div class="adv-item"><div class="adv-bullet"></div><div><h4>Transformative Partnerships</h4><p>We build relationships that drive long-term, measurable success.</p></div></div>
+          <div class="adv-item"><div class="adv-bullet"></div><div><h4>Future-Ready Solutions</h4><p>Technology designed to adapt, evolve, and scale indefinitely.</p></div></div>
+          <div class="adv-item"><div class="adv-bullet"></div><div><h4>Unmatched Support</h4><p>24/7 assistance and a commitment to continuous improvement.</p></div></div>
         </div>
-    </section>
-
-    <!-- Case Study Section -->
-    <section class="privacy-grid-section" style="padding: 40px 0 100px;">
-        <div class="container">
-            <div class="case-study-modern">
-                <div class="case-study-header">
-                    <div class="case-study-icon">📊</div>
-                    <h2>Case study: <span class="gradient-text">Restaurant ERP transformation</span></h2>
-                </div>
-                <p style="font-size: 1.1rem; color: var(--text-medium); margin-bottom: 30px;">How Silver Fox Dynamics helped a 12‑location restaurant chain reduce costs by 25% and unify operations.</p>
-                <div class="case-stats">
-                    <div class="case-stat-item">
-                        <h4>-25%</h4>
-                        <p>operational costs</p>
-                    </div>
-                    <div class="case-stat-item">
-                        <h4>3mo</h4>
-                        <p>implementation</p>
-                    </div>
-                    <div class="case-stat-item">
-                        <h4>99.9%</h4>
-                        <p>uptime</p>
-                    </div>
-                </div>
-                <p style="color: var(--text-medium);">The client, a growing restaurant group, struggled with siloed spreadsheets, delayed inventory data, and payroll errors. We built a custom ERP (powered by Oracle APEX) that integrated POS, back‑office, and HR. Real‑time dashboards gave managers instant insight, and automated ordering cut food waste. Within three months, all 12 locations were live, and the client saw a 25% drop in overheads.</p>
-                <div class="case-testimonial">
-                    <p>“The Silver Fox team didn't just deliver software — they became part of our business. They understood our workflow and designed a system that our staff actually enjoys using.”</p>
-                    <span>— Omar F., COO of Gourmet Dining Group</span>
-                </div>
-                <div style="margin-top: 40px;">
-                    <a href="products.html" class="btn btn-gradient">Explore similar solutions</a>
-                </div>
-            </div>
+        <div class="about-cta-row">
+          <a href="contact.html" class="btn btn-gradient">Start your project</a>
+          <a href="team.html" class="btn btn-outline-gradient">Meet our team</a>
         </div>
-    </section>
+      </div>
 
-    <!-- Stats Section -->
-    <section class="stats-section-modern">
-        <div class="container">
-            <div class="stats-grid-modern">
-                <div class="stat-item-modern">
-                    <h3>10+</h3>
-                    <p>Successful Projects</p>
-                </div>
-                <div class="stat-item-modern">
-                    <h3>2+</h3>
-                    <p>Years of Excellence</p>
-                </div>
-                <div class="stat-item-modern">
-                    <h3>5+</h3>
-                    <p>Happy Clients</p>
-                </div>
-                <div class="stat-item-modern">
-                    <h3>99%</h3>
-                    <p>Client Satisfaction</p>
-                </div>
-            </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Client <span class="gradient-text">Testimonials</span></h2>
+      <p>Don't take our word for it — hear from the businesses we've worked with</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Silver Fox Dynamics completely transformed our restaurant operations. The ERP system streamlined inventory, payroll, and ordering — we've saved countless hours and reduced waste by 20%."</p>
+        <div class="review-author">
+          <div class="review-avatar">LT</div>
+          <div><h4>Laura T.</h4><p>Owner, Bistro Central</p></div>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section-modern">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Business?</h2>
-                <p>Discover how Silver Fox Dynamics can help you achieve your digital goals with innovative, scalable solutions.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-gradient btn-large">Get Started Today</a>
-                    <a href="products.html" class="btn btn-outline-gradient btn-large">View Our Services</a>
-                </div>
-            </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The team built our e-commerce platform from scratch — it's been flawless. Sales are up 150% since launch, and the support team is always fast and genuinely helpful."</p>
+        <div class="review-author">
+          <div class="review-avatar">MK</div>
+          <div><h4>Michael K.</h4><p>Founder, Sieyah Wear</p></div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="colorful-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Silver Fox Dynamics</h4>
-                    <div class="brand-tagline">
-                        <span>Silver</span> · <span>Innovation</span> · <span>Excellence</span>
-                    </div>
-                    <p>Transforming businesses through innovative digital solutions since 2024.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="products.html#mobile">Mobile Apps</a></li>
-                        <li><a href="products.html#erp">ERP Systems</a></li>
-                        <li><a href="products.html#web">Web Development</a></li>
-                        <li><a href="products.html#ecommerce">E-Commerce</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="mailto:info@silverfoxdynamics.com">Email Us</a></li>
-                        <li>WhatsApp +92 329 5103414</li>
-                        <li>Office #01, 5th Floor<br>GIGA Commercial Hub<br>DHA Phase II, Islamabad</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Silver Fox Dynamics. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-            </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"We hired them for a custom mobile app. They listened carefully, delivered ahead of schedule, and the app now holds a 4.8-star rating on the Play Store. Absolute professionals."</p>
+        <div class="review-author">
+          <div class="review-avatar">AR</div>
+          <div><h4>Ahmed R.</h4><p>Product Lead, AnyDown</p></div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
-    <script>
-        // ==================== DUAL THEME SYSTEM ====================
-        // Theme management with localStorage persistence
-        (function() {
-            // Get theme toggle button
-            const themeBtn = document.getElementById('themeToggleBtn');
-            const body = document.body;
-            
-            // Check for saved theme preference
-            const savedTheme = localStorage.getItem('silverfox_theme');
-            
-            // Function to apply theme based on body class
-            function applyTheme(isDark) {
-                if (isDark) {
-                    body.classList.add('dark-theme');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                } else {
-                    body.classList.remove('dark-theme');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                }
-            }
-            
-            // Determine initial theme
-            if (savedTheme === 'dark') {
-                applyTheme(true);
-            } else if (savedTheme === 'light') {
-                applyTheme(false);
-            } else {
-                // Check system preference if no saved preference
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                applyTheme(prefersDark);
-                // Save system preference for consistency
-                localStorage.setItem('silverfox_theme', prefersDark ? 'dark' : 'light');
-            }
-            
-            // Toggle theme function
-            function toggleTheme() {
-                const isDark = body.classList.contains('dark-theme');
-                if (isDark) {
-                    body.classList.remove('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'light');
-                    if (themeBtn) themeBtn.classList.remove('dark-active');
-                } else {
-                    body.classList.add('dark-theme');
-                    localStorage.setItem('silverfox_theme', 'dark');
-                    if (themeBtn) themeBtn.classList.add('dark-active');
-                }
-            }
-            
-            // Add click event listener to toggle button
-            if (themeBtn) {
-                themeBtn.addEventListener('click', toggleTheme);
-            }
-            
-            // Listen for system preference changes (optional)
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-                // Only apply if user hasn't manually set a preference
-                if (!localStorage.getItem('silverfox_theme')) {
-                    applyTheme(e.matches);
-                }
-            });
-        })();
+<!-- Case Study -->
+<section class="case-study-section">
+  <div class="container">
+    <div class="case-study-card reveal">
+      <p class="case-study-label">Case Study</p>
+      <h2>Restaurant ERP <span class="gradient-text">transformation</span></h2>
+      <p>How Silver Fox Dynamics helped a 12-location restaurant chain cut costs by 25% and unify all operations on a single platform.</p>
+      <div class="case-stats">
+        <div class="case-stat"><h4>-25%</h4><p>Operational costs</p></div>
+        <div class="case-stat"><h4>3 mo</h4><p>Implementation time</p></div>
+        <div class="case-stat"><h4>99.9%</h4><p>Platform uptime</p></div>
+      </div>
+      <p>The client — a growing restaurant group — struggled with siloed spreadsheets, delayed inventory data, and recurring payroll errors. We built a custom ERP on Oracle APEX integrating POS, back-office, and HR. Real-time dashboards gave managers instant insight, and automated ordering cut food waste significantly. Within three months, all 12 locations were live.</p>
+      <div class="case-quote">
+        <p>"The Silver Fox team didn't just deliver software — they became part of our business. They understood our workflow and designed a system our staff genuinely enjoys using."</p>
+        <cite>— Omar F., COO of Gourmet Dining Group</cite>
+      </div>
+      <a href="products.html" class="btn btn-gradient" style="margin-top:8px;">Explore similar solutions</a>
+    </div>
+  </div>
+</section>
 
-        // Toggle menu function
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            const menuToggle = document.querySelector('.menu-toggle');
-            menu.classList.toggle('show');
-            menuToggle.classList.toggle('active');
-        }
+<!-- Stats -->
+<section class="stats-section-alt">
+  <div class="container">
+    <div class="stats-grid-alt">
+      <div class="stat-alt reveal"><h3>10+</h3><p>Successful projects</p></div>
+      <div class="stat-alt reveal"><h3>2+</h3><p>Years of excellence</p></div>
+      <div class="stat-alt reveal"><h3>5+</h3><p>Happy clients</p></div>
+      <div class="stat-alt reveal"><h3>99%</h3><p>Client satisfaction</p></div>
+    </div>
+  </div>
+</section>
 
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('menu');
-            const menuToggle = document.querySelector('.menu-toggle');
-            
-            if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
-                menu.classList.remove('show');
-                menuToggle.classList.remove('active');
-            }
-        });
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2 class="reveal">Ready to transform your business?</h2>
+    <p class="reveal">Discover how Silver Fox Dynamics can help you achieve your digital goals with scalable, future-ready solutions.</p>
+    <div class="cta-buttons reveal">
+      <a href="contact.html" class="btn btn-gradient btn-large">Get started today</a>
+      <a href="products.html" class="btn btn-outline-gradient btn-large">View our services</a>
+    </div>
+  </div>
+</section>
 
-        // Close menu when clicking on links
-        document.querySelectorAll('#menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('menu').classList.remove('show');
-                document.querySelector('.menu-toggle').classList.remove('active');
-            });
-        });
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Silver Fox Dynamics</h4><p class="footer-tagline">Silver · Innovation · Excellence</p><p>Transforming businesses through innovative digital solutions since 2024.</p></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="products.html">Mobile Apps</a></li><li><a href="products.html">ERP Systems</a></li><li><a href="products.html">Web Development</a></li><li><a href="products.html">E-Commerce</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="contact.html">Contact</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="mailto:info@silverfoxdynamics.com">info@silverfoxdynamics.com</a></li><li><a href="https://wa.me/923295103414" target="_blank" rel="noopener">WhatsApp: +92 329 5103414</a></li><li>Office #01, 5th Floor, GIGA Commercial Hub, DHA Phase II, Islamabad</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 Silver Fox Dynamics. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Service</a></p></div>
+  </div>
+</footer>
 
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Initialize header state
-        if (window.scrollY > 50) {
-            document.querySelector('header').classList.add('scrolled');
-        }
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
