@@ -509,13 +509,19 @@ body.dark-theme .page-hero::before {
   margin-bottom: 32px;
 }
 
-/* FIX: Carousel container - fully centered on all screens */
+/* Carousel container - fully centered */
 .logo-carousel {
   overflow: hidden;
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+}
+
+/* Pause animation on hover */
+.logo-carousel:hover .logo-track {
+  animation-play-state: paused;
 }
 
 .logo-carousel::before,
@@ -537,7 +543,7 @@ body.dark-theme .page-hero::before {
   background: linear-gradient(to left, var(--bg), transparent);
 }
 
-/* FIX: Logo track - properly centered with infinite scroll */
+/* FIX: Logo track - smooth continuous infinite scroll with NO gap */
 .logo-track {
   display: flex;
   gap: 48px;
@@ -546,7 +552,8 @@ body.dark-theme .page-hero::before {
   justify-content: center;
 }
 
-/* FIX: Logo items - consistent sizing */
+/* FIX: Duplicate the logo items in HTML for seamless looping */
+/* You need to duplicate your logo items in the HTML for true seamless scrolling */
 .logo-item {
   flex-shrink: 0;
   display: flex;
@@ -563,16 +570,17 @@ body.dark-theme .page-hero::before {
   filter: grayscale(0) opacity(1);
 }
 
+/* FIX: Smooth continuous animation - works with duplicated content */
 @keyframes scrollLogos {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-50%);
   }
 }
 
-/* FIX: Responsive adjustments for carousel */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .logo-carousel::before,
   .logo-carousel::after {
@@ -699,7 +707,6 @@ body.dark-theme .page-hero::before {
 .cta-section h2 { margin-bottom: 16px; }
 .cta-section p  { font-size: 1.05rem; max-width: 500px; margin: 0 auto 40px; }
 .cta-buttons    { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-
 /* ══════════════════════════════════════════════════════════════
    ABOUT PAGE
 ══════════════════════════════════════════════════════════════ */
