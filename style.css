@@ -508,22 +508,50 @@ body.dark-theme .page-hero::before {
   text-align: center;
   margin-bottom: 32px;
 }
-.logo-carousel { overflow: hidden; position: relative; }
-.logo-carousel::before, .logo-carousel::after {
+
+/* FIX: Carousel container - fully centered on all screens */
+.logo-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-carousel::before,
+.logo-carousel::after {
   content: '';
   position: absolute;
-  top: 0; bottom: 0;
+  top: 0;
+  bottom: 0;
   width: 120px;
   z-index: 2;
   pointer-events: none;
 }
-.logo-carousel::before { left: 0; background: linear-gradient(to right, var(--bg), transparent); }
-.logo-carousel::after  { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
+.logo-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg), transparent);
+}
+.logo-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg), transparent);
+}
+
+/* FIX: Logo track - properly centered with infinite scroll */
 .logo-track {
   display: flex;
   gap: 48px;
   animation: scrollLogos 22s linear infinite;
   width: max-content;
+  justify-content: center;
+}
+
+/* FIX: Logo items - consistent sizing */
+.logo-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo-item img {
   height: 42px;
@@ -531,11 +559,44 @@ body.dark-theme .page-hero::before {
   filter: grayscale(1) opacity(0.45);
   transition: filter var(--t-med);
 }
-.logo-item img:hover { filter: grayscale(0) opacity(1); }
+.logo-item img:hover {
+  filter: grayscale(0) opacity(1);
+}
 
 @keyframes scrollLogos {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* FIX: Responsive adjustments for carousel */
+@media (max-width: 768px) {
+  .logo-carousel::before,
+  .logo-carousel::after {
+    width: 60px;
+  }
+  .logo-track {
+    gap: 32px;
+  }
+  .logo-item img {
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-carousel::before,
+  .logo-carousel::after {
+    width: 40px;
+  }
+  .logo-track {
+    gap: 24px;
+  }
+  .logo-item img {
+    height: 28px;
+  }
 }
 
 /* Featured Projects */
