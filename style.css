@@ -1831,17 +1831,16 @@ footer {
    TEAM PROFILES — SECTIONS
 ══════════════════════════════════════════════════════════════ */
 
-/* Team Cards as Clickable Links */
-.team-card {
-  text-decoration: none;
-  display: block;
-  cursor: pointer;
-}
-
 /* Profile Hero Section */
 .profile-hero {
   padding: 80px 0 60px;
   position: relative;
+}
+
+.profile-hero .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .profile-hero-grid {
@@ -1853,11 +1852,11 @@ footer {
 
 .profile-image-wrap {
   aspect-ratio: 1 / 1;
-  border-radius: var(--r-xl);
+  border-radius: 24px;
   overflow: hidden;
   background: var(--surface-dim);
-  border: 2px solid var(--border);
-  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-image-wrap img {
@@ -1869,7 +1868,7 @@ footer {
 
 .profile-badge {
   display: inline-block;
-  background: var(--g-primary);
+  background: linear-gradient(135deg, #7B35D4 0%, #9B4DFF 100%);
   color: #fff;
   font-size: 0.75rem;
   font-weight: 600;
@@ -1877,17 +1876,19 @@ footer {
   border-radius: 40px;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .profile-info h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 8px;
+  font-weight: 700;
 }
 
 .profile-info h2 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--violet-light);
+  color: #9B4DFF;
   margin-bottom: 24px;
 }
 
@@ -1907,7 +1908,7 @@ footer {
   font-size: 1.8rem;
   font-weight: 800;
   font-family: 'Syne', sans-serif;
-  color: var(--violet-light);
+  color: #9B4DFF;
   line-height: 1.2;
 }
 
@@ -1927,6 +1928,12 @@ footer {
   padding: 60px 0 100px;
 }
 
+.profile-details .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 .profile-details-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1936,6 +1943,7 @@ footer {
 .profile-bio h3 {
   font-size: 1.5rem;
   margin: 28px 0 16px;
+  font-weight: 600;
 }
 
 .profile-bio h3:first-of-type {
@@ -1961,7 +1969,7 @@ footer {
 }
 
 .capabilities-list li strong {
-  color: var(--violet-light);
+  color: #9B4DFF;
   display: block;
   margin-bottom: 4px;
   font-size: 1rem;
@@ -1975,9 +1983,10 @@ footer {
 .sidebar-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--r-lg);
+  border-radius: 20px;
   padding: 24px;
   margin-bottom: 24px;
+  backdrop-filter: blur(16px);
 }
 
 .sidebar-card:last-child {
@@ -1989,7 +1998,8 @@ footer {
   margin-bottom: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border);
-  color: var(--violet-light);
+  color: #9B4DFF;
+  font-weight: 600;
 }
 
 .sidebar-card p {
@@ -2004,13 +2014,14 @@ footer {
 }
 
 .sidebar-card a {
-  color: var(--violet-light);
+  color: #9B4DFF;
   text-decoration: none;
-  transition: opacity var(--t-fast);
+  transition: opacity 0.2s ease;
 }
 
 .sidebar-card a:hover {
   opacity: 0.8;
+  text-decoration: underline;
 }
 
 /* Responsive */
@@ -2046,12 +2057,16 @@ footer {
   }
   
   .profile-image-wrap {
-    max-width: 240px;
+    max-width: 220px;
     margin: 0 auto;
   }
   
   .profile-stats {
     justify-content: center;
+  }
+  
+  .profile-stat {
+    text-align: center;
   }
   
   .profile-actions {
@@ -2069,4 +2084,25 @@ footer {
   .sidebar-card {
     padding: 20px;
   }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .profile-badge {
+  background: linear-gradient(135deg, #7B35D4 0%, #9B4DFF 100%);
+}
+
+[data-theme="dark"] .profile-info h2,
+[data-theme="dark"] .profile-stat span,
+[data-theme="dark"] .capabilities-list li strong,
+[data-theme="dark"] .sidebar-card h4,
+[data-theme="dark"] .sidebar-card a {
+  color: #B87CFF;
+}
+
+[data-theme="dark"] .profile-image-wrap {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .sidebar-card {
+  background: rgba(255, 255, 255, 0.03);
 }
