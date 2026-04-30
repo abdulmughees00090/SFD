@@ -1,0 +1,95 @@
+# robots.txt for Silver Fox Dynamics
+# https://www.silverfoxdynamics.com/robots.txt
+# Last updated: May 2025
+
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /draft/
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /config/
+Disallow: /vendor/
+Disallow: /node_modules/
+
+# Prevent crawling of profile pages (optional - remove if you want profiles indexed)
+# Note: Profile pages are valuable for personal branding, so I've commented this out
+# Disallow: /profiles/
+
+# Prevent crawling of thank you / form submission pages
+Disallow: /thank-you/
+Disallow: /form-submitted/
+Disallow: /submission-success/
+
+# Prevent crawling of assets directories (optional - saves crawl budget)
+Disallow: /images/*.png$
+Disallow: /images/*.jpg$
+Disallow: /images/*.jpeg$
+Disallow: /css/
+Disallow: /js/
+Disallow: /fonts/
+Disallow: /assets/
+
+# Prevent crawling of email and print versions (if any)
+Disallow: /*?print=
+Disallow: /*?email=
+
+# Prevent crawling of any query parameters that create duplicate content
+Disallow: /*?ref=
+Disallow: /*?source=
+Disallow: /*?utm_source=
+Disallow: /*?utm_medium=
+Disallow: /*?utm_campaign=
+Disallow: /*?utm_term=
+Disallow: /*?utm_content=
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+Disallow: /*?msclkid=
+
+# Sitemap location
+Sitemap: https://www.silverfoxdynamics.com/sitemap.xml
+
+# Crawl delay (be gentle on the server - optional)
+Crawl-delay: 1
+
+# Allow search engines to cache pages
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yahoo! Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# Block known bad bots (optional but recommended)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Uptimebot
+Disallow: /
