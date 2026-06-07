@@ -1,52 +1,52 @@
 /* ============================================================
-   SILVER FOX DYNAMICS — Redesigned UI/UX System
-   Aesthetic: Refined Glassmorphism · Deep Cosmos · Precision
-   Fonts: Syne (display) + DM Sans (body)
+   SILVER FOX DYNAMICS — Redesigned UI/UX System v3
+   Aesthetic: Silver Crystal · Electric Cobalt · Royal Violet
+   Fonts: Outfit (display) + Plus Jakarta Sans (body)
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
 /* ── CSS Variables ─────────────────────────────────────────── */
 :root {
-  /* Brand Palette – drawn from logo (violet-magenta-gold) */
-  --violet:       #7B35D4;
-  --violet-light: #9B5DE5;
-  --violet-dim:   #4A1D8A;
-  --magenta:      #D43581;
-  --magenta-light:#F06FA5;
-  --amber:        #F0A500;
-  --amber-light:  #FFD166;
+  /* Brand Palette – Logo: cobalt "S" → violet "D", silver fox body */
+  --violet:       #0369A1;      /* cobalt blue  – logo "S" */
+  --violet-light: #0EA5E9;      /* sky blue     – primary accent */
+  --violet-dim:   #075985;
+  --magenta:      #7C3AED;      /* vibrant violet – logo "D" & "DYNAMICS" */
+  --magenta-light:#A78BFA;      /* soft lavender  – secondary accent */
+  --amber:        #F59E0B;
+  --amber-light:  #FDE68A;
   --cyan:         #06D6A0;
   --cyan-dim:     #0A8F6C;
 
-  /* Gradient Definitions */
-  --g-primary:   linear-gradient(135deg, var(--violet) 0%, var(--magenta) 100%);
+  /* Gradient Definitions — cobalt blue → royal violet (mirrors logo sweep) */
+  --g-primary:   linear-gradient(135deg, var(--violet-light) 0%, var(--magenta) 100%);
   --g-warm:      linear-gradient(135deg, var(--magenta) 0%, var(--amber) 100%);
-  --g-cool:      linear-gradient(135deg, var(--violet-light) 0%, #5BC0F8 100%);
-  --g-hero:      linear-gradient(135deg, #0D0A1F 0%, #1A0B34 50%, #0D1A30 100%);
-  --g-text:      linear-gradient(135deg, var(--violet-light), var(--magenta-light));
+  --g-cool:      linear-gradient(135deg, var(--violet-light) 0%, var(--magenta-light) 100%);
+  --g-hero:      linear-gradient(135deg, #040C1A 0%, #07152B 50%, #031420 100%);
+  --g-text:      linear-gradient(135deg, var(--violet-light) 0%, var(--magenta-light) 100%);
 
   /* Light Mode Surfaces */
-  --bg:          #F8F7FF;
+  --bg:          #EFF8FF;
   --bg-card:     rgba(255,255,255,0.72);
   --bg-glass:    rgba(255,255,255,0.55);
   --bg-glass-2:  rgba(255,255,255,0.35);
   --surface:     #FFFFFF;
-  --surface-dim: #EEE8FF;
-  --border:      rgba(123,53,212,0.12);
-  --border-2:    rgba(123,53,212,0.22);
+  --surface-dim: #DBEAFE;
+  --border:      rgba(14,165,233,0.13);
+  --border-2:    rgba(14,165,233,0.26);
 
   /* Light Mode Text */
-  --text:        #120C24;
-  --text-2:      #2E1A54;
-  --text-muted:  #6B5F8A;
-  --text-light:  #9589AA;
+  --text:        #0C1A2E;
+  --text-2:      #1A3554;
+  --text-muted:  #4D7090;
+  --text-light:  #7A9BB8;
 
   /* Shadows */
-  --shadow-sm:   0 2px 12px rgba(123,53,212,0.08);
-  --shadow-md:   0 8px 30px rgba(123,53,212,0.12);
-  --shadow-lg:   0 20px 60px rgba(123,53,212,0.16);
-  --shadow-glow: 0 0 40px rgba(123,53,212,0.25);
+  --shadow-sm:   0 2px 12px rgba(14,165,233,0.09);
+  --shadow-md:   0 8px 30px rgba(14,165,233,0.13);
+  --shadow-lg:   0 20px 60px rgba(14,165,233,0.17);
+  --shadow-glow: 0 0 40px rgba(124,58,237,0.28), 0 0 80px rgba(14,165,233,0.15);
 
   /* Spacing & Radius */
   --r-sm:  8px;
@@ -67,22 +67,22 @@
 
 /* ── Dark Theme ─────────────────────────────────────────────── */
 body.dark-theme {
-  --bg:          #080613;
-  --bg-card:     rgba(18,10,38,0.80);
-  --bg-glass:    rgba(25,14,55,0.65);
-  --bg-glass-2:  rgba(20,10,44,0.45);
-  --surface:     #120C24;
-  --surface-dim: #1E1040;
-  --border:      rgba(155,93,229,0.15);
-  --border-2:    rgba(155,93,229,0.28);
-  --text:        #EDE8FF;
-  --text-2:      #C4B5F4;
-  --text-muted:  #7E6BA8;
-  --text-light:  #50446E;
+  --bg:          #060B14;
+  --bg-card:     rgba(6,14,32,0.82);
+  --bg-glass:    rgba(8,20,48,0.68);
+  --bg-glass-2:  rgba(6,16,38,0.48);
+  --surface:     #0C1524;
+  --surface-dim: #0F1D30;
+  --border:      rgba(14,165,233,0.14);
+  --border-2:    rgba(14,165,233,0.28);
+  --text:        #E8F4FF;
+  --text-2:      #B0D4F0;
+  --text-muted:  #5A8AAA;
+  --text-light:  #3A6080;
   --shadow-sm:   0 2px 12px rgba(0,0,0,0.35);
   --shadow-md:   0 8px 30px rgba(0,0,0,0.45);
   --shadow-lg:   0 20px 60px rgba(0,0,0,0.55);
-  --shadow-glow: 0 0 50px rgba(123,53,212,0.35);
+  --shadow-glow: 0 0 50px rgba(124,58,237,0.40), 0 0 100px rgba(14,165,233,0.20);
 }
 
 /* ── Reset & Base ───────────────────────────────────────────── */
@@ -91,7 +91,7 @@ body.dark-theme {
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
 body {
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.65;
   background: var(--bg);
@@ -109,11 +109,120 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 input, select, textarea { font-family: inherit; }
 
 /* ── Typography ─────────────────────────────────────────────── */
+
+/* ── Silver Crystal Shimmer Animation ──────────────────────── */
+@keyframes silverShimmer {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Silver Crystal Headings (Light Mode) ───────────────────── */
+/* Multi-stop gradient with sharp transitions ≈ low-poly facets  */
 h1, h2, h3, h4, h5 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-weight: 700;
   line-height: 1.15;
-  color: var(--text);
+
+  /* Crystallized silver: dark steel → bright ice → pewter → highlight */
+  background: linear-gradient(
+    125deg,
+    #2C4A6A  0%,
+    #4A6888  7%,
+    #2A4060  9%,    /* sharp dip — facet edge */
+    #6080A4  16%,
+    #9AB8D4  24%,
+    #6888A8  26%,   /* facet edge */
+    #A0B8CE  34%,
+    #C8D8EA  44%,
+    #8AA2BC  46%,   /* facet edge */
+    #5C7A98  54%,
+    #7898B4  62%,
+    #A8C0D8  72%,
+    #7090B0  74%,   /* facet edge */
+    #4C6A88  84%,
+    #6A88A8  92%,
+    #2C4A6A  100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: silverShimmer 12s ease-in-out infinite;
+}
+
+/* ── Silver Crystal Headings (Dark Mode) ────────────────────── */
+/* Brighter, icier — silver catches light against dark background */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5 {
+  background: linear-gradient(
+    125deg,
+    #88AACE  0%,
+    #D4E8FC  8%,
+    #7898BC  10%,   /* facet edge */
+    #B8D2EE  18%,
+    #F0F8FF  28%,   /* peak highlight */
+    #A0BCDA  30%,   /* sharp drop — facet edge */
+    #6A90B8  40%,
+    #C0D8F4  50%,
+    #E8F4FF  58%,
+    #98B8D8  60%,   /* facet edge */
+    #587AA0  70%,
+    #B4CEEA  80%,
+    #DCF0FF  88%,
+    #8AAECE  92%,   /* facet edge */
+    #88AACE  100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: silverShimmer 12s ease-in-out infinite;
+}
+
+/* ── Override: headings ON colored gradient backgrounds ─────── */
+/* Stats section, gradient cards, message cards etc. need plain white */
+.stats-section .stat-item h3,
+.stats-section .stat-item h4,
+.stats-section-alt .stat-alt h3,
+.message-card h2,
+.message-card h3,
+.message-card h4,
+.message-card h5 {
+  background: none !important;
+  -webkit-text-fill-color: #ffffff !important;
+  color: #ffffff;
+  animation: none;
+}
+
+/* ── Gradient-text class: cobalt → violet (logo palette as accent) */
+/* These are the vibrant ACCENT words like "digital reality", "Products" */
+.gradient-text {
+  background: var(--g-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: silverShimmer 6s ease-in-out infinite;
+}
+
+/* ── Specificity override for .case-stat h4 (large stat numbers) */
+.case-stat h4 {
+  background: var(--g-text) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-size: 200% 200%;
+  animation: silverShimmer 6s ease-in-out infinite;
+}
+
+/* ── Profile page stat spans (not headings, keep colored) ──── */
+.profile-stat span,
+.profile-info h2 { 
+  /* these will inherit silver from h2 rule; that's fine */
 }
 
 h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); letter-spacing: -0.03em; }
@@ -122,12 +231,6 @@ h3 { font-size: clamp(1.35rem, 2vw, 1.65rem); letter-spacing: -0.015em; }
 h4 { font-size: 1.1rem; font-weight: 600; }
 p  { color: var(--text-muted); line-height: 1.72; }
 
-.gradient-text {
-  background: var(--g-text);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 /* ── Container ──────────────────────────────────────────────── */
 .container {
@@ -195,7 +298,7 @@ header nav {
 }
 
 .nav-menu a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-muted);
@@ -279,7 +382,7 @@ header nav {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   padding: 11px 24px;
@@ -292,11 +395,11 @@ header nav {
 .btn-gradient {
   background: var(--g-primary);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(123,53,212,0.35);
+  box-shadow: 0 4px 20px rgba(124,58,237,0.35), 0 2px 8px rgba(14,165,233,0.20);
 }
 .btn-gradient:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(123,53,212,0.45);
+  box-shadow: 0 8px 32px rgba(124,58,237,0.45), 0 4px 12px rgba(14,165,233,0.25);
 }
 
 .btn-outline {
@@ -376,19 +479,37 @@ header nav {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(123,53,212,0.18) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 60% at 10% 80%, rgba(212,53,129,0.12) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 40% at 60% 90%, rgba(240,165,0,0.08) 0%, transparent 60%);
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(14,165,233,0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 10% 80%, rgba(8,145,178,0.10) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 40% at 60% 90%, rgba(16,185,129,0.07) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
+}
+
+/* Dot-grid overlay on hero */
+.site-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(14,165,233,0.18) 1px, transparent 1px);
+  background-size: 36px 36px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
 }
 
 body.dark-theme .site-hero::before,
 body.dark-theme .page-hero::before {
   background:
-    radial-gradient(ellipse 65% 55% at 80% 15%, rgba(123,53,212,0.35) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 60% at 5% 80%, rgba(212,53,129,0.22) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 40% at 60% 95%, rgba(240,165,0,0.12) 0%, transparent 60%);
+    radial-gradient(ellipse 70% 60% at 85% 10%, rgba(14,165,233,0.32) 0%, transparent 70%),
+    radial-gradient(ellipse 55% 65% at 5% 85%, rgba(8,145,178,0.20) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 45% at 55% 95%, rgba(16,185,129,0.12) 0%, transparent 60%);
+}
+
+body.dark-theme .site-hero::after {
+  opacity: 0.22;
 }
 
 .site-hero .container,
@@ -442,7 +563,7 @@ body.dark-theme .page-hero::before {
 }
 .hero-orb-inner img {
   width: 65%;
-  filter: drop-shadow(0 0 30px rgba(123,53,212,0.6));
+  filter: drop-shadow(0 0 24px rgba(14,165,233,0.5)) drop-shadow(0 0 48px rgba(124,58,237,0.3));
   animation: float 4s ease-in-out infinite;
 }
 
@@ -457,9 +578,9 @@ body.dark-theme .page-hero::before {
 .orb-ring:nth-child(2) { inset: -28%; animation-duration: 28s; animation-direction: reverse; border-style: dashed; opacity: 0.5; }
 .orb-ring:nth-child(3) { inset: -48%; animation-duration: 38s; opacity: 0.3; }
 
-@keyframes orbPulse {
-  0%, 100% { transform: scale(1); opacity: 0.18; }
-  50%       { transform: scale(1.1); opacity: 0.25; }
+/* Enhanced cobalt glow */ @keyframes orbPulse {
+  0%, 100% { transform: scale(1); opacity: 0.22; }
+  50%       { transform: scale(1.15); opacity: 0.30; }
 }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -499,7 +620,7 @@ body.dark-theme .page-hero::before {
   overflow: hidden;
 }
 .client-logos h3 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -672,7 +793,10 @@ body.dark-theme .page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 .stats-grid {
   display: grid;
@@ -682,7 +806,7 @@ body.dark-theme .page-hero::before {
 }
 .stat-item { text-align: center; }
 .stat-item h3 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 800;
   color: #fff;
@@ -701,7 +825,7 @@ body.dark-theme .page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(123,53,212,0.1) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(14,165,233,0.1) 0%, transparent 70%);
 }
 .cta-section .container { position: relative; z-index: 1; }
 .cta-section h2 { margin-bottom: 16px; }
@@ -719,7 +843,7 @@ body.dark-theme .page-hero::before {
 }
 .about-grid .glass-card { padding: 36px; }
 .about-grid .wide        { grid-column: span 2; }
-.about-grid .featured    { grid-column: span 2; background: linear-gradient(135deg, rgba(123,53,212,0.08), rgba(212,53,129,0.06)); border-color: var(--border-2); }
+.about-grid .featured    { grid-column: span 2; background: linear-gradient(135deg, rgba(14,165,233,0.08), rgba(8,145,178,0.06)); border-color: var(--border-2); }
 
 .card-icon-badge {
   width: 52px; height: 52px;
@@ -832,7 +956,7 @@ body.dark-theme .reviews-section { background: var(--surface); }
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .review-author h4 { font-size: 0.92rem; margin-bottom: 1px; }
 .review-author p  { font-size: 0.8rem; }
@@ -870,7 +994,7 @@ body.dark-theme .reviews-section { background: var(--surface); }
   border-radius: var(--r-md);
 }
 .case-stat h4 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   background: var(--g-text);
@@ -896,7 +1020,7 @@ body.dark-theme .reviews-section { background: var(--surface); }
   gap: 32px;
 }
 .stat-alt { text-align: center; }
-.stat-alt h3 { font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 6px; }
+.stat-alt h3 { font-family: 'Outfit', sans-serif; font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 6px; }
 .stat-alt p  { color: rgba(255,255,255,0.72); font-size: 0.88rem; }
 
 /* ══════════════════════════════════════════════════════════════
@@ -936,7 +1060,7 @@ body.dark-theme .reviews-section { background: var(--surface); }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 50%, rgba(123,53,212,0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(14,165,233,0.12) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -1088,7 +1212,13 @@ body.dark-theme .reviews-section { background: var(--surface); }
 .team-body h4 {
   font-size: 0.83rem;
   font-weight: 500;
-  color: var(--violet-light);
+  /* Role label: cobalt→violet as a small colored accent */
+  background: var(--g-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: silverShimmer 6s ease-in-out infinite;
   margin-bottom: 12px;
   letter-spacing: 0.3px;
 }
@@ -1112,7 +1242,7 @@ body.dark-theme .reviews-section { background: var(--surface); }
   content: '';
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 44px 44px;
   pointer-events: none;
 }
 .message-card h2 {
@@ -1269,7 +1399,7 @@ body.dark-theme .reviews-section { background: var(--surface); }
 .form-group textarea:focus {
   border-color: var(--violet-light);
   background: var(--bg-glass);
-  box-shadow: 0 0 0 3px rgba(123,53,212,0.12);
+  box-shadow: 0 0 0 3px rgba(14,165,233,0.12);
 }
 
 .form-group select {
@@ -1529,7 +1659,7 @@ body.dark-theme .culture-section { background: var(--surface); }
 .policy-card:hover { border-color: var(--border-2); }
 
 .policy-card-intro {
-  background: linear-gradient(135deg, rgba(123,53,212,0.06), rgba(212,53,129,0.04));
+  background: linear-gradient(135deg, rgba(14,165,233,0.07), rgba(8,145,178,0.05));
   border-color: var(--border-2);
 }
 
@@ -1541,7 +1671,7 @@ body.dark-theme .culture-section { background: var(--surface); }
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 0.9rem;
   font-weight: 800;
   flex-shrink: 0;
@@ -1636,8 +1766,8 @@ body.dark-theme .culture-section { background: var(--surface); }
 .resp-item p  { font-size: 0.83rem; }
 
 .info-callout {
-  background: rgba(123,53,212,0.08);
-  border: 1px solid rgba(123,53,212,0.2);
+  background: rgba(14,165,233,0.08);
+  border: 1px solid rgba(14,165,233,0.2);
   border-radius: var(--r-md);
   padding: 14px 18px;
   font-size: 0.88rem;
@@ -1645,8 +1775,8 @@ body.dark-theme .culture-section { background: var(--surface); }
   margin-top: 16px;
 }
 .info-callout.warning {
-  background: rgba(212,53,129,0.08);
-  border-color: rgba(212,53,129,0.2);
+  background: rgba(8,145,178,0.09);
+  border-color: rgba(8,145,178,0.2);
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -1666,7 +1796,7 @@ footer {
 }
 
 .footer-col h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -1676,7 +1806,7 @@ footer {
 }
 
 .footer-col:first-child h4 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 1rem;
   letter-spacing: 0;
   text-transform: none;
@@ -1868,7 +1998,7 @@ footer {
 
 .profile-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #7B35D4 0%, #9B4DFF 100%);
+  background: linear-gradient(135deg, #0EA5E9 0%, #7C3AED 100%);
   color: #fff;
   font-size: 0.75rem;
   font-weight: 600;
@@ -1888,7 +2018,7 @@ footer {
 .profile-info h2 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #9B4DFF;
+  color: #38BDF8;
   margin-bottom: 24px;
 }
 
@@ -1907,8 +2037,8 @@ footer {
   display: block;
   font-size: 1.8rem;
   font-weight: 800;
-  font-family: 'Syne', sans-serif;
-  color: #9B4DFF;
+  font-family: 'Outfit', sans-serif;
+  color: #38BDF8;
   line-height: 1.2;
 }
 
@@ -1969,7 +2099,7 @@ footer {
 }
 
 .capabilities-list li strong {
-  color: #9B4DFF;
+  color: #38BDF8;
   display: block;
   margin-bottom: 4px;
   font-size: 1rem;
@@ -1998,7 +2128,12 @@ footer {
   margin-bottom: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border);
-  color: #9B4DFF;
+  background: var(--g-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: silverShimmer 6s ease-in-out infinite;
   font-weight: 600;
 }
 
@@ -2014,7 +2149,7 @@ footer {
 }
 
 .sidebar-card a {
-  color: #9B4DFF;
+  color: #38BDF8;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -2088,21 +2223,113 @@ footer {
 
 /* Dark mode adjustments */
 [data-theme="dark"] .profile-badge {
-  background: linear-gradient(135deg, #7B35D4 0%, #9B4DFF 100%);
+  background: linear-gradient(135deg, #0369A1 0%, #7C3AED 100%);
 }
 
-[data-theme="dark"] .profile-info h2,
+/* profile-info h2 and sidebar-card h4 now use gradient via class rule,
+   so color override here is not needed (would be overridden by -webkit-text-fill-color anyway) */
 [data-theme="dark"] .profile-stat span,
 [data-theme="dark"] .capabilities-list li strong,
-[data-theme="dark"] .sidebar-card h4,
 [data-theme="dark"] .sidebar-card a {
-  color: #B87CFF;
+  color: #7DD3FC;
 }
 
 [data-theme="dark"] .profile-image-wrap {
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(14, 165, 233, 0.15);
 }
 
 [data-theme="dark"] .sidebar-card {
   background: rgba(255, 255, 255, 0.03);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   NEW v2 COMPONENTS — Electric Arctic additions
+══════════════════════════════════════════════════════════════ */
+
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--g-primary);
+  z-index: 1100;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 10px rgba(14,165,233,0.5), 0 0 20px rgba(124,58,237,0.4);
+}
+
+/* Badge animated dot */
+.badge-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--violet-light), var(--magenta));
+  box-shadow: 0 0 0 0 rgba(124,58,237,0.6);
+  animation: pulseDot 2s ease-in-out infinite;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+@keyframes pulseDot {
+  0%   { box-shadow: 0 0 0 0 rgba(14,165,233,0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(124,58,237,0); }
+  100% { box-shadow: 0 0 0 0 rgba(14,165,233,0); }
+}
+
+/* Enhanced project cards — cobalt left-border flash on hover */
+.project-card {
+  border-left: 3px solid transparent;
+  transition: all var(--t-med) var(--ease), border-left-color var(--t-med);
+}
+.project-card:hover {
+  border-left-color: var(--violet-light);
+}
+
+/* Stat item label refinement */
+.stat-item h3 {
+  letter-spacing: -0.02em;
+}
+
+/* Footer accent line */
+footer {
+  border-top: 1px solid var(--border);
+  position: relative;
+}
+footer::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--g-primary);
+  opacity: 0.6;
+}
+
+/* Hero h1 letter-spacing refinement for Outfit */
+.site-hero .hero-content h1 {
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+/* Project card image placeholder gradient */
+.project-image {
+  background: linear-gradient(135deg, var(--surface-dim) 0%, var(--bg-glass-2) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.project-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(14,165,233,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* CTA section glow refinement */
+.cta-section::before {
+  background: 
+    radial-gradient(ellipse 60% 70% at 50% 50%, rgba(14,165,233,0.09) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 80% 80%, rgba(8,145,178,0.06) 0%, transparent 60%);
 }
