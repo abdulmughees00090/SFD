@@ -1,25 +1,85 @@
 {
-  "name": "Silver Fox Dynamics - Your Ultimate Software Solution",
+  "id": "/",
+  "name": "Silver Fox Dynamics",
   "short_name": "SFD",
-  "description": "Your Ultimate Software Solution Partner",
+  "description": "Custom software, ERP systems, mobile apps & live digital products.",
   "start_url": "/",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
-  "orientation": "portrait-primary",
   "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+
+  "background_color": "#060B14",
+  "theme_color": "#0EA5E9",
+
   "icons": [
     {
       "src": "images/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "images/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
     }
-  ]
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Products & Services",
+      "short_name": "Products",
+      "description": "View our software products and services",
+      "url": "/products.html",
+      "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with Silver Fox Dynamics",
+      "url": "/contact.html",
+      "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Careers",
+      "short_name": "Careers",
+      "description": "Join the Silver Fox Dynamics team",
+      "url": "/careers.html",
+      "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "images/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Silver Fox Dynamics homepage"
+    }
+  ],
+
+  "categories": ["business", "productivity", "developer"],
+  "lang": "en-US",
+  "dir": "ltr"
 }
