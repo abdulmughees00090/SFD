@@ -50,21 +50,21 @@
       "name": "Products & Services",
       "short_name": "Products",
       "description": "View our software products and services",
-      "url": "/products.html",
+      "url": "/products/",
       "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Contact Us",
       "short_name": "Contact",
       "description": "Get in touch with Silver Fox Dynamics",
-      "url": "/contact.html",
+      "url": "/contact/",
       "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "Careers",
       "short_name": "Careers",
       "description": "Join the Silver Fox Dynamics team",
-      "url": "/careers.html",
+      "url": "/careers/",
       "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
     }
   ],
