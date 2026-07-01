@@ -6,7 +6,7 @@
    Splash / install uses the updated branded icons.
 ================================================================ */
 
-const CACHE_VERSION = 'sfd-v3';
+const CACHE_VERSION = 'sfd-v4';
 const CACHE_STATIC  = `${CACHE_VERSION}-static`;
 const CACHE_DYNAMIC = `${CACHE_VERSION}-dynamic`;
 
