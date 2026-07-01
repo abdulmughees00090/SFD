@@ -31,6 +31,7 @@
   --bg-card:     rgba(255,255,255,0.72);
   --bg-glass:    rgba(255,255,255,0.55);
   --bg-glass-2:  rgba(255,255,255,0.35);
+  --header-bg-glass: rgba(222,236,248,0.78); /* darker glass, header only — improves logo contrast in light mode */
   --surface:     #FFFFFF;
   --surface-dim: #DBEAFE;
   --border:      rgba(14,165,233,0.13);
@@ -71,6 +72,7 @@ body.dark-theme {
   --bg-card:     rgba(6,14,32,0.82);
   --bg-glass:    rgba(8,20,48,0.68);
   --bg-glass-2:  rgba(6,16,38,0.48);
+  --header-bg-glass: rgba(8,20,48,0.68); /* dark mode unchanged */
   --surface:     #0C1524;
   --surface-dim: #0F1D30;
   --border:      rgba(14,165,233,0.14);
@@ -264,7 +266,7 @@ header {
 }
 
 header.scrolled {
-  background: var(--bg-glass);
+  background: var(--header-bg-glass);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   box-shadow: 0 1px 0 var(--border), var(--shadow-sm);
@@ -275,6 +277,7 @@ header .container {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding-left: 8px; /* keeps logo from sitting flush against the edge */
 }
 
 .header-logo {
@@ -284,6 +287,17 @@ header .container {
   transition: opacity var(--t-fast);
 }
 .header-logo:hover { opacity: 0.85; }
+
+/* Larger logo on desktop browsers only; installed PWA keeps the original size below */
+@media (min-width: 769px) {
+  .header-logo { height: 54px; }
+}
+
+/* Installed PWA (standalone display mode) — always use the original logo size,
+   regardless of viewport width */
+@media (display-mode: standalone) {
+  .header-logo { height: 44px; }
+}
 
 header nav {
   display: flex;
