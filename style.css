@@ -311,6 +311,8 @@ header .container {
 
 body.dark-theme .header-logo-dark { display: block; }
 body.dark-theme .header-logo-light-wrap { display: none; }
+html.dark-theme .header-logo-dark { display: block; }
+html.dark-theme .header-logo-light-wrap { display: none; }
 
 header nav {
   display: flex;

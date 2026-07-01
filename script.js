@@ -10,6 +10,7 @@
 
   function applyTheme(dark) {
     body.classList.toggle('dark-theme', dark);
+    document.documentElement.classList.toggle('dark-theme', dark);
     if (btn) btn.classList.toggle('dark-active', dark);
   }
 
