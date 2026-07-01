@@ -954,13 +954,19 @@ body.dark-theme .site-hero::after {
   justify-content: center;
 }
 .logo-item img {
-  height: 42px;
+  height: 64px;
   width: auto;
-  filter: grayscale(1) opacity(0.45);
-  transition: filter var(--t-med);
+  filter: none;
+  opacity: 1;
+  transition: transform var(--t-med) var(--ease);
 }
 .logo-item img:hover {
-  filter: grayscale(0) opacity(1);
+  transform: translateY(-6px);
+}
+
+/* Extra-large screens get a further size bump */
+@media (min-width: 1440px) {
+  .logo-item img { height: 78px; }
 }
 
 /* FIX: Smooth continuous animation - works with duplicated content */
@@ -983,7 +989,7 @@ body.dark-theme .site-hero::after {
     gap: 32px;
   }
   .logo-item img {
-    height: 32px;
+    height: 40px;
   }
 }
 
@@ -996,7 +1002,7 @@ body.dark-theme .site-hero::after {
     gap: 24px;
   }
   .logo-item img {
-    height: 28px;
+    height: 34px;
   }
 }
 
@@ -2695,6 +2701,10 @@ footer::before {
           <div class="logo-item"><img src="/images/nat-logo.png" alt="NAT client logo"></div>
           <div class="logo-item"><img src="/images/accra-logo.png" alt="Accra client logo"></div>
           <div class="logo-item"><img src="/images/safari-logo.png" alt="Safari client logo"></div>
+          <div class="logo-item" aria-hidden="true"><img src="/images/jfc-logo.png" alt="" aria-hidden="true"></div>
+          <div class="logo-item" aria-hidden="true"><img src="/images/nat-logo.png" alt="" aria-hidden="true"></div>
+          <div class="logo-item" aria-hidden="true"><img src="/images/accra-logo.png" alt="" aria-hidden="true"></div>
+          <div class="logo-item" aria-hidden="true"><img src="/images/safari-logo.png" alt="" aria-hidden="true"></div>
         </div>
       </div>
     </div>
