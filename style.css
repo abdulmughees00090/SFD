@@ -31,7 +31,7 @@
   --bg-card:     rgba(255,255,255,0.72);
   --bg-glass:    rgba(255,255,255,0.55);
   --bg-glass-2:  rgba(255,255,255,0.35);
-  --header-bg-glass: linear-gradient(90deg, rgba(124,58,237,0.88) 0%, rgba(255,255,255,0.88) 100%); /* purple → white gradient, header only, visible on load */
+  --header-bg-glass: linear-gradient(90deg, rgba(100,116,139,0.88) 0%, rgba(255,255,255,0.88) 100%); /* grey → white gradient, header only, visible on load */
   --surface:     #FFFFFF;
   --surface-dim: #DBEAFE;
   --border:      rgba(14,165,233,0.13);
