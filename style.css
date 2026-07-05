@@ -1529,7 +1529,8 @@ body.dark-theme .reviews-section { background: var(--surface); }
 .job-tag.remote { background: rgba(6,214,160,0.1); color: var(--cyan); border-color: rgba(6,214,160,0.2); }
 
 .job-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
-.job-location { font-size: 0.83rem; color: var(--text-muted); margin-bottom: 12px; }
+.job-location { font-size: 0.83rem; color: var(--text-muted); margin-bottom: 4px; }
+.job-salary { font-size: 0.83rem; color: var(--violet-light); font-weight: 600; margin-bottom: 12px; }
 .job-card p   { font-size: 0.88rem; margin-bottom: 22px; flex: 1; }
 .apply-link {
   font-size: 0.87rem;
@@ -1651,6 +1652,7 @@ body.dark-theme .culture-section { background: var(--surface); }
 .openings-card h3 { font-size: 1rem; margin-bottom: 14px; }
 .openings-list { display: flex; flex-direction: column; gap: 8px; }
 .openings-list li { font-size: 0.88rem; color: var(--text-muted); }
+.salary-badge { color: var(--violet-light); font-weight: 600; margin: 0 6px; }
 
 .tips-card {
   background: var(--bg-card);
