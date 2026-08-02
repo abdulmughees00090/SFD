@@ -1303,6 +1303,61 @@ body.dark-theme .reviews-section { background: var(--surface); }
   border-color: #fff;
 }
 
+/* CEO Message Section (profile pages) */
+.ceo-message-section { padding: 70px 0 20px; }
+.ceo-message-card {
+  background: var(--g-primary);
+  border-radius: var(--r-xl);
+  padding: 56px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.ceo-message-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 44px 44px;
+  pointer-events: none;
+}
+.ceo-message-card h2 {
+  color: #fff;
+  margin-bottom: 18px;
+  position: relative;
+  font-size: 2rem;
+}
+.ceo-message-card p {
+  color: rgba(255,255,255,0.82);
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  font-style: italic;
+}
+.ceo-message-card .message-signature {
+  margin-top: 28px;
+  position: relative;
+  color: rgba(255,255,255,0.92);
+  font-size: 1rem;
+}
+.ceo-message-card .message-signature strong {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .ceo-message-section {
+    padding: 50px 0 10px;
+  }
+  .ceo-message-card {
+    padding: 40px 24px;
+  }
+  .ceo-message-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /* Responsive adjustments for team grid */
 @media (max-width: 1024px) {
   .team-grid {
