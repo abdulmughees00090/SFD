@@ -17,9 +17,11 @@ Disallow: /config/
 Disallow: /vendor/
 Disallow: /node_modules/
 
-# Prevent crawling of profile pages (optional - remove if you want profiles indexed)
-# Note: Profile pages are valuable for personal branding, so I've commented this out
-# Disallow: /profiles/
+# Employee profile & team pages have been retired from the public site.
+# Source files are kept in the repo under /internal-archive/ but must not be crawled or indexed.
+Disallow: /internal-archive/
+Disallow: /team/
+Disallow: /profiles/
 
 # Prevent crawling of thank you / form submission pages
 Disallow: /thank-you/

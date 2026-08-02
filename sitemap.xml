@@ -21,8 +21,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://silverfoxdynamics.com/team/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <loc>https://silverfoxdynamics.com/ceo-message/</loc>
+    <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -57,56 +57,6 @@
     <lastmod>2026-04-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-  </url>
-  
-  <!-- Team Profile Pages (NEW - Important for personal branding SEO) -->
-  <url>
-    <loc>https://silverfoxdynamics.com/profiles/ceo/</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://silverfoxdynamics.com/profiles/dg/</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://silverfoxdynamics.com/profiles/hrm/</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://silverfoxdynamics.com/profiles/erp/</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-  <loc>https://silverfoxdynamics.com/profiles/marketing/</loc>
-  <lastmod>2026-04-30</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://silverfoxdynamics.com/profiles/mob/</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://silverfoxdynamics.com/profiles/shopify/</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://silverfoxdynamics.com/profiles/web/</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   
 </urlset>
