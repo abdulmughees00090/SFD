@@ -1,5 +1,5 @@
 # robots.txt for Silver Fox Dynamics
-# https://www.silverfoxdynamics.com/robots.txt
+# https://silverfoxdynamics.com/robots.txt
 # Last updated: May 2025
 
 User-agent: *
@@ -54,7 +54,7 @@ Disallow: /*?gclid=
 Disallow: /*?msclkid=
 
 # Sitemap location
-Sitemap: https://www.silverfoxdynamics.com/sitemap.xml
+Sitemap: https://silverfoxdynamics.com/sitemap.xml
 
 # Crawl delay (be gentle on the server - optional)
 Crawl-delay: 1
