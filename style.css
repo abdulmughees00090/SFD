@@ -1661,97 +1661,6 @@ body.dark-theme .culture-section { background: var(--surface); }
 .perk-card p  { font-size: 0.82rem; }
 
 /* ══════════════════════════════════════════════════════════════
-   CAREERS & APPLICATION — GUIDELINES (shared component)
-══════════════════════════════════════════════════════════════ */
-.guidelines-section {
-  margin: 32px 0 16px;
-}
-
-.guidelines-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--r-lg);
-  padding: 28px 32px;
-  backdrop-filter: blur(16px);
-  transition: all var(--t-med) var(--ease);
-}
-.guidelines-card:hover {
-  border-color: var(--violet-light);
-  box-shadow: var(--shadow-md);
-}
-
-.guidelines-card h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-.guidelines-card .sub {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 12px;
-}
-
-.rule-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.rule-list li {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  padding: 10px 14px;
-  background: var(--surface-dim);
-  border-radius: var(--r-sm);
-  transition: background var(--t-fast);
-}
-body.dark-theme .rule-list li {
-  background: var(--surface);
-}
-
-.rule-list li .num {
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--violet-light);
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.75rem;
-  margin-top: 2px;
-}
-.rule-list li .text {
-  font-size: 0.92rem;
-  color: var(--text);
-  line-height: 1.6;
-}
-.rule-list li .text strong {
-  color: var(--text);
-  font-weight: 600;
-}
-.rule-list li .text .highlight {
-  color: var(--violet-light);
-  font-weight: 600;
-}
-
-.guidelines-card .footer-note {
-  margin-top: 24px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
-  text-align: center;
-  font-size: 0.88rem;
-  color: var(--text-muted);
-}
-
-/* ══════════════════════════════════════════════════════════════
    APPLICATION PAGE
 ══════════════════════════════════════════════════════════════ */
 .apply-section { padding: 90px 0; }
@@ -1817,6 +1726,7 @@ body.dark-theme .rule-list li {
   align-items: flex-start;
 }
 .tips-list li::before { content: '✓'; color: var(--cyan); flex-shrink: 0; }
+
 /* ══════════════════════════════════════════════════════════════
    PRIVACY & TERMS PAGES
 ══════════════════════════════════════════════════════════════ */
