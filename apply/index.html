@@ -96,101 +96,7 @@
   <link rel="icon" type="image/x-icon"            href="/favicon.ico">
   <link rel="shortcut icon"                       href="/favicon.ico">
 
-  <!-- ========== INLINE STYLES FOR GUIDELINES CARD ========== -->
-  <style>
-    /* Replicate the style of .tips-card for .guidelines-card */
-    .guidelines-card {
-      background: var(--card-bg, #ffffff);
-      border-radius: 1.5rem;
-      padding: 1.75rem 1.75rem 2rem;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-      border: 1px solid var(--border-color, rgba(0, 0, 0, 0.06));
-      margin-top: 1.5rem;
-      transition: background 0.3s, border-color 0.3s;
-    }
-    .dark-theme .guidelines-card {
-      background: var(--card-bg-dark, #1a1f2e);
-      border-color: var(--border-color-dark, rgba(255, 255, 255, 0.08));
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-    }
-    .guidelines-card h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 0.75rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .guidelines-card .guidelines-sub {
-      font-size: 0.9rem;
-      color: var(--text-muted, #6b7280);
-      margin-bottom: 1rem;
-    }
-    .guidelines-card .guidelines-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
-    .guidelines-card .guidelines-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      padding: 0.35rem 0;
-    }
-    .guidelines-card .guidelines-list li .num {
-      flex-shrink: 0;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 1.8rem;
-      height: 1.8rem;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #9B5DE5, #7C3AED);
-      color: #fff;
-      font-size: 0.8rem;
-      font-weight: 700;
-      margin-top: 0.1rem;
-    }
-    .guidelines-card .guidelines-list li .text {
-      flex: 1;
-    }
-    .guidelines-card .guidelines-list li .text strong {
-      color: var(--text-strong, #111827);
-    }
-    .dark-theme .guidelines-card .guidelines-list li .text strong {
-      color: var(--text-strong-dark, #f3f4f6);
-    }
-    .guidelines-card .guidelines-footer {
-      margin-top: 1.25rem;
-      padding-top: 0.75rem;
-      border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.06));
-      font-size: 0.85rem;
-      color: var(--text-muted, #6b7280);
-      text-align: center;
-    }
-    .dark-theme .guidelines-card .guidelines-footer {
-      border-top-color: var(--border-color-dark, rgba(255, 255, 255, 0.08));
-    }
-    @media (max-width: 640px) {
-      .guidelines-card {
-        padding: 1.25rem 1rem;
-      }
-      .guidelines-card .guidelines-list li {
-        font-size: 0.9rem;
-      }
-      .guidelines-card .guidelines-list li .num {
-        width: 1.6rem;
-        height: 1.6rem;
-        font-size: 0.7rem;
-      }
-    }
-  </style>
-</head>
+ </head>
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
 
@@ -368,16 +274,16 @@
             </ul>
           </div>
 
-          <div class="tips-card reveal">
+          <div class="guidelines-card reveal">
             <h3>Application Guidelines</h3>
-            <ul class="tips-list">
+            <ul class="guidelines-list">
               <li>Only applications submitted through the official website's application form shall be entertained.</li>
               <li>Applications received through any other medium — including WhatsApp, direct email, social media DMs, or any other means — will not be considered</li>
               <li>>Only shortlisted candidates shall be contacted. If you do not hear from us within 15 working days of the deadline, please consider your application for this round unsuccessful. We appreciate your interest and encourage you to apply for future openings.</li>
+              <li> We look forward to receiving your application through the official form. Good luck!</li>
               </ul>
            </div>
-            <div class="guidelines-footer">
-              We look forward to receiving your application through the official form. Good luck!
+                   
             </div>
           </div>
       </div>
