@@ -1661,7 +1661,7 @@ body.dark-theme .culture-section { background: var(--surface); }
 .perk-card p  { font-size: 0.82rem; }
 
 /* ══════════════════════════════════════════════════════════════
-   CAREERS PAGE — APPLICATION GUIDELINES (numbered rules)
+   CAREERS & APPLICATION — GUIDELINES (shared component)
 ══════════════════════════════════════════════════════════════ */
 .guidelines-section {
   margin: 32px 0 16px;
@@ -1817,36 +1817,6 @@ body.dark-theme .rule-list li {
   align-items: flex-start;
 }
 .tips-list li::before { content: '✓'; color: var(--cyan); flex-shrink: 0; }
-
-/* Application page — guidelines with checkmarks (distinct from careers page) */
-.app-guidelines-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--r-lg);
-  padding: 24px;
-  backdrop-filter: blur(16px);
-}
-.app-guidelines-card h3 {
-  font-size: 1rem;
-  margin-bottom: 14px;
-}
-.app-guidelines-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.app-guidelines-list li {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  display: flex;
-  gap: 8px;
-  align-items: flex-start;
-}
-.app-guidelines-list li::before {
-  content: '✓';
-  color: var(--cyan);
-  flex-shrink: 0;
-}
 /* ══════════════════════════════════════════════════════════════
    PRIVACY & TERMS PAGES
 ══════════════════════════════════════════════════════════════ */
