@@ -190,138 +190,6 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <!-- ========== INLINE STYLES FOR CENTERING ========== -->
-    <style>
-        /* ensure the message-actions container centers its single button */
-        .message-actions {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-
-        /* optional: make the button feel balanced */
-        .message-actions .btn {
-            min-width: 200px;
-            text-align: center;
-        }
-
-        /* ensure the parent card doesn't interfere */
-        .message-card .message-actions {
-            width: 100%;
-        }
-
-        /* --- Application Guidelines --- */
-        .guidelines-section {
-            padding: 2rem 0 2.5rem;
-        }
-        .guidelines-section .guidelines-card {
-            background: var(--card-bg, #ffffff);
-            border-radius: 1.5rem;
-            padding: 2.5rem 3rem;
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
-            border: 1px solid var(--border-color, rgba(0, 0, 0, 0.06));
-            max-width: 880px;
-            margin: 0 auto;
-            transition: background 0.3s, border-color 0.3s;
-        }
-        .dark-theme .guidelines-section .guidelines-card {
-            background: var(--card-bg-dark, #1a1f2e);
-            border-color: var(--border-color-dark, rgba(255, 255, 255, 0.08));
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-        }
-        .guidelines-section .guidelines-card h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 0.25rem;
-        }
-        .guidelines-section .guidelines-card .sub {
-            font-size: 0.95rem;
-            color: var(--text-muted, #6b7280);
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.06));
-            padding-bottom: 1rem;
-        }
-        .dark-theme .guidelines-section .guidelines-card .sub {
-            border-bottom-color: var(--border-color-dark, rgba(255, 255, 255, 0.08));
-        }
-        .guidelines-section .guidelines-card .rule-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .guidelines-section .guidelines-card .rule-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.85rem;
-            font-size: 1rem;
-            line-height: 1.6;
-            padding: 0.5rem 0.75rem;
-            border-radius: 0.75rem;
-            background: var(--rule-bg, rgba(0, 0, 0, 0.02));
-            transition: background 0.3s;
-        }
-        .dark-theme .guidelines-section .guidelines-card .rule-list li {
-            background: var(--rule-bg-dark, rgba(255, 255, 255, 0.04));
-        }
-        .guidelines-section .guidelines-card .rule-list li .num {
-            flex-shrink: 0;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 1.8rem;
-            height: 1.8rem;
-            border-radius: 50%;
-            background: var(--gradient-start, #9B5DE5);
-            color: #fff;
-            font-size: 0.8rem;
-            font-weight: 700;
-            margin-top: 0.1rem;
-        }
-        .guidelines-section .guidelines-card .rule-list li .text {
-            flex: 1;
-        }
-        .guidelines-section .guidelines-card .rule-list li .text strong {
-            color: var(--text-strong, #111827);
-        }
-        .dark-theme .guidelines-section .guidelines-card .rule-list li .text strong {
-            color: var(--text-strong-dark, #f3f4f6);
-        }
-        .guidelines-section .guidelines-card .rule-list li .text .highlight {
-            color: var(--gradient-start, #9B5DE5);
-            font-weight: 600;
-        }
-        .guidelines-section .guidelines-card .footer-note {
-            margin-top: 1.75rem;
-            padding-top: 1.25rem;
-            border-top: 1px solid var(--border-color, rgba(0, 0, 0, 0.06));
-            font-size: 0.92rem;
-            color: var(--text-muted, #6b7280);
-            text-align: center;
-        }
-        .dark-theme .guidelines-section .guidelines-card .footer-note {
-            border-top-color: var(--border-color-dark, rgba(255, 255, 255, 0.08));
-        }
-        @media (max-width: 640px) {
-            .guidelines-section .guidelines-card {
-                padding: 1.75rem 1.25rem;
-            }
-            .guidelines-section .guidelines-card .rule-list li {
-                padding: 0.5rem 0.5rem;
-                font-size: 0.95rem;
-            }
-            .guidelines-section .guidelines-card .rule-list li .num {
-                width: 1.6rem;
-                height: 1.6rem;
-                font-size: 0.7rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="scroll-progress" id="scrollProgress"></div>
@@ -388,8 +256,8 @@
                 </div>
 
                 <!-- ========== APPLICATION GUIDELINES (moved here) ========== -->
-                <section class="guidelines-section">
-                    <div class="guidelines-card reveal">
+                <div class="guidelines-section reveal">
+                    <div class="guidelines-card">
                         <h3>Application Guidelines</h3>
                         <p class="sub">Please read the following instructions carefully before applying.</p>
                         <ul class="rule-list">
@@ -410,7 +278,7 @@
                             We look forward to receiving your application through the official form. Good luck!
                         </div>
                     </div>
-                </section>
+                </div>
 
                 <div class="jobs-grid">
 
