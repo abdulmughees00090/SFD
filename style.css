@@ -1726,6 +1726,23 @@ body.dark-theme .culture-section { background: var(--surface); }
   align-items: flex-start;
 }
 .tips-list li::before { content: '✓'; color: var(--cyan); flex-shrink: 0; }
+.guidelines-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 24px;
+  backdrop-filter: blur(16px);
+}
+.guidelines-card h3 { font-size: 1rem; margin-bottom: 14px; }
+.guidelines-list { display: flex; flex-direction: column; gap: 8px; }
+.guidelines-list li {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.guidelines-list li::before { content: '✓'; color: var(--cyan); flex-shrink: 0; }
 
 /* ══════════════════════════════════════════════════════════════
    PRIVACY & TERMS PAGES
