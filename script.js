@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 4000);
         } else { throw new Error(); }
       } catch {
-        showToast('Submission failed. Please try again or email us directly.', 'error');
+        showToast('Submission failed. Please try again later after refreshing the page.', 'error');
         if (text) { text.textContent = 'Submit Application'; text.style.display = 'inline'; }
         if (spin) spin.style.display = 'none';
         if (btn)  btn.disabled = false;
