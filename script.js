@@ -131,10 +131,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (btn)  btn.disabled = true;
 
       try {
+        const payload = Object.fromEntries(new FormData(contactForm));
+        payload.type = 'contact';
         const resp = await fetch(contactForm.action, {
           method: 'POST',
-          body: new FormData(contactForm),
-          headers: { Accept: 'application/json' }
+          body: JSON.stringify(payload),
+          headers: { 'Content-Type': 'application/json' }
         });
         if (resp.ok) {
           showToast('Message sent successfully! We\'ll be in touch soon.', 'success');
@@ -190,10 +192,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (btn)  btn.disabled = true;
 
       try {
+        const payload = Object.fromEntries(new FormData(jobForm));
+        payload.type = 'application';
         const resp = await fetch(jobForm.action, {
           method: 'POST',
-          body: new FormData(jobForm),
-          headers: { Accept: 'application/json' }
+          body: JSON.stringify(payload),
+          headers: { 'Content-Type': 'application/json' }
         });
         if (resp.ok) {
           showToast('Application submitted! We\'ll review your profile and be in touch.', 'success');
