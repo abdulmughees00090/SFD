@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    { "source": "/about.html", "destination": "/about/", "permanent": true },
+    { "source": "/apply.html", "destination": "/apply/", "permanent": true },
+    { "source": "/careers.html", "destination": "/careers/", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact/", "permanent": true },
+    { "source": "/privacy.html", "destination": "/privacy/", "permanent": true },
+    { "source": "/products.html", "destination": "/products/", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms/", "permanent": true },
+    { "source": "/team.html", "destination": "/", "permanent": true },
+    { "source": "/team/", "destination": "/", "permanent": true },
+    { "source": "/profiles/:path*", "destination": "/", "permanent": true }
+  ]
+}
