@@ -1,12 +1,14 @@
 /* ================================================================
-   Silver Fox Dynamics — Service Worker v3
+   Silver Fox Dynamics — Service Worker v4
    Strategy:
      HTML pages   → Network-first  (always fresh content)
-     Assets       → Cache-first    (fast repeat loads)
+     CSS / JS     → Network-first  (style/behaviour changes show up
+                                     immediately, no hard refresh needed)
+     Other assets → Cache-first    (fast repeat loads for images/icons)
    Splash / install uses the updated branded icons.
 ================================================================ */
 
-const CACHE_VERSION = 'sfd-v5';
+const CACHE_VERSION = 'sfd-v6';
 const CACHE_STATIC  = `${CACHE_VERSION}-static`;
 const CACHE_DYNAMIC = `${CACHE_VERSION}-dynamic`;
 
@@ -73,7 +75,14 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Everything else → Cache-first (fast assets)
+  // CSS / JS → Network-first (so style/behaviour edits show up
+  // immediately on next load, without needing a hard refresh)
+  if (request.destination === 'style' || request.destination === 'script') {
+    event.respondWith(networkFirst(request));
+    return;
+  }
+
+  // Everything else (images, fonts, icons) → Cache-first (fast assets)
   event.respondWith(cacheFirst(request));
 });
 
