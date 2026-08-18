@@ -544,6 +544,7 @@ header .container {
   line-height: 0;
 }
 .header-logo-dark { display: none; }
+.header-logo-light-wrap { display: inline-flex; }
 
 body.dark-theme .header-logo-dark { display: block; }
 body.dark-theme .header-logo-light-wrap { display: none; }
@@ -947,19 +948,13 @@ body.dark-theme .site-hero::after {
   justify-content: center;
 }
 .logo-item img {
-  height: 64px;
+  height: 42px;
   width: auto;
-  filter: none;
-  opacity: 1;
-  transition: transform var(--t-med) var(--ease);
+  filter: grayscale(1) opacity(0.45);
+  transition: filter var(--t-med);
 }
 .logo-item img:hover {
-  transform: translateY(-6px);
-}
-
-/* Extra-large screens get a further size bump */
-@media (min-width: 1440px) {
-  .logo-item img { height: 78px; }
+  filter: grayscale(0) opacity(1);
 }
 
 /* FIX: Smooth continuous animation - works with duplicated content */
@@ -982,7 +977,7 @@ body.dark-theme .site-hero::after {
     gap: 32px;
   }
   .logo-item img {
-    height: 40px;
+    height: 32px;
   }
 }
 
@@ -995,7 +990,7 @@ body.dark-theme .site-hero::after {
     gap: 24px;
   }
   .logo-item img {
-    height: 34px;
+    height: 28px;
   }
 }
 
@@ -1275,13 +1270,13 @@ body.dark-theme .reviews-section { background: var(--surface); }
   margin-bottom: 4px;
 }
 .case-stat p { font-size: 0.82rem; }
-.case-quote {
+.case-insight {
   border-left: 3px solid var(--violet);
   padding-left: 22px;
   margin: 28px 0;
 }
-.case-quote p { font-style: italic; font-size: 1rem; color: var(--text-2); }
-.case-quote cite { font-size: 0.85rem; color: var(--text-muted); }
+.case-insight p { font-size: 1rem; color: var(--text-2); line-height: 1.7; }
+.case-insight strong { color: var(--text); }
 
 /* Stats Modern */
 .stats-section-alt { padding: 80px 0; background: var(--g-primary); }
@@ -1545,6 +1540,61 @@ body.dark-theme .reviews-section { background: var(--surface); }
   border-color: #fff;
 }
 
+/* CEO Message Section (profile pages) */
+.ceo-message-section { padding: 70px 0 20px; }
+.ceo-message-card {
+  background: var(--g-primary);
+  border-radius: var(--r-xl);
+  padding: 56px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.ceo-message-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 44px 44px;
+  pointer-events: none;
+}
+.ceo-message-card h2 {
+  color: #fff;
+  margin-bottom: 18px;
+  position: relative;
+  font-size: 2rem;
+}
+.ceo-message-card p {
+  color: rgba(255,255,255,0.82);
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  font-style: italic;
+}
+.ceo-message-card .message-signature {
+  margin-top: 28px;
+  position: relative;
+  color: rgba(255,255,255,0.92);
+  font-size: 1rem;
+}
+.ceo-message-card .message-signature strong {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .ceo-message-section {
+    padding: 50px 0 10px;
+  }
+  .ceo-message-card {
+    padding: 40px 24px;
+  }
+  .ceo-message-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /* Responsive adjustments for team grid */
 @media (max-width: 1024px) {
   .team-grid {
@@ -1771,7 +1821,8 @@ body.dark-theme .reviews-section { background: var(--surface); }
 .job-tag.remote { background: rgba(6,214,160,0.1); color: var(--cyan); border-color: rgba(6,214,160,0.2); }
 
 .job-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
-.job-location { font-size: 0.83rem; color: var(--text-muted); margin-bottom: 12px; }
+.job-location { font-size: 0.83rem; color: var(--text-muted); margin-bottom: 4px; }
+.job-salary { font-size: 0.83rem; color: var(--violet-light); font-weight: 600; margin-bottom: 12px; }
 .job-card p   { font-size: 0.88rem; margin-bottom: 22px; flex: 1; }
 .apply-link {
   font-size: 0.87rem;
@@ -1847,6 +1898,97 @@ body.dark-theme .culture-section { background: var(--surface); }
 .perk-card p  { font-size: 0.82rem; }
 
 /* ══════════════════════════════════════════════════════════════
+   CAREERS & APPLICATION — GUIDELINES (shared component)
+══════════════════════════════════════════════════════════════ */
+.guidelines-section {
+  margin: 32px 0 16px;
+}
+
+.guidelines-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 28px 32px;
+  backdrop-filter: blur(16px);
+  transition: all var(--t-med) var(--ease);
+}
+.guidelines-card:hover {
+  border-color: var(--violet-light);
+  box-shadow: var(--shadow-md);
+}
+
+.guidelines-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.guidelines-card .sub {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.rule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.rule-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 10px 14px;
+  background: var(--surface-dim);
+  border-radius: var(--r-sm);
+  transition: background var(--t-fast);
+}
+body.dark-theme .rule-list li {
+  background: var(--surface);
+}
+
+.rule-list li .num {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--violet-light);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.rule-list li .text {
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+.rule-list li .text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+.rule-list li .text .highlight {
+  color: var(--violet-light);
+  font-weight: 600;
+}
+
+.guidelines-card .footer-note {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* ══════════════════════════════════════════════════════════════
    APPLICATION PAGE
 ══════════════════════════════════════════════════════════════ */
 .apply-section { padding: 90px 0; }
@@ -1893,6 +2035,7 @@ body.dark-theme .culture-section { background: var(--surface); }
 .openings-card h3 { font-size: 1rem; margin-bottom: 14px; }
 .openings-list { display: flex; flex-direction: column; gap: 8px; }
 .openings-list li { font-size: 0.88rem; color: var(--text-muted); }
+.salary-badge { color: var(--violet-light); font-weight: 600; margin: 0 6px; }
 
 .tips-card {
   background: var(--bg-card);
@@ -2061,7 +2204,7 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
   gap: 48px;
   margin-bottom: 56px;
 }
@@ -2101,6 +2244,64 @@ footer {
 }
 .footer-col ul a:hover { color: var(--violet-light); }
 .footer-col ul li { font-size: 0.88rem; color: var(--text-muted); }
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--surface-dim);
+  border: 1px solid var(--border-2);
+  transition: transform var(--t-fast), border-color var(--t-fast), background var(--t-fast);
+}
+.footer-social a svg { display: none; }
+.footer-social a .icon-fill {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(
+    125deg,
+    #2C4A6A 0%, #4A6888 7%, #2A4060 9%, #6080A4 16%, #9AB8D4 24%,
+    #6888A8 26%, #A0B8CE 34%, #C8D8EA 44%, #8AA2BC 46%, #5C7A98 54%,
+    #7898B4 62%, #A8C0D8 72%, #7090B0 74%, #4C6A88 84%, #6A88A8 92%, #2C4A6A 100%
+  );
+  background-size: 300% 300%;
+  animation: silverShimmer 12s ease-in-out infinite;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.footer-social a.icon-facebook .icon-fill {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cpath%20d%3D%27M22%2012.06C22%206.51%2017.52%202%2012%202S2%206.51%202%2012.06c0%205.02%203.66%209.18%208.44%209.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52%201.49-3.91%203.77-3.91%201.09%200%202.24.2%202.24.2v2.47h-1.26c-1.24%200-1.63.78-1.63%201.58v1.87h2.78l-.44%202.91h-2.34V22c4.78-.76%208.44-4.92%208.44-9.94Z%27%2F%3E%3C%2Fsvg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cpath%20d%3D%27M22%2012.06C22%206.51%2017.52%202%2012%202S2%206.51%202%2012.06c0%205.02%203.66%209.18%208.44%209.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52%201.49-3.91%203.77-3.91%201.09%200%202.24.2%202.24.2v2.47h-1.26c-1.24%200-1.63.78-1.63%201.58v1.87h2.78l-.44%202.91h-2.34V22c4.78-.76%208.44-4.92%208.44-9.94Z%27%2F%3E%3C%2Fsvg%3E");
+}
+.footer-social a.icon-linkedin .icon-fill {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cpath%20d%3D%27M20.45%2020.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85%200-2.14%201.45-2.14%202.94v5.67H9.34V9h3.42v1.56h.05c.48-.9%201.64-1.85%203.38-1.85%203.61%200%204.28%202.38%204.28%205.47v6.27ZM5.34%207.43a2.07%202.07%200%201%201%200-4.13%202.07%202.07%200%200%201%200%204.13ZM7.12%2020.45H3.56V9h3.56v11.45Z%27%2F%3E%3C%2Fsvg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cpath%20d%3D%27M20.45%2020.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85%200-2.14%201.45-2.14%202.94v5.67H9.34V9h3.42v1.56h.05c.48-.9%201.64-1.85%203.38-1.85%203.61%200%204.28%202.38%204.28%205.47v6.27ZM5.34%207.43a2.07%202.07%200%201%201%200-4.13%202.07%202.07%200%200%201%200%204.13ZM7.12%2020.45H3.56V9h3.56v11.45Z%27%2F%3E%3C%2Fsvg%3E");
+}
+body.dark-theme .footer-social a .icon-fill {
+  background: linear-gradient(
+    125deg,
+    #88AACE 0%, #D4E8FC 8%, #7898BC 10%, #B8D2EE 18%, #F0F8FF 28%,
+    #A0BCDA 30%, #6A90B8 40%, #C0D8F4 50%, #E8F4FF 58%, #98B8D8 60%,
+    #587AA0 70%, #B4CEEA 80%, #DCF0FF 88%, #8AAECE 92%, #88AACE 100%
+  );
+  background-size: 300% 300%;
+  animation: silverShimmer 12s ease-in-out infinite;
+}
+.footer-social a:hover {
+  border-color: var(--violet-light);
+  transform: translateY(-2px);
+}
 
 .footer-bottom {
   padding-top: 28px;
@@ -2604,7 +2805,6 @@ footer::before {
     radial-gradient(ellipse 60% 70% at 50% 50%, rgba(14,165,233,0.09) 0%, transparent 70%),
     radial-gradient(ellipse 40% 40% at 80% 80%, rgba(8,145,178,0.06) 0%, transparent 60%);
 }
-
 
 </style>
   
