@@ -659,101 +659,59 @@ body.dark-theme .site-hero::after {
   margin-bottom: 32px;
 }
 
-/* Carousel container - fully centered */
-.logo-carousel {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+/* Client logos — fixed, framed, colored (no carousel) */
+.logo-grid {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  cursor: pointer;
+  gap: clamp(16px, 3vw, 32px);
 }
 
-/* Pause animation on hover */
-.logo-carousel:hover .logo-track {
-  animation-play-state: paused;
-}
-
-.logo-carousel::before,
-.logo-carousel::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 120px;
-  z-index: 2;
-  pointer-events: none;
-}
-.logo-carousel::before {
-  left: 0;
-  background: linear-gradient(to right, var(--bg), transparent);
-}
-.logo-carousel::after {
-  right: 0;
-  background: linear-gradient(to left, var(--bg), transparent);
-}
-
-/* FIX: Logo track - smooth continuous infinite scroll with NO gap */
-.logo-track {
-  display: flex;
-  gap: 48px;
-  animation: scrollLogos 22s linear infinite;
-  width: max-content;
-  justify-content: center;
-}
-
-/* FIX: Duplicate the logo items in HTML for seamless looping */
-/* You need to duplicate your logo items in the HTML for true seamless scrolling */
-.logo-item {
+.logo-frame {
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: clamp(72px, 9vw, 128px);
+  height: clamp(72px, 9vw, 128px);
+  padding: clamp(12px, 1.6vw, 20px);
+  border-radius: var(--r-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+  transition: transform var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease), border-color var(--t-med) var(--ease);
 }
-.logo-item img {
-  height: 42px;
+.logo-frame:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--violet-light);
+}
+.logo-frame img {
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
-  filter: grayscale(1) opacity(0.45);
-  transition: filter var(--t-med);
-}
-.logo-item img:hover {
-  filter: grayscale(0) opacity(1);
+  height: auto;
+  object-fit: contain;
 }
 
-/* FIX: Smooth continuous animation - works with duplicated content */
-@keyframes scrollLogos {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* Responsive adjustments */
+/* Responsive adjustments (incl. narrow PWA viewports) */
 @media (max-width: 768px) {
-  .logo-carousel::before,
-  .logo-carousel::after {
-    width: 60px;
-  }
-  .logo-track {
-    gap: 32px;
-  }
-  .logo-item img {
-    height: 32px;
+  .logo-grid { gap: 14px; }
+  .logo-frame {
+    width: clamp(56px, 18vw, 84px);
+    height: clamp(56px, 18vw, 84px);
+    padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .logo-carousel::before,
-  .logo-carousel::after {
-    width: 40px;
-  }
-  .logo-track {
-    gap: 24px;
-  }
-  .logo-item img {
-    height: 28px;
+  .logo-grid { gap: 10px; }
+  .logo-frame {
+    width: clamp(48px, 20vw, 68px);
+    height: clamp(48px, 20vw, 68px);
+    padding: 8px;
+    border-radius: var(--r-sm);
   }
 }
 
