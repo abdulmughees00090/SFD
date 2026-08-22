@@ -1515,11 +1515,66 @@ body.dark-theme .reviews-section { background: var(--surface); }
   transition: all var(--t-med) var(--ease);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .job-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
   border-color: var(--violet-light);
+}
+
+/* Closed job card — light grey, muted-silver text, premium (not broken) look */
+.job-card.job-closed {
+  background: #e0e0e0;
+  border-color: #c7c7c7;
+  backdrop-filter: none;
+}
+.job-card.job-closed:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: #c7c7c7;
+}
+.job-card.job-closed h3,
+.job-card.job-closed p,
+.job-card.job-closed .job-location,
+.job-card.job-closed .job-salary,
+.job-card.job-closed strong,
+.job-card.job-closed .deadline-highlight {
+  color: #6b6f76;
+}
+.job-card.job-closed h3 {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: #6b6f76;
+  animation: none;
+}
+.job-card.job-closed .job-tag {
+  background: #cfcfcf;
+  color: #74787f;
+  border-color: #bdbdbd;
+}
+.job-card.job-closed .apply-link.is-closed {
+  color: #cc0000;
+  font-weight: 700;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.job-card.job-closed .apply-link.is-closed:hover { gap: 6px; }
+
+.job-closed-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 11px;
+  border-radius: var(--r-pill);
+  background: rgba(204,0,0,0.1);
+  color: #cc0000;
+  border: 1px solid rgba(204,0,0,0.35);
 }
 
 .job-meta {
