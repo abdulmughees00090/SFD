@@ -334,8 +334,32 @@
   - `terms/index.html`
   - `index.html`
   - `docs/seo/PROGRESS.md`
-- **Decisions made**:
-  - Eliminated conflicting email addresses (`silverfoxdynamics@gmail.com`, `business@...`, `privacy@...`, `legal@...`) in favor of single source of truth (`info@silverfoxdynamics.com`).
+## SEO Refinement — Step 3 (Claims Qualification & Stats Audit)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Rephrased `"under 2 seconds"` load time claim in `services/speed-optimization/index.html` to `"we optimize for fast mobile loading"`.
+  - Rephrased `"Zero-Downtime"` migration claims in `services/website-migration/index.html` to `"planned to minimise downtime"` and `"Managed Website Migration"`.
+  - Rephrased `"regional CDN deployment"` on `markets/pakistan/index.html` to `"Edge CDN asset caching"`.
+  - Cleared unverified `@silverfoxdyn` twitter handle tags across `index.html`, `products/index.html`, `speed-optimization`, and `website-migration`.
+  - Preserved original homepage stats and client logos untouched, as instructed.
+- **Files touched**:
+  - `services/speed-optimization/index.html`
+  - `services/website-migration/index.html`
+  - `markets/pakistan/index.html`
+  - `index.html`
+  - `products/index.html`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made & Preserved Items**:
+  - **Homepage Stats Preserved**:
+    1. `10+` — Projects delivered
+    2. `5+` — Happy clients
+    3. `2+` — Years of excellence
+    4. `24/7` — Support available
+  - **Client Logos Preserved**:
+    1. `Sieyah Wear` (http://sieyahwear.com/) — Live WooCommerce fashion e-commerce store
+    2. `Nora Eve Bridal` (http://noraevebridal.co.uk/) — E-commerce bridal store
+    3. `Upstreet Co` (http://upstreetco.com/) — Apparel e-commerce store
+
 
 
 
