@@ -31,9 +31,9 @@
 - **Notes/Decisions**: Created 5 dedicated care service landing pages under /services/: /services/website-maintenance/, /services/wordpress-maintenance/, /services/website-security/, /services/speed-optimization/, and /services/website-migration/. Applied Schema.org JSON-LD Service & Breadcrumbs, establishing the recurring-revenue service ladder.
 
 ## Phase 6 — Growth and business technology services
-- **Status**: Not started
+- **Status**: Done
 - **Description**: SEO, local SEO, technical SEO, e-commerce SEO, Google Business Profile, custom software, web apps, mobile apps, business automation, SaaS, API integration, custom portals. Link relevant products.
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Created 4 dedicated growth & tech service landing pages: /services/seo-services/, /services/custom-software/ (linking Restaurant ERP & EventOS), /services/mobile-apps/ (linking AnyDown), and /services/business-automation/. Applied full Schema.org JSON-LD Service & Breadcrumbs.
 
 ## Phase 7 — Market and use-case pages
 - **Status**: Not started
