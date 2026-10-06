@@ -21,9 +21,9 @@
 - **Notes/Decisions**: Updated header navigation across all pages to include dedicated Services link, updated homepage hero messaging ("Global Remote-First Software Agency"), added Services Overview section to index.html, created /services/index.html hub page, and preserved featured products grid.
 
 ## Phase 4 — Website development services
-- **Status**: Not started
+- **Status**: Done
 - **Description**: Business website, WordPress, Shopify, WooCommerce, e-commerce, landing pages, redesign. Build a reusable service-page template from existing components first, then the pages.
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Created 4 dedicated development service landing pages under /services/: /services/web-development/, /services/wordpress-development/, /services/shopify-ecommerce/ (cross-linked to Sieyah Wear), and /services/landing-pages/. Applied full SEO metadata, Schema.org JSON-LD Service & Breadcrumbs, and FAQs.
 
 ## Phase 5 — Website care services (recurring)
 - **Status**: Not started

@@ -99,7 +99,30 @@
 - **Decisions made**:
   - Maintained full prominence of featured products (EventOS, Do Not Panic, Restaurant ERP, AnyDown, Sieyah Wear) while adding structured service pathways.
 - **Open items**:
-  - Begin Phase 4 Website Development Services.
+  - Phase 4 completed. Proceed to Phase 5 Website Care Services (recurring).
+
+## Phase 4 — Website development services
+- **Date**: 2026-10-07
+- **What changed**:
+  - Built 4 dedicated website development service landing pages under `/services/`:
+    - `/services/web-development/index.html` (Custom Business Website Development & Redesign)
+    - `/services/wordpress-development/index.html` (WordPress & WooCommerce Development)
+    - `/services/shopify-ecommerce/index.html` (Shopify Storefront & E-Commerce Solutions)
+    - `/services/landing-pages/index.html` (High-Converting Landing Pages & Campaign Optimization)
+  - Applied Schema.org `Service`, `BreadcrumbList`, and `FAQPage` structured data to each page.
+  - Linked live e-commerce store (`Sieyah Wear`) as an authentic portfolio reference.
+- **Files touched**:
+  - `services/web-development/index.html`
+  - `services/wordpress-development/index.html`
+  - `services/shopify-ecommerce/index.html`
+  - `services/landing-pages/index.html`
+  - `docs/seo/PHASES.md`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Structured development service pages to clearly guide users toward quotes ("Request a Service Estimate") and recurring care plans.
+- **Open items**:
+  - Begin Phase 5 Website Care Services (recurring).
+
 
 
 
