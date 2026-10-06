@@ -322,7 +322,7 @@
   - Standardized the primary contact email to `info@silverfoxdynamics.com` across all HTML pages, footer links, `/about/company-facts/`, `/llms.txt`, and JSON-LD schemas.
   - Classified `Sieyah Wear` strictly as an e-commerce WooCommerce store case study (not a software platform).
   - Extended `/about/company-facts/`, `/llms.txt`, and `SoftwareApplication` / `ItemList` schema on `/products/` to cover every real product (EventOS, Restaurant ERP, AnyDown, Do Not Panic, ScanDoc, WeatherNow, Goldmine).
-  - Investigated Restaurant ERP stable URL: `https://rms.silverfoxdynamics.com` is the branded domain proxying to an Oracle APEX Cloud Database demo instance (`g54ea164d4958ce-apxdb.adb.me-dubai-1.oraclecloudapps.com`).
+  - Documented Restaurant ERP stable schema URL: `https://rms.silverfoxdynamics.com` (the branded public product URL linked across the site).
   - Standardized `sameAs` array in Organization schema to include only verified Facebook (`https://www.facebook.com/SilverFoxDynamics`) and LinkedIn (`https://www.linkedin.com/company/silver-fox-dynamics/`) pages found in the footer.
   - Removed unverified `@silverfoxdyn` twitter handle tags.
 - **Files touched**:
@@ -409,6 +409,14 @@
   - `docs/seo/PROGRESS.md`
 - **Decisions made**:
   - Confirmed 0 QA errors across workspace.
+
+## SEO Refinement — Corrections Step 2 (Client Logos Correction)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Corrected `PROGRESS.md` and `REFINEMENT_REPORT.md` client logo records.
+  - Verified actual client logos in the homepage "Trusted by businesses worldwide" section: `JFC` (`/images/jfc-logo.png`), `NAT` (`/images/nat-logo.png`), `Accra` (`/images/accra-logo.png`), and `Safari` (`/images/safari-logo.png`).
+  - Homepage logos and stats were left unchanged.
+
 
 
 

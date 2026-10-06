@@ -40,7 +40,7 @@ All work was completed strictly according to `/docs/seo/SEO_RULES.md`, preservin
 - **Single Contact Email**: Standardized the primary contact email strictly to `info@silverfoxdynamics.com` across all HTML pages, footer links, `/about/company-facts/`, `/llms.txt`, and JSON-LD schemas.
 - **Sieyah Wear Classification**: Classified `Sieyah Wear` (`http://sieyahwear.com/`) strictly as an e-commerce WooCommerce store case study built and maintained by Silver Fox Dynamics.
 - **Product Entity Coverage**: Extended `/about/company-facts/`, `/llms.txt`, and `SoftwareApplication` / `ItemList` schema on `/products/` to explicitly document all 7 real products: `EventOS`, `Restaurant ERP`, `AnyDown`, `Do Not Panic`, `ScanDoc`, `WeatherNow`, and `Goldmine`.
-- **Restaurant ERP Public URL**: Documented that `https://rms.silverfoxdynamics.com` is the branded public domain proxying to an Oracle APEX Autonomous Database instance (`g54ea164d4958ce-apxdb.adb.me-dubai-1.oraclecloudapps.com`).
+- **Restaurant ERP Public URL**: Documented that `https://rms.silverfoxdynamics.com` is the branded public product URL linked across the site and used in Schema structured data.
 - **Organization `sameAs` Links**: Standardized `sameAs` arrays to include only verified social profiles from the footer:
   - `https://www.facebook.com/SilverFoxDynamics`
   - `https://www.linkedin.com/company/silver-fox-dynamics/`
@@ -60,9 +60,10 @@ All work was completed strictly according to `/docs/seo/SEO_RULES.md`, preservin
   - `2+` — Years of excellence
   - `24/7` — Support available
 - **Preserved Client Logos (Logged & Untouched)**:
-  - `Sieyah Wear` (`http://sieyahwear.com/`)
-  - `Nora Eve Bridal` (`http://noraevebridal.co.uk/`)
-  - `Upstreet Co` (`http://upstreetco.com/`)
+  - `JFC` (`/images/jfc-logo.png`)
+  - `NAT` (`/images/nat-logo.png`)
+  - `Accra` (`/images/accra-logo.png`)
+  - `Safari` (`/images/safari-logo.png`)
 
 ---
 
