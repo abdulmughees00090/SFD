@@ -17,4 +17,21 @@
   - Baseline commit saved before creating docs or modifying codebase.
   - Local branch `seo-overhaul` designated for all subsequent phase commits.
 - **Open items**:
-  - Begin Phase 0 audit and local server baseline verification.
+  - Phase 0 completed. Proceed to Phase 1 Strategy and Information Architecture.
+
+## Phase 0 — Audit (read-only)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Inspected repository structure, HTML/CSS/JS files, API endpoints, sitemap, robots.txt, schema JSON-LD, and deployment configurations.
+  - Created `/docs/seo/AUDIT.md`.
+- **Files touched**:
+  - `docs/seo/AUDIT.md`
+  - `docs/seo/PHASES.md`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Documented core preservation rules (theme system, dark/light mode toggle, Vercel function API contracts, 5 live product links, official contact info).
+  - Identified critical robots.txt issue (blocking CSS/JS/images) to be fixed in Phase 2.
+  - Identified gap in service architecture (missing granular service routes & care plans) to be mapped in Phase 1.
+- **Open items**:
+  - Begin Phase 1 Strategy and Information Architecture.
+

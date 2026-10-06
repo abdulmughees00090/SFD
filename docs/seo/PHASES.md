@@ -1,9 +1,9 @@
 # SEO Overhaul Phase Plan
 
 ## Phase 0 — Audit (read-only)
-- **Status**: Not started
+- **Status**: Done
 - **Description**: Inspect repo, framework, routing, components, metadata, sitemap, robots, schema, analytics, navigation, products, contact mechanism, deployment config, existing pages/content worth keeping, and the live site. Output /docs/seo/AUDIT.md: current state, weaknesses, risks, what must not change. No app-code changes.
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Audit completed. Created /docs/seo/AUDIT.md detailing tech stack (HTML/CSS/JS + Vercel Functions), strengths, weaknesses (robots.txt blocking CSS/JS, lack of dedicated service routes, hidden hashtag divs), and preservation requirements.
 
 ## Phase 1 — Strategy and information architecture
 - **Status**: Not started
