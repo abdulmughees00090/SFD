@@ -36,9 +36,9 @@
 - **Notes/Decisions**: Created 4 dedicated growth & tech service landing pages: /services/seo-services/, /services/custom-software/ (linking Restaurant ERP & EventOS), /services/mobile-apps/ (linking AnyDown), and /services/business-automation/. Applied full Schema.org JSON-LD Service & Breadcrumbs.
 
 ## Phase 7 — Market and use-case pages
-- **Status**: Not started
+- **Status**: Done
 - **Description**: Regional hubs and the country-page shortlist from STRATEGY.md, one light Pakistan page, and a few use-case pages only if differentiated (restaurants, clinics, real estate, event venues, booking sites, digital menus).
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Created 2 regional market hubs (/markets/africa/, /markets/south-asia/), 5 market country pages (/markets/nigeria/, /markets/kenya/, /markets/ghana/, /markets/south-africa/, /markets/philippines/), 1 light home-base page (/markets/pakistan/), and 1 targeted industry use-case page (/use-cases/restaurant-management-system/). Updated sitemap.xml to include all new market and use-case URLs.
 
 ## Phase 8 — Content and FAQs
 - **Status**: Not started

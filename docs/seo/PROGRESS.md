@@ -164,8 +164,41 @@
   - `docs/seo/PROGRESS.md`
 - **Decisions made**:
   - Interlinked core growth services with live product portfolios to build authentic authority.
+## Phase 7 — Market and use-case pages
+- **Date**: 2026-10-07
+- **What changed**:
+  - Built 2 regional market hubs:
+    - `/markets/africa/index.html` (Africa Regional Hub: Mobile money, WhatsApp commerce, low-bandwidth optimization)
+    - `/markets/south-asia/index.html` (South Asia Regional Hub: Cross-border e-commerce, local payment integration, digital menus)
+  - Built 6 market country pages:
+    - `/markets/nigeria/index.html` (Paystack, Flutterwave, Naira cards, USD virtual cards)
+    - `/markets/kenya/index.html` (Safaricom M-Pesa Daraja API, Airtel Money, low-bandwidth 3G/4G performance)
+    - `/markets/ghana/index.html` (MTN Mobile Money, Telecel Cash, Paystack GH, Hubtel)
+    - `/markets/south-africa/index.html` (PayFast, Ozow instant EFT, ZAR multi-currency e-commerce)
+    - `/markets/philippines/index.html` (GCash, PayMaya, GrabPay, COD checkout integration)
+    - `/markets/pakistan/index.html` (Light home-base layer: Islamabad office, JazzCash, EasyPaisa, Raast, PKR estimates)
+  - Built 1 targeted industry use-case page:
+    - `/use-cases/restaurant-management-system/index.html` (QR menus, cloud POS, kitchen display, linking live Restaurant ERP demo)
+  - Updated `sitemap.xml` with all 8 new market and use-case routes.
+- **Files touched**:
+  - `markets/africa/index.html`
+  - `markets/nigeria/index.html`
+  - `markets/kenya/index.html`
+  - `markets/ghana/index.html`
+  - `markets/south-africa/index.html`
+  - `markets/south-asia/index.html`
+  - `markets/philippines/index.html`
+  - `markets/pakistan/index.html`
+  - `use-cases/restaurant-management-system/index.html`
+  - `sitemap.xml`
+  - `docs/seo/PHASES.md`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Verified region-specific payment APIs (M-Pesa Daraja, Paystack, Ozow, GCash, Raast) before including in copy.
+  - Formulated regional hubs to group English-speaking target markets cleanly without thin content.
 - **Open items**:
-  - Begin Phase 7 Market and Use-Case Pages.
+  - Begin Phase 8 Content and FAQs.
+
 
 
 
