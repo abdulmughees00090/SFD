@@ -26,9 +26,9 @@
 - **Notes/Decisions**: Created 4 dedicated development service landing pages under /services/: /services/web-development/, /services/wordpress-development/, /services/shopify-ecommerce/ (cross-linked to Sieyah Wear), and /services/landing-pages/. Applied full SEO metadata, Schema.org JSON-LD Service & Breadcrumbs, and FAQs.
 
 ## Phase 5 — Website care services (recurring)
-- **Status**: Not started
+- **Status**: Done
 - **Description**: Website maintenance, WordPress/Shopify maintenance, security, backups and monitoring, speed/performance, migration.
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Created 5 dedicated care service landing pages under /services/: /services/website-maintenance/, /services/wordpress-maintenance/, /services/website-security/, /services/speed-optimization/, and /services/website-migration/. Applied Schema.org JSON-LD Service & Breadcrumbs, establishing the recurring-revenue service ladder.
 
 ## Phase 6 — Growth and business technology services
 - **Status**: Not started

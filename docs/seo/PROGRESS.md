@@ -121,7 +121,31 @@
 - **Decisions made**:
   - Structured development service pages to clearly guide users toward quotes ("Request a Service Estimate") and recurring care plans.
 - **Open items**:
-  - Begin Phase 5 Website Care Services (recurring).
+  - Phase 5 completed. Proceed to Phase 6 Growth and Business Technology Services.
+
+## Phase 5 — Website care services (recurring)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Built 5 dedicated recurring website care landing pages under `/services/`:
+    - `/services/website-maintenance/index.html` (Comprehensive Website Maintenance & Care Plans)
+    - `/services/wordpress-maintenance/index.html` (Dedicated WordPress & WooCommerce Care)
+    - `/services/website-security/index.html` (Website Security, Malware Removal & Hardening)
+    - `/services/speed-optimization/index.html` (PageSpeed & Core Web Vitals Optimization)
+    - `/services/website-migration/index.html` (Zero-Downtime Host & CMS Migration)
+  - Configured Schema.org `Service` and `BreadcrumbList` structured data on all care pages.
+- **Files touched**:
+  - `services/website-maintenance/index.html`
+  - `services/wordpress-maintenance/index.html`
+  - `services/website-security/index.html`
+  - `services/speed-optimization/index.html`
+  - `services/website-migration/index.html`
+  - `docs/seo/PHASES.md`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Positioned care plans as proactive monthly/annual subscriptions to create recurring revenue pathways.
+- **Open items**:
+  - Begin Phase 6 Growth and Business Technology Services.
+
 
 
 
