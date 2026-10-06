@@ -46,9 +46,9 @@
 - **Notes/Decisions**: Built /resources/ knowledge hub page and 6 in-depth technical guides targeting key e-commerce, payment gateway, WhatsApp integration, site speed, technical SEO, and care plan topics. Added Schema.org Article JSON-LD to each article page and updated sitemap.xml.
 
 ## Phase 9 — Internal linking, structured data and AI discoverability
-- **Status**: Not started
+- **Status**: Done
 - **Description**: Service/Product/Breadcrumb/FAQ schema pass validated against visible content, related-services and product links, About/company-facts page, optional /llms.txt.
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Created /about/company-facts/index.html with legal corporate details, operating structure, and verified product links. Created /llms.txt at repository root for AI answer engines (ChatGPT, Claude, Perplexity). Validated full Schema.org JSON-LD structured data and updated sitemap.xml.
 
 ## Phase 10 — QA
 - **Status**: Not started

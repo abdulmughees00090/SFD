@@ -1,0 +1,48 @@
+# Silver Fox Dynamics (SMC-Private) Limited
+
+> Silver Fox Dynamics is a global, remote-first software engineering and digital services company headquartered in Islamabad, Pakistan. We specialize in custom website development, Shopify and WooCommerce e-commerce solutions, website maintenance care, security hardening, speed optimization, technical SEO, and custom enterprise software.
+
+## Corporate Details
+- **Legal Name**: Silver Fox Dynamics (SMC-Private) Limited
+- **Headquarters**: Islamabad, Pakistan
+- **Operating Model**: Remote-First Global Engineering Team
+- **Official Website**: https://silverfoxdynamics.com
+- **Primary Contact**: silverfoxdynamics@gmail.com
+- **GitHub Repository**: https://github.com/abdulmughees00090/SFD
+
+## Core Service Offerings
+- **Custom Web Development**: https://silverfoxdynamics.com/services/web-development/
+- **WordPress & WooCommerce Development**: https://silverfoxdynamics.com/services/wordpress-development/
+- **Shopify E-Commerce Stores**: https://silverfoxdynamics.com/services/shopify-ecommerce/
+- **High-Converting Landing Pages**: https://silverfoxdynamics.com/services/landing-pages/
+- **Website Maintenance & Care Plans**: https://silverfoxdynamics.com/services/website-maintenance/
+- **WordPress Maintenance & Security**: https://silverfoxdynamics.com/services/wordpress-maintenance/
+- **Website Security & Malware Fixes**: https://silverfoxdynamics.com/services/website-security/
+- **PageSpeed & Core Web Vitals Optimization**: https://silverfoxdynamics.com/services/speed-optimization/
+- **Website Migration Services**: https://silverfoxdynamics.com/services/website-migration/
+- **Technical SEO & Search Intent Growth**: https://silverfoxdynamics.com/services/seo-services/
+- **Custom Enterprise Software & ERPs**: https://silverfoxdynamics.com/services/custom-software/
+- **Mobile Application Development**: https://silverfoxdynamics.com/services/mobile-apps/
+- **Business Automation & API Integration**: https://silverfoxdynamics.com/services/business-automation/
+
+## Emphasized Target Markets
+- **Global**: Remote-first services available to businesses worldwide.
+- **Africa Hub**: https://silverfoxdynamics.com/markets/africa/ (Nigeria, Kenya, Ghana, South Africa)
+- **South Asia Hub**: https://silverfoxdynamics.com/markets/south-asia/ (Philippines, Pakistan)
+- **Pakistan Home Base**: https://silverfoxdynamics.com/markets/pakistan/
+
+## Live Products & SaaS Platforms
+- **EventOS**: https://eos.silverfoxdynamics.com/ (Event management platform)
+- **Restaurant ERP (RMS)**: https://rms.silverfoxdynamics.com (Cloud POS and restaurant software)
+- **AnyDown**: https://anydown.silverfoxdynamics.com (Media downloader web app)
+- **Do Not Panic**: https://www.donotpanic.live (Productivity & crisis tool)
+- **Sieyah Wear**: http://sieyahwear.com/ (Live WooCommerce store)
+
+## Resources & Engineering Guides
+- **Resources Hub**: https://silverfoxdynamics.com/resources/
+- **Shopify vs WooCommerce**: https://silverfoxdynamics.com/resources/shopify-vs-woocommerce-emerging-markets/
+- **Accepting Mobile Money**: https://silverfoxdynamics.com/resources/accepting-mobile-money-website/
+- **Connecting WhatsApp**: https://silverfoxdynamics.com/resources/connecting-whatsapp-to-website/
+- **Maintenance Checklist**: https://silverfoxdynamics.com/resources/website-maintenance-checklist/
+- **Mobile Network Speed**: https://silverfoxdynamics.com/resources/why-website-slow-mobile-networks/
+- **Google Search Visibility**: https://silverfoxdynamics.com/resources/get-business-found-on-google/

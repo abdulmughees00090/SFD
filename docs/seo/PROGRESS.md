@@ -222,8 +222,25 @@
 - **Decisions made**:
   - Positioned guide topics around high-intent questions asked by small/growing businesses in target regions.
   - Linked each article to relevant recurring care and development service pages.
+## Phase 9 — Internal linking, structured data and AI discoverability
+- **Date**: 2026-10-07
+- **What changed**:
+  - Built official corporate profile page at `/about/company-facts/index.html`.
+  - Created standardized `/llms.txt` plain-text markdown file at the root of the domain for AI answer engines (ChatGPT, Claude, Perplexity, Google AI Overviews).
+  - Conducted complete Schema.org JSON-LD audit (Organization, WebSite, Service, SoftwareApplication, CollectionPage, Article, BreadcrumbList, FAQPage).
+  - Updated `sitemap.xml` with `/about/company-facts/`.
+- **Files touched**:
+  - `about/company-facts/index.html`
+  - `llms.txt`
+  - `sitemap.xml`
+  - `docs/seo/PHASES.md`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Implemented `/llms.txt` following standard AI discoverability conventions to ensure concise, factual retrieval of company legal identity and service offerings by AI agents.
+  - Linked company facts page directly from header and footer navigation.
 - **Open items**:
-  - Begin Phase 9 Internal linking, structured data and AI discoverability.
+  - Begin Phase 10 QA.
+
 
 
 
