@@ -176,7 +176,7 @@
     - `/markets/ghana/index.html` (MTN Mobile Money, Telecel Cash, Paystack GH, Hubtel)
     - `/markets/south-africa/index.html` (PayFast, Ozow instant EFT, ZAR multi-currency e-commerce)
     - `/markets/philippines/index.html` (GCash, PayMaya, GrabPay, COD checkout integration)
-    - `/markets/pakistan/index.html` (Light home-base layer: Islamabad office, JazzCash, EasyPaisa, Raast, PKR estimates)
+    - `/markets/pakistan/index.html` (Light home-base layer: team in Pakistan, JazzCash, EasyPaisa, Raast, PKR estimates)
   - Built 1 targeted industry use-case page:
     - `/use-cases/restaurant-management-system/index.html` (QR menus, cloud POS, kitchen display, linking live Restaurant ERP demo)
   - Updated `sitemap.xml` with all 8 new market and use-case routes.
@@ -265,7 +265,36 @@
 - **Decisions made**:
   - Confirmed all 11 phases are complete and verified.
 - **Open items**:
-  - None. Project overhaul is complete and ready for user review on branch `seo-overhaul`.
+  - Pre-flight claim check completed. Proceed to remote publishing.
+
+## Pre-Flight Claim Check
+- **Date**: 2026-10-07
+- **What changed**:
+  - Rephrased all "free audit / free discovery / free quote / free emergency cleanup" copy to standard non-promotional terms ("Speed Audit", "Security Audit", "discovery consultation", "quote request", "Emergency cleanup included").
+  - Grounded location copy across market pages, company facts, and `/llms.txt` to strictly match original site support ("based in Pakistan, working remotely with clients worldwide").
+  - Removed any unconfirmed numerical statistics, awards, or partnership claims.
+- **Files touched**:
+  - `contact/index.html`
+  - `docs/seo/FINAL_REPORT.md`
+  - `docs/seo/PROGRESS.md`
+  - `docs/seo/STRATEGY.md`
+  - `llms.txt`
+  - `markets/africa/index.html`
+  - `markets/ghana/index.html`
+  - `markets/kenya/index.html`
+  - `markets/nigeria/index.html`
+  - `markets/pakistan/index.html`
+  - `markets/philippines/index.html`
+  - `markets/south-africa/index.html`
+  - `markets/south-asia/index.html`
+  - `products/index.html`
+  - `services/mobile-apps/index.html`
+  - `services/shopify-ecommerce/index.html`
+  - `services/speed-optimization/index.html`
+  - `services/web-development/index.html`
+  - `services/wordpress-development/index.html`
+  - `services/wordpress-maintenance/index.html`
+
 
 
 

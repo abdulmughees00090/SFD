@@ -36,7 +36,7 @@ Extra content and dedicated landing pages have been targeted toward regions wher
 * **Tier 2 (South & Southeast Asia)**:
   * **Regional Hub**: `/markets/south-asia/`
   * **Philippines**: `/markets/philippines/` — Unique value: GCash, PayMaya, GrabPay, Cash-on-Delivery (COD) checkout workflows.
-  * **Pakistan (Home Base)**: `/markets/pakistan/` — Light home-base layer highlighting Islamabad office location, local gateways (JazzCash, EasyPaisa, Raast, PayFast PK), and PKR invoice estimates.
+  * **Pakistan (Home Base)**: `/markets/pakistan/` — Light home-base layer highlighting team in Pakistan location, local gateways (JazzCash, EasyPaisa, Raast, PayFast PK), and PKR invoice estimates.
 
 ---
 

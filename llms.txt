@@ -1,6 +1,6 @@
 # Silver Fox Dynamics (SMC-Private) Limited
 
-> Silver Fox Dynamics is a global, remote-first software engineering and digital services company headquartered in Islamabad, Pakistan. We specialize in custom website development, Shopify and WooCommerce e-commerce solutions, website maintenance care, security hardening, speed optimization, technical SEO, and custom enterprise software.
+> Silver Fox Dynamics is a global, remote-first software engineering and digital services company based in Pakistan, serving clients worldwide remotely. We specialize in custom website development, Shopify and WooCommerce e-commerce solutions, website maintenance care, security hardening, speed optimization, technical SEO, and custom enterprise software.
 
 ## Corporate Details
 - **Legal Name**: Silver Fox Dynamics (SMC-Private) Limited

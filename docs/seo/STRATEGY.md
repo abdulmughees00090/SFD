@@ -12,7 +12,7 @@
 - `/about/` — Company Overview (Vision, mission, methodology, team values, company background).
 - `/about/company-facts/` — Fact Sheet & Entity Data for AI / Answer Engines (Factual overview, canonical entity data).
 - `/products/` — Software Products Showcase (EventOS, Do Not Panic, Restaurant ERP, AnyDown, Sieyah Wear).
-- `/contact/` — Inquiries & Consultation (Contact form, WhatsApp, office details, free discovery call CTA).
+- `/contact/` — Inquiries & Consultation (Contact form, WhatsApp, office details, discovery consultation CTA).
 - `/ceo-message/` — Leadership Vision & Strategic Direction.
 - `/careers/` — Hiring & Open Positions.
 - `/apply/` — Job Application Form.
@@ -50,7 +50,7 @@
 - `/markets/ghana/` — E-Commerce & Web Development in Ghana (MTN MoMo, Vodafone Cash, Paystack GH, Hubtel).
 - `/markets/south-africa/` — Web Engineering & Care Services in South Africa (PayFast, Ozow instant EFT, ZAR billing).
 - `/markets/philippines/` — E-Commerce & Custom Web Apps in the Philippines (GCash, PayMaya, GrabPay, COD workflows).
-- `/markets/pakistan/` — Custom Software & Web Engineering in Pakistan (Light local home-base layer, JazzCash, EasyPaisa, Raast, Islamabad office).
+- `/markets/pakistan/` — Custom Software & Web Engineering in Pakistan (Light local home-base layer, JazzCash, EasyPaisa, Raast, team in Pakistan).
 
 ### D. Resources & Educational Content (Phase 8)
 - `/resources/` — Articles, Guides & Business Tech Knowledge Hub.
@@ -73,7 +73,7 @@
 | **Ghana** `/markets/ghana/` | MTN Mobile Money (MoMo), Telecel Cash (formerly Vodafone Cash), Paystack Ghana, Hubtel payment gateway. | Local currency GHS support, USSD & mobile money checkout flows. |
 | **South Africa** `/markets/south-africa/` | PayFast, Ozow Instant EFT, SnapScan, Zapper, Peach Payments, South African Rand (ZAR) multi-currency support. | High desktop/mobile balance, security compliance (POPIA alignment). |
 | **Philippines** `/markets/philippines/` | GCash API, Maya (PayMaya), GrabPay, Cash-on-Delivery (COD) status verification, Facebook Messenger webhooks. | High social-commerce conversion rates, PHP currency setup. |
-| **Pakistan** `/markets/pakistan/` | Light local home-base layer. JazzCash, EasyPaisa, Raast instant payments, COD management, Islamabad office contact. | Local software engineering support, PKR pricing estimates. |
+| **Pakistan** `/markets/pakistan/` | Light local home-base layer. JazzCash, EasyPaisa, Raast instant payments, COD management, team in Pakistan contact. | Local software engineering support, PKR pricing estimates. |
 
 ---
 
@@ -123,7 +123,7 @@
 - **Market Pages**:
   - Link to core development services + e-commerce payment setup resources + WhatsApp contact CTA.
 - **Resource Articles**:
-  - Link to corresponding service landing pages and free discovery call CTA.
+  - Link to corresponding service landing pages and discovery consultation CTA.
 
 ---
 
