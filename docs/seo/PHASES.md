@@ -16,9 +16,9 @@
 - **Notes/Decisions**: Fixed robots.txt (removed asset disallows for CSS/JS/images), created custom branded 404.html page, removed hidden hashtag divs from existing pages, removed unconfigured Bing verification placeholders, verified Organization & WebSite schemas.
 
 ## Phase 3 — Homepage and navigation
-- **Status**: Not started
+- **Status**: Done
 - **Description**: Improve messaging (who we are, global remote-first service, services, own products, contact) without a wall of text; add a Services entry to navigation in the existing style; keep products prominent.
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Updated header navigation across all pages to include dedicated Services link, updated homepage hero messaging ("Global Remote-First Software Agency"), added Services Overview section to index.html, created /services/index.html hub page, and preserved featured products grid.
 
 ## Phase 4 — Website development services
 - **Status**: Not started

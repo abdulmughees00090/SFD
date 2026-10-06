@@ -73,7 +73,34 @@
   - Standardized robots.txt rules to ensure search engine crawlers can fully render styled content.
   - Eliminated hidden hashtag blocks to comply strictly with Google Search Quality guidelines.
 - **Open items**:
-  - Begin Phase 3 Homepage and Navigation.
+  - Phase 3 completed. Proceed to Phase 4 Website Development Services.
+
+## Phase 3 — Homepage and navigation
+- **Date**: 2026-10-07
+- **What changed**:
+  - Updated global header navigation menu across all pages to separate "Services" and "Products".
+  - Enhanced homepage (`index.html`) hero badge and copy to emphasize global remote-first software agency capabilities.
+  - Added a responsive "Digital Services & Care Plans" overview section to `index.html`.
+  - Created main `/services/index.html` hub page.
+- **Files touched**:
+  - `index.html`
+  - `products/index.html`
+  - `about/index.html`
+  - `contact/index.html`
+  - `careers/index.html`
+  - `apply/index.html`
+  - `ceo-message/index.html`
+  - `privacy/index.html`
+  - `terms/index.html`
+  - `404.html`
+  - `services/index.html`
+  - `docs/seo/PHASES.md`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Maintained full prominence of featured products (EventOS, Do Not Panic, Restaurant ERP, AnyDown, Sieyah Wear) while adding structured service pathways.
+- **Open items**:
+  - Begin Phase 4 Website Development Services.
+
 
 
 
