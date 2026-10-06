@@ -41,9 +41,9 @@
 - **Notes/Decisions**: Created 2 regional market hubs (/markets/africa/, /markets/south-asia/), 5 market country pages (/markets/nigeria/, /markets/kenya/, /markets/ghana/, /markets/south-africa/, /markets/philippines/), 1 light home-base page (/markets/pakistan/), and 1 targeted industry use-case page (/use-cases/restaurant-management-system/). Updated sitemap.xml to include all new market and use-case URLs.
 
 ## Phase 8 — Content and FAQs
-- **Status**: Not started
+- **Status**: Done
 - **Description**: Visible FAQs on service pages; 5–8 quality articles in the existing blog/resources section (create the section only if sensible). Topics should serve the emphasized markets, e.g. Shopify vs WooCommerce for emerging-market stores, accepting mobile-money and online payments, connecting WhatsApp to a website, website maintenance checklist, why a site is slow on mobile networks, how to get a business found on Google.
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Built /resources/ knowledge hub page and 6 in-depth technical guides targeting key e-commerce, payment gateway, WhatsApp integration, site speed, technical SEO, and care plan topics. Added Schema.org Article JSON-LD to each article page and updated sitemap.xml.
 
 ## Phase 9 — Internal linking, structured data and AI discoverability
 - **Status**: Not started

@@ -196,8 +196,35 @@
 - **Decisions made**:
   - Verified region-specific payment APIs (M-Pesa Daraja, Paystack, Ozow, GCash, Raast) before including in copy.
   - Formulated regional hubs to group English-speaking target markets cleanly without thin content.
+## Phase 8 — Content and FAQs
+- **Date**: 2026-10-07
+- **What changed**:
+  - Built main resources hub page at `/resources/index.html`.
+  - Authored 6 technical guides with Schema.org `Article` structured data:
+    - `/resources/shopify-vs-woocommerce-emerging-markets/index.html` (Fee comparison, M-Pesa/Paystack support, mobile speed)
+    - `/resources/accepting-mobile-money-website/index.html` (M-Pesa Daraja, MTN MoMo, GCash, Paystack API & webhooks)
+    - `/resources/connecting-whatsapp-to-website/index.html` (Click-to-chat deep links, WhatsApp Business API order alerts)
+    - `/resources/website-maintenance-checklist/index.html` (Step-by-step monthly maintenance, backup testing, security hardening)
+    - `/resources/why-website-slow-mobile-networks/index.html` (WebP image compression, script deferral, CDN edge caching)
+    - `/resources/get-business-found-on-google/index.html` (Technical SEO, Google Business Profile, search intent, Schema markup)
+  - Updated `sitemap.xml` with all 7 resource URLs.
+- **Files touched**:
+  - `resources/index.html`
+  - `resources/shopify-vs-woocommerce-emerging-markets/index.html`
+  - `resources/accepting-mobile-money-website/index.html`
+  - `resources/connecting-whatsapp-to-website/index.html`
+  - `resources/website-maintenance-checklist/index.html`
+  - `resources/why-website-slow-mobile-networks/index.html`
+  - `resources/get-business-found-on-google/index.html`
+  - `sitemap.xml`
+  - `docs/seo/PHASES.md`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Positioned guide topics around high-intent questions asked by small/growing businesses in target regions.
+  - Linked each article to relevant recurring care and development service pages.
 - **Open items**:
-  - Begin Phase 8 Content and FAQs.
+  - Begin Phase 9 Internal linking, structured data and AI discoverability.
+
 
 
 
