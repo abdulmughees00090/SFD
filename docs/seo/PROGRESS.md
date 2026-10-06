@@ -355,10 +355,23 @@
     2. `5+` — Happy clients
     3. `2+` — Years of excellence
     4. `24/7` — Support available
-  - **Client Logos Preserved**:
-    1. `Sieyah Wear` (http://sieyahwear.com/) — Live WooCommerce fashion e-commerce store
-    2. `Nora Eve Bridal` (http://noraevebridal.co.uk/) — E-commerce bridal store
-    3. `Upstreet Co` (http://upstreetco.com/) — Apparel e-commerce store
+## SEO Refinement — Step 4 (Sitemap and Crawl Optimization)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Configured `<meta name="robots" content="noindex, follow">` on `/apply/index.html`.
+  - Removed `/apply/` route from `sitemap.xml`.
+  - Retained `/privacy/` and `/terms/` in `sitemap.xml` with low priority (`0.4`).
+  - Updated all 39 `sitemap.xml` `<lastmod>` entries to match exact last git commit dates (`YYYY-MM-DD`).
+  - Verified `404.html` returns HTTP status 404 on Vercel deployment and has `noindex, follow`.
+  - Verified 100% of canonical URLs across all HTML files end with trailing slashes, matching Vercel URL normalization.
+  - Verified zero redirect chains in `vercel.json`.
+- **Files touched**:
+  - `apply/index.html`
+  - `sitemap.xml`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - `apply/index.html` set to `noindex, follow` to keep job application utility out of search index while allowing crawler link discovery.
+
 
 
 
