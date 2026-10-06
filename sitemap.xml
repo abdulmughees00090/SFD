@@ -82,6 +82,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://silverfoxdynamics.com/services/woocommerce-development/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Website Care Services -->
   <url>
@@ -118,6 +124,12 @@
   <!-- Growth & Tech Services -->
   <url>
     <loc>https://silverfoxdynamics.com/services/seo-services/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://silverfoxdynamics.com/services/local-seo/</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -173,6 +185,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://silverfoxdynamics.com/markets/uganda/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://silverfoxdynamics.com/markets/tanzania/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://silverfoxdynamics.com/markets/south-asia/</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -190,10 +214,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://silverfoxdynamics.com/markets/bangladesh/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Use Cases -->
   <url>
     <loc>https://silverfoxdynamics.com/use-cases/restaurant-management-system/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://silverfoxdynamics.com/use-cases/event-venue-management-software/</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

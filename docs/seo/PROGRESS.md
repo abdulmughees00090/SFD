@@ -369,8 +369,35 @@
   - `apply/index.html`
   - `sitemap.xml`
   - `docs/seo/PROGRESS.md`
+## SEO Refinement — Step 5 (New Services, Use-Cases, and Market Country Pages)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Built `/services/woocommerce-development/index.html` (WooCommerce dev, payment integrations, speed, care, referencing Sieyah Wear).
+  - Built `/services/local-seo/index.html` (Google Business Profile, NAP consistency, local citations, geo-targeted search intent, no fake metrics).
+  - Built `/use-cases/event-venue-management-software/index.html` (Built around live product EventOS: venue booking, ticketing, seating maps, live demo link).
+  - Verified local payment ecosystems and created 3 dedicated, highly unique market country pages:
+    - `/markets/uganda/index.html` (MTN MoMo UG, Airtel Money UG, Pesapal, UGX multi-currency, 3G data optimization).
+    - `/markets/tanzania/index.html` (Vodacom M-Pesa TZ, Tigo Pesa, Selcom gateway, TZS pricing).
+    - `/markets/bangladesh/index.html` (bKash MFS tokenized checkout, Nagad, Rocket, SSLCommerz, F-commerce to web migration).
+  - Updated regional hubs (`/markets/africa/` and `/markets/south-asia/`) to link directly to new country pages.
+  - Updated `/services/` and `/products/` hubs to link to the new service and use-case pages.
+  - Updated `sitemap.xml` with all 6 new URLs.
+- **Files touched**:
+  - `services/woocommerce-development/index.html`
+  - `services/local-seo/index.html`
+  - `use-cases/event-venue-management-software/index.html`
+  - `markets/uganda/index.html`
+  - `markets/tanzania/index.html`
+  - `markets/bangladesh/index.html`
+  - `markets/africa/index.html`
+  - `markets/south-asia/index.html`
+  - `services/index.html`
+  - `products/index.html`
+  - `sitemap.xml`
+  - `docs/seo/PROGRESS.md`
 - **Decisions made**:
-  - `apply/index.html` set to `noindex, follow` to keep job application utility out of search index while allowing crawler link discovery.
+  - Verified specific local payment providers (MTN MoMo UG, Vodacom M-Pesa TZ, bKash BD) via research and built dedicated country pages with 0 duplicate content.
+
 
 
 
