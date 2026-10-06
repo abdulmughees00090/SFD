@@ -316,8 +316,27 @@
   - `index.html`
   - `products/index.html`
   - `docs/seo/PROGRESS.md`
+## SEO Refinement — Step 2 (Entity Consistency)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Standardized the primary contact email to `info@silverfoxdynamics.com` across all HTML pages, footer links, `/about/company-facts/`, `/llms.txt`, and JSON-LD schemas.
+  - Classified `Sieyah Wear` strictly as an e-commerce WooCommerce store case study (not a software platform).
+  - Extended `/about/company-facts/`, `/llms.txt`, and `SoftwareApplication` / `ItemList` schema on `/products/` to cover every real product (EventOS, Restaurant ERP, AnyDown, Do Not Panic, ScanDoc, WeatherNow, Goldmine).
+  - Investigated Restaurant ERP stable URL: `https://rms.silverfoxdynamics.com` is the branded domain proxying to an Oracle APEX Cloud Database demo instance (`g54ea164d4958ce-apxdb.adb.me-dubai-1.oraclecloudapps.com`).
+  - Standardized `sameAs` array in Organization schema to include only verified Facebook (`https://www.facebook.com/SilverFoxDynamics`) and LinkedIn (`https://www.linkedin.com/company/silver-fox-dynamics/`) pages found in the footer.
+  - Removed unverified `@silverfoxdyn` twitter handle tags.
+- **Files touched**:
+  - `about/company-facts/index.html`
+  - `llms.txt`
+  - `products/index.html`
+  - `ceo-message/index.html`
+  - `privacy/index.html`
+  - `terms/index.html`
+  - `index.html`
+  - `docs/seo/PROGRESS.md`
 - **Decisions made**:
-  - Replaced legacy keyword-stuffed tags with clean, accurate title and meta descriptions matching visible page content.
+  - Eliminated conflicting email addresses (`silverfoxdynamics@gmail.com`, `business@...`, `privacy@...`, `legal@...`) in favor of single source of truth (`info@silverfoxdynamics.com`).
+
 
 
 
