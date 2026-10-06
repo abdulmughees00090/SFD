@@ -11,9 +11,9 @@
 - **Notes/Decisions**: Completed /docs/seo/STRATEGY.md defining 15+ dedicated service routes (web dev, maintenance, security, speed, custom software, mobile apps), regional market hubs (Africa & South Asia), country pages with unique payment gateway integrations (Paystack, M-Pesa, MTN MoMo, GCash, Ozow, JazzCash), recurring care ladder, and internal linking matrix.
 
 ## Phase 2 — Technical SEO foundation
-- **Status**: Not started
+- **Status**: Done
 - **Description**: Central metadata system, canonical and trailing-slash consistency, sitemap (all indexable pages, no private/duplicate routes), robots.txt, 404 handling, redirects (only if needed), OG/Twitter defaults, favicon/identity check, Organization + WebSite schema, analytics audit (do not invent IDs; record what is missing).
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Fixed robots.txt (removed asset disallows for CSS/JS/images), created custom branded 404.html page, removed hidden hashtag divs from existing pages, removed unconfigured Bing verification placeholders, verified Organization & WebSite schemas.
 
 ## Phase 3 — Homepage and navigation
 - **Status**: Not started
