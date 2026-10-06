@@ -410,12 +410,22 @@
 - **Decisions made**:
   - Confirmed 0 QA errors across workspace.
 
-## SEO Refinement — Corrections Step 2 (Client Logos Correction)
+## SEO Hotfix — Branch `seo-hotfix`
 - **Date**: 2026-10-07
 - **What changed**:
-  - Corrected `PROGRESS.md` and `REFINEMENT_REPORT.md` client logo records.
-  - Verified actual client logos in the homepage "Trusted by businesses worldwide" section: `JFC` (`/images/jfc-logo.png`), `NAT` (`/images/nat-logo.png`), `Accra` (`/images/accra-logo.png`), and `Safari` (`/images/safari-logo.png`).
-  - Homepage logos and stats were left unchanged.
+  1. **Fixed Stray `>` Bug**: Identified root cause (`<meta name="description" content="...">>` with double `>>` closing brackets across HTML files). Executed fix on all 47 HTML files. 0 stray `>` characters remain in head or before `<header>`.
+  2. **Replaced `*dev.png` Images**: Mapped and replaced 15 active `*dev.png` references (`web-dev.png` -> `web-prod.png`, `e-com-dev.png` -> `ecom-prod.png`) across HTML files with `*prod.png` equivalents. Updated alt text to accurately describe product scenes (removed developer/coding wording). Retained original `*dev.png` files on disk, maintained `loading="lazy"`, `width="600"`, `height="400"`.
+  3. **Brand in Titles & Copy**: Replaced `| SFD` abbreviation in title tags with `| Silver Fox Dynamics`. Trimmed lead phrases so all title lengths are <= 62 characters and remain unique. Synchronized `og:title` and `twitter:title` tags across all 47 HTML files. Standardized company name references in body copy.
+  4. **WWW & Asset Domain Verification**: Verified `vercel.json` redirect configuration. Confirmed 0 references to `www.silverfoxdynamics.com` exist in workspace assets; all image and page links are root-relative or use the apex domain `https://silverfoxdynamics.com`.
+  5. **Verification & QA Pass**: Executed complete QA script `run_full_qa.js` and `verify_hotfix_rules.js` confirming 0 errors across 47 HTML files and 103 JSON-LD schema blocks.
+- **Files touched**:
+  - All 47 `.html` files
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Replaced double closing brackets `>>` in meta description tags.
+  - Shortened lead phrases in titles exceeding 62 characters while keeping titles unique and brand-compliant.
+  - Kept app manifest short_name, `apple-mobile-web-app-title`, and JSON-LD `alternateName` as `SFD`.
+
 
 
 
