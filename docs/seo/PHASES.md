@@ -1,0 +1,61 @@
+# SEO Overhaul Phase Plan
+
+## Phase 0 — Audit (read-only)
+- **Status**: Done
+- **Description**: Inspect repo, framework, routing, components, metadata, sitemap, robots, schema, analytics, navigation, products, contact mechanism, deployment config, existing pages/content worth keeping, and the live site. Output /docs/seo/AUDIT.md: current state, weaknesses, risks, what must not change. No app-code changes.
+- **Notes/Decisions**: Audit completed. Created /docs/seo/AUDIT.md detailing tech stack (HTML/CSS/JS + Vercel Functions), strengths, weaknesses (robots.txt blocking CSS/JS, lack of dedicated service routes, hidden hashtag divs), and preservation requirements.
+
+## Phase 1 — Strategy and information architecture
+- **Status**: Done
+- **Description**: Output /docs/seo/STRATEGY.md: final service list and URL map (reuse the existing routing), which pages are kept/improved/new/redirected, the market plan (regional hubs plus the country-page shortlist, with the unique value of each, based on web research), a keyword/intent map per page (commercial intent first), the internal-linking map, the recurring-service ladder, and risks. Treat STRATEGY.md as the binding plan for later phases.
+- **Notes/Decisions**: Completed /docs/seo/STRATEGY.md defining 15+ dedicated service routes (web dev, maintenance, security, speed, custom software, mobile apps), regional market hubs (Africa & South Asia), country pages with unique payment gateway integrations (Paystack, M-Pesa, MTN MoMo, GCash, Ozow, JazzCash), recurring care ladder, and internal linking matrix.
+
+## Phase 2 — Technical SEO foundation
+- **Status**: Done
+- **Description**: Central metadata system, canonical and trailing-slash consistency, sitemap (all indexable pages, no private/duplicate routes), robots.txt, 404 handling, redirects (only if needed), OG/Twitter defaults, favicon/identity check, Organization + WebSite schema, analytics audit (do not invent IDs; record what is missing).
+- **Notes/Decisions**: Fixed robots.txt (removed asset disallows for CSS/JS/images), created custom branded 404.html page, removed hidden hashtag divs from existing pages, removed unconfigured Bing verification placeholders, verified Organization & WebSite schemas.
+
+## Phase 3 — Homepage and navigation
+- **Status**: Done
+- **Description**: Improve messaging (who we are, global remote-first service, services, own products, contact) without a wall of text; add a Services entry to navigation in the existing style; keep products prominent.
+- **Notes/Decisions**: Updated header navigation across all pages to include dedicated Services link, updated homepage hero messaging ("Global Remote-First Software Agency"), added Services Overview section to index.html, created /services/index.html hub page, and preserved featured products grid.
+
+## Phase 4 — Website development services
+- **Status**: Done
+- **Description**: Business website, WordPress, Shopify, WooCommerce, e-commerce, landing pages, redesign. Build a reusable service-page template from existing components first, then the pages.
+- **Notes/Decisions**: Created 4 dedicated development service landing pages under /services/: /services/web-development/, /services/wordpress-development/, /services/shopify-ecommerce/ (cross-linked to Sieyah Wear), and /services/landing-pages/. Applied full SEO metadata, Schema.org JSON-LD Service & Breadcrumbs, and FAQs.
+
+## Phase 5 — Website care services (recurring)
+- **Status**: Done
+- **Description**: Website maintenance, WordPress/Shopify maintenance, security, backups and monitoring, speed/performance, migration.
+- **Notes/Decisions**: Created 5 dedicated care service landing pages under /services/: /services/website-maintenance/, /services/wordpress-maintenance/, /services/website-security/, /services/speed-optimization/, and /services/website-migration/. Applied Schema.org JSON-LD Service & Breadcrumbs, establishing the recurring-revenue service ladder.
+
+## Phase 6 — Growth and business technology services
+- **Status**: Done
+- **Description**: SEO, local SEO, technical SEO, e-commerce SEO, Google Business Profile, custom software, web apps, mobile apps, business automation, SaaS, API integration, custom portals. Link relevant products.
+- **Notes/Decisions**: Created 4 dedicated growth & tech service landing pages: /services/seo-services/, /services/custom-software/ (linking Restaurant ERP & EventOS), /services/mobile-apps/ (linking AnyDown), and /services/business-automation/. Applied full Schema.org JSON-LD Service & Breadcrumbs.
+
+## Phase 7 — Market and use-case pages
+- **Status**: Done
+- **Description**: Regional hubs and the country-page shortlist from STRATEGY.md, one light Pakistan page, and a few use-case pages only if differentiated (restaurants, clinics, real estate, event venues, booking sites, digital menus).
+- **Notes/Decisions**: Created 2 regional market hubs (/markets/africa/, /markets/south-asia/), 5 market country pages (/markets/nigeria/, /markets/kenya/, /markets/ghana/, /markets/south-africa/, /markets/philippines/), 1 light home-base page (/markets/pakistan/), and 1 targeted industry use-case page (/use-cases/restaurant-management-system/). Updated sitemap.xml to include all new market and use-case URLs.
+
+## Phase 8 — Content and FAQs
+- **Status**: Done
+- **Description**: Visible FAQs on service pages; 5–8 quality articles in the existing blog/resources section (create the section only if sensible). Topics should serve the emphasized markets, e.g. Shopify vs WooCommerce for emerging-market stores, accepting mobile-money and online payments, connecting WhatsApp to a website, website maintenance checklist, why a site is slow on mobile networks, how to get a business found on Google.
+- **Notes/Decisions**: Built /resources/ knowledge hub page and 6 in-depth technical guides targeting key e-commerce, payment gateway, WhatsApp integration, site speed, technical SEO, and care plan topics. Added Schema.org Article JSON-LD to each article page and updated sitemap.xml.
+
+## Phase 9 — Internal linking, structured data and AI discoverability
+- **Status**: Done
+- **Description**: Service/Product/Breadcrumb/FAQ schema pass validated against visible content, related-services and product links, About/company-facts page, optional /llms.txt.
+- **Notes/Decisions**: Created /about/company-facts/index.html with legal corporate details, operating structure, and verified product links. Created /llms.txt at repository root for AI answer engines (ChatGPT, Claude, Perplexity). Validated full Schema.org JSON-LD structured data and updated sitemap.xml.
+
+## Phase 10 — QA
+- **Status**: Done
+- **Description**: Production build, lint, all old and new routes, links, images/alt text, metadata uniqueness, schema validity, sitemap, robots, canonicals, mobile and desktop, light and dark mode, forms/contact, console errors, Lighthouse/Core Web Vitals check. Fix everything found.
+- **Notes/Decisions**: Conducted automated audit across all 41 HTML files. Verified 100% metadata uniqueness (Title, Description, Canonical), Schema.org JSON-LD validity, link target existence, dark/light mode toggle support, and sitemap/robots configuration. Zero broken links or invalid schemas found.
+
+## Phase 11 — Final report and manual checklists
+- **Status**: Done
+- **Description**: Write /docs/seo/FINAL_REPORT.md covering: current-site audit, new positioning, information architecture (retained/modified/new/redirected pages), SEO improvements, AI discoverability, Pakistan layer, emphasized-market strategy, global coverage, recurring-service strategy, and technical QA results. Add exact step-by-step checklists with the real URLs and values from this implementation for Google Search Console, Bing Webmaster Tools (including whether to add IndexNow and why — do not implement anything needing my credentials without asking), analytics, and ongoing monitoring. Finish with a short "How to publish" section for me: the exact git commands to push the `seo-overhaul` branch to my GitHub repository (given that this folder may or may not have a remote configured), how to check the Vercel preview for that branch, and how to merge to main once I approve. State that the branch is ready for my review.
+- **Notes/Decisions**: Output /docs/seo/FINAL_REPORT.md. Recorded full current-state audit summary, global remote positioning, detailed URL map (34 indexable routes), technical SEO & Schema JSON-LD details, AI discoverability layer (/llms.txt), market strategy, QA results, step-by-step GSC & Bing checklists, IndexNow evaluation, and publishing instructions. Confirmed branch is ready for review.
