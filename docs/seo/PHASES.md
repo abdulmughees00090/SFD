@@ -6,9 +6,9 @@
 - **Notes/Decisions**: Audit completed. Created /docs/seo/AUDIT.md detailing tech stack (HTML/CSS/JS + Vercel Functions), strengths, weaknesses (robots.txt blocking CSS/JS, lack of dedicated service routes, hidden hashtag divs), and preservation requirements.
 
 ## Phase 1 — Strategy and information architecture
-- **Status**: Not started
+- **Status**: Done
 - **Description**: Output /docs/seo/STRATEGY.md: final service list and URL map (reuse the existing routing), which pages are kept/improved/new/redirected, the market plan (regional hubs plus the country-page shortlist, with the unique value of each, based on web research), a keyword/intent map per page (commercial intent first), the internal-linking map, the recurring-service ladder, and risks. Treat STRATEGY.md as the binding plan for later phases.
-- **Notes/Decisions**: Pending execution.
+- **Notes/Decisions**: Completed /docs/seo/STRATEGY.md defining 15+ dedicated service routes (web dev, maintenance, security, speed, custom software, mobile apps), regional market hubs (Africa & South Asia), country pages with unique payment gateway integrations (Paystack, M-Pesa, MTN MoMo, GCash, Ozow, JazzCash), recurring care ladder, and internal linking matrix.
 
 ## Phase 2 — Technical SEO foundation
 - **Status**: Not started
