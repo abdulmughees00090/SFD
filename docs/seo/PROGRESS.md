@@ -306,6 +306,20 @@
 - **Decisions made**:
   - Confirmed 0 FAQ schema mismatches exist across the codebase.
 
+## SEO Refinement — Step 1 (Metadata Optimization)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Updated homepage (`index.html`) Title (57 chars), Meta Description (152 chars), Open Graph, and Twitter metadata to align with global remote positioning (web development, e-commerce, care plans, SEO, custom software, EventOS/RMS).
+  - Updated Products page (`products/index.html`) Title (56 chars), Meta Description (154 chars), Open Graph, and Twitter metadata to describe actual live products (EventOS, Restaurant ERP, AnyDown, ScanDoc, WeatherNow, Goldmine, Do Not Panic, Sieyah Wear) plus custom software and AI web services without keyword stuffing.
+  - Verified uniqueness and length bounds across titles (< 60 chars) and descriptions (< 155 chars).
+- **Files touched**:
+  - `index.html`
+  - `products/index.html`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Replaced legacy keyword-stuffed tags with clean, accurate title and meta descriptions matching visible page content.
+
+
 
 
 
