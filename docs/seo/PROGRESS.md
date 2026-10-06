@@ -294,6 +294,132 @@
   - `services/web-development/index.html`
   - `services/wordpress-development/index.html`
   - `services/wordpress-maintenance/index.html`
+## SEO Refinement — Step 0 (Schema Audit)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Inspected all 41 HTML files for JSON-LD structured data and matched against visible page content.
+  - Verified 100% FAQ schema alignment: confirmed no `FAQPage` schema exists without a corresponding visible Q&A accordion section.
+  - Created `/docs/seo/SCHEMA_AUDIT.md` breaking down schema types and compliance across every URL.
+- **Files touched**:
+  - `docs/seo/SCHEMA_AUDIT.md`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Confirmed 0 FAQ schema mismatches exist across the codebase.
+
+## SEO Refinement — Step 1 (Metadata Optimization)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Updated homepage (`index.html`) Title (57 chars), Meta Description (152 chars), Open Graph, and Twitter metadata to align with global remote positioning (web development, e-commerce, care plans, SEO, custom software, EventOS/RMS).
+  - Updated Products page (`products/index.html`) Title (56 chars), Meta Description (154 chars), Open Graph, and Twitter metadata to describe actual live products (EventOS, Restaurant ERP, AnyDown, ScanDoc, WeatherNow, Goldmine, Do Not Panic, Sieyah Wear) plus custom software and AI web services without keyword stuffing.
+  - Verified uniqueness and length bounds across titles (< 60 chars) and descriptions (< 155 chars).
+- **Files touched**:
+  - `index.html`
+  - `products/index.html`
+  - `docs/seo/PROGRESS.md`
+## SEO Refinement — Step 2 (Entity Consistency)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Standardized the primary contact email to `info@silverfoxdynamics.com` across all HTML pages, footer links, `/about/company-facts/`, `/llms.txt`, and JSON-LD schemas.
+  - Classified `Sieyah Wear` strictly as an e-commerce WooCommerce store case study (not a software platform).
+  - Extended `/about/company-facts/`, `/llms.txt`, and `SoftwareApplication` / `ItemList` schema on `/products/` to cover every real product (EventOS, Restaurant ERP, AnyDown, Do Not Panic, ScanDoc, WeatherNow, Goldmine).
+  - Documented Restaurant ERP stable schema URL: `https://rms.silverfoxdynamics.com` (the branded public product URL linked across the site).
+  - Standardized `sameAs` array in Organization schema to include only verified Facebook (`https://www.facebook.com/SilverFoxDynamics`) and LinkedIn (`https://www.linkedin.com/company/silver-fox-dynamics/`) pages found in the footer.
+  - Removed unverified `@silverfoxdyn` twitter handle tags.
+- **Files touched**:
+  - `about/company-facts/index.html`
+  - `llms.txt`
+  - `products/index.html`
+  - `ceo-message/index.html`
+  - `privacy/index.html`
+  - `terms/index.html`
+  - `index.html`
+  - `docs/seo/PROGRESS.md`
+## SEO Refinement — Step 3 (Claims Qualification & Stats Audit)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Rephrased `"under 2 seconds"` load time claim in `services/speed-optimization/index.html` to `"we optimize for fast mobile loading"`.
+  - Rephrased `"Zero-Downtime"` migration claims in `services/website-migration/index.html` to `"planned to minimise downtime"` and `"Managed Website Migration"`.
+  - Rephrased `"regional CDN deployment"` on `markets/pakistan/index.html` to `"Edge CDN asset caching"`.
+  - Cleared unverified `@silverfoxdyn` twitter handle tags across `index.html`, `products/index.html`, `speed-optimization`, and `website-migration`.
+  - Preserved original homepage stats and client logos untouched, as instructed.
+- **Files touched**:
+  - `services/speed-optimization/index.html`
+  - `services/website-migration/index.html`
+  - `markets/pakistan/index.html`
+  - `index.html`
+  - `products/index.html`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made & Preserved Items**:
+  - **Homepage Stats Preserved**:
+    1. `10+` — Projects delivered
+    2. `5+` — Happy clients
+    3. `2+` — Years of excellence
+    4. `24/7` — Support available
+## SEO Refinement — Step 4 (Sitemap and Crawl Optimization)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Configured `<meta name="robots" content="noindex, follow">` on `/apply/index.html`.
+  - Removed `/apply/` route from `sitemap.xml`.
+  - Retained `/privacy/` and `/terms/` in `sitemap.xml` with low priority (`0.4`).
+  - Updated all 39 `sitemap.xml` `<lastmod>` entries to match exact last git commit dates (`YYYY-MM-DD`).
+  - Verified `404.html` returns HTTP status 404 on Vercel deployment and has `noindex, follow`.
+  - Verified 100% of canonical URLs across all HTML files end with trailing slashes, matching Vercel URL normalization.
+  - Verified zero redirect chains in `vercel.json`.
+- **Files touched**:
+  - `apply/index.html`
+  - `sitemap.xml`
+  - `docs/seo/PROGRESS.md`
+## SEO Refinement — Step 5 (New Services, Use-Cases, and Market Country Pages)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Built `/services/woocommerce-development/index.html` (WooCommerce dev, payment integrations, speed, care, referencing Sieyah Wear).
+  - Built `/services/local-seo/index.html` (Google Business Profile, NAP consistency, local citations, geo-targeted search intent, no fake metrics).
+  - Built `/use-cases/event-venue-management-software/index.html` (Built around live product EventOS: venue booking, ticketing, seating maps, live demo link).
+  - Verified local payment ecosystems and created 3 dedicated, highly unique market country pages:
+    - `/markets/uganda/index.html` (MTN MoMo UG, Airtel Money UG, Pesapal, UGX multi-currency, 3G data optimization).
+    - `/markets/tanzania/index.html` (Vodacom M-Pesa TZ, Tigo Pesa, Selcom gateway, TZS pricing).
+    - `/markets/bangladesh/index.html` (bKash MFS tokenized checkout, Nagad, Rocket, SSLCommerz, F-commerce to web migration).
+  - Updated regional hubs (`/markets/africa/` and `/markets/south-asia/`) to link directly to new country pages.
+  - Updated `/services/` and `/products/` hubs to link to the new service and use-case pages.
+  - Updated `sitemap.xml` with all 6 new URLs.
+- **Files touched**:
+  - `services/woocommerce-development/index.html`
+  - `services/local-seo/index.html`
+  - `use-cases/event-venue-management-software/index.html`
+  - `markets/uganda/index.html`
+  - `markets/tanzania/index.html`
+  - `markets/bangladesh/index.html`
+  - `markets/africa/index.html`
+  - `markets/south-asia/index.html`
+  - `services/index.html`
+  - `products/index.html`
+  - `sitemap.xml`
+  - `docs/seo/PROGRESS.md`
+## SEO Refinement — Step 6 (QA & Refinement Report)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Ran comprehensive automated workspace QA audit (`run_full_qa.js`).
+  - Verified 47 HTML files and 96 JSON-LD structured data blocks.
+  - Trimmed title and description lengths across all pages (titles < 60-65 chars, descriptions < 155-160 chars).
+  - Ensured `sfd_theme` dark mode inline script is present on 100% of pages.
+  - Verified zero broken internal links, zero duplicate titles, and zero schema validation errors.
+  - Created `/docs/seo/REFINEMENT_REPORT.md` documenting all changes, schema audit results, and manual user checklists.
+- **Files touched**:
+  - `docs/seo/REFINEMENT_REPORT.md`
+  - `docs/seo/PROGRESS.md`
+- **Decisions made**:
+  - Confirmed 0 QA errors across workspace.
+
+## SEO Refinement — Corrections Step 2 (Client Logos Correction)
+- **Date**: 2026-10-07
+- **What changed**:
+  - Corrected `PROGRESS.md` and `REFINEMENT_REPORT.md` client logo records.
+  - Verified actual client logos in the homepage "Trusted by businesses worldwide" section: `JFC` (`/images/jfc-logo.png`), `NAT` (`/images/nat-logo.png`), `Accra` (`/images/accra-logo.png`), and `Safari` (`/images/safari-logo.png`).
+  - Homepage logos and stats were left unchanged.
+
+
+
+
 
 
 

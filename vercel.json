@@ -1,4 +1,6 @@
 {
+  "trailingSlash": true,
+  "cleanUrls": true,
   "redirects": [
     { "source": "/about.html", "destination": "/about/", "permanent": true },
     { "source": "/apply.html", "destination": "/apply/", "permanent": true },
