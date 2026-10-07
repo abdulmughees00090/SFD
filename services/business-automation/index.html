@@ -42,6 +42,7 @@
     "name": "Business Automation & API Integration Services",
     "provider": {
       "@type": "Organization",
+      "@id": "https://silverfoxdynamics.com/#organization",
       "name": "Silver Fox Dynamics",
       "url": "https://silverfoxdynamics.com"
     },
@@ -74,7 +75,7 @@
 
 <header>
   <div class="container">
-    <a href="/" aria-label="Silver Fox Dynamics Homepage"><span class="header-logo-light-wrap"><img src="/images/logo-light.png" alt="Silver Fox Dynamics Logo" class="header-logo header-logo-light"></span><img src="/images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo header-logo-dark"></a>
+    <a href="/" aria-label="Silver Fox Dynamics Homepage"><span class="header-logo-light-wrap"><img decoding="async" height="50" width="200" src="/images/logo-light.png" alt="Silver Fox Dynamics Logo" class="header-logo header-logo-light"></span><img decoding="async" height="50" width="200" src="/images/logo1.png" alt="Silver Fox Dynamics Logo" class="header-logo header-logo-dark"></a>
     <nav>
       <div class="theme-toggle-wrapper">
         <button class="theme-switch" id="themeToggleBtn" aria-label="Toggle light/dark mode">
@@ -115,7 +116,7 @@
     <div class="container">
       <div class="product-showcase reveal">
         <div class="product-visual-wrap">
-          <img src="/images/consult-prod.png" alt="Business Automation Services">
+          <img decoding="async" loading="lazy" height="400" width="600" src="/images/consult-prod.png" alt="Business Automation Services">
         </div>
         <div class="product-content">
           <span class="product-tag" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">Workflow Efficiency</span>
@@ -137,6 +138,71 @@
             <a href="/services/custom-software/" class="btn btn-outline-gradient">Enterprise Software →</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="features-section" style="padding: 60px 0;">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Business Automation &amp; System Integration Scope</h2>
+        <p>Streamline repetitive business workflows with custom software, API bridges, and automated pipelines.</p>
+      </div>
+
+      <div class="about-grid" style="margin-top: 32px;">
+        <div class="glass-card">
+          <h3>Automation Capabilities &amp; Features</h3>
+          <p>We build tailored automation solutions to connect disconnected tools and eliminate manual data entry:</p>
+          <ul class="features-list" style="margin-top: 12px;">
+            <li>REST and GraphQL API integration between CRMs, ERPs, and web platforms.</li>
+            <li>Custom webhook listeners and automated background worker scripts.</li>
+            <li>Automated customer onboarding workflows, email notifications, and receipt generation.</li>
+            <li>Data extraction, transformation, and synchronization pipelines (ETL).</li>
+            <li>Automated inventory and order status syncing across multi-channel stores.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <h3>Ideal Use Cases &amp; Target Teams</h3>
+          <p>Automation services are built for organizations seeking operational efficiency and accuracy:</p>
+          <ul class="features-list" style="margin-top: 12px;">
+            <li>Operations teams spending hours manually copying data between web forms and spreadsheets.</li>
+            <li>E-commerce businesses needing synchronized inventory across marketplaces.</li>
+            <li>Service providers requiring instant CRM lead distribution and SMS/email alerts.</li>
+            <li>Finance teams looking for automated invoice generation and payment reconciliation.</li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <h3>Development &amp; Deployment Process</h3>
+          <p>Our engineering approach ensures reliable data transfer and error handling:</p>
+          <ol style="margin-top: 12px; padding-left: 20px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            <li><strong style="color:var(--text-main);">Workflow Audit:</strong> Analyze existing manual steps, data schemas, and API documentation.</li>
+            <li><strong style="color:var(--text-main);">Architecture Design:</strong> Design middleware, authentication schemes, and retry mechanisms.</li>
+            <li><strong style="color:var(--text-main);">Development &amp; Testing:</strong> Build webhook endpoints and test edge-case error responses.</li>
+            <li><strong style="color:var(--text-main);">Deployment &amp; Logging:</strong> Deploy serverless functions or worker tasks with automated error logging.</li>
+          </ol>
+        </div>
+
+        <div class="glass-card">
+          <h3>Client Prerequisites &amp; System Boundaries</h3>
+          <p>Understanding requirements and technical dependencies upfront:</p>
+          <ul class="features-list" style="margin-top: 12px;">
+            <li><strong>Prerequisites:</strong> API tokens/credentials for target platforms, sample data schemas, and clear mapping rules.</li>
+            <li><strong>System Boundaries:</strong> Automations rely on third-party platform API uptime and rate limits. Legacy desktop software without API access may require middleware extensions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="resource-link-banner" style="padding: 24px 0; border-top: 1px solid var(--border-1);">
+    <div class="container">
+      <div style="background: var(--surface-2, rgba(255,255,255,0.03)); border: 1px solid var(--border-2); border-radius: 12px; padding: 20px; text-align: center;">
+        <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); font-weight: 600;">Recommended Reading</span>
+        <h4 style="margin: 8px 0 12px; font-size: 1.1rem;"><a href="/resources/connecting-whatsapp-to-website/" style="color: var(--text-main); text-decoration: underline;">Guide: Connecting WhatsApp Integration to Your Website &rarr;</a></h4>
       </div>
     </div>
   </section>

@@ -4,55 +4,46 @@
   <!-- Main Pages -->
   <url>
     <loc>https://silverfoxdynamics.com/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/products/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/resources/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/about/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/about/company-facts/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/ceo-message/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/contact/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/careers/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -60,31 +51,26 @@
   <!-- Web Development Services -->
   <url>
     <loc>https://silverfoxdynamics.com/services/web-development/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/wordpress-development/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/shopify-ecommerce/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/landing-pages/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/woocommerce-development/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -92,31 +78,26 @@
   <!-- Website Care Services -->
   <url>
     <loc>https://silverfoxdynamics.com/services/website-maintenance/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/wordpress-maintenance/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/website-security/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/speed-optimization/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/website-migration/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -124,31 +105,26 @@
   <!-- Growth & Tech Services -->
   <url>
     <loc>https://silverfoxdynamics.com/services/seo-services/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/local-seo/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/custom-software/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/mobile-apps/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/services/business-automation/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -156,67 +132,56 @@
   <!-- Market Regional Hubs & Country Pages -->
   <url>
     <loc>https://silverfoxdynamics.com/markets/africa/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/nigeria/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/kenya/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/ghana/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/south-africa/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/uganda/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/tanzania/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/south-asia/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/philippines/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/pakistan/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/markets/bangladesh/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -224,13 +189,11 @@
   <!-- Use Cases -->
   <url>
     <loc>https://silverfoxdynamics.com/use-cases/restaurant-management-system/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/use-cases/event-venue-management-software/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -238,37 +201,31 @@
   <!-- Resource Articles -->
   <url>
     <loc>https://silverfoxdynamics.com/resources/shopify-vs-woocommerce-emerging-markets/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/resources/accepting-mobile-money-website/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/resources/connecting-whatsapp-to-website/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/resources/website-maintenance-checklist/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/resources/why-website-slow-mobile-networks/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/resources/get-business-found-on-google/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -276,13 +233,11 @@
   <!-- Legal Pages -->
   <url>
     <loc>https://silverfoxdynamics.com/privacy/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://silverfoxdynamics.com/terms/</loc>
-    <lastmod>2026-10-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>

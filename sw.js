@@ -8,7 +8,7 @@
    Splash / install uses the updated branded icons.
 ================================================================ */
 
-const CACHE_VERSION = 'sfd-v6';
+const CACHE_VERSION = "sfd-cache-v4";
 const CACHE_STATIC  = `${CACHE_VERSION}-static`;
 const CACHE_DYNAMIC = `${CACHE_VERSION}-dynamic`;
 
@@ -25,7 +25,6 @@ const STATIC_ASSETS = [
   '/images/icon-512-maskable.png',
   '/images/apple-touch-icon.png',
   '/images/favicon-32x32.png',
-  '/images/logo.png',
   '/images/logo1.png'
 ];
 

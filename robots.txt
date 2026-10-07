@@ -28,25 +28,3 @@ Disallow: /*?msclkid=
 
 # Sitemap location
 Sitemap: https://silverfoxdynamics.com/sitemap.xml
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-# Block known aggressive scrapers
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
