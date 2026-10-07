@@ -91,46 +91,70 @@
 <main>
   <section class="page-hero">
     <div class="container">
-      <div class="hero-content text-center">
-        <span class="hero-badge">Payment Integration</span>
+      <div class="hero-content">
+        <span class="hero-badge">Payments & E-Commerce</span>
         <h1>How to Accept Mobile Money & Online Payments <span class="gradient-text">on Your Website</span></h1>
-        <p class="article-meta">Published by Silver Fox Dynamics Engineering Team | October 2026</p>
+        <p>Published by Silver Fox Dynamics Engineering Team | October 2026</p>
       </div>
     </div>
   </section>
 
-            <div class="article-content" style="line-height: 1.8; margin-top: 2rem;">
-                <p class="lead" style="font-size: 1.2rem;">
-                    In regions like Kenya, Ghana, Uganda, Nigeria, and the Philippines, mobile wallets and STK push prompts account for over half of all digital transactions. Integrating mobile money seamlessly ensures lower cart abandonment rates and instant order fulfillment.
-                </p>
+  <section class="policy-section">
+    <div class="container">
+      <div class="policy-cards" style="max-width: 860px; margin: 0 auto;">
 
-                <h2>1. Selecting the Right Integration Architecture</h2>
-                <p>
-                    Depending on your tech stack (Custom Web App, WooCommerce, or Shopify), you can choose between direct API integrations or multi-channel payment aggregators:
-                </p>
-                <ul>
-                    <li><strong>Direct API (e.g., Safaricom M-Pesa Daraja API):</strong> Initiates a prompt on the customer's phone (STK Push), returning an instant callback (Webhook) to your server upon PIN entry.</li>
-                    <li><strong>Aggregator APIs (e.g., Paystack, Flutterwave, Hubtel):</strong> Provides a unified modal that accepts cards, bank transfers, and mobile wallets in local currencies.</li>
-                </ul>
-
-                <h2>2. Managing Webhooks & Order Confirmation Security</h2>
-                <p>
-                    Never rely on client-side status updates for order completion. Implement server-side verification using cryptographic signature verification (HMAC header validation) to verify webhook payloads before marking invoices as paid.
-                </p>
-
-                <h2>3. Fallback Workflows & Cash-On-Delivery (COD) Options</h2>
-                <p>
-                    For markets like the Philippines or Pakistan, combining digital payments with a verified Cash-on-Delivery (COD) option and automated SMS/WhatsApp verification codes ensures maximum order volume.
-                </p>
-
-                <div class="article-cta-box card" style="margin-top: 3rem; padding: 2rem; border-left: 4px solid var(--accent-color, #ff6b35);">
-                    <h3>Need Custom Payment Gateway Integration?</h3>
-                    <p>Our engineering team builds secure custom web apps and e-commerce payment integrations for global and regional platforms.</p>
-                    <a href="/services/business-automation/" class="btn-primary" style="margin-top: 1rem; inline-block;">Learn About API Integrations</a>
-                </div>
-            </div>
+        <div class="policy-card policy-card-intro reveal">
+          <p>Expanding online sales in emerging markets requires supporting local payment methods like M-Pesa, Paystack, MTN MoMo, and regional card processors alongside international options.</p>
+          <div class="meta-chips">
+            <span class="meta-chip">Published: October 2026</span>
+            <span class="meta-chip">Category: Payments & E-Commerce</span>
+            <span class="meta-chip">Engineering Guide</span>
+          </div>
         </div>
-    
+
+
+        <div class="policy-card reveal">
+          <div class="section-num-row">
+            <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">1</span>
+            <h2>Selecting the Right Integration Architecture</h2>
+          </div>
+          
+          <p>Choose between hosted checkout redirects and embedded inline payment forms based on your PCI-DSS compliance requirements and technical capabilities.</p>
+        
+        </div>
+
+        <div class="policy-card reveal">
+          <div class="section-num-row">
+            <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">2</span>
+            <h2>Managing Webhooks & Order Confirmation Security</h2>
+          </div>
+          
+          <p>Ensure payment status verification happens server-to-server via cryptographic signatures before fulfilling orders to prevent fraud and transaction spoofing.</p>
+        
+        </div>
+
+        <div class="policy-card reveal">
+          <div class="section-num-row">
+            <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">3</span>
+            <h2>Fallback Workflows & Cash-On-Delivery (COD) Options</h2>
+          </div>
+          
+          <p>Provide automated SMS or email order receipts with manual bank transfer instructions or COD verification for customers hesitant to pay upfront.</p>
+        
+        </div>
+
+        <div class="policy-accept reveal" style="margin-top: 32px;">
+          <h2 style="color: #fff; margin-bottom: 12px;">Need Payment Gateway Integration?</h2>
+          <p style="color: rgba(255,255,255,0.85); max-width: 560px; margin: 0 auto 24px;">Silver Fox Dynamics engineers secure payment workflows for e-commerce stores and custom web platforms.</p>
+          <div class="acceptance-actions" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+            <a href="/contact/" class="btn btn-gradient">Request Service Quote &rarr;</a>
+            <a href="/services/" class="btn btn-outline-gradient">Explore Engineering Services &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>

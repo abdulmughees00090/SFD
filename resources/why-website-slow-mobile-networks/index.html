@@ -91,51 +91,70 @@
 <main>
   <section class="page-hero">
     <div class="container">
-      <div class="hero-content text-center">
-        <span class="hero-badge">Performance & Speed</span>
+      <div class="hero-content">
+        <span class="hero-badge">Performance Engineering</span>
         <h1>Why Your Website is Slow on Mobile Networks (And How <span class="gradient-text">to Fix It)</span></h1>
-        <p class="article-meta">Published by Silver Fox Dynamics Engineering Team | October 2026</p>
+        <p>Published by Silver Fox Dynamics Engineering Team | October 2026</p>
       </div>
     </div>
   </section>
 
-            <div class="article-content" style="line-height: 1.8; margin-top: 2rem;">
-                <p class="lead" style="font-size: 1.2rem;">
-                    In emerging markets across Africa and Asia, over 80% of web traffic originates from smartphones connected to 3G or 4G mobile data connections. A website that takes 8 seconds to load will lose up to 50% of its visitors before the hero section renders.
-                </p>
+  <section class="policy-section">
+    <div class="container">
+      <div class="policy-cards" style="max-width: 860px; margin: 0 auto;">
 
-                <h2>1. Oversized Uncompressed Images</h2>
-                <p>
-                    Serving 3MB raw JPEGs or PNGs over a mobile data connection consumes user bandwidth and stalls rendering.
-                </p>
-                <ul>
-                    <li><strong>Solution:</strong> Convert all images to next-gen WebP or AVIF formats. Use responsive <code>srcset</code> attributes so mobile devices download smaller image resolutions.</li>
-                </ul>
-
-                <h2>2. Render-Blocking JavaScript & CSS</h2>
-                <p>
-                    Browsers pause page rendering when encountering heavy un-deferred scripts in the HTML <code>&lt;head&gt;</code>.
-                </p>
-                <ul>
-                    <li><strong>Solution:</strong> Add <code>defer</code> or <code>async</code> tags to non-critical JavaScript files and inline critical CSS for above-the-fold content.</li>
-                </ul>
-
-                <h2>3. Lack of Edge Content Delivery Network (CDN)</h2>
-                <p>
-                    If your server is located in the US or Europe, users in Lagos, Nairobi, Manila, or Islamabad face 200ms+ round-trip latency for every asset request.
-                </p>
-                <ul>
-                    <li><strong>Solution:</strong> Deploy an edge CDN (such as Cloudflare or Vercel Edge Cache) to serve HTML, CSS, JS, and media from edge nodes located close to the user.</li>
-                </ul>
-
-                <div class="article-cta-box card" style="margin-top: 3rem; padding: 2rem; border-left: 4px solid var(--accent-color, #ff6b35);">
-                    <h3>Want a Guaranteed Speed Score Upgrade?</h3>
-                    <p>Silver Fox Dynamics offers Core Web Vitals and mobile speed optimization services with performance verification.</p>
-                    <a href="/services/speed-optimization/" class="btn-primary" style="margin-top: 1rem; inline-block;">Explore Speed Services</a>
-                </div>
-            </div>
+        <div class="policy-card policy-card-intro reveal">
+          <p>High page load latency on mobile networks directly degrades user experience and lowers search rankings. Most mobile slowdowns stem from payload bloat and unoptimized script execution.</p>
+          <div class="meta-chips">
+            <span class="meta-chip">Published: October 2026</span>
+            <span class="meta-chip">Category: Performance Engineering</span>
+            <span class="meta-chip">Engineering Guide</span>
+          </div>
         </div>
-    
+
+
+        <div class="policy-card reveal">
+          <div class="section-num-row">
+            <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">1</span>
+            <h2>Oversized Uncompressed Images</h2>
+          </div>
+          
+          <p>Large uncompressed JPG or PNG images consume mobile data quickly. Convert assets to WebP formats, set explicit width and height attributes, and implement native <code>loading="lazy"</code>.</p>
+        
+        </div>
+
+        <div class="policy-card reveal">
+          <div class="section-num-row">
+            <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">2</span>
+            <h2>Render-Blocking JavaScript & CSS</h2>
+          </div>
+          
+          <p>Excessive third-party tracking scripts, analytics tags, and un-minified CSS delay initial page render. Defer non-critical scripts with <code>defer</code> or <code>async</code> attributes.</p>
+        
+        </div>
+
+        <div class="policy-card reveal">
+          <div class="section-num-row">
+            <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">3</span>
+            <h2>Lack of Edge Content Delivery Network (CDN)</h2>
+          </div>
+          
+          <p>Serving assets from a single distant origin server increases network round-trip latency. Deploy an edge CDN with static caching headers to serve content close to your visitors.</p>
+        
+        </div>
+
+        <div class="policy-accept reveal" style="margin-top: 32px;">
+          <h2 style="color: #fff; margin-bottom: 12px;">Need Speed & Core Web Vitals Optimization?</h2>
+          <p style="color: rgba(255,255,255,0.85); max-width: 560px; margin: 0 auto 24px;">Silver Fox Dynamics optimizes web application payloads for sub-second mobile rendering.</p>
+          <div class="acceptance-actions" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+            <a href="/contact/" class="btn btn-gradient">Request Service Quote &rarr;</a>
+            <a href="/services/" class="btn btn-outline-gradient">Explore Engineering Services &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
