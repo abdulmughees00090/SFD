@@ -92,8 +92,8 @@
   <section class="page-hero">
     <div class="container">
       <div class="hero-content">
-        <span class="hero-badge">Payments & E-Commerce</span>
-        <h1>How to Accept Mobile Money & Online Payments <span class="gradient-text">on Your Website</span></h1>
+        <span class="hero-badge">Payments &amp; E-Commerce</span>
+        <h1>How to Accept Mobile Money &amp; Online Payments <span class="gradient-text">on Your Website</span></h1>
         <p>Published by Silver Fox Dynamics Engineering Team | October 2026</p>
       </div>
     </div>
@@ -104,51 +104,75 @@
       <div class="policy-cards" style="max-width: 860px; margin: 0 auto;">
 
         <div class="policy-card policy-card-intro reveal">
-          <p>Expanding online sales in emerging markets requires supporting local payment methods like M-Pesa, Paystack, MTN MoMo, and regional card processors alongside international options.</p>
+          <p>Expanding online sales across Africa, South Asia, and emerging markets requires accepting regional payment channels where credit card usage is low. Solutions such as M-Pesa (East Africa), Paystack and Flutterwave (Nigeria/Ghana), MTN MoMo, bKash (Bangladesh), and GCash (Philippines) allow merchants to collect payments instantly directly from mobile wallets.</p>
           <div class="meta-chips">
             <span class="meta-chip">Published: October 2026</span>
-            <span class="meta-chip">Category: Payments & E-Commerce</span>
+            <span class="meta-chip">Category: Payments &amp; E-Commerce</span>
             <span class="meta-chip">Engineering Guide</span>
           </div>
         </div>
-
 
         <div class="policy-card reveal">
           <div class="section-num-row">
             <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">1</span>
             <h2>Selecting the Right Integration Architecture</h2>
           </div>
-          
-          <p>Choose between hosted checkout redirects and embedded inline payment forms based on your PCI-DSS compliance requirements and technical capabilities.</p>
-        
+          <p>When integrating payment gateways into your web application or e-commerce platform, selecting the correct API integration pattern determines security, user experience, and PCI-DSS compliance scope:</p>
+          <ul class="check-list">
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Hosted Checkout Redirects:</strong> Redirect customers to a secure gateway-hosted page (e.g. Paystack Standard Checkout). This simplifies PCI compliance as card data never touches your server.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Inline Modal SDKs:</strong> Open a secure payment overlay directly on your checkout page via JavaScript SDKs, keeping customers on your domain while offloading card handling.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Direct Server-to-Server APIs:</strong> Process mobile money STK pushes (e.g. M-Pesa Express Daraja API) via REST API calls initiated directly from your backend server.</li>
+          </ul>
         </div>
 
         <div class="policy-card reveal">
           <div class="section-num-row">
             <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">2</span>
-            <h2>Managing Webhooks & Order Confirmation Security</h2>
+            <h2>Managing Webhooks &amp; Order Confirmation Security</h2>
           </div>
-          
-          <p>Ensure payment status verification happens server-to-server via cryptographic signatures before fulfilling orders to prevent fraud and transaction spoofing.</p>
-        
+          <p>Mobile money transactions are inherently asynchronous: a customer initiates payment, receives an STK prompt on their mobile phone, enters their PIN, and the telecom network processes the transaction. Webhooks are critical to updating order status accurately:</p>
+          <p>Never mark an order as "Paid" solely based on client-side browser redirects. Always configure a secure HTTP POST webhook listener on your web server.</p>
+          <div class="info-callout">
+            <strong>Security Best Practice:</strong> Verify the cryptographic signature (e.g., HMAC-SHA512 header) sent with every incoming payment webhook against your secret API key before updating your database records.
+          </div>
+          <ul class="check-list" style="margin-top: 14px;">
+            <li><em class="check-icon" aria-hidden="true">→</em> Implement idempotency checks using unique payment transaction IDs to prevent processing duplicate webhooks.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> Store raw payment response payloads in server logs for audit trails and customer support queries.</li>
+          </ul>
         </div>
 
         <div class="policy-card reveal">
           <div class="section-num-row">
             <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">3</span>
-            <h2>Fallback Workflows & Cash-On-Delivery (COD) Options</h2>
+            <h2>Common Payment Integration Mistakes &amp; How to Avoid Them</h2>
           </div>
-          
-          <p>Provide automated SMS or email order receipts with manual bank transfer instructions or COD verification for customers hesitant to pay upfront.</p>
-        
+          <p>Avoid these common technical pitfalls when launching payment gateways for growth markets:</p>
+          <ul class="check-list">
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Hardcoding Currency Codes:</strong> Ensure multi-currency platforms dynamically pass ISO currency codes (KES, GHS, NGN, USD) and account for local decimal formatting.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Ignoring Mobile Network Timeouts:</strong> Mobile money PIN prompts can take 15-30 seconds to complete. Implement polling algorithms or user status pages that wait for background webhooks gracefully.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Missing Fallback Channels:</strong> Always offer secondary payment options (such as direct bank transfer or Cash on Delivery) if a specific mobile network gateway experiences temporary downtime.</li>
+          </ul>
+        </div>
+
+        <div class="policy-card reveal">
+          <div class="section-num-row">
+            <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">4</span>
+            <h2>Pre-Launch Checklist &amp; Technical Support</h2>
+          </div>
+          <p>Before launching payment processing live on production environments, complete these verification steps:</p>
+          <ul class="check-list">
+            <li><em class="check-icon" aria-hidden="true">→</em> Verify sandbox test transactions across successful, declined, and cancelled payment flows.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> Switch API keys from test mode to production live keys and verify HTTPS SSL configuration.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> Test automated order confirmation emails and WhatsApp notification triggers upon payment confirmation.</li>
+          </ul>
         </div>
 
         <div class="policy-accept reveal" style="margin-top: 32px;">
-          <h2 style="color: #fff; margin-bottom: 12px;">Need Payment Gateway Integration?</h2>
-          <p style="color: rgba(255,255,255,0.85); max-width: 560px; margin: 0 auto 24px;">Silver Fox Dynamics engineers secure payment workflows for e-commerce stores and custom web platforms.</p>
+          <h2 style="color: #fff; margin-bottom: 12px;">Need Payment Gateway Integration Engineering?</h2>
+          <p style="color: rgba(255,255,255,0.85); max-width: 560px; margin: 0 auto 24px;">Silver Fox Dynamics builds custom payment integrations, mobile money checkout workflows, and secure web platforms.</p>
           <div class="acceptance-actions" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
-            <a href="/contact/" class="btn btn-gradient">Request Service Quote &rarr;</a>
-            <a href="/services/" class="btn btn-outline-gradient">Explore Engineering Services &rarr;</a>
+            <a href="/contact/" class="btn btn-gradient">Request Payment Engineering Quote &rarr;</a>
+            <a href="/services/" class="btn btn-outline-gradient">Explore Development Services &rarr;</a>
           </div>
         </div>
 

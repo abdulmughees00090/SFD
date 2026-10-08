@@ -2757,8 +2757,7 @@ body.dark-theme .faq-contact-section {
 .card,
 .feature-card,
 .resource-card,
-.market-box,
-.tips-card {
+.market-box {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
@@ -2803,8 +2802,7 @@ body.dark-theme .faq-contact-section {
   margin-bottom: 40px;
 }
 
-.category-tag,
-.hero-badge {
+.category-tag {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -2957,16 +2955,7 @@ body.dark-theme .faq-contact-section {
   text-decoration: underline;
 }
 
-/* Header logo theme toggle visibility */
-.header-logo-light {
-  display: none;
-}
-.dark-theme .header-logo-light {
-  display: inline-block;
-}
-.dark-theme .header-logo-dark {
-  display: none;
-}
+
 
 /* Specific component fallbacks */
 .features-section,
