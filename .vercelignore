@@ -1,0 +1,8 @@
+docs/
+scripts/
+package.json
+package-lock.json
+*.md
+*.zip
+*.rar
+unused-images/

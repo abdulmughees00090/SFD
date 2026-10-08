@@ -93,7 +93,7 @@
     <div class="container">
       <div class="hero-content">
         <span class="hero-badge">Performance Engineering</span>
-        <h1>Why Your Website is Slow on Mobile Networks (And How <span class="gradient-text">to Fix It)</span></h1>
+        <h1>Why Your Website is Slow on Mobile Networks <span class="gradient-text">(And How to Fix It)</span></h1>
         <p>Published by Silver Fox Dynamics Engineering Team | October 2026</p>
       </div>
     </div>
@@ -104,7 +104,7 @@
       <div class="policy-cards" style="max-width: 860px; margin: 0 auto;">
 
         <div class="policy-card policy-card-intro reveal">
-          <p>High page load latency on mobile networks directly degrades user experience and lowers search rankings. Most mobile slowdowns stem from payload bloat and unoptimized script execution.</p>
+          <p>High page load latency on 3G and 4G mobile networks increases bounce rates, lowers user conversion, and damages Google search rankings. Mobile speed bottlenecks stem primarily from uncompressed image payloads, render-blocking JavaScript, and inefficient server response times.</p>
           <div class="meta-chips">
             <span class="meta-chip">Published: October 2026</span>
             <span class="meta-chip">Category: Performance Engineering</span>
@@ -112,43 +112,80 @@
           </div>
         </div>
 
-
         <div class="policy-card reveal">
           <div class="section-num-row">
             <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">1</span>
-            <h2>Oversized Uncompressed Images</h2>
+            <h2>Oversized Uncompressed Images &amp; Missing Attributes</h2>
           </div>
-          
-          <p>Large uncompressed JPG or PNG images consume mobile data quickly. Convert assets to WebP formats, set explicit width and height attributes, and implement native <code>loading="lazy"</code>.</p>
-        
+          <p>Uncompressed media files consume mobile data quotas and delay visual rendering:</p>
+          <ul class="check-list">
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>WebP Conversion:</strong> Convert heavy PNG and JPG images to modern WebP formats to reduce payload size by up to 70% without visual degradation.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Explicit Width &amp; Height:</strong> Always specify explicit <code>width</code> and <code>height</code> attributes on <code>&lt;img&gt;</code> tags to eliminate Cumulative Layout Shift (CLS).</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Native Lazy Loading:</strong> Add <code>loading="lazy" decoding="async"</code> to below-the-fold images while keeping above-the-fold hero images eagerly loaded.</li>
+          </ul>
         </div>
 
         <div class="policy-card reveal">
           <div class="section-num-row">
             <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">2</span>
-            <h2>Render-Blocking JavaScript & CSS</h2>
+            <h2>Render-Blocking Scripts &amp; CSS Framework Bloat</h2>
           </div>
-          
-          <p>Excessive third-party tracking scripts, analytics tags, and un-minified CSS delay initial page render. Defer non-critical scripts with <code>defer</code> or <code>async</code> attributes.</p>
-        
+          <p>Excessive script execution freezes the main browser thread on mid-range mobile devices:</p>
+          <ul class="check-list">
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Script Deferral:</strong> Add <code>defer</code> or <code>async</code> to non-critical analytics, tag managers, and widget scripts.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Critical CSS Inline Rendering:</strong> Inline essential above-the-fold CSS styles directly in the HTML <code>&lt;head&gt;</code> to render hero sections immediately.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Minification:</strong> Minify CSS and JavaScript bundles to drop unused whitespace and comments.</li>
+          </ul>
         </div>
 
         <div class="policy-card reveal">
           <div class="section-num-row">
             <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">3</span>
-            <h2>Lack of Edge Content Delivery Network (CDN)</h2>
+            <h2>Edge CDN Caching &amp; Server Response Optimization</h2>
           </div>
-          
-          <p>Serving assets from a single distant origin server increases network round-trip latency. Deploy an edge CDN with static caching headers to serve content close to your visitors.</p>
+          <p>Slow Time to First Byte (TTFB) delays the start of asset downloads:</p>
+          <ul class="check-list">
+            <li><em class="check-icon" aria-hidden="true">→</em> Deploy global Edge Content Delivery Networks (CDNs) like Vercel or Cloudflare to serve static HTML, CSS, and image assets from servers close to your mobile visitors.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> Configure HTTP Cache-Control headers with long max-age policies for immutable static assets.</li>
+          </ul>
+        </div>
+
+        <div class="policy-card reveal">
+          <div class="section-num-row">
+            <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">4</span>
+            <h2>Mobile Speed Audit Workflow</h2>
+          </div>
+          <p>Systematically audit page performance using these diagnostic steps:</p>
+          <ul class="check-list">
+            <li><em class="check-icon" aria-hidden="true">→</em> Test page load using Google PageSpeed Insights under simulated 4G mobile throttling.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> Audit total page payload size (keep initial page download under 1 MB).</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> Verify Interaction to Next Paint (INP) and Largest Contentful Paint (LCP) metrics.</li>
+          </ul>
+        </div>
+
         
+        <div class="policy-card reveal">
+          <div class="section-num-row">
+            <span class="section-num" style="background:linear-gradient(135deg,#0EA5E9,#7C3AED);">5</span>
+            
+          <p>Optimizing web application speed for 3G and 4G networks is essential for user retention and conversion. Mobile users expect pages to render visually within 2 seconds. By addressing uncompressed image assets, deferring render-blocking scripts, and leveraging edge CDN caching, business websites can deliver sub-second performance even under poor network conditions.</p>
+
+          <h2>Mobile Performance Optimization Action Checklist</h2>
+          </div>
+          <p>Apply these performance engineering steps to maintain sub-second mobile page loads:</p>
+          <ul class="check-list">
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Image Payloads:</strong> Compress image sizes under 100 KB using modern WebP or AVIF compression.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Font Subsetting:</strong> Host system fonts locally and load Google Fonts using <code>font-display: swap</code> to prevent invisible text during font loading.</li>
+            <li><em class="check-icon" aria-hidden="true">→</em> <strong>Service Worker Static Caching:</strong> Implement a progressive Service Worker (PWA) to cache core CSS and JavaScript assets locally on mobile devices.</li>
+          </ul>
         </div>
 
         <div class="policy-accept reveal" style="margin-top: 32px;">
-          <h2 style="color: #fff; margin-bottom: 12px;">Need Speed & Core Web Vitals Optimization?</h2>
+          <h2 style="color: #fff; margin-bottom: 12px;">Need Speed &amp; Core Web Vitals Optimization?</h2>
           <p style="color: rgba(255,255,255,0.85); max-width: 560px; margin: 0 auto 24px;">Silver Fox Dynamics optimizes web application payloads for sub-second mobile rendering.</p>
           <div class="acceptance-actions" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
-            <a href="/contact/" class="btn btn-gradient">Request Service Quote &rarr;</a>
-            <a href="/services/" class="btn btn-outline-gradient">Explore Engineering Services &rarr;</a>
+            <a href="/contact/" class="btn btn-gradient">Get Speed Optimization Quote &rarr;</a>
+            <a href="/services/speed-optimization/" class="btn btn-outline-gradient">Explore Speed Services &rarr;</a>
           </div>
         </div>
 
