@@ -8,6 +8,9 @@
    <head>. A second @import here made the browser fetch them behind an extra
    sequential hop, so it was removed. */
 
+/* <picture> wrappers (WebP with PNG fallback) must not create a layout box of their own. */
+picture { display: contents; }
+
 /* ── CSS Variables ─────────────────────────────────────────── */
 :root {
   /* Brand Palette – Logo: cobalt "S" → violet "D", silver fox body */
