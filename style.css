@@ -4,7 +4,12 @@
    Fonts: Outfit (display) + Plus Jakarta Sans (body)
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+/* Fonts (Outfit + Plus Jakarta Sans) are loaded by the <link> in each page's
+   <head>. A second @import here made the browser fetch them behind an extra
+   sequential hop, so it was removed. */
+
+/* <picture> wrappers (WebP with PNG fallback) must not create a layout box of their own. */
+picture { display: contents; }
 
 /* ── CSS Variables ─────────────────────────────────────────── */
 :root {

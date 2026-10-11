@@ -12,37 +12,66 @@
   - Facebook: https://www.facebook.com/SilverFoxDynamics
   - LinkedIn: https://www.linkedin.com/company/silver-fox-dynamics/
 
+## About the Company
+- [Company Facts](https://silverfoxdynamics.com/about/company-facts/): Official corporate facts, operating model, software products, e-commerce portfolio, and contact details.
+- [About Silver Fox Dynamics](https://silverfoxdynamics.com/about/): Vision, mission, and values.
+- [Contact](https://silverfoxdynamics.com/contact/): How to reach the team.
+- [Products & Services overview](https://silverfoxdynamics.com/products/): All live products and service lines in one place.
+
 ## Published Software Products & SaaS Platforms
-- **EventOS**: https://eos.silverfoxdynamics.com/ (Event management SaaS platform)
-- **Restaurant ERP (RMS)**: https://rms.silverfoxdynamics.com (Cloud restaurant POS & inventory software)
-- **AnyDown**: https://anydown.silverfoxdynamics.com (Media downloader web app & Google Play Store application)
-- **Do Not Panic**: https://www.donotpanic.live (Emergency response & productivity platform)
-- **ScanDoc**: https://silverfoxdynamics.com/products/#scandoc (Document scanning utility)
-- **WeatherNow**: https://silverfoxdynamics.com/products/#weathernow (Real-time weather tracking utility)
-- **Goldmine**: https://silverfoxdynamics.com/products/#goldmine (Commodity & gold tracking software)
+- [EventOS](https://eos.silverfoxdynamics.com/): Event management SaaS platform.
+- [Restaurant ERP (RMS)](https://rms.silverfoxdynamics.com): Cloud restaurant POS & inventory software.
+- [AnyDown](https://anydown.silverfoxdynamics.com): Media downloader web app & Google Play Store application.
+- [Do Not Panic](https://www.donotpanic.live): Emergency response & productivity platform.
+- [ScanDoc](https://silverfoxdynamics.com/products/#scandoc): Document scanning utility.
+- [WeatherNow](https://silverfoxdynamics.com/products/#weathernow): Real-time weather tracking utility.
+- [Goldmine](https://silverfoxdynamics.com/products/#goldmine): Commodity & gold tracking software.
 
 ## E-Commerce Work & Case Studies
-- **Sieyah Wear**: http://sieyahwear.com/ (Live WooCommerce fashion store)
-- **Nora Eve Bridal**: http://noraevebridal.co.uk/ (E-commerce bridal store)
-- **Upstreet Co**: http://upstreetco.com/ (Apparel e-commerce store)
+- [Sieyah Wear](https://sieyahwear.com/): Live WooCommerce fashion store.
+- [Nora Eve Bridal](https://noraeve.co.uk/): Bridal boutique Shopify store.
+- [Upstreet Co](https://upstreetco.com/): Apparel e-commerce store.
 
 ## Core Digital Services
-- **Custom Web Development**: https://silverfoxdynamics.com/services/web-development/
-- **WordPress & WooCommerce Development**: https://silverfoxdynamics.com/services/wordpress-development/
-- **Shopify E-Commerce Stores**: https://silverfoxdynamics.com/services/shopify-ecommerce/
-- **High-Converting Landing Pages**: https://silverfoxdynamics.com/services/landing-pages/
-- **Website Maintenance & Care Plans**: https://silverfoxdynamics.com/services/website-maintenance/
-- **WordPress Maintenance & Security**: https://silverfoxdynamics.com/services/wordpress-maintenance/
-- **Website Security & Malware Fixes**: https://silverfoxdynamics.com/services/website-security/
-- **PageSpeed & Core Web Vitals Tuning**: https://silverfoxdynamics.com/services/speed-optimization/
-- **Website Migration Services**: https://silverfoxdynamics.com/services/website-migration/
-- **Technical SEO & Growth**: https://silverfoxdynamics.com/services/seo-services/
-- **Custom Enterprise Software & ERPs**: https://silverfoxdynamics.com/services/custom-software/
-- **Mobile Application Development**: https://silverfoxdynamics.com/services/mobile-apps/
-- **Business Automation & API Integration**: https://silverfoxdynamics.com/services/business-automation/
+- [Custom Web Development](https://silverfoxdynamics.com/services/web-development/)
+- [WordPress & WooCommerce Development](https://silverfoxdynamics.com/services/wordpress-development/)
+- [WooCommerce Development](https://silverfoxdynamics.com/services/woocommerce-development/)
+- [Shopify E-Commerce Stores](https://silverfoxdynamics.com/services/shopify-ecommerce/)
+- [High-Converting Landing Pages](https://silverfoxdynamics.com/services/landing-pages/)
+- [Website Maintenance & Care Plans](https://silverfoxdynamics.com/services/website-maintenance/)
+- [WordPress Maintenance & Security](https://silverfoxdynamics.com/services/wordpress-maintenance/)
+- [Website Security & Malware Fixes](https://silverfoxdynamics.com/services/website-security/)
+- [PageSpeed & Core Web Vitals Tuning](https://silverfoxdynamics.com/services/speed-optimization/)
+- [Website Migration Services](https://silverfoxdynamics.com/services/website-migration/)
+- [Technical SEO & Growth](https://silverfoxdynamics.com/services/seo-services/)
+- [Local SEO](https://silverfoxdynamics.com/services/local-seo/)
+- [Custom Enterprise Software & ERPs](https://silverfoxdynamics.com/services/custom-software/)
+- [Mobile Application Development](https://silverfoxdynamics.com/services/mobile-apps/)
+- [Business Automation & API Integration](https://silverfoxdynamics.com/services/business-automation/)
+
+## Guides & Resources
+- [Engineering Guides & E-Commerce Insights](https://silverfoxdynamics.com/resources/): Index of practical web development, e-commerce, SEO, and website maintenance guides.
+- [Shopify vs WooCommerce for Emerging Markets: Technical Comparison](https://silverfoxdynamics.com/resources/shopify-vs-woocommerce-emerging-markets/): Compares fees, mobile payments, and performance for businesses in Africa, South Asia, and other emerging markets.
+- [How to Accept Mobile Money & Online Payments on Your Website](https://silverfoxdynamics.com/resources/accepting-mobile-money-website/): Integrating mobile money (M-Pesa, MTN MoMo, GCash) and regional gateways (Paystack, Flutterwave).
+- [How to Connect WhatsApp to Your Website for Sales & Support](https://silverfoxdynamics.com/resources/connecting-whatsapp-to-website/): Click-to-chat widgets, product catalog sharing, and WhatsApp Business API order notifications.
+- [How to Get Your Business Found on Google: Local & Technical SEO](https://silverfoxdynamics.com/resources/get-business-found-on-google/): Technical SEO, Google Business Profile, structured data, and search-intent content.
+- [Essential Monthly Website Maintenance Checklist for Business](https://silverfoxdynamics.com/resources/website-maintenance-checklist/): Security hardening, plugin updates, database optimization, and backup verification.
+- [Why Your Website is Slow on Mobile Networks (And How to Fix It)](https://silverfoxdynamics.com/resources/why-website-slow-mobile-networks/): Causes of slow pages on 3G and 4G networks and how to improve Core Web Vitals.
+
+## Use Cases
+- [Restaurant Management Systems & Digital Ordering Platforms](https://silverfoxdynamics.com/use-cases/restaurant-management-system/)
+- [Event Venue Management Software: EventOS](https://silverfoxdynamics.com/use-cases/event-venue-management-software/)
 
 ## Emphasized Target Markets
 - **Global**: Remote-first services available to businesses worldwide.
-- **Africa Regional Hub**: https://silverfoxdynamics.com/markets/africa/ (Nigeria, Kenya, Ghana, South Africa)
-- **South Asia Regional Hub**: https://silverfoxdynamics.com/markets/south-asia/ (Philippines, Pakistan)
-- **Pakistan Remote Base**: https://silverfoxdynamics.com/markets/pakistan/
+- [Africa Regional Hub](https://silverfoxdynamics.com/markets/africa/): Nigeria, Kenya, Ghana, Uganda, Tanzania, South Africa.
+  - [Nigeria](https://silverfoxdynamics.com/markets/nigeria/), [Kenya](https://silverfoxdynamics.com/markets/kenya/), [Ghana](https://silverfoxdynamics.com/markets/ghana/), [Uganda](https://silverfoxdynamics.com/markets/uganda/), [Tanzania](https://silverfoxdynamics.com/markets/tanzania/), [South Africa](https://silverfoxdynamics.com/markets/south-africa/)
+- [South Asia Regional Hub](https://silverfoxdynamics.com/markets/south-asia/): Bangladesh, Philippines, Pakistan.
+  - [Bangladesh](https://silverfoxdynamics.com/markets/bangladesh/), [Philippines](https://silverfoxdynamics.com/markets/philippines/)
+- [Pakistan Remote Base](https://silverfoxdynamics.com/markets/pakistan/)
+
+## Optional
+- [Careers](https://silverfoxdynamics.com/careers/)
+- [Message from the CEO](https://silverfoxdynamics.com/ceo-message/)
+- [Privacy Policy](https://silverfoxdynamics.com/privacy/)
+- [Terms of Service](https://silverfoxdynamics.com/terms/)
