@@ -1,5 +1,5 @@
 /* ================================================================
-   Silver Fox Dynamics — Service Worker v4
+   Silver Fox Dynamics — Service Worker v5
    Strategy:
      HTML pages   → Network-first  (always fresh content)
      CSS / JS     → Network-first  (style/behaviour changes show up
@@ -8,7 +8,8 @@
    Splash / install uses the updated branded icons.
 ================================================================ */
 
-const CACHE_VERSION = "sfd-cache-v4";
+const CACHE_VERSION = "sfd-cache-v5";
+const DYNAMIC_MAX_ENTRIES = 80;
 const CACHE_STATIC  = `${CACHE_VERSION}-static`;
 const CACHE_DYNAMIC = `${CACHE_VERSION}-dynamic`;
 
@@ -65,8 +66,12 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
 
-  // Only intercept same-origin requests
+  // Only intercept same-origin GET requests. Form POSTs and the /api/
+  // endpoints go straight to the network (a POST can't be cached, and
+  // trying to put one in the cache throws).
   if (url.origin !== location.origin) return;
+  if (request.method !== 'GET') return;
+  if (url.pathname.startsWith('/api/')) return;
 
   // HTML pages → Network-first (keeps content fresh)
   if (request.headers.get('Accept')?.includes('text/html')) {
@@ -85,18 +90,38 @@ self.addEventListener('fetch', event => {
   event.respondWith(cacheFirst(request));
 });
 
+// ── Keep the dynamic cache from growing without bound ────────────
+async function trimCache(cache) {
+  const keys = await cache.keys();
+  for (let i = 0; i < keys.length - DYNAMIC_MAX_ENTRIES; i++) {
+    await cache.delete(keys[i]);
+  }
+}
+
+async function remember(request, response) {
+  try {
+    const cache = await caches.open(CACHE_DYNAMIC);
+    await cache.put(request, response);
+    await trimCache(cache);
+  } catch { /* caching is best-effort */ }
+}
+
 // ── Network-first strategy ───────────────────────────────────────
 async function networkFirst(request) {
   try {
     const networkResponse = await fetch(request);
-    if (networkResponse.ok) {
-      const cache = await caches.open(CACHE_DYNAMIC);
-      cache.put(request, networkResponse.clone());
-    }
+    if (networkResponse.ok) remember(request, networkResponse.clone());
     return networkResponse;
   } catch {
     const cached = await caches.match(request);
-    return cached || caches.match('/index.html');
+    if (cached) return cached;
+    // Offline fallback to the home page only makes sense for page
+    // navigations, never for a stylesheet or script.
+    if (request.mode === 'navigate') {
+      const home = await caches.match('/index.html');
+      if (home) return home;
+    }
+    return Response.error();
   }
 }
 
@@ -107,10 +132,7 @@ async function cacheFirst(request) {
 
   try {
     const networkResponse = await fetch(request);
-    if (networkResponse.ok) {
-      const cache = await caches.open(CACHE_DYNAMIC);
-      cache.put(request, networkResponse.clone());
-    }
+    if (networkResponse.ok) remember(request, networkResponse.clone());
     return networkResponse;
   } catch {
     // Return empty 404 response if both fail

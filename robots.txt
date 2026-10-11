@@ -1,7 +1,31 @@
 # robots.txt for Silver Fox Dynamics
 # https://silverfoxdynamics.com/robots.txt
+#
+# All crawlers are welcome. The named search and AI crawlers below share the
+# same rule set as "*" (one group, so the Disallow rules are written once).
+# Naming them documents intent; it does not change what "*" already allows.
+#   Google / Gemini:    Googlebot, Google-Extended
+#   Bing / Copilot:     Bingbot
+#   ChatGPT:            OAI-SearchBot (search), ChatGPT-User (user-triggered), GPTBot (training)
+#   Claude:             Claude-SearchBot (search), Claude-User (user-triggered), ClaudeBot (training)
+#   Perplexity:         PerplexityBot, Perplexity-User
+#   Apple:              Applebot, Applebot-Extended
+# Crawlers not listed (e.g. DeepSeek) fall under "*".
 
 User-agent: *
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Applebot
+User-agent: Applebot-Extended
 Allow: /
 Disallow: /api/
 Disallow: /private/
