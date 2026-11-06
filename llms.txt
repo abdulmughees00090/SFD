@@ -71,7 +71,10 @@
 - [Pakistan Remote Base](https://silverfoxdynamics.com/markets/pakistan/)
 
 ## Optional
-- [Careers](https://silverfoxdynamics.com/careers/)
+- [Careers](https://silverfoxdynamics.com/careers/): Current openings at Silver Fox Dynamics.
+  - [Senior Oracle APEX Developer, Lahore](https://silverfoxdynamics.com/careers/senior-oracle-apex-developer/)
+  - [Junior Oracle APEX Developer, Lahore](https://silverfoxdynamics.com/careers/junior-oracle-apex-developer/)
+  - [Commission-Based Sales Agents, Pakistan](https://silverfoxdynamics.com/careers/commission-based-sales-agent/)
 - [Message from the CEO](https://silverfoxdynamics.com/ceo-message/)
 - [Privacy Policy](https://silverfoxdynamics.com/privacy/)
 - [Terms of Service](https://silverfoxdynamics.com/terms/)
