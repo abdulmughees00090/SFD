@@ -108,7 +108,11 @@ function showToast(message, type = 'success') {
   const icon = type === 'success' ? '✓' : '✕';
   const toast = document.createElement('div');
   toast.className = `toast ${type}`;
-  toast.innerHTML = `<span>${icon}</span><span>${message}</span>`;
+  const iconEl = document.createElement('span');
+  iconEl.textContent = icon;
+  const msgEl = document.createElement('span');
+  msgEl.textContent = message;
+  toast.append(iconEl, msgEl);
   document.body.appendChild(toast);
   setTimeout(() => {
     toast.classList.add('hide');
@@ -164,7 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const role = new URLSearchParams(window.location.search).get('role');
     const posIn = document.getElementById('position');
     if (role && posIn) {
-      posIn.value = decodeURIComponent(role);
+      // URLSearchParams.get() already decodes the value; decoding again threw
+      // a URIError on any literal "%" and aborted the rest of this handler.
+      posIn.value = role.slice(0, 120);
       const lbl = document.querySelector('label[for="position"]');
       if (lbl) {
         const note = document.createElement('span');
