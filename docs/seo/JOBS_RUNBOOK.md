@@ -18,6 +18,6 @@ Source of truth: JobPosting JSON-LD in `careers/<slug>/index.html`.
 Jobs whose `validThrough` has passed are dropped from feeds/sitemap automatically on the next build; rebuild after each deadline (Junior APEX: 2026-12-01, Senior APEX: 2026-12-20).
 
 ## Credentials (never commit)
-- IndexNow: public key file `0541c4696391b15380c4d55bf668d656.txt` is already in the site root.
+- IndexNow: public key file `f3dfe24845974c508e6a73ef5fe29997.txt` is already in the site root.
 - Google Indexing API: create a service account in Google Cloud, enable "Web Search Indexing API", add its email as Owner in Search Console, then
   `$env:GOOGLE_SERVICE_ACCOUNT_JSON="C:\secure\sa.json"; node scripts/notify-indexing.js --send`

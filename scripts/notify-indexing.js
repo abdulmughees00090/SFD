@@ -23,7 +23,7 @@ const send = args.includes('--send');
 const deleted = [];
 args.forEach((a, i) => { if (a === '--deleted') deleted.push(args[i + 1]); });
 const updated = [`${SITE}/careers/`, ...discoverJobs().filter((j) => !j.expired).map((j) => j.url)];
-const INDEXNOW_KEY = process.env.INDEXNOW_KEY || '0541c4696391b15380c4d55bf668d656';
+const INDEXNOW_KEY = process.env.INDEXNOW_KEY || 'f3dfe24845974c508e6a73ef5fe29997';
 
 async function indexNow(urls) {
   const body = { host: new URL(SITE).host, key: INDEXNOW_KEY, keyLocation: `${SITE}/${INDEXNOW_KEY}.txt`, urlList: urls };
